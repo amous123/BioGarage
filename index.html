@@ -11,6 +11,11 @@
   <link href="about_style.css" type="text/css" rel="StyleSheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<style>
+.mySlides{
+  display: none;
+}
+</style>
   <body>
 
 <!-- topnav is the navigation bar of the website -->
@@ -22,7 +27,7 @@
      <li class="right"><a href="team.html">Team</a></li>
      <li  class="right"><a href="projects.html">Projects</a></li>
      <!-- the drop down menu of the navbar is for mobile version of website -->
-     <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Dropdown ▼ </a>
+     <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Explore ▼ </a>
        <div class="dropdown-content">
       <a href="#about">About bioGarrage</a>
       <a href="contact.html">Contact Us</a>
@@ -33,10 +38,71 @@
    </ul>
 
 <!-- the front page of the website begins here -->
-    <div class="FrontPage">
-
+<div class="FrontPage">
+    <div class="FrontPageContent FrontPageSection">
+      <!-- Images should be 1.5:1 ratio to 2:1 ratio to fit best, keep photos similiar size -->
+      <img class="mySlides img1" src="microscope.jpg" style="width:100%">
+      <img class="mySlides img2" src="dna.gif" style="width:100%">
+      <img class="mySlides img3" src="head.gif" style="width:100%">
+      <img class="mySlides img4" src="neurons.gif" style="width:100%">
     </div>
+  </div>
 <!-- the front page of the website ends here-->
+<div class="seperator">
+  <div class="seperatorContent">
+  </div>
+</div>
+
+<div class="about" id="about">
+  <div class="aboutContent">
+    <h2> What is bioGARRAGE? </h2>
+    <p> bioGARRAGE is an enviromment to share and collaborate molecular biology experiments and
+      allow the general public access to what would normally take a few years of university courses in the field. </p>
+      <hr>
+
+      <h2>More questions?</h2>
+      <p>This is some other text.</p>
+      <hr>
+
+      <h2>More information</h2>
+      <p>This is some other text.</p>
+      <hr>
+
+      <h3> Have a question we didn't answer or want more information? </h3>
+      <p> Get in touch with us! </p>
+      <div class="contactButton">
+        <a href="contact.html"><button type="button" onclick=""class="contactButtonContent"> Contact Us </button></a>
+      </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footerContent">
+    <a class="lin" href="#"><i class="fa fa-github"></i></a>
+    <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+    <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+    <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+  </div>
+    <p class="copyright"> bioGARRAGE INC. © 2018 | <a href="terms.txt" class="terms"> terms </a> & <a href="privacy.txt" class="privacy"> privacy </a></p>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
 
   </body>
 
