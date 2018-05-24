@@ -121,11 +121,11 @@ ul.topnav .dropdown-content a {
     text-align: left;
 }
 
-ul.topnav .dropdown-content a:hover, a:active, a:focus {
+ul.topnav .dropdown-content a:hover, a:active {
   background-color: #f1f1f1
 }
 
-ul.topnav .dropdown:hover .dropdown-content, .dropdown:active, .dropdown:focus {
+ul.topnav .dropdown:hover .dropdown-content, .dropdown:active .dropdown-content{
     display: block;
 }
 }
