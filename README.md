@@ -1,3 +1,3 @@
-# BioGarage
-A website for UOttawa BioGarage
+# bioGARAGE
+A website for UOttawa bioGARAGE
 Developpers: amous123
