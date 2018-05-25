@@ -280,24 +280,15 @@ ul.topnav li.dropdown{
     text-align: left;
   }
 
-  ul.topnav .dropdown-content a:hover, a:active {
+  ul.topnav .dropdown-content a:hover, ul.topnav .dropdown-content a:active {
     background-color: #f9f9f9;
     color: gold;
   }
 
-  ul.topnav .dropdown:hover .dropdown-content, .dropdown:active .dropdown-content{
+  ul.topnav .dropdown:hover .dropdown-content, ul.topnav .dropdown:active .dropdown-content{
     display: block;
   }
 }
-@media screen and (max-width: 600px){
-  ul.topnav .dropdown-content a:active {
-    background-color: #f9f9f9;
-    color: gold;
-  }
 
-  ul.topnav .dropdown:active .dropdown-content{
-    display: block;
-  }
-}
 /*End of navbar for mobile */
 /*End of navbar*/
