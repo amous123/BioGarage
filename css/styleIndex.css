@@ -1,0 +1,267 @@
+/* the body influences everything that doesn't have a class or id*/
+body {
+  background-color: White;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+}
+
+/* begining of slideshow */
+.FrontPage{
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  background-attachment: fixed;
+
+}
+
+.FrontPageContent{
+  max-width: 800px;
+  margin: auto;
+  outline-style: groove;
+  outline-color: gold;
+  outline-width: 10px;
+}
+
+.FrontPageSection{
+  margin-top: 16px;!important
+  margin-bottom: 16px;!important
+}
+
+/*
+.img1 { flex: 1.7766; }
+.img2 { flex: 1.8170; }
+.img3 { flex: 1.5065; }
+.img4 { flex: 1.7777; }
+*/
+
+img.FrontPageContent{
+  vertical-align: middle;
+  border-style: none;
+
+}
+/* end of slideshow */
+
+/* beginning of seperator */
+.seperator{
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+.seperatorContent{
+padding-top: 2px;
+background-color: black;
+width: 100%;
+align-content: center;
+}
+/* end of seperator */
+
+/* beginning about section */
+.about{
+  padding-top: 50px;
+  text-align:center;
+  padding-bottom: 200px;
+}
+
+.aboutContent{
+
+}
+
+.contactButtonContent{
+  font-size: 16px;
+  background-color: gray;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.contactButtonContent:hover{
+  background-color: gray;
+  color: gold;
+  padding: 18px 35px;
+  font-size: 18px;
+  transition-duration: 0.3s;
+
+}
+/* ending about section */
+
+/* beginning of footer */
+.footer{
+background-color: black;
+margin: 0;
+padding-top: 25px;
+padding-bottom: 10px;
+color: white;
+font-size: 17px;
+}
+.lin, .footerContent{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.lin:hover{
+  color: gold;
+  transition-duration: 0.3s;
+}
+.copyright{
+  text-align: center;
+}
+.privacy, .terms{
+  text-decoration: none;
+  color: white;
+}
+.privacy:hover, .terms:hover{
+  color: gold;
+  transition-duration: 0.3s;
+}
+
+/* end of footer */
+
+/*Beginning of navbar */
+ul.topnav {
+    background-color: White;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    box-shadow: 0 2px 4px 0;!important
+    z-index: 1;
+}
+
+ul.topnav img{
+  float: left;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.topnav li a{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1.875em 1.5625em;
+    text-decoration: none;
+    font-size: 1.0625em;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+.topnav a:hover {
+    background-color: White;
+    color: Gold;
+}
+
+.topnav a.active {
+  background-color: White;
+  color: Gold;
+}
+
+/* Beginning of navbar for mobile */
+ul.topnav li.dropdown{
+  visibility: hidden;
+  display: none;
+  overflow: hidden;
+}
+@media screen and (max-width: 952px){
+  ul.topnav li a{
+    padding: 1.875em 1.2em;
+  }
+}
+@media screen and (max-width: 904px){
+  ul.topnav li a{
+    padding: 1.875em 0.9em;
+  }
+}
+@media screen and (max-width: 863px){
+  ul.topnav li a{
+    padding: 1.875em 0.5em;
+  }
+}
+@media screen and (max-width: 809px){
+  ul.topnav img{
+    float: none;
+    text-align: center;
+  }
+
+  ul.topnav{
+    height: auto;
+    text-align: center;
+    position: unset;
+  }
+
+  ul.topnav li.dropdown{
+    visibility: visible;
+    display: block;
+    background-color: white;
+  }
+
+  ul.topnav li.right{
+    visibility: hidden;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+ul.topnav li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: none;
+}
+
+ul.topnav li a:hover, .dropdown:hover .dropbtn {
+    background-color: gold;
+    color: white;
+}
+
+ul.topnav li.dropdown {
+    display: inline-block;
+}
+
+ul.topnav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+ul.topnav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+ul.topnav .dropdown-content a:hover, a:active {
+  background-color: #f9f9f9;
+  color: gold;
+}
+
+ul.topnav .dropdown:hover .dropdown-content, .dropdown:active .dropdown-content{
+    display: block;
+}
+}
+/*End of navbar for mobile */
+/*End of navbar*/
