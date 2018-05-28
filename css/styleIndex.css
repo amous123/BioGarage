@@ -34,11 +34,11 @@ body {
   opacity: 0.5;
   background-position: center;
 }
-@media screen and (max-width: 813px){
-.transPhoto{
-  background-size: contain;
+@media only screen and (max-device-width: 813px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
-  }
 /* end of seperator photo */
 
 
