@@ -234,21 +234,23 @@ ul.topnav li.dropdown{
 
 /* begining of front page */
 .frontContent{
-  padding-top: 60px;
-}
-.img1{
-  width: 100%;
+  background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 60px;
   background-size: cover;
-  z-index: 0;
-  opacity: 0.9;
+  padding: 250px;
+  background-attachment: fixed;
 }
-
+@media screen and (max-width: 1200px){
+  .frontContent{padding: 220px;}
+}
 .opening{
   padding: 20px;
   background-color: black;
   opacity: 0.85;
   bottom: 0;
   position: relative;
+  padding-bottom: 30px;
 }
 .openingContent{
   background-color: inherit;
@@ -344,7 +346,7 @@ padding-top: 40px;
   background-repeat: no-repeat;
   z-index: 1;
   opacity: 0.5;
-  background-position: 0 60px;;
+  background-position: 0 60px;
 }
 @media only screen and (max-device-width: 813px) {
     .transPhoto {
@@ -365,6 +367,9 @@ padding-top: 40px;
 #Minfo{ float: right; }
 .StayInTouch{
   text-align: center;
+}
+.StayInTouch p{
+  text-indent: unset;
 }
 .contactButtonContent{
   font-size: 18px;
