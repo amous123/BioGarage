@@ -35,7 +35,7 @@ body {
   background-position: center;
 }
 @media only screen and (max-device-width: 813px) {
-    .parallax {
+    .transPhoto {
         background-attachment: scroll;
     }
 }
