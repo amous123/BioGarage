@@ -89,40 +89,9 @@ li.crop{
 /* end of slideshow */
 /* ending of front page */
 
-/* beginning of footer */
-.footer{
-  background-color: black;
-  margin: 0;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  color: white;
-  font-size: 17px;
-}
-.lin, .footerContent{
-  text-align: center;
-  color: white;
-  font-size: 25px;
-}
-.lin:hover{
-  color: gold;
-  transition-duration: 0.3s;
-}
-.copyright{
-  text-align: center;
-}
-.privacy, .terms{
-  text-decoration: none;
-  color: white;
-}
-.privacy:hover, .terms:hover{
-  color: gold;
-  transition-duration: 0.3s;
-}
-/* end of footer */
-
 /*Beginning of navbar */
 ul.topnav {
-  background-color: White;
+  background-color: white;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -130,11 +99,10 @@ ul.topnav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 10%;
-  box-shadow: 0 2px 4px 0;!important
-  z-index: 1;
+  height: 60px;
+  box-shadow: 0 2px 4px 0;
+  z-index: 2;
 }
-
 ul.topnav img{
   float: left;
   text-align: center;
@@ -142,30 +110,87 @@ ul.topnav img{
   margin-left: auto;
   margin-right: auto;
 }
-
 ul.topnav li a{
   float: right;
   display: block;
   color: black;
   text-align: center;
-  padding: 1.875em 1.5625em;
+  padding: 20px 20px;
   text-decoration: none;
   font-size: 1.0625em;
+  z-index: 1;
 }
-
 ul.topnav li.right {
   float: right;
 }
-
 .topnav a:hover {
   background-color: White;
   color: Gold;
 }
-
 .topnav a.active {
   background-color: White;
   color: Gold;
 }
+
+
+/* beginning of sideNav*/
+#menuoverlay{
+  left: 0;
+  z-index: 10000;
+  opacity: 1;
+  text-align: left;
+  display: none;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 200ms;
+  transition-property: all;
+}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 280;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
+}
+.bioGARRAGE-logo{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100000;
+}
+@media screen and (max-width: 813px){
+  #menuoverlay{
+    position: fixed;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    pointer-events: auto;
+    background-color: #2f2f2f;;
+    text-decoration: none;
+    /*#2f2f2f; #ffe0e0*/
+    transition-delay: initial;
+    transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+    transition-duration: 200ms;
+    transition-property: all;
+  }
+  #mainmenu{
+    position: relative;
+    width: 85%;
+    right:0;
+    left: 20px;
+    top:40px;
+    color: white;
+    list-style: none;
+  }
+}
+/* end of sideNav */
+
 
 /* Beginning of navbar for mobile */
 ul.topnav li.dropdown{
@@ -173,39 +198,59 @@ ul.topnav li.dropdown{
   display: none;
   overflow: hidden;
 }
-@media screen and (max-width: 952px){
-  ul.topnav li a{
-    padding: 1.875em 1.2em;
+#logo{
+  width: 300;
+  height: 60;
+  cursor: pointer;
+}
+#logoHolder{
+  cursor: default;
+}
+#sitemenu-icon{
+  display: none;
+  cursor: pointer;
+  width: 20px;
+  height: 14px;
+  background-color: transparent;
+  position: fixed;
+  top: 24px;
+  left: 15px;
+  z-index: 1000;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 200ms;
+  transition-property: all;
+}
+#sitemenu-icon span{
+  width: 15px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+}
+#sitemenu-icon span.line1{
+  top: 0px;
+}
+#sitemenu-icon span.line2{
+  top: 5px;
+}
+#sitemenu-icon span.line3{
+  top: 10px;
+}
+@media screen and (max-width: 390px){
+  #sitemenu-icon{
+    left: 7px;
   }
 }
-@media screen and (max-width: 904px){
-  ul.topnav li a{
-    padding: 1.875em 0.9em;
-  }
-}
-@media screen and (max-width: 863px){
-  ul.topnav li a{
-    padding: 1.875em 0.5em;
-  }
-}
-@media screen and (max-width: 809px){
+@media screen and (max-width: 813px){
   ul.topnav img{
     float: none;
-    text-align: center;
-  }
-
-  ul.topnav{
-    height: auto;
-    text-align: center;
-    position: fixed;
-  }
-
-  ul.topnav li.dropdown{
-    visibility: visible;
+    position: relative;
     display: block;
-    background-color: white;
+    text-align: center;
   }
-
+  #sitemenu-icon{
+    display: block;
+  }
   ul.topnav li.right{
     visibility: hidden;
     overflow: hidden;
@@ -213,52 +258,53 @@ ul.topnav li.dropdown{
     padding: 0;
     display: none;
   }
-
-  ul.topnav li a, .dropbtn {
-    display: inline-block;
-    color: black;
+  ul.topnav{
+    height: auto;
     text-align: center;
-    padding: 14px 16px;
+    position: fixed;
+  }
+  #mainmenu li.dropdown{
+    visibility: visible;
+    display: inline-block;
+    background-color: transparent;
+  }
+  #mainmenu li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: left;
     text-decoration: none;
     float: none;
   }
-
-  ul.topnav li a:hover, .dropdown:hover .dropbtn {
-    background-color: gold;
-    color: white;
+  #mainmenu li a:hover, .dropdown:hover .dropbtn {
+    color: red;
   }
+  #mainmenu li.dropdown { display: inline-block; }
 
-  ul.topnav li.dropdown {
-    display: inline-block;
-  }
-
-  ul.topnav .dropdown-content {
+  #mainmenu .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: transparent;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
     position: fixed;
   }
-
-  ul.topnav .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+  #mainmenu .dropdown-content a {
+    color: white;
+    padding: 6px 12px;
     text-decoration: none;
     display: block;
     text-align: left;
   }
-
-  ul.topnav .dropdown-content a:hover, ul.topnav .dropdown-content a:active {
-    background-color: #f9f9f9;
+  #mainmenu .dropdown-content a:hover, #mainmenu .dropdown-content a:active {
+    background-color: transparent;
     color: gold;
   }
-
-  ul.topnav .dropdown:hover .dropdown-content, ul.topnav .dropdown:active .dropdown-content{
+  #mainmenu .dropdown:hover .dropdown-content, #mainmenu .dropdown:active .dropdown-content{
     display: block;
+    transition-delay: initial;
+    transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+    transition-duration: 200ms;
+    transition-property: all;
   }
 }
-
 /*End of navbar for mobile */
 /*End of navbar*/
