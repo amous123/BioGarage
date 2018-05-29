@@ -358,10 +358,10 @@ padding-top: 40px;
 .about{
   padding-bottom: 200px;
 }
-.aboutContent p{ overflow: auto; }
+.aboutContent p{ overflow: auto; text-indent: 50px; }
 .aboutContent h2{ text-align: center; }
-#descriptionImage{ float: right; position: relative;}
-#Mquestions{ float: left; }
+#descriptionImage{ float: right;}
+#Mquestions{ float: right;; }
 #Minfo{ float: right; }
 .StayInTouch{
   text-align: center;
@@ -394,23 +394,24 @@ padding-top: 40px;
 .footer{
   background-color: #000;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 10px;
   color: white;
   font-size: 17px;
 }
-.lin, .footerContent{
+.lin{
   text-align: center;
   color: white;
   font-size: 25px;
 }
+.footerContent{
+  text-align: center;
+  overflow: auto;
+}
+.footerContent p span{ display: block; }
+
 .lin:hover{
   color: gold;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-}
-.copyright{
-  text-align: center;
 }
 .privacy, .terms{
   text-decoration: none;
