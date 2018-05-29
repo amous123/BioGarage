@@ -405,9 +405,8 @@ padding-top: 40px;
 .footerContent{
   text-align: center;
   overflow: auto;
+  line-height: 200%;
 }
-.footerContent p span{ display: block; }
-
 .lin:hover{
   color: gold;
   -webkit-transition-duration: 0.4s; /* Safari */
