@@ -158,7 +158,7 @@ ul.topnav li.dropdown{
 }
 @media screen and (max-width: 420px){
   #sitemenu-icon{
-    left: 7px;
+    left: 2px;
   }
 }
 @media screen and (max-width: 813px){
@@ -356,11 +356,16 @@ padding-top: 40px;
 
 /* beginning about section */
 .about{
-  padding-top: 50px;
-  text-align:center;
   padding-bottom: 200px;
 }
-.aboutContent{ }
+.aboutContent p{ overflow: auto; }
+.aboutContent h2{ text-align: center; }
+#descriptionImage{ float: right; position: relative;}
+#Mquestions{ float: left; }
+#Minfo{ float: right; }
+.StayInTouch{
+  text-align: center;
+}
 .contactButtonContent{
   font-size: 18px;
   color: black;
