@@ -196,7 +196,9 @@ ul.topnav li.dropdown{
     float: none;
   }
   #mainmenu li a:hover, .dropdown:hover .dropbtn {
-    color: red;
+    color: gold;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
   }
   #mainmenu li.dropdown { display: inline-block; }
 
@@ -216,7 +218,7 @@ ul.topnav li.dropdown{
   }
   #mainmenu .dropdown-content a:hover, #mainmenu .dropdown-content a:active {
     background-color: transparent;
-    color: gold;
+    color: grey;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
   }
@@ -351,10 +353,10 @@ word-spacing: 50px;
 @media only screen and (max-device-width: 813px) {
     .transPhoto {
         background-attachment: scroll;
-        padding: auto;***
+        padding: 80px;
     }
     .frontContent{
-      background-size: auto;
+      background-size: contain;
     }
 }
 /* end of seperator photo */
