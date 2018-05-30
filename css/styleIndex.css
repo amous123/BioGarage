@@ -239,7 +239,7 @@ ul.topnav li.dropdown{
   background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");
   background-repeat: no-repeat;
   background-position: 0 60px;
-  background-size: cover;
+   background-size: cover; 
   padding: 250px;
   background-attachment: fixed;
 }
@@ -353,9 +353,13 @@ word-spacing: 50px;
 @media only screen and (max-device-width: 813px) {
     .transPhoto {
         background-attachment: scroll;
-        padding: 80px;
+        background-position: center;
     }
     .frontContent{
+      background: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg") no-repeat center center fixed;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
       background-size: contain;
     }
 }
