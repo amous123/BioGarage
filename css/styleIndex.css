@@ -237,11 +237,18 @@ ul.topnav li.dropdown{
 /* begining of front page */
 .frontContent{
   background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 60px;
-   background-size: cover;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
   padding: 250px;
-  background-attachment: fixed;
+  background-position: 0 60px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+background-attachment: fixed;
 }
 @media screen and (max-width: 1200px){
   .frontContent{ padding: 220px; }
@@ -356,14 +363,14 @@ word-spacing: 50px;
         background-position: center;
     }
     .frontContent{
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      -o-background-size: 100%;
-      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
       -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+    	-moz-background-size: cover;
+    	-o-background-size: cover;
+    	background-size: cover;
+    	font-family: Verdana, Geneva, sans-serif;
+    	font-size: 12px;
     }
 }
 /* end of seperator photo */
