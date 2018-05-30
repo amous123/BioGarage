@@ -242,7 +242,8 @@ ul.topnav li.dropdown{
   background-attachment: fixed;
 }
 @media screen and (max-width: 1200px){
-  .frontContent{padding: 220px;}
+  .frontContent{ padding: 220px; }
+  .openingButtons{ padding-top: 40px; }
 }
 .opening{
   padding: 20px;
@@ -275,7 +276,6 @@ ul.topnav li.dropdown{
 .openingButtons{
 text-align: center;
 word-spacing: 50px;
-padding-top: 40px;
 }
 .openBtn1{
   font-size: 18px;
@@ -351,6 +351,10 @@ padding-top: 40px;
 @media only screen and (max-device-width: 813px) {
     .transPhoto {
         background-attachment: scroll;
+        padding: auto;***
+    }
+    .frontContent{
+      background-size: auto;
     }
 }
 /* end of seperator photo */
