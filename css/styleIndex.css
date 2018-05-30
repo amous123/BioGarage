@@ -248,7 +248,7 @@ ul.topnav li.dropdown{
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-background-attachment: fixed;
+  background-attachment: fixed;
 }
 @media screen and (max-width: 1200px){
   .frontContent{ padding: 220px; }
@@ -363,14 +363,13 @@ word-spacing: 50px;
         background-position: center;
     }
     .frontContent{
-      background-repeat: no-repeat;
-      background-position: center center;
+      background: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg") no-repeat center center fixed;
       -webkit-background-size: cover;
-    	-moz-background-size: cover;
-    	-o-background-size: cover;
-    	background-size: cover;
-    	font-family: Verdana, Geneva, sans-serif;
-    	font-size: 12px;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+      overflow: hidden;
     }
 }
 /* end of seperator photo */
