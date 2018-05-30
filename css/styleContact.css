@@ -6,9 +6,6 @@ body {
   padding: 0;
   font-family: Verdana;
 }
-.space{
-  padding-top: 800px;
-}
 
 /* beginning of news tab */
 .newsTab{
@@ -27,6 +24,197 @@ body {
   padding-bottom: 70px;
 }
 /* end of news tab */
+
+/*CONTACT*/
+#contactDetails {
+    height: auto;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+#contactDetailsContent {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    z-index: 2;
+    margin-top: 5%;
+    overflow: hidden;
+}
+#contact-info {
+    width: 40%;
+    z-index: 3;
+    text-align: left;
+    position: relative;
+}
+#contact-form {
+    width: 60%;
+    z-index: 3;
+    text-align: left;
+    display: block;
+    margin-right: 5%;
+}
+
+@media(max-width:900px){
+  #contactDetailsContent{
+    display:block;
+  }
+  #contact-info{
+    width: 80%;
+    margin-left: 10px;
+    text-align: center;
+  }
+  #contact-form{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  input{
+    margin-bottom: 40px;
+    float: none;
+    width: 100%;
+  }
+}
+
+#contact-top{
+    width: 100%;
+    text-align: center;
+    padding-top: 1em;
+}
+#contact-title {
+    font-size: 4em;
+    z-index: 4;
+    letter-spacing: 2px;
+    color: #444444;
+    text-align: center;
+}
+.contact-stuff {
+    font-size: 1em;
+    z-index: 4;
+    margin-left: 18%;
+    font-weight: bold;
+    padding: 1.5% 0;
+}
+.contact-stuff a {
+    color: #444444;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+.contact-stuff a:hover {
+    text-decoration: none;
+    color: #FFC80A;
+    transition-duration: 0.3s;
+}
+.contactLabel {
+    font-size: 1em;
+    letter-spacing: 5px;
+    color: #a6a6a6;
+    z-index: 4;
+    margin-left: 18%;
+}
+#name-elements {
+    width: 50%;
+    float: left;
+}
+#email-elements {
+    width: 50%;
+    float: right;
+}
+#message-elements {
+    margin-top: 10%;
+}
+.filled {
+    border-color: #FFC80A;
+    transition-duration: 0.5s;
+}
+.notfilled {
+    border-color: #ccc;
+    transition-duration: 0.5s;
+}
+#contact-name-box {
+    background-color: transparent;
+    color: black;
+    padding: 0.25em 0.35em;
+    outline: none;
+    outline-style: none;
+    border-width: 0 0 2px 0;
+    width: 95%;
+    float: left;
+    transition-duration: 0.5s;
+    font-family: montserrat;
+    box-sizing: border-box;
+}
+#contact-email-box {
+    background-color: transparent;
+    color: black;
+    padding: 0.25em 0.35em;
+    outline: none;
+    outline-style: none;
+    border-width: 0 0 2px 0;
+    float: right;
+    width: 95%;
+    box-sizing: border-box;
+    transition-duration: 0.5s;
+    font-family: montserrat;
+}
+::-webkit-input-placeholder {
+    font-family: montserrat;
+}
+#contact-message-box {
+    background-color: transparent;
+    color: black;
+    padding: 0.25em 0.45em;
+    outline: none;
+    outline-style: none;
+    border-width: 2px;
+    width: 100%;
+    resize: none;
+    transition-duration: 0.5s;
+    font-family: montserrat;
+    box-sizing: border-box;
+}
+#contact-name-box:focus, #contact-email-box:focus {
+    border-color: #FFC80A;
+    transition-duration: 0.5s;
+}
+#contact-message-box:focus {
+    border-color: #FFC80A;
+    transition-duration: 0.5s;
+}
+#bottom-button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+#contact-button {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 60px;
+    border: 3px solid #FFC80A;
+    color: #444444;
+    margin: 5% 0;
+    transition-duration: 0.2s;
+    outline: none;
+    font-family: montserrat;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 1em;
+}
+#contact-button:hover {
+    background-color: #FFC80A;
+    transition-duration: 0.2s;
+    border: 3px solid #FFC80A;
+    cursor: pointer;
+}
+#map{
+  height: 17em;
+  width: 100%;
+}
+/* make sure to secure it to bioGARAGE website when done *** */
+
+
 
 /* beginning of footer */
 .footer{

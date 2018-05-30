@@ -2,78 +2,130 @@
 <html>
 <head>
 
-  <link rel="StyleSheet" href="css/styleContact.css">
   <meta charset="utf-8" />
+
+  <!-- CSS Documents -->
+  <link rel="StyleSheet" href="css/styleContact.css">
+
+  <!-- JavaScript Documents -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/Javascript" src="contact.js"></script>
+
+  <!-- Viewport - for scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title style="text-align:center;"> Contact Us </title style="text-align:center;">
     <meta name="Developers" content="amous123">
-
   </head>
 
   <ul class="topnav">
-   <div id="sitemenu-icon" onclick="on()"><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
+    <div id="sitemenu-icon" onclick="on()"><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
     <!-- the logo for the website is logo.png located inside src="", the width and height are in pixels -->
-   <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img>
-   <li class="right"><a href="index.html#about">About bioGARAGE</a></li>
-   <li class="right"><a href="contact.html">Contact Us</a></li>
-   <li class="right"><a href="team.html">Team</a></li>
-   <li  class="right"><a href="projects.html">Projects</a></li>
+    <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img>
+    <li class="right"><a href="index.html#about">About bioGARAGE</a></li>
+    <li class="right"><a href="contact.html">Contact Us</a></li>
+    <li class="right"><a href="team.html">Team</a></li>
+    <li  class="right"><a href="projects.html">Projects</a></li>
 
- </ul>
+  </ul>
 </header>
 <div id="overlay" onclick="off()"></div>
 <div id="menuoverlay">
   <div id="mainmenu">
-        <h2> Explore </h2>
-        <!-- the drop down menu of the navbar is for mobile version of website -->
-        <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Content ▾ </a>
-        <div class="dropdown-content">
-         <a href="index.html">Home</a>
-         <a href="index.html#about">About bioGarage</a>
-         <a href="contact.html">Contact Us</a>
-         <a href="team.html">Team</a>
-         <a href="projects.html">Projects</a>
-       </div>
-       </li>
+    <h2> Explore </h2>
+    <!-- the drop down menu of the navbar is for mobile version of website -->
+    <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Content ▾ </a>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About bioGarage</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="team.html">Team</a>
+        <a href="projects.html">Projects</a>
+      </div>
+    </li>
   </div>
   <div class="bioGARRAGE-logo"> <a href="index.html"> <img src="resources/logo.png" alt="bioGARRAGE logo" width="240px" height="7%;"></img> </a> </div>
+</div>
+
+<div class="newsTab">
+  <div class="newsTabContent">
+    <h2> weekly news </h2>
+    <object class="pdf" width="80%" height="30%" data="MethPreuves.pdf"> </object>
   </div>
+</div>
 
-     <div class="newsTab">
-       <div class="newsTabContent">
-         <h2> weekly news </h2>
-         <object class="pdf" width="80%" height="30%" data="MethPreuves.pdf"> </object>
-       </div>
-     </div>
-
-     <div class="space">
-     </div>
-
-     <div id="location">
-       We are located here.
-     </div>
-
+<section>
+  <div id="contactDetails">
+    <p id="contact-title">Contact Us</p>
+    <div id="contactDetailsContent">
+      <div id="contact-info">
+        <p class="contactLabel"> Address: </p>
+        <p class="contact-stuff"> 10 Marie-Curie Private, Ottawa, ON K1N 9A4 </p>
+        <p class="contactLabel"> Phone: </p>
+        <p class="contact-stuff"> (613) 562-0000 </p>
+        <p class="contactLabel"> Email: </p>
+        <p class="contact-stuff"> bioGARAGE@uottawa.ca </p>
+      </div>
 
 
-     <div class="footer">
-       <div class="footerContent">
-         <a class="lin" href="#"><i class="fa fa-github"></i></a>
-         <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
-         <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
-         <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
-       </div>
-         <p class="copyright"> bioGARRAGE INC. © 2018 | <a href="resources/terms.txt" class="terms"> terms </a> & <a href="resources/privacy.txt" class="privacy"> privacy </a></p>
-     </div>
-     
-     <script>
-     function on() {
-         document.getElementById("overlay").style.display = "block";
-         document.getElementById("menuoverlay").style.display = "block";
-     }
+    </article>
 
-     function off() {
-         document.getElementById("overlay").style.display = "none";
-         document.getElementById("menuoverlay").style.display = "none";
-     }
-     </script>
-  </html>
+    <article id="contactForm">
+      <!-- action="contact.php"-->
+
+      <form method="POST" action="https://formspree.io/alex303@gmail.com">
+        <div id="contact-form">
+          <div id="name-elements">
+            <!-- <p id="contact-name">Name</p>-->
+            <input id="contact-name-box" class="notfilled" placeholder="Name" type="text" name="name" />
+          </div>
+          <div id="email-elements">
+            <!-- <p id="contact-email">Email</p>-->
+            <input id="contact-email-box" class="notfilled" placeholder="Email" type="email" name="_replyto"/>
+          </div>
+          <div id="message-elements">
+            <!--<p id="contact-message">Message</p>-->
+            <textarea rows="10" id="contact-message-box" class="notfilled" placeholder="Message" type="text" name="content" ></textarea>
+          </div>
+          <div id="bottom-button">
+            <input id="contact-button" type="submit" value="Send"></input>
+          </div>
+        </div>
+      </form>
+
+    </article>
+
+
+  </div>
+</div>
+<!-- predefined code for using Google Maps Static Javascript API -->
+<div id="map" style="position: relative; overflow hidden;"></div>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA944DX_JmQ8u_qAlL5QREKP7XTjekUpLo&callback=initMap">
+</script>
+</section>
+
+<div class="footer">
+  <div class="footerContent">
+    <a class="lin" href="#"><i class="fa fa-github"></i></a>
+    <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+    <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+    <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+  </div>
+  <p class="copyright"> bioGARRAGE INC. © 2018 | <a href="resources/terms.txt" class="terms"> terms </a> & <a href="resources/privacy.txt" class="privacy"> privacy </a></p>
+</div>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById("menuoverlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("menuoverlay").style.display = "none";
+}
+</script>
+
+
+</html>
