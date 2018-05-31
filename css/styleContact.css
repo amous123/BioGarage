@@ -331,7 +331,7 @@ ul.topnav li.right {
   left: 20px;
   z-index: 100000;
 }
-@media screen and (max-width: 813px){
+@media screen and (max-width: 900px){
   #menuoverlay{
     position: fixed;
     top: 0;
@@ -408,7 +408,7 @@ ul.topnav li.dropdown{
     left: 7px;
   }
 }
-@media screen and (max-width: 813px){
+@media screen and (max-width: 900px){
   ul.topnav img{
     float: none;
     position: relative;

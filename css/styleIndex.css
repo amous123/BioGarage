@@ -74,7 +74,7 @@ ul.topnav li.right {
     left: 280;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(255,255,255,0.9);
     z-index: 2;
     cursor: pointer;
 }
@@ -129,13 +129,13 @@ ul.topnav li.dropdown{
 #sitemenu-icon{
   display: none;
   cursor: pointer;
-  width: 40px;
+  width: 20px;
   height: 15px;
   background-color: transparent;
   position: fixed;
   top: 24px;
   left: 15px;
-  z-index: 1000;
+  z-index: 10000;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
@@ -169,7 +169,7 @@ ul.topnav li.dropdown{
     text-align: center;
   }
   #sitemenu-icon{
-    display: block;
+    display: flex;
   }
   ul.topnav li.right{
     visibility: hidden;
@@ -290,6 +290,7 @@ word-spacing: 50px;
   font-size: 18px;
   color: #fff;
   border: 2px solid #fff;
+  border-radius: 10px;
   background-color: transparent;
   letter-spacing: .375em;
   font-family: AkkuratPro-Regular,sans-serif;
@@ -306,6 +307,7 @@ word-spacing: 50px;
   font-size: 18px;
   color: #fff;
   border: 2px solid #fff;
+  border-radius: 10px;
   background-color: transparent;
   letter-spacing: .375em;
   font-family: AkkuratPro-Regular,sans-serif;
@@ -405,6 +407,7 @@ word-spacing: 50px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 10px;
   width: 230px;
 }
 .contactButtonContent:hover{
