@@ -54,6 +54,15 @@ body {
     display: block;
     margin-right: 5%;
 }
+#contact-form-content{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+input{
+  margin-bottom: 40px;
+}
 
 @media(max-width:900px){
   #contactDetailsContent{
