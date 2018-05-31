@@ -475,3 +475,36 @@ ul.topnav li.dropdown{
 }
 /*End of navbar for mobile */
 /*End of navbar*/
+
+/* beginning of footer */
+.footer{
+  background-color: #000;
+  margin: 0;
+  color: white;
+  font-size: 17px;
+}
+.lin{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.footerContent{
+  text-align: center;
+  overflow: auto;
+  line-height: 200%;
+}
+.lin:hover{
+  color: gold;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.privacy, .terms{
+  text-decoration: none;
+  color: white;
+}
+.privacy:hover, .terms:hover{
+  color: gold;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+/* end of footer */

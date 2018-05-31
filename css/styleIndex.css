@@ -84,7 +84,7 @@ ul.topnav li.right {
   left: 20px;
   z-index: 100000;
 }
-@media screen and (max-width: 824px){
+@media screen and (max-width: 900px){
   #menuoverlay{
     position: fixed;
     top: 0;
@@ -161,7 +161,7 @@ ul.topnav li.dropdown{
     left: 2px;
   }
 }
-@media screen and (max-width: 824px){
+@media screen and (max-width: 900px){
   ul.topnav img{
     float: none;
     position: relative;
@@ -358,7 +358,7 @@ word-spacing: 50px;
   opacity: 0.5;
   background-position: 0 60px;
 }
-@media only screen and (max-device-width: 824px) {
+@media only screen and (max-device-width: 900px) {
     .transPhoto {
         background-attachment: scroll;
         background-position: center;
