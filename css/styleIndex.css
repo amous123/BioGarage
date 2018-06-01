@@ -44,8 +44,9 @@ ul.topnav li.right {
 .topnav a:hover {
   background-color: White;
   color: Gold;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+
 }
 .topnav a.active {
   background-color: White;
@@ -78,11 +79,37 @@ ul.topnav li.right {
     z-index: 2;
     cursor: pointer;
 }
-.bioGARRAGE-logo{
+#bioGARRAGE-logo a{
   position: absolute;
   bottom: 20px;
   left: 20px;
   z-index: 100000;
+  color: #777777;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+#bioGARRAGE-logo a:hover{
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+}
+#sideNavExit p{
+  color: #777777;
+  width: 25px;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+#sideNavExit p:hover{
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
 }
 @media screen and (max-width: 900px){
   #menuoverlay{
@@ -129,36 +156,36 @@ ul.topnav li.dropdown{
 #sitemenu-icon{
   display: none;
   cursor: pointer;
-  width: 20px;
+  width: 25px;
   height: 15px;
   background-color: transparent;
   position: fixed;
   top: 24px;
-  left: 15px;
+  left: 17px;
   z-index: 10000;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 #sitemenu-icon span{
-  height: 2px;
+  height: 3px;
   background-color: black;
   position: absolute;
 }
 #sitemenu-icon span.line1{
   top: 0px;
-  width: 20px;
+  width: 25px;
 }
 #sitemenu-icon span.line2{
-  top: 5px;
-  width: 20px;
+  top: 7px;
+  width: 25px;
 }
 #sitemenu-icon span.line3{
-  top: 10px;
-  width: 20px;
+  top: 14px;
+  width: 25px;
 }
 @media screen and (max-width: 420px){
   #sitemenu-icon{
-    left: 2px;
+    left: 5px;
   }
 }
 @media screen and (max-width: 900px){
@@ -218,7 +245,7 @@ ul.topnav li.dropdown{
   }
   #mainmenu .dropdown-content a:hover, #mainmenu .dropdown-content a:active {
     background-color: transparent;
-    color: grey;
+    color: #777777;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
   }
@@ -323,10 +350,14 @@ word-spacing: 50px;
 .openBtn1:hover{
   color: black;
   background-color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
  }
 .openBtn2:hover{
   color: black;
   background-color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
    }
 
 @media screen and (max-width: 700px){
@@ -351,7 +382,7 @@ word-spacing: 50px;
 /* beginning of seperator photo */
 /* https://images.unsplash.com/photo-1476733636740-24c58e0e7432?auto=format&fit=crop&w=1050&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D */
 .transPhoto{
-  padding: 100px;
+  padding: 125px;
   background-image: url("../images/garageMech.png");
   background-size: cover;
   background-attachment: fixed;
@@ -408,12 +439,13 @@ word-spacing: 50px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
-  width: 230px;
+  width: unset;
 }
 .contactButtonContent:hover{
   background-color: black;
   color: white;
-  transition-duration: 0.4s;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
 }
 /* ending about section */
 
@@ -422,12 +454,12 @@ word-spacing: 50px;
 .footer{
   background-color: #000;
   margin: 0;
-  color: white;
+  color: #777777;
   font-size: 17px;
 }
 .lin{
   text-align: center;
-  color: white;
+  color: #777777;
   font-size: 25px;
 }
 .footerContent{
@@ -436,17 +468,17 @@ word-spacing: 50px;
   line-height: 200%;
 }
 .lin:hover{
-  color: gold;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
 }
 .privacy, .terms{
   text-decoration: none;
-  color: white;
+  color: #777777;
 }
 .privacy:hover, .terms:hover{
-  color: gold;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
 }
 /* end of footer */

@@ -6,6 +6,7 @@
 
   <!-- CSS Documents -->
   <link rel="StyleSheet" href="css/styleContact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- JavaScript Documents -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,41 +18,49 @@
     <meta name="Developers" content="amous123">
   </head>
 
-  <ul class="topnav">
-    <div id="sitemenu-icon" onclick="on()"><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
-    <!-- the logo for the website is logo.png located inside src="", the width and height are in pixels -->
-    <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img>
-    <li class="right"><a href="index.html#about">About bioGARAGE</a></li>
-    <li class="right"><a href="contact.html">Contact Us</a></li>
-    <li class="right"><a href="team.html">Team</a></li>
-    <li  class="right"><a href="projects.html">Projects</a></li>
+  <!-- topnav is the navigation bar of the website -->
+  <header>
+      <ul class="topnav">
 
-  </ul>
-</header>
-<div id="overlay" onclick="off()"></div>
-<div id="menuoverlay">
-  <div id="mainmenu">
-    <h2> Explore </h2>
-    <!-- the drop down menu of the navbar is for mobile version of website -->
-    <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Content ▾ </a>
-      <div class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About bioGarage</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="team.html">Team</a>
-        <a href="projects.html">Projects</a>
+       <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
+        <!-- the logo for the website is logo.png located inside src="", the width and height are in pixels -->
+       <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img>
+       <li class="right"><a href="index.html#about">ABOUT US</a></li>
+       <li class="right"><a href="contact.html">CONTACT US</a></li>
+       <li class="right"><a href="team.html">TEAM</a></li>
+       <li  class="right"><a href="projects.html">PROJECTS</a></li>
+
+     </ul>
+  </header>
+  <div id="overlay" onclick="off()"></div>
+    <div id="menuoverlay">
+      <div id="sideNavExit"><p onclick="off()"> x </p></div>
+      <hr>
+      <div id="mainmenu">
+            <h2> Explore </h2>
+            <!-- the drop down menu of the navbar is for mobile version of website -->
+            <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Content ▾ </a>
+            <div class="dropdown-content">
+             <a href="index.html">HOME</a>
+             <a href="index.html#about">ABOUT US</a>
+             <a href="contact.html">CONTACT US</a>
+             <a href="team.html">TEAM</a>
+             <a href="projects.html">PROJECTS</a>
+           </div>
+           </li>
       </div>
-    </li>
-  </div>
-  <div class="bioGARRAGE-logo"> <a href="index.html"> <img src="resources/logo.png" alt="bioGARRAGE logo" width="240px" height="7%;"></img> </a> </div>
-</div>
+      <hr>
+      <div id="bioGARRAGE-logo"> <a href="index.html"> bioGARAGE </a> </div>
+      </div>
 
+<!--
 <div class="newsTab">
   <div class="newsTabContent">
     <h2> weekly news </h2>
     <object class="pdf" width="80%" height="30%" data="MethPreuves.pdf"> </object>
   </div>
 </div>
+-->
 
 <section>
   <div id="contactDetails">
@@ -65,8 +74,6 @@
         <p class="contactLabel"> Email: </p>
         <p class="contact-stuff"> bioGARAGE@uottawa.ca </p>
       </div>
-
-
 <!--
     <article id="contactForm">
        action="contact.php"
@@ -77,15 +84,15 @@
 	       <input type="hidden" name="_subject" id="_subject" value="Website Contact Form">
           <div id="name-elements">
             <!-- <p id="contact-name">Name</p>-->
-            <input id="contact-name-box" class="notfilled" placeholder="Name" type="text" name="name" />
+            <input required="true" id="contact-name-box" class="notfilled" placeholder="Name" type="text" name="name" />
           </div>
           <div id="email-elements">
             <!-- <p id="contact-email">Email</p>-->
-            <input id="contact-email-box" class="notfilled" placeholder="Your email" type="email" name="_replyto"/>
+            <input required="true" id="contact-email-box" class="notfilled" placeholder="Your email" type="email" name="_replyto"/>
           </div>
           <div id="message-elements">
             <!--<p id="contact-message">Message</p>-->
-            <textarea rows="12" id="contact-message-box" class="notfilled" placeholder="Message" type="text" name="message" ></textarea>
+            <textarea required="true" rows="12" id="contact-message-box" class="notfilled" placeholder="Message" type="text" name="message" ></textarea>
           </div>
           <div id="bottom-button">
             <input id="contact-button" type="submit" value="Send"></input>
@@ -106,23 +113,26 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA944DX_JmQ8u_qAlL5QREKP7X
 
 <div class="footer">
   <div class="footerContent">
-    <a class="lin" href="#"><i class="fa fa-github"></i></a>
-    <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
-    <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
-    <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+    <p>
+      <a class="lin" href="#"><i class="fa fa-github"></i></a>
+      <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+      <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+      <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+    <br>
+        bioGARAGE INC. © 2018 | <a href="resources/terms.txt" class="terms"> terms </a> & <a href="resources/privacy.txt" class="privacy"> privacy </a>
+    </p>
   </div>
-  <p class="copyright"> bioGARRAGE INC. © 2018 | <a href="resources/terms.txt" class="terms"> terms </a> & <a href="resources/privacy.txt" class="privacy"> privacy </a></p>
 </div>
 
 <script>
 function on() {
-  document.getElementById("overlay").style.display = "block";
-  document.getElementById("menuoverlay").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("menuoverlay").style.display = "block";
 }
 
 function off() {
-  document.getElementById("overlay").style.display = "none";
-  document.getElementById("menuoverlay").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("menuoverlay").style.display = "none";
 }
 </script>
 <script>

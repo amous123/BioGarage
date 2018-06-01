@@ -1,5 +1,5 @@
 ﻿<DOCTYPE! html>
-<html>
+<html lang="en">
 
 <head>
 <!-- the style sheet linked to this page of the website is called styleIndex.css -->
@@ -13,37 +13,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
   <body>
+
 <!-- topnav is the navigation bar of the website -->
 <header>
     <ul class="topnav">
 
-     <div id="sitemenu-icon" onclick="on()"><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
+     <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
       <!-- the logo for the website is logo.png located inside src="", the width and height are in pixels -->
      <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img>
-     <li class="right"><a href="index.html#about">About bioGARAGE</a></li>
-     <li class="right"><a href="contact.html">Contact Us</a></li>
-     <li class="right"><a href="team.html">Team</a></li>
-     <li  class="right"><a href="projects.html">Projects</a></li>
+     <li class="right"><a href="index.html#about">ABOUT US</a></li>
+     <li class="right"><a href="contact.html">CONTACT US</a></li>
+     <li class="right"><a href="team.html">TEAM</a></li>
+     <li  class="right"><a href="projects.html">PROJECTS</a></li>
 
    </ul>
 </header>
 <div id="overlay" onclick="off()"></div>
   <div id="menuoverlay">
+    <div id="sideNavExit"><p onclick="off()"> x </p></div>
+    <hr>
     <div id="mainmenu">
           <h2> Explore </h2>
           <!-- the drop down menu of the navbar is for mobile version of website -->
           <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Content ▾ </a>
           <div class="dropdown-content">
-           <a href="index.html">Home</a>
-           <a href="index.html#about" onclick="off()">About bioGarage</a>
-           <a href="contact.html">Contact Us</a>
-           <a href="team.html">Team</a>
-           <a href="projects.html">Projects</a>
+           <a href="index.html">HOME</a>
+           <a href="index.html#about" onclick="off()">ABOUT US</a>
+           <a href="contact.html">CONTACT US</a>
+           <a href="team.html">TEAM</a>
+           <a href="projects.html">PROJECTS</a>
          </div>
          </li>
-
     </div>
-    <div class="bioGARRAGE-logo"> <a href="index.html"> <img src="resources/logo.png" alt="bioGARRAGE logo" width="240px" height="7%;"></img> </a> </div>
+    <hr>
+    <div id="bioGARRAGE-logo"> <a href="index.html"> bioGARAGE </a> </div>
     </div>
 
   <div class="frontContent">

@@ -13,31 +13,33 @@ body {
 
 /* beginning of footer */
 .footer{
-  background-color: black;
+  background-color: #000;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  color: white;
+  color: #777777;
   font-size: 17px;
 }
-.lin, .footerContent{
+.lin{
   text-align: center;
-  color: white;
+  color: #777777;
   font-size: 25px;
 }
-.lin:hover{
-  color: gold;
-  transition-duration: 0.3s;
-}
-.copyright{
+.footerContent{
   text-align: center;
+  overflow: auto;
+  line-height: 200%;
+}
+.lin:hover{
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
 }
 .privacy, .terms{
   text-decoration: none;
-  color: white;
+  color: #777777;
 }
 .privacy:hover, .terms:hover{
-  color: gold;
+  color: white;
+  transform: scale(1.2,1.2);
   transition-duration: 0.3s;
 }
 /* end of footer */
@@ -79,6 +81,9 @@ ul.topnav li.right {
 .topnav a:hover {
   background-color: White;
   color: Gold;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+
 }
 .topnav a.active {
   background-color: White;
@@ -107,17 +112,43 @@ ul.topnav li.right {
     left: 280;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(255,255,255,0.9);
     z-index: 2;
     cursor: pointer;
 }
-.bioGARRAGE-logo{
+#bioGARRAGE-logo a{
   position: absolute;
   bottom: 20px;
   left: 20px;
   z-index: 100000;
+  color: #777777;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
-@media screen and (max-width: 813px){
+#bioGARRAGE-logo a:hover{
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+}
+#sideNavExit p{
+  color: #777777;
+  width: 25px;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+#sideNavExit p:hover{
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+}
+@media screen and (max-width: 900px){
   #menuoverlay{
     position: fixed;
     top: 0;
@@ -162,39 +193,39 @@ ul.topnav li.dropdown{
 #sitemenu-icon{
   display: none;
   cursor: pointer;
-  width: 20px;
-  height: 14px;
+  width: 25px;
+  height: 15px;
   background-color: transparent;
   position: fixed;
   top: 24px;
-  left: 15px;
-  z-index: 1000;
-  transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-  transition-duration: 200ms;
-  transition-property: all;
+  left: 17px;
+  z-index: 10000;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 #sitemenu-icon span{
-  width: 15px;
-  height: 2px;
+  height: 3px;
   background-color: black;
   position: absolute;
 }
 #sitemenu-icon span.line1{
   top: 0px;
+  width: 25px;
 }
 #sitemenu-icon span.line2{
-  top: 5px;
+  top: 7px;
+  width: 25px;
 }
 #sitemenu-icon span.line3{
-  top: 10px;
+  top: 14px;
+  width: 25px;
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 420px){
   #sitemenu-icon{
-    left: 7px;
+    left: 5px;
   }
 }
-@media screen and (max-width: 813px){
+@media screen and (max-width: 900px){
   ul.topnav img{
     float: none;
     position: relative;
@@ -202,7 +233,7 @@ ul.topnav li.dropdown{
     text-align: center;
   }
   #sitemenu-icon{
-    display: block;
+    display: flex;
   }
   ul.topnav li.right{
     visibility: hidden;
@@ -229,7 +260,9 @@ ul.topnav li.dropdown{
     float: none;
   }
   #mainmenu li a:hover, .dropdown:hover .dropbtn {
-    color: red;
+    color: gold;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
   }
   #mainmenu li.dropdown { display: inline-block; }
 
@@ -249,7 +282,9 @@ ul.topnav li.dropdown{
   }
   #mainmenu .dropdown-content a:hover, #mainmenu .dropdown-content a:active {
     background-color: transparent;
-    color: gold;
+    color: #777777;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
   }
   #mainmenu .dropdown:hover .dropdown-content, #mainmenu .dropdown:active .dropdown-content{
     display: block;
