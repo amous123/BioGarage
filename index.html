@@ -4,8 +4,11 @@
 <head>
 <!-- the style sheet linked to this page of the website is called styleIndex.css -->
   <link rel="StyleSheet" href="css/styleIndex.css">
+  <!-- scripts -->
   <script type="text/Javascript" src="index.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <meta charset="utf-8" />
   <title style="text-align:center;"> BioGarage </title style="text-align:center;">
   <meta name="Developers" content="amous123">
@@ -20,12 +23,12 @@
 
      <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
       <!-- the logo for the website is logo.png located inside src="", the width and height are in pixels -->
-     <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img>
+    <!-- <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img> -->
+     <li id="logo"> <a href="index.html"> bioGARAGE </a></li>
      <li class="right"><a href="index.html#about">ABOUT US</a></li>
      <li class="right"><a href="contact.html">CONTACT US</a></li>
      <li class="right"><a href="team.html">TEAM</a></li>
      <li  class="right"><a href="projects.html">PROJECTS</a></li>
-
    </ul>
 </header>
 <div id="overlay" onclick="off()"></div>
@@ -49,9 +52,11 @@
     <div id="bioGARRAGE-logo"> <a href="index.html"> bioGARAGE </a> </div>
     </div>
 
-  <div class="frontContent">
-  <!--  <img class="img1" src="images/bio.gif"> -->
-  </div>
+<div id="particles-js"></div>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script  src="index.js"></script>
+<div class="frontContent">
+</div>
 
 <div class="opening">
   <div class="openingContent">
@@ -71,17 +76,55 @@
  </div>
 </div>
 
-<div class="about" id="about">
-  <div class="aboutContent">
-
+<div id="about">
+  <div id="aboutContent">
     <h2> What is bioGARAGE? </h2>
-    <div class="description">
+    <p>bioGARAGE is an enviromment to share and collaborate molecular biology experiments and
+    allow the general public access to what would normally take a few years of university courses in the field.
+  </p>
+</div>
+
+
+<div id="questionsContent">
+  <table>
+    <tr>
+      <td>
+         <h2 class="tableH2"> Our goal </h2>
+          <div class="QuestionMore"> <p id="about1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton"> <button onclick="toggleAboutA()" class="moreButtonContent"> Expand </button></div>
+      </div>
+    </td>
+      <td>
+        <img src="images/longdna.gif" id="Mquestions" alt="about picture" width="200px" height="200px;"> </img></td>
+      <td>
+         <h2  class="tableH2"> What You Can Do </h2>
+         <div class="QuestionMore"> <p id="about2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton">  <button class="moreButtonContent"> Expand </button></div>
+         </div>
+       </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/jellyfish.jpg" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img></td>
+      <td>
+        <h2  class="tableH2"> F.A.Q </h2>
+        <div class="QuestionMore"> <p id="about3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. </p> <div class="moreButton">  <button class="moreButtonContent"> Expand </button></div>
+        </div>
+      </td>
+      <td>
+        <img src="images/jellyfish.jpg" id="Minfo" alt="about picture" width="200px" height="200px;"> </img></td>
+    </tr>
+  </table>
+</div>
+
+<!--
+    <h2> What is bioGARAGE? </h2>
+    <div id="description">
     <p> <img src="" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img>
       bioGARAGE is an enviromment to share and collaborate molecular biology experiments and
       allow the general public access to what would normally take a few years of university courses in the field.
     </p>
     </div>
-      <hr>
+
+
 
       <h2>More questions?</h2>
       <div class="questionsContent">
@@ -91,7 +134,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
       </p>
     </div>
-      <hr>
+
 
       <h2>More information</h2>
       <div class="InfoContent">
@@ -100,7 +143,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
       </p>
     </div>
-      <hr>
+  -->
 
       <div class="StayInTouch">
       <h3> Have a question we didn't answer or want more information? </h3>
@@ -110,7 +153,6 @@
       </div>
     </div>
 
-  </div>
 </div>
 
 <div class="footer">
@@ -137,6 +179,23 @@ function off() {
     document.getElementById("menuoverlay").style.display = "none";
 }
 </script>
+<!--
+<script>
+var openNumA=0;
+function toggleAboutA() {
+  if (openNumA == 0){
+    document.getElementById("about1").style.height ="fit-context";
+  }
+  else{
+    document.getElementById("about1").style.height ="10em";
+  }
+  openNumA++;
+  if (openNumA == 1){
+    openNumA = 0;
+  }
+}
+</script>
+-->
   </body>
 
 </html>

@@ -1,6 +1,6 @@
 /* the body influences everything that doesn't have a class or id*/
 body {
-  background-color: White;
+  background-color: white;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ body {
 
 /*Beginning of navbar */
 ul.topnav {
-  background-color: white;
+  background-color:rgba(255,255,255,0.5);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -22,12 +22,30 @@ ul.topnav {
   z-index: 2;
 }
 ul.topnav img{
+  /*
   float: left;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  */
 }
+
+
+#logo a{
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 1.0625em;
+  color: black;
+  vertical-align: middle;
+  cursor: pointer;
+  float:left;
+  display: block;
+  z-index: 1;
+}
+
 ul.topnav li a{
   float: right;
   display: block;
@@ -42,7 +60,7 @@ ul.topnav li.right {
   float: right;
 }
 .topnav a:hover {
-  background-color: White;
+  background-color: transparent;
   color: Gold;
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
@@ -145,14 +163,6 @@ ul.topnav li.dropdown{
   display: none;
   overflow: hidden;
 }
-#logo{
-  width: 300;
-  height: 60;
-  cursor: pointer;
-}
-#logoHolder{
-  cursor: default;
-}
 #sitemenu-icon{
   display: none;
   cursor: pointer;
@@ -189,11 +199,19 @@ ul.topnav li.dropdown{
   }
 }
 @media screen and (max-width: 900px){
-  ul.topnav img{
+  #logo{
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: none;
+  }
+  #logo a{
     float: none;
     position: relative;
     display: block;
     text-align: center;
+    cursor: pointer;
   }
   #sitemenu-icon{
     display: flex;
@@ -262,7 +280,26 @@ ul.topnav li.dropdown{
 
 
 /* begining of front page */
+
+/* ---- particles front page section---- */
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .frontContent{
+  padding: 374px;;
+/*
   background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -276,9 +313,9 @@ ul.topnav li.dropdown{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  */
 }
 @media screen and (max-width: 1200px){
-  .frontContent{ padding: 220px; }
   .openingButtons{ padding-top: 40px; }
 }
 .opening{
@@ -389,7 +426,7 @@ word-spacing: 50px;
   background-repeat: no-repeat;
   z-index: 1;
   opacity: 0.5;
-  background-position: 0 60px;
+  background-position: center;
 }
 @media only screen and (max-device-width: 900px) {
     .transPhoto {
@@ -410,14 +447,84 @@ word-spacing: 50px;
 
 
 /* beginning about section */
-.about{
+#about{
   padding-bottom: 200px;
+  padding-top: 20px;
+  background: linear-gradient(135deg, #83a4d4, #b6fbff);
 }
+#aboutContent{
+  text-align: center;
+  margin: 20px;
+}
+/*
+#description{
+  background-color: white;
+  color: black;
+}
+
 .aboutContent p{ overflow: auto; text-indent: 50px; }
 .aboutContent h2{ text-align: center; }
 #descriptionImage{ float: right;}
 #Mquestions{ float: right;; }
 #Minfo{ float: right; }
+*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+#questionsContent img{
+
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#questionsContent h2{
+  text-align: center;
+}
+#questionsContent p{
+  text-indent: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 10em;
+}
+.moreButton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.moreButtonContent{
+  font-size: 14px;
+  border: 2px solid black;
+  background-color: transparent;
+  letter-spacing: .175em;
+  font-family: AkkuratPro-Regular,sans-serif;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: unset;
+}
+.moreButtonContent:hover{
+  background-color: black;
+  color: white;
+  transform: scale(1.1,1.1);
+  transition-duration: 0.3s;
+}
+td {
+    border: 1px solid transparent;
+    text-align: left;
+    padding: 8px;
+    overflow-y: scroll;
+}
+
 .StayInTouch{
   text-align: center;
 }
