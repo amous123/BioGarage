@@ -2,18 +2,23 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8" />
+
+  <!-- Viewport - for scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
 <!-- the style sheet linked to this page of the website is called styleIndex.css -->
   <link rel="StyleSheet" href="css/styleIndex.css">
   <!-- scripts -->
   <script type="text/Javascript" src="index.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="about_style.css" type="text/css" rel="StyleSheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <meta charset="utf-8" />
   <title style="text-align:center;"> BioGarage </title style="text-align:center;">
   <meta name="Developers" content="amous123">
-  <link href="about_style.css" type="text/css" rel="StyleSheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
   <body>
 
@@ -23,16 +28,16 @@
 
      <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
       <!-- the logo for the website is logo.png located inside src="", the width and height are in pixels -->
-    <!-- <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img> -->
-     <li id="logo"> <a href="index.html"> bioGARAGE </a></li>
-     <li class="right"><a href="index.html#about">ABOUT US</a></li>
-     <li class="right"><a href="contact.html">CONTACT US</a></li>
+    <!-- <li id="logoHolder"><a href="index.html"><img id="logo" src="images/bioLogo.png" alt="bioGARRAGE logo" width="220" height="60"> </img></a></li> -->
+     <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="204" height="52"> </img> </a></li>
+     <li class="right"><a href="index.html#about">ABOUT</a></li>
+     <li class="right"><a href="contact.html">CONTACT</a></li>
      <li class="right"><a href="team.html">TEAM</a></li>
      <li  class="right"><a href="projects.html">PROJECTS</a></li>
    </ul>
 </header>
-<div id="overlay" onclick="off()"></div>
-  <div id="menuoverlay">
+<div id="overlay" class="hideSideNav" onclick="off()"></div>
+  <div id="menuoverlay" class="hideSideNav">
     <div id="sideNavExit"><p onclick="off()"> x </p></div>
     <hr>
     <div id="mainmenu">
@@ -41,29 +46,37 @@
           <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Content ▾ </a>
           <div class="dropdown-content">
            <a href="index.html">HOME</a>
-           <a href="index.html#about" onclick="off()">ABOUT US</a>
-           <a href="contact.html">CONTACT US</a>
+           <a href="index.html#about" onclick="off()">ABOUT</a>
+           <a href="contact.html">CONTACT</a>
            <a href="team.html">TEAM</a>
            <a href="projects.html">PROJECTS</a>
          </div>
          </li>
     </div>
     <hr>
-    <div id="bioGARRAGE-logo"> <a href="index.html"> bioGARAGE </a> </div>
+    <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="220" height="60"> </img> </a> </div>
     </div>
-
-<div id="particles-js"></div>
+<!--
+<div id="particles-js"></div> -->
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script  src="index.js"></script>
-<div class="frontContent">
+<div id="frontContent">
+  <div id="lightButtonsContent">
+    <button onclick="currentDiv(1)" class="lightChanger demo"> </button>
+    <button onclick="currentDiv(2)" class="lightChanger demo"> </button>
+    <button onclick="currentDiv(3)" class="lightChanger demo"> </button>
+  </div>
+  <figure class="mySlides back-pulse"></figure>
+  <figure class="mySlides back-pulse"></figure>
+  <figure class="mySlides back-pulse"></figure>
 </div>
 
 <div class="opening">
   <div class="openingContent">
-    <div class="open1"> A space to build your genome </div>
-    <div class="open2"> A home for your bacteria colonies </div>
-    <div class="open3"> Take your concepts into the garage </div>
-    <div class="open4"> Or take a look at other experiments </div>
+    <div class="open1"> A SPACE TO BUILD YOUR GENOME </div>
+    <div class="open2"> A HOME FOR YOUR BACTERIA COLONIES </div>
+    <div class="open3"> TAKE YOUR CONCEPTS INTO THE GARAGE </div>
+    <div class="open4"> OR TAKE A LOOK AT OTHER EXPERIMENTS </div>
   </div>
   <div class="openingButtons">
     <a href="contact.html#map"> <button class="openBtn1"> Location </button> </a>
@@ -90,14 +103,16 @@
     <tr>
       <td>
          <h2 class="tableH2"> Our goal </h2>
-          <div class="QuestionMore"> <p id="about1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton"> <button onclick="toggleAboutA()" class="moreButtonContent"> Expand </button></div>
+          <div class="QuestionMore"> <p id="about1" class="hide"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton"> <button id="expandB1" onclick="expand1()" class="moreButtonContent"> Expand </button>
+          <button id="retractB1" onclick="retract1()" class="lessButtonContent"> Retract </button></div>
       </div>
     </td>
       <td>
         <img src="images/longdna.gif" id="Mquestions" alt="about picture" width="200px" height="200px;"> </img></td>
       <td>
-         <h2  class="tableH2"> What You Can Do </h2>
-         <div class="QuestionMore"> <p id="about2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton">  <button class="moreButtonContent"> Expand </button></div>
+         <h2  class="tableH2"> What You Can Do? </h2>
+         <div class="QuestionMore"> <p id="about2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton">  <button id="expandB2" onclick="expand2()" class="moreButtonContent"> Expand </button>
+         <button id="retractB2" onclick="retract2()" class="lessButtonContent"> Retract </button></div>
          </div>
        </td>
     </tr>
@@ -106,7 +121,8 @@
         <img src="images/jellyfish.jpg" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img></td>
       <td>
         <h2  class="tableH2"> F.A.Q </h2>
-        <div class="QuestionMore"> <p id="about3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. </p> <div class="moreButton">  <button class="moreButtonContent"> Expand </button></div>
+        <div class="QuestionMore"> <p id="about3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. </p> <div class="moreButton">  <button id="expandB3" onclick="expand3()" class="moreButtonContent"> Expand </button>
+        <button id="retractB3" onclick="retract3()" class="lessButtonContent"> Retract </button></div>
         </div>
       </td>
       <td>
@@ -114,36 +130,6 @@
     </tr>
   </table>
 </div>
-
-<!--
-    <h2> What is bioGARAGE? </h2>
-    <div id="description">
-    <p> <img src="" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img>
-      bioGARAGE is an enviromment to share and collaborate molecular biology experiments and
-      allow the general public access to what would normally take a few years of university courses in the field.
-    </p>
-    </div>
-
-
-
-      <h2>More questions?</h2>
-      <div class="questionsContent">
-
-      <p>
-        <img src="" id="Mquestions" alt="about picture" width="200px" height="200px;"> </img>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
-      </p>
-    </div>
-
-
-      <h2>More information</h2>
-      <div class="InfoContent">
-      <p>
-        <img src="" id="Minfo" alt="about picture" width="200px" height="200px;"> </img>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
-      </p>
-    </div>
-  -->
 
       <div class="StayInTouch">
       <h3> Have a question we didn't answer or want more information? </h3>
@@ -168,34 +154,48 @@
   </div>
 </div>
 
-<script>
-function on() {
-    document.getElementById("overlay").style.display = "block";
-    document.getElementById("menuoverlay").style.display = "block";
-}
-
-function off() {
-    document.getElementById("overlay").style.display = "none";
-    document.getElementById("menuoverlay").style.display = "none";
-}
-</script>
 <!--
 <script>
-var openNumA=0;
-function toggleAboutA() {
-  if (openNumA == 0){
-    document.getElementById("about1").style.height ="fit-context";
-  }
-  else{
-    document.getElementById("about1").style.height ="10em";
-  }
-  openNumA++;
-  if (openNumA == 1){
-    openNumA = 0;
-  }
+function changeBackground1(){
+document.getElementById("frontContent").className = "frontPage1";
+}
+function changeBackground2(){
+document.getElementById("frontContent").className = "frontPage2";
+}
+function changeBackground3(){
+document.getElementById("frontContent").className = "frontPage3";
 }
 </script>
 -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
   </body>
 
 </html>

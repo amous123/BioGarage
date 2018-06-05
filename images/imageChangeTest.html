@@ -1,0 +1,184 @@
+<DOCTYPE! html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Viewport - for scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<!-- the style sheet linked to this page of the website is called styleIndex.css -->
+  <link rel="StyleSheet" href="css/styleIndex.css">
+  <!-- scripts -->
+  <script type="text/Javascript" src="index.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="about_style.css" type="text/css" rel="StyleSheet">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+  <title style="text-align:center;"> BioGarage </title style="text-align:center;">
+  <meta name="Developers" content="amous123">
+
+</head>
+  <body>
+
+    <div class="crossfade">
+      <figure class="mySlides back-pulse"></figure>
+      <figure class="mySlides back-pulse"></figure>
+      <figure class="mySlides back-pulse"></figure>
+      <figure class="mySlides back-pulse"></figure>
+      <figure class="mySlides back-pulse"></figure>
+    </div>
+
+<!--
+    <div onclick="change()" id="cf2" class="from2to3">
+    </div> -->
+
+<style>
+
+@keyframes back-pulse {
+  0%   {background-color: transparent}
+  20%  {background: black;}
+  40%  {background: white;}
+  60%  {background: black;}
+  80%  {background: black;}
+  100% {background: green}
+}
+.back-pulse{
+  animation-name: back-pulse;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+
+figure:nth-child(1) { background-image: url("../images/garageMech.png"); }
+
+figure:nth-child(2) {
+  background-image: url("../images/jellyfish.jpg");
+}
+
+figure:nth-child(3) {
+  background-image: url("../images/microscope.jpg");
+}
+
+
+figure {
+width: 100%;
+padding: 400;
+background-color: blue;
+}
+
+
+</style>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+</script>
+<style>
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes from1to2 {
+  0%   {background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("garageMech.png");}
+}
+/* Standard syntax */
+@keyframes from1to2 {
+  0%   {background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("garageMech.png");}
+}
+@-webkit-keyframes from2to3 {
+  0%   {background-image: url("garageMech.png");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("jellyfish.jpg");}
+}
+@keyframes from2to3 {
+  0%   {background-image: url("garageMech.png");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("jellyfish.jpg");}
+}
+ @-webkit-keyframes from3to2 {
+   0%   {background-image: url("jellyfish.jpg");}
+  50%  {background-image: url("black.jpg");}
+  100% {background-image: url("garageMech.png");}
+ }
+ @keyframes from3to2 {
+   0%   {background-image: url("jellyfish.jpg");}
+  50%  {background-image: url("black.jpg");}
+  100% {background-image: url("garageMech.png");}
+}
+@-webkit-keyframes from3to1 {
+  0%   {background-image: url("jellyfish.jpg");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");}
+}
+@keyframes from3to1 {
+  0%   {background-image: url("jellyfish.jpg");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");}
+}
+@-webkit-keyframes from1to3 {
+  0%   {background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("garageMech.png");}
+}
+@keyframes from1to3 {
+  0%   {background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("garageMech.png");}
+}
+@-webkit-keyframes from2to1 {
+  0%   {background-image: url("garageMech.png");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");}
+}
+@keyframes from2to1 {
+  0%   {background-image: url("garageMech.png");}
+ 50%  {background-image: url("black.jpg");}
+ 100% {background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg");}
+}
+
+.from2to3{
+  width: 100%;
+  height: 100%;
+  background-image: url("jellyfish.jpg");
+  -webkit-animation-name: from2to3; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+   animation-name: from2to3;
+   animation-duration: 4s;
+}
+.from3to2{
+  width: 100%;
+  height: 100%;
+  background-image: url("garageMech.png");
+  -webkit-animation-name: from3to2; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+   animation-name: from3to2;
+   animation-duration: 4s;
+}
+
+</style>
+<script>
+function change(){
+  document.getElementById("cf2").className = "from3to2";
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+Legal:
+particles.js for the frontPage used, made byvifcentgarreau 
+Github:https://github.com/VincentGarreau/particles.js/
+

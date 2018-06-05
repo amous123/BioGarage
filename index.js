@@ -1,3 +1,54 @@
+/* ---- expand and retract sideBar content and overlay ---- */
+function on() {
+  var over = document.getElementById("overlay");
+  over.className = "showSideNav";
+  var menu = document.getElementById("menuoverlay");
+  menu.className = "showSideNav";
+}
+function off() {
+    document.getElementById("overlay").className = "hideSideNav";
+    document.getElementById("menuoverlay").className = "hideSideNav";
+}
+
+/* ---- expand and retract about section content ---- */
+function expand1(){
+  var p1 = document.getElementById("about1");
+  p1.className = "show";
+    document.getElementById("expandB1").style.display="none";
+    document.getElementById("retractB1").style.display="inline-block";
+}
+function expand2(){
+  var p2 = document.getElementById("about2");
+  p2.className = "show";
+    document.getElementById("expandB2").style.display="none";
+    document.getElementById("retractB2").style.display="inline-block";
+}
+function expand3(){
+  var p3 = document.getElementById("about3");
+  p3.className = "show";
+    document.getElementById("expandB3").style.display="none";
+    document.getElementById("retractB3").style.display="inline-block";
+}
+
+function retract1(){
+  var p1 = document.getElementById("about1");
+  p1.className = "hide";
+  document.getElementById("expandB1").style.display="inline-block";
+  document.getElementById("retractB1").style.display="none";
+}
+function retract2(){
+  var p2 = document.getElementById("about2");
+  p2.className = "hide";
+  document.getElementById("expandB2").style.display="inline-block";
+  document.getElementById("retractB2").style.display="none";
+}
+function retract3(){
+  var p3 = document.getElementById("about3");
+  p3.className = "hide";
+  document.getElementById("expandB3").style.display="inline-block";
+  document.getElementById("retractB3").style.display="none";
+}
+
 particlesJS("particles-js", {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
