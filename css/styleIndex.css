@@ -1,4 +1,5 @@
-/* the body influences everything that doesn't have a class or id*/
+/* the body influences everything that doesn't have a class or id */
+/* --- beginning of webpage --- */
 body {
   background-color: white;
   width: 100%;
@@ -7,7 +8,7 @@ body {
   font-family: Verdana;
 }
 
-/*Beginning of navbar */
+/* --- Beginning of navbar --- */
 ul.topnav {
   background-color:rgba(255,255,255,0.75);
   margin: 0;
@@ -51,32 +52,32 @@ ul.topnav img{
     display: block;
     text-align: center;
     cursor: pointer;
+    background-color: transparent !important;
   }
 }
-
 ul.topnav li a{
   float: right;
   display: block;
   color: black;
   text-align: center;
-  padding: 20px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   font-size: 1.0625em;
+  line-height: 10px;
   z-index: 1;
 }
 ul.topnav li.right {
   float: right;
 }
-.topnav a:hover {
-  background-color: transparent;
-  color: Gold;
-  transform: scale(1.2,1.2);
+.topnav li a:hover {
+  background-color: black;
+  color: white;
   transition-duration: 0.3s;
-
 }
+.topnav a p:hover{  transform: scale(1.2,1.2); }
 .topnav a.active {
-  background-color: White;
-  color: Gold;
+  background-color: black;
+  color: white;
 }
 
 
@@ -165,10 +166,8 @@ ul.topnav li.right {
   transition-duration: 200ms;
   transition-property: all;
 }
-/* end of sideNav */
-
-
-/* Beginning of navbar for mobile */
+/* --- end of sideNav --- */
+/* --- Beginning of navbar for mobile --- */
 ul.topnav li.dropdown{
   visibility: hidden;
   display: none;
@@ -225,6 +224,9 @@ ul.topnav li.dropdown{
     text-align: center;
     position: fixed;
   }
+  #bottomHr{
+    margin-top: 100%;
+  }
   #mainmenu li.dropdown{
     visibility: visible;
     display: inline-block;
@@ -238,7 +240,7 @@ ul.topnav li.dropdown{
     float: none;
   }
   #mainmenu li a:hover, .dropdown:hover .dropbtn {
-    color: gold;
+    color: #777777;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
   }
@@ -272,29 +274,9 @@ ul.topnav li.dropdown{
     transition-property: all;
   }
 }
-/*End of navbar for mobile */
-/*End of navbar*/
+/* --- End of navbar for mobile --- */
+/* --- End of navbar --- */
 
-/* --- keyframes --- */
-@keyframes back-pulse {
-  0%   {background-color: transparent;}
-  25%  {background: black;}
-  50%  {background: white;}
-  75%  {background: black;}
-  100% {background-color: transparent;}
-}
-.back-pulse{
-  animation-name: back-pulse;
-  animation-duration: 3s;
-}
-figure:nth-child(1) { background-image: url("../images/garageMech.png"); }
-
-figure:nth-child(2) {
-  background-image: url("../images/jellyfish.jpg");
-}
-figure:nth-child(3) {
-  background-image: url("../images/microscope.jpg");
-}
 
 /* begining of front page */
 /* ---- particles front page section---- */
@@ -330,6 +312,24 @@ figure{
   background-attachment: fixed;
   margin: 0 0 !important;
 }
+/* --- keyframes --- */
+@keyframes fade {
+  0%  {background: black;}
+  100% {opacity: 1;}
+}
+.fade{
+  animation-name: fade;
+  animation-duration: 3s;
+}
+figure:nth-child(2) { background-image: url("../images/garageMech.png"); }
+
+figure:nth-child(3) {
+  background-image: url("../images/jellyfish.jpg");
+}
+figure:nth-child(4) {
+  background-image: url("../images/microscope.jpg");
+}
+/* --- animation buttons --- */
 #lightButtonsContent{
   width: min-content;
   margin-top: 10%;
@@ -354,9 +354,13 @@ figure{
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-@media screen and (max-width: 1200px){
-  .openingButtons{ padding-top: 40px; }
+.pressed{
+  background-color: #962a2a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
+/* --- end of front page --- */
+/* --- opening content section --- */
 .opening{
   padding: 20px;
   background-color: black;
@@ -388,6 +392,9 @@ figure{
 .openingButtons{
 text-align: center;
 word-spacing: 50px;
+}
+@media screen and (max-width: 1200px){
+  .openingButtons{ padding-top: 40px; }
 }
 .openBtn1{
   font-size: 18px;
@@ -452,11 +459,10 @@ word-spacing: 50px;
     padding-left: 0px;
   }
 }
-/* ending of front page */
+/* --- end of opening content section --- */
 
 
-
-/* beginning of seperator photo */
+/* --- beginning of seperator photo --- */
 .transPhoto{
   padding: 125px;
   background-image: url("../images/garageMech.png");
@@ -482,11 +488,11 @@ word-spacing: 50px;
       overflow: hidden;
     }
 }
-/* end of seperator photo */
+/* --- end of seperator photo --- */
 
 
 
-/* beginning about section */
+/* --- beginning about content section --- */
 #about{
   padding-bottom: 200px;
   padding-top: 20px;
@@ -574,13 +580,13 @@ table {
 .show{
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-delay: 0.4s;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-timing-function: ease-out;
   height: 400px;
 }
 .hide{
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-delay: 0.4s;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-timing-function: ease-out;
   height: 200px;
 }
 td {
@@ -618,12 +624,11 @@ td {
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
 }
-/* ending about section */
+/* --- end of about section --- */
 
 
 
-
-/* beginning of footer */
+/* --- beginning of footer --- */
 .footer{
   background-color: #000;
   margin: 0;
@@ -654,4 +659,5 @@ td {
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
 }
-/* end of footer */
+/* --- end of footer --- */
+/* --- end of webpage --- */

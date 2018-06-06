@@ -342,6 +342,13 @@ ul.topnav li.dropdown{
 /*End of navbar for mobile */
 /*End of navbar*/
 
+#photoWall{
+ width: 100%;
+ height: 100%;
+}
+
+
+
 /* beginning of footer */
 .footer{
   background-color: #000;
