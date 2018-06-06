@@ -36,6 +36,7 @@ ul.topnav img{
 }
 #logo a:hover{
   transform: scale(1,1);
+  background-color: transparent;
 }
 
 @media screen and (max-width: 900px){
@@ -52,7 +53,6 @@ ul.topnav img{
     display: block;
     text-align: center;
     cursor: pointer;
-    background-color: transparent !important;
   }
 }
 ul.topnav li a{
