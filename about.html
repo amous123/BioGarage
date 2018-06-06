@@ -1,0 +1,166 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+  <link rel="StyleSheet" href="css/styleTeam.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title style="text-align:center;"> Team </title style="text-align:center;">
+    <meta name="Developers" content="amous123">
+
+  </head>
+
+  <!-- topnav is the navigation bar of the website -->
+  <header>
+      <ul class="topnav">
+
+       <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
+        <!-- the logo for the website is logo.png located inside src="", the width and height are in pixels -->
+       <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img>
+       <li class="right"><a href="index.html#about">ABOUT US</a></li>
+       <li class="right"><a href="contact.html">CONTACT US</a></li>
+       <li class="right"><a href="team.html">TEAM</a></li>
+       <li  class="right"><a href="projects.html">PROJECTS</a></li>
+
+     </ul>
+  </header>
+  <div id="overlay" onclick="off()"></div>
+    <div id="menuoverlay">
+      <div id="sideNavExit"><p onclick="off()"> x </p></div>
+      <hr>
+      <div id="mainmenu">
+            <h2> Explore </h2>
+            <!-- the drop down menu of the navbar is for mobile version of website -->
+            <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Content ▾ </a>
+            <div class="dropdown-content">
+             <a href="index.html">HOME</a>
+             <a href="index.html#about" onclick="off()">ABOUT US</a>
+             <a href="contact.html">CONTACT US</a>
+             <a href="team.html">TEAM</a>
+             <a href="projects.html">PROJECTS</a>
+           </div>
+           </li>
+      </div>
+      <hr>
+      <div id="bioGARRAGE-logo"> <a href="index.html"> bioGARAGE </a> </div>
+      </div>
+
+
+     <header>
+     <!-- the front page of the website begins here -->
+     <div class="FrontPage">
+         <div class="FrontPageContent FrontPageSection">
+           <!-- Images should be 1.5:1 ratio to 2:1 ratio to fit best, keep photos similiar size -->
+           <li class="crop">
+           <img class="mySlides img1" src="images/bio.gif">
+           <img class="mySlides img2" src="images/dna.gif">
+           <img class="mySlides img3" src="images/head.gif">
+           <img class="mySlides img4" src="images/neurons.gif">
+         </li>
+         </div>
+       </div>
+     <!-- the front page of the website ends here-->
+     </header>
+
+     <div class="space">
+     </div>
+     <div id="about">
+
+       <div id="aboutContent">
+         <h2> What is bioGARAGE? </h2>
+         <p>bioGARAGE is an enviromment to share and collaborate molecular biology experiments and
+           allow the general public access to what would normally take a few years of university courses in the field.
+         </p>
+       </div>
+
+
+       <div id="questionsContent">
+         <table>
+           <tr>
+             <td>
+               <h2 class="tableH2"> Our goal </h2>
+               <div class="QuestionMore"> <p id="about1" class="hide"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p>
+                 <div class="moreButton"> <button id="expandB1" onclick="expand1()" class="moreButtonContent"> Expand </button>
+                 <button id="retractB1" onclick="retract1()" class="lessButtonContent"> Retract </button></div>
+               </div>
+             </td>
+             <td>
+               <img src="images/longdna.gif" id="Mquestions" alt="about picture" width="200px" height="200px;"> </img></td>
+               <td>
+                 <h2  class="tableH2"> What You Can Do? </h2>
+                 <div class="QuestionMore"> <p id="about2" class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton">  <button id="expandB2" onclick="expand2()" class="moreButtonContent"> Expand </button>
+                   <button id="retractB2" onclick="retract2()" class="lessButtonContent"> Retract </button></div>
+                 </div>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <img src="images/jellyfish.jpg" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img></td>
+                 <td>
+                   <h2  class="tableH2"> F.A.Q </h2>
+                   <div class="QuestionMore"> <p id="about3" class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. </p> <div class="moreButton">  <button id="expandB3" onclick="expand3()" class="moreButtonContent"> Expand </button>
+                     <button id="retractB3" onclick="retract3()" class="lessButtonContent"> Retract </button></div>
+                   </div>
+                 </td>
+                 <td>
+                   <img src="images/jellyfish.jpg" id="Minfo" alt="about picture" width="200px" height="200px;"> </img></td>
+                 </tr>
+               </table>
+             </div>
+             <script  src="index.js"></script>
+
+             <div class="StayInTouch">
+               <h3> Have a question we didn't answer or want more information? </h3>
+               <p> Get in touch with us! </p>
+               <div class="contactButton">
+                 <a href="contact.html"><button type="button" onclick=""class="contactButtonContent"> Contact Us </button></a>
+               </div>
+             </div>
+
+           </div>
+
+
+
+     <div class="footer">
+       <div class="footerContent">
+         <p>
+           <a class="lin" href="#"><i class="fa fa-github"></i></a>
+           <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+           <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+           <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+         <br>
+             bioGARAGE INC. © 2018 | <a href="resources/terms.txt" class="terms"> terms </a> & <a href="resources/privacy.txt" class="privacy"> privacy </a>
+         </p>
+       </div>
+     </div>
+
+     <script>
+     function on() {
+         document.getElementById("overlay").style.display = "block";
+         document.getElementById("menuoverlay").style.display = "block";
+     }
+
+     function off() {
+         document.getElementById("overlay").style.display = "none";
+         document.getElementById("menuoverlay").style.display = "none";
+     }
+     </script>
+<script>
+var myIndex = 0;
+carousel();
+
+     function carousel() {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+         }
+         myIndex++;
+         if (myIndex > x.length) {myIndex = 1}
+         x[myIndex-1].style.display = "block";
+         setTimeout(carousel, 3000); // Change image every 3 seconds
+     }
+     </script>
+
+  </html>

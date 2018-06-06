@@ -1,0 +1,512 @@
+/* the body influences everything that doesn't have a class or id*/
+body {
+  background-color: White;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+}
+
+.space{
+  padding-top: 800px;
+}
+
+/* begining of front page */
+header{
+
+}
+/* begining of slideshow */
+.mySlides{
+  display: none;
+}
+.FrontPage{
+  padding-top: 100px;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-bottom: 5%;
+  background-attachment: fixed;
+}
+.FrontPageContent{
+  /* max-width: 1000px; */
+  margin: auto;
+  outline-color: gold;
+  outline-width: 10px;
+  background-color: black;
+}
+.FrontPageSection{
+  margin-top: 16px;!important
+  margin-bottom: 16px;!important
+}
+img.FrontPageContent{
+  vertical-align: middle;
+  border-style: none;
+}
+li.crop{
+  list-style:none;
+}
+.crop{
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+.crop img{
+  height: auto;
+  width: 100%;
+}
+@media screen and (max-width: 900px){
+  .crop{
+    height: 50%;
+  }
+}
+@media screen and (max-width: 809px){
+  .FrontPage{
+    padding-top: 150px;
+  }
+}
+@media screen and (max-width: 780px){
+  .crop{
+    height: 45%;
+  }
+}
+@media screen and (max-width: 670px){
+  .crop{
+    height: 40%;
+  }
+}
+@media screen and (max-width: 570px){
+  .crop{
+    height: 30%;
+  }
+  .FrontPage{
+    padding-top: 150px;
+  }
+}
+@media screen and (max-width: 400px){
+  .crop{
+    height: 23%;
+  }
+}
+/* end of slideshow */
+/* ending of front page */
+
+/*Beginning of navbar */
+ul.topnav {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 4px 0;
+  z-index: 2;
+}
+ul.topnav img{
+  float: left;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul.topnav li a{
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 1.0625em;
+  z-index: 1;
+}
+ul.topnav li.right {
+  float: right;
+}
+.topnav a:hover {
+  background-color: White;
+  color: Gold;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+
+}
+.topnav a.active {
+  background-color: White;
+  color: Gold;
+}
+
+
+/* beginning of sideNav*/
+#menuoverlay{
+  left: 0;
+  z-index: 10000;
+  opacity: 1;
+  text-align: left;
+  display: none;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 200ms;
+  transition-property: all;
+}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 280;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 2;
+    cursor: pointer;
+}
+#bioGARRAGE-logo a{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100000;
+  color: #777777;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+#bioGARRAGE-logo a:hover{
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+}
+#sideNavExit p{
+  color: #777777;
+  width: 25px;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+#sideNavExit p:hover{
+  cursor: pointer;
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+}
+@media screen and (max-width: 900px){
+  #menuoverlay{
+    position: fixed;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    pointer-events: auto;
+    background-color: #2f2f2f;;
+    text-decoration: none;
+    /*#2f2f2f; #ffe0e0*/
+    transition-delay: initial;
+    transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+    transition-duration: 200ms;
+    transition-property: all;
+  }
+  #mainmenu{
+    position: relative;
+    width: 85%;
+    right:0;
+    left: 20px;
+    top:40px;
+    color: white;
+    list-style: none;
+  }
+}
+/* end of sideNav */
+
+
+/* Beginning of navbar for mobile */
+ul.topnav li.dropdown{
+  visibility: hidden;
+  display: none;
+  overflow: hidden;
+}
+#logo{
+  width: 300;
+  height: 60;
+  cursor: pointer;
+}
+#logoHolder{
+  cursor: default;
+}
+#sitemenu-icon{
+  display: none;
+  cursor: pointer;
+  width: 25px;
+  height: 15px;
+  background-color: transparent;
+  position: fixed;
+  top: 24px;
+  left: 17px;
+  z-index: 10000;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+#sitemenu-icon span{
+  height: 3px;
+  background-color: black;
+  position: absolute;
+}
+#sitemenu-icon span.line1{
+  top: 0px;
+  width: 25px;
+}
+#sitemenu-icon span.line2{
+  top: 7px;
+  width: 25px;
+}
+#sitemenu-icon span.line3{
+  top: 14px;
+  width: 25px;
+}
+@media screen and (max-width: 420px){
+  #sitemenu-icon{
+    left: 5px;
+  }
+}
+@media screen and (max-width: 900px){
+  ul.topnav img{
+    float: none;
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  #sitemenu-icon{
+    display: flex;
+  }
+  ul.topnav li.right{
+    visibility: hidden;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  ul.topnav{
+    height: auto;
+    text-align: center;
+    position: fixed;
+  }
+  #mainmenu li.dropdown{
+    visibility: visible;
+    display: inline-block;
+    background-color: transparent;
+  }
+  #mainmenu li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    float: none;
+  }
+  #mainmenu li a:hover, .dropdown:hover .dropbtn {
+    color: gold;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  #mainmenu li.dropdown { display: inline-block; }
+
+  #mainmenu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    position: fixed;
+  }
+  #mainmenu .dropdown-content a {
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  #mainmenu .dropdown-content a:hover, #mainmenu .dropdown-content a:active {
+    background-color: transparent;
+    color: #777777;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  #mainmenu .dropdown:hover .dropdown-content, #mainmenu .dropdown:active .dropdown-content{
+    display: block;
+    transition-delay: initial;
+    transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+    transition-duration: 200ms;
+    transition-property: all;
+  }
+}
+/*End of navbar for mobile */
+/*End of navbar*/
+
+/* --- beginning about content section --- */
+#about{
+  padding-bottom: 200px;
+  padding-top: 20px;
+  background: linear-gradient(217deg, rgba(255,255,0,.8), rgba(255,255,0,0) 50.71%),
+            linear-gradient(127deg, rgba(0,255,255,.8), rgba(0,255,255,0) 40.71%),
+            linear-gradient(336deg, rgba(255,0,255,.8), rgba(255,0,255,0) 55.71%);
+}
+#aboutContent{
+  text-align: center;
+  margin: 20px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+#questionsContent img{
+
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#questionsContent h2{
+  text-align: center;
+}
+#questionsContent p{
+  text-indent: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.moreButton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.moreButtonContent{
+  display: inline-block;
+  font-size: 14px;
+  border: 2px solid black;
+  background-color: transparent;
+  letter-spacing: .175em;
+  font-family: AkkuratPro-Regular,sans-serif;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: unset;
+}
+.moreButtonContent:hover{
+  background-color: black;
+  color: white;
+  transform: scale(1.1,1.1);
+  transition-duration: 0.3s;
+}
+.lessButtonContent{
+  display: none;
+  font-size: 14px;
+  border: 2px solid black;
+  background-color: transparent;
+  letter-spacing: .175em;
+  font-family: AkkuratPro-Regular,sans-serif;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: unset;
+}
+.lessButtonContent:hover{
+  background-color: black;
+  color: white;
+  transform: scale(1.1,1.1);
+  transition-duration: 0.3s;
+}
+.show{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-delay: 0.4s;
+  transition-timing-function: ease-out;
+  height: 400px;
+}
+.hide{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-delay: 0.4s;
+  transition-timing-function: ease-out;
+  height: 200px;
+}
+td {
+    border: 1px solid transparent;
+    text-align: left;
+    padding: 8px;
+    overflow-y: scroll;
+}
+.StayInTouch{
+  text-align: center;
+}
+.StayInTouch p{
+  text-indent: unset;
+}
+.contactButtonContent{
+  font-size: 18px;
+  color: black;
+  border: 2px solid black;
+  background-color: transparent;
+  letter-spacing: .375em;
+  font-family: AkkuratPro-Regular,sans-serif;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: unset;
+}
+.contactButtonContent:hover{
+  background-color: black;
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+}
+/* --- end of about section --- */
+
+
+
+/* beginning of footer */
+.footer{
+  background-color: #000;
+  margin: 0;
+  color: #777777;
+  font-size: 17px;
+}
+.lin{
+  text-align: center;
+  color: #777777;
+  font-size: 25px;
+}
+.footerContent{
+  text-align: center;
+  overflow: auto;
+  line-height: 200%;
+}
+.lin:hover{
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+}
+.privacy, .terms{
+  text-decoration: none;
+  color: #777777;
+}
+.privacy:hover, .terms:hover{
+  color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+}
+/* end of footer */

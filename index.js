@@ -25,14 +25,12 @@ function showDivs(n) {
 
 /* ---- expand and retract sideBar content and overlay ---- */
 function on() {
-  var over = document.getElementById("overlay");
-  over.className = "showSideNav";
-  var menu = document.getElementById("menuoverlay");
-  menu.className = "showSideNav";
+  document.getElementById("overlay").style.width="100%";
+  document.getElementById("menuoverlay").style.width="340px";
 }
 function off() {
-    document.getElementById("overlay").className = "hideSideNav";
-    document.getElementById("menuoverlay").className = "hideSideNav";
+    document.getElementById("overlay").style.width="0%";
+    document.getElementById("menuoverlay").style.width="0px";
 }
 
 /* ---- expand and retract about section content ---- */

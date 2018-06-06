@@ -10,7 +10,7 @@ body {
 
 /* --- Beginning of navbar --- */
 ul.topnav {
-  background-color:rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255,0.9);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -18,7 +18,7 @@ ul.topnav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   box-shadow: 0 2px 4px 0;
   z-index: 2;
 }
@@ -30,40 +30,27 @@ ul.topnav img{
 #logoHolder{
   float: left;
   padding: unset;
-  margin-left: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+#logo{
+width: 266px;
 }
 #logo a:hover{
-  transform: scale(1,1);
   background-color: transparent;
 }
 
-@media screen and (max-width: 900px){
-  #logo{
-    width: 227px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: none;
-  }
-  #logo a{
-    float: none;
-    position: relative;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-  }
-}
 ul.topnav li a{
   float: right;
   display: block;
   color: black;
   text-align: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
   text-decoration: none;
   font-size: 1.0625em;
   line-height: 10px;
+  width: 125px;
   z-index: 1;
 }
 ul.topnav li.right {
@@ -83,26 +70,37 @@ ul.topnav li.right {
 
 /* beginning of sideNav*/
 #menuoverlay{
-  left: 0;
+  right: 0;
   z-index: 10000;
   opacity: 1;
   text-align: left;
-  transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-  transition-duration: 200ms;
-  transition-property: all;
+  transition: all 1s;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  pointer-events: auto;
+  background-color: #5D5D5D;
+  text-decoration: none;
 }
 #overlay {
     position: fixed;
-    width: 100%;
     height: 100%;
     top: 0;
-    left: 280;
-    right: 0;
+    right: 340px;
+    left: 0;
     bottom: 0;
     background-color: rgba(255,255,255,0.9);
     z-index: 2;
     cursor: pointer;
+}
+#mainmenu{
+  position: relative;
+  width: 300px;
+  right:0;
+  left: 20px;
+  top:0px;
+  color: white;
+  list-style: none;
 }
 #bioGARRAGE-logo a{
   position: absolute;
@@ -121,8 +119,8 @@ ul.topnav li.right {
   font-size: 25px;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: 20px;
+  margin-right: auto;
+  margin-left: 20px;
   margin-top: 20px;
 }
 #sideNavExit p:hover{
@@ -131,39 +129,12 @@ ul.topnav li.right {
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
 }
-@media screen and (max-width: 900px){
-  #menuoverlay{
-    position: fixed;
-    top: 0;
-    width: 280px;
-    height: 100%;
-    pointer-events: auto;
-    background-color: #2f2f2f;;
-    text-decoration: none;
-    /*#2f2f2f; #ffe0e0*/
-  }
-  #mainmenu{
-    position: relative;
-    width: 85%;
-    right:0;
-    left: 20px;
-    top:40px;
-    color: white;
-    list-style: none;
-  }
-}
 .showSideNav{
   display: block;
+  width: 0px;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-  transition-duration: 200ms;
-  transition-property: all;
-}
-.hideSideNav{
-  display: none;
-  transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-  transition-duration: 200ms;
+  transition-duration: 0.5s;
   transition-property: all;
 }
 /* --- end of sideNav --- */
@@ -174,59 +145,59 @@ ul.topnav li.dropdown{
   overflow: hidden;
 }
 #sitemenu-icon{
-  display: none;
+  display: flex;
   cursor: pointer;
-  width: 25px;
-  height: 15px;
+  width: 36px;
+  height: 30px;
   background-color: transparent;
   position: fixed;
-  top: 24px;
-  left: 17px;
+  top: 25px;
+  right: 40px;
   z-index: 10000;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 #sitemenu-icon span{
-  height: 3px;
+  height: 4px;
+  width: 100%;
   background-color: black;
   position: absolute;
 }
 #sitemenu-icon span.line1{
-  top: 0px;
-  width: 25px;
+  top: 3px;
+  width: 36px;
 }
 #sitemenu-icon span.line2{
-  top: 7px;
-  width: 25px;
+  top: 13px;
+  width: 36px;
 }
 #sitemenu-icon span.line3{
-  top: 14px;
-  width: 25px;
-}
-@media screen and (max-width: 420px){
-  #sitemenu-icon{
-    left: 5px;
-  }
+  top: 23px;
+  width: 36px;
 }
 @media screen and (max-width: 900px){
-  #sitemenu-icon{
-    display: flex;
-  }
-  ul.topnav li.right{
-    visibility: hidden;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    display: none;
-  }
   ul.topnav{
-    height: auto;
+    height: 80px;;
     text-align: center;
     position: fixed;
   }
-  #bottomHr{
-    margin-top: 100%;
-  }
+}
+.sideNavMenuItems{
+  display: block;
+  padding: 10px 10px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 3px;;
+}
+.sideNavMenuItems:hover{
+  background-color: #808080;
+  color: #05BAFF;
+}
+
   #mainmenu li.dropdown{
     visibility: visible;
     display: inline-block;
@@ -312,14 +283,16 @@ figure{
   background-attachment: fixed;
   margin: 0 0 !important;
 }
+
 /* --- keyframes --- */
 @keyframes fade {
-  0%  {background: black;}
+  0%  {opacity: 0;}
   100% {opacity: 1;}
 }
 .fade{
   animation-name: fade;
   animation-duration: 3s;
+  animation-timing-function: ease-out;
 }
 figure:nth-child(2) { background-image: url("../images/garageMech.png"); }
 
@@ -345,6 +318,7 @@ figure:nth-child(4) {
   margin-bottom: 10px;
   margin-left: 30px;
   box-shadow: 0 9px #999;
+  animation-direction: reverse;
 }
 .lightChanger:hover{
   background-color: #962a2a;
@@ -465,6 +439,8 @@ word-spacing: 50px;
 /* --- beginning of seperator photo --- */
 .transPhoto{
   padding: 125px;
+  margin-top: 200px;
+  margin-bottom: 200px;
   background-image: url("../images/garageMech.png");
   background-size: cover;
   background-attachment: fixed;
@@ -489,143 +465,6 @@ word-spacing: 50px;
     }
 }
 /* --- end of seperator photo --- */
-
-
-
-/* --- beginning about content section --- */
-#about{
-  padding-bottom: 200px;
-  padding-top: 20px;
-  background: linear-gradient(217deg, rgba(255,255,0,.8), rgba(255,255,0,0) 50.71%),
-            linear-gradient(127deg, rgba(0,255,255,.8), rgba(0,255,255,0) 40.71%),
-            linear-gradient(336deg, rgba(255,0,255,.8), rgba(255,0,255,0) 55.71%);
-}
-#aboutContent{
-  text-align: center;
-  margin: 20px;
-}
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    text-align: center;
-}
-#questionsContent img{
-
-  overflow: hidden;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#questionsContent h2{
-  text-align: center;
-}
-#questionsContent p{
-  text-indent: 50px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.moreButton{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.moreButtonContent{
-  display: inline-block;
-  font-size: 14px;
-  border: 2px solid black;
-  background-color: transparent;
-  letter-spacing: .175em;
-  font-family: AkkuratPro-Regular,sans-serif;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-  width: unset;
-}
-.moreButtonContent:hover{
-  background-color: black;
-  color: white;
-  transform: scale(1.1,1.1);
-  transition-duration: 0.3s;
-}
-.lessButtonContent{
-  display: none;
-  font-size: 14px;
-  border: 2px solid black;
-  background-color: transparent;
-  letter-spacing: .175em;
-  font-family: AkkuratPro-Regular,sans-serif;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-  width: unset;
-}
-.lessButtonContent:hover{
-  background-color: black;
-  color: white;
-  transform: scale(1.1,1.1);
-  transition-duration: 0.3s;
-}
-.show{
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-delay: 0.4s;
-  transition-timing-function: ease-out;
-  height: 400px;
-}
-.hide{
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-delay: 0.4s;
-  transition-timing-function: ease-out;
-  height: 200px;
-}
-td {
-    border: 1px solid transparent;
-    text-align: left;
-    padding: 8px;
-    overflow-y: scroll;
-}
-.StayInTouch{
-  text-align: center;
-}
-.StayInTouch p{
-  text-indent: unset;
-}
-.contactButtonContent{
-  font-size: 18px;
-  color: black;
-  border: 2px solid black;
-  background-color: transparent;
-  letter-spacing: .375em;
-  font-family: AkkuratPro-Regular,sans-serif;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-  width: unset;
-}
-.contactButtonContent:hover{
-  background-color: black;
-  color: white;
-  transform: scale(1.2,1.2);
-  transition-duration: 0.3s;
-}
-/* --- end of about section --- */
-
 
 
 /* --- beginning of footer --- */

@@ -26,26 +26,31 @@
     <header>
       <ul class="topnav">
         <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
-        <!-- the logo for the website is logo.png located inside src="", the width and height are in pixels -->
-        <!-- <li id="logoHolder"><a href="index.html"><img id="logo" src="images/bioLogo.png" alt="bioGARRAGE logo" width="220" height="60"> </img></a></li> -->
-        <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="204" height="52"> </img> </a></li>
+        <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a></li>
+        <!--
         <li class="right"><a href="index.html#about"><p>ABOUT</p></a></li>
         <li class="right"><a href="contact.html"><p>CONTACT</p></a></li>
         <li class="right"><a href="team.html"><p>TEAM</p></a></li>
         <li  class="right"><a href="projects.html"><p>PROJECTS</p></a></li>
+      -->
       </ul>
     </header>
 
-    <div id="overlay" class="hideSideNav" onclick="off()">
+    <div id="overlay" class="showSideNav" onclick="off()">
     </div>
 
-    <div id="menuoverlay" class="hideSideNav">
+    <div id="menuoverlay" class="showSideNav">
       <div id="sideNavExit"><p onclick="off()"> x </p></div>
-      <hr>
       <div id="mainmenu">
         <h2> EXPLORE </h2>
         <!-- the drop down menu of the navbar is for mobile version of website -->
-        <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> CONTENT ▾ </a>
+        <a class="sideNavMenuItems" href="index.html">HOME</a>
+        <a class="sideNavMenuItems" href="index.html#about" onclick="off()">ABOUT</a>
+        <a class="sideNavMenuItems" href="contact.html">CONTACT</a>
+        <a class="sideNavMenuItems" href="team.html">TEAM</a>
+        <a class="sideNavMenuItems" href="projects.html">PROJECTS</a>
+        <!--
+        <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> MORE ▾ </a>
           <div class="dropdown-content">
             <a href="index.html">HOME</a>
             <a href="index.html#about" onclick="off()">ABOUT</a>
@@ -54,9 +59,9 @@
             <a href="projects.html">PROJECTS</a>
           </div>
         </li>
+      -->
       </div>
-      <hr id="bottomHr">
-      <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="220" height="60"> </img> </a> </div>
+      <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a> </div>
     </div>
     <!--
     <div id="particles-js"></div> -->
@@ -97,60 +102,6 @@
     </div>
   </div>
 
-  <div id="about">
-
-    <div id="aboutContent">
-      <h2> What is bioGARAGE? </h2>
-      <p>bioGARAGE is an enviromment to share and collaborate molecular biology experiments and
-        allow the general public access to what would normally take a few years of university courses in the field.
-      </p>
-    </div>
-
-
-    <div id="questionsContent">
-      <table>
-        <tr>
-          <td>
-            <h2 class="tableH2"> Our goal </h2>
-            <div class="QuestionMore"> <p id="about1" class="hide"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p>
-              <div class="moreButton"> <button id="expandB1" onclick="expand1()" class="moreButtonContent"> Expand </button>
-              <button id="retractB1" onclick="retract1()" class="lessButtonContent"> Retract </button></div>
-            </div>
-          </td>
-          <td>
-            <img src="images/longdna.gif" id="Mquestions" alt="about picture" width="200px" height="200px;"> </img></td>
-            <td>
-              <h2  class="tableH2"> What You Can Do? </h2>
-              <div class="QuestionMore"> <p id="about2" class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton">  <button id="expandB2" onclick="expand2()" class="moreButtonContent"> Expand </button>
-                <button id="retractB2" onclick="retract2()" class="lessButtonContent"> Retract </button></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="images/jellyfish.jpg" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img></td>
-              <td>
-                <h2  class="tableH2"> F.A.Q </h2>
-                <div class="QuestionMore"> <p id="about3" class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. </p> <div class="moreButton">  <button id="expandB3" onclick="expand3()" class="moreButtonContent"> Expand </button>
-                  <button id="retractB3" onclick="retract3()" class="lessButtonContent"> Retract </button></div>
-                </div>
-              </td>
-              <td>
-                <img src="images/jellyfish.jpg" id="Minfo" alt="about picture" width="200px" height="200px;"> </img></td>
-              </tr>
-            </table>
-          </div>
-          <script  src="index.js"></script>
-
-          <div class="StayInTouch">
-            <h3> Have a question we didn't answer or want more information? </h3>
-            <p> Get in touch with us! </p>
-            <div class="contactButton">
-              <a href="contact.html"><button type="button" onclick=""class="contactButtonContent"> Contact Us </button></a>
-            </div>
-          </div>
-
-        </div>
 
         <div class="footer">
           <div class="footerContent">
