@@ -24,7 +24,7 @@
 
     <!-- topnav is the navigation bar of the website -->
     <header>
-      <ul class="topnav">
+      <ul class="topnav transparent">
         <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
         <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a></li>
         <!--
@@ -35,6 +35,7 @@
       -->
       </ul>
     </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <div id="overlay" class="showSideNav" onclick="off()">
     </div>
@@ -45,7 +46,7 @@
         <h2> EXPLORE </h2>
         <!-- the drop down menu of the navbar is for mobile version of website -->
         <a class="sideNavMenuItems" href="index.html">HOME</a>
-        <a class="sideNavMenuItems" href="index.html#about" onclick="off()">ABOUT</a>
+        <a class="sideNavMenuItems" href="about.html" >ABOUT</a>
         <a class="sideNavMenuItems" href="contact.html">CONTACT</a>
         <a class="sideNavMenuItems" href="team.html">TEAM</a>
         <a class="sideNavMenuItems" href="projects.html">PROJECTS</a>
@@ -105,14 +106,37 @@
 
         <div class="footer">
           <div class="footerContent">
-            <p>
+            <div id="UOttawa-section">
+
+              <div id="UO-logo">
+                <img src="images/uOttawa-logo.png" width="150px"> </img>
+              </div>
+
+              <div id="faculyAndRelated">
+                Faculty of Science
+                <br>
+                University of Ottawa
+                <br>
+                Ottawa, Ontario, K1N 6N5
+                <br>
+                CANADA
+                <br>
+                <a href="contact.html"> CONTACT US <a>
+              </div>
+          </div>
+
+
+          <div id="bioGARAGE-section">
               <a class="lin" href="#"><i class="fa fa-github"></i></a>
               <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
               <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
               <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
-              <br>
-              bioGARAGE INC. © 2018 | <a href="resources/terms.txt" class="terms"> terms </a> & <a href="resources/privacy.txt" class="privacy"> privacy </a>
+            <p>
+              bioGARAGE INC. © 2018 <br>
+               <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
             </p>
+          </div>
+
           </div>
         </div>
 

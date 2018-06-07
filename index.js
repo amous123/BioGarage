@@ -1,3 +1,13 @@
+/* --- sets navbar transparent at top of page --- */
+$(window).scroll(function () {
+if ($(document).scrollTop() >= 800) {
+$("ul.topnav").removeClass('transparent');
+} else {
+$("ul.topnav").addClass('transparent');
+}
+});
+
+
 /* --- function to transition frontpage main background smoothly --- */
 function plusDivs(n) {
   showDivs(slideIndex += n);

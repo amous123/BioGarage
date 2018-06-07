@@ -10,9 +10,9 @@ body {
 
 /* --- Beginning of navbar --- */
 ul.topnav {
-  background-color: rgba(255,255,255,0.9);
   margin: 0;
   padding: 0;
+  background-color:rgba(255,255,255,0.9);
   list-style: none;
   overflow: hidden;
   position: fixed;
@@ -21,11 +21,17 @@ ul.topnav {
   height: 80px;
   box-shadow: 0 2px 4px 0;
   z-index: 2;
+  -webkit-transition: all 0.4s ease;
+transition: all 0.4s ease;
 }
 ul.topnav img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+ul.topnav.transparent{
+  background-color:rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0 0;
 }
 #logoHolder{
   float: left;
@@ -40,7 +46,7 @@ width: 266px;
 #logo a:hover{
   background-color: transparent;
 }
-
+/*
 ul.topnav li a{
   float: right;
   display: block;
@@ -53,20 +59,7 @@ ul.topnav li a{
   width: 125px;
   z-index: 1;
 }
-ul.topnav li.right {
-  float: right;
-}
-.topnav li a:hover {
-  background-color: black;
-  color: white;
-  transition-duration: 0.3s;
-}
-.topnav a p:hover{  transform: scale(1.2,1.2); }
-.topnav a.active {
-  background-color: black;
-  color: white;
-}
-
+*/
 
 /* beginning of sideNav*/
 #menuoverlay{
@@ -244,7 +237,6 @@ ul.topnav li.dropdown{
     transition-duration: 200ms;
     transition-property: all;
   }
-}
 /* --- End of navbar for mobile --- */
 /* --- End of navbar --- */
 
@@ -472,7 +464,9 @@ word-spacing: 50px;
   background-color: #000;
   margin: 0;
   color: #777777;
-  font-size: 17px;
+  font-size: 14px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .lin{
   text-align: center;
@@ -484,16 +478,56 @@ word-spacing: 50px;
   overflow: auto;
   line-height: 200%;
 }
+#UOttawa-section{
+  width: 60%;
+  float: left;
+}
+#bioGARAGE-section{
+  float: right;
+  width: 40%;
+  text-align: right;
+  padding-right:50px;
+}
+#UO-logo{
+  float: left;
+  padding-left: 50px;
+}
+#faculyAndRelated{
+  float: left;
+  width: 40%;
+  text-align: left;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 630px){
+  #bioGARAGE-section{
+    float: none;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 50px;
+    width: 100%;
+  }
+  #faculyAndRelated{
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #UOttawa-section{
+    width: 100%;
+  }
+  }
+
 .lin:hover{
   color: white;
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
 }
-.privacy, .terms{
+.legal, .terms{
   text-decoration: none;
   color: #777777;
 }
-.privacy:hover, .terms:hover{
+.legal:hover, .terms:hover{
   color: white;
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
