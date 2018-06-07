@@ -466,12 +466,13 @@ word-spacing: 50px;
   color: #777777;
   font-size: 14px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .lin{
   text-align: center;
   color: #777777;
-  font-size: 25px;
+  font-size: 20px;
+  padding: 5px 5px;
 }
 .footerContent{
   text-align: center;
@@ -498,6 +499,25 @@ word-spacing: 50px;
   text-align: left;
   margin-left: 20px;
 }
+#faculyAndRelated a{
+  text-decoration: none;
+  cursor: pointer;
+}
+#faculyAndRelated p{
+  display: unset;
+}
+#faculyAndRelated p:hover{
+  color: white;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.fa-facebook{color: #4e64b5; }
+.fa-linkedin{color: #0288d1; }
+.fa-twitter{color: #00aced; }
+.fa-instagram{color: #9a8f62; }
+.fa-pinterest{color: #ff5757; }
+.fa-youtube-play{color: #c82929; }
+.fa-github{color: #4a2881; }
 
 @media screen and (max-width: 630px){
   #bioGARAGE-section{
@@ -518,9 +538,9 @@ word-spacing: 50px;
   }
   }
 
-.lin:hover{
+.fa:hover{
   color: white;
-  transform: scale(1.2,1.2);
+  transform: scale(1.1,1.1);
   transition-duration: 0.3s;
 }
 .legal, .terms{
@@ -529,7 +549,7 @@ word-spacing: 50px;
 }
 .legal:hover, .terms:hover{
   color: white;
-  transform: scale(1.2,1.2);
+  transform: scale(1.1,1.1);
   transition-duration: 0.3s;
 }
 /* --- end of footer --- */
