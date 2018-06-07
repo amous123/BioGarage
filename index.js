@@ -1,6 +1,6 @@
 /* --- sets navbar transparent at top of page --- */
 $(window).scroll(function () {
-if ($(document).scrollTop() >= 800) {
+if ($(document).scrollTop() >= 100) {
 $("ul.topnav").removeClass('transparent');
 } else {
 $("ul.topnav").addClass('transparent');
@@ -27,10 +27,10 @@ function showDivs(n) {
      x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" pressed", "");
+     dots[i].id = "transparentHomeButtons";
   }
   x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " pressed";
+  dots[slideIndex-1].id = "";
 }
 
 /* ---- expand and retract sideBar content and overlay ---- */

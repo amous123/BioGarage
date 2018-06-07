@@ -70,14 +70,24 @@
     <script  src="index.js"></script>
 
     <div id="frontContent">
+      <!--
       <div id="lightButtonsContent">
         <button onclick="currentDiv(1)" class="lightChanger demo"> </button>
         <button onclick="currentDiv(2)" class="lightChanger demo"> </button>
         <button onclick="currentDiv(3)" class="lightChanger demo"> </button>
       </div>
-      <figure class="mySlides fade"></figure>
-      <figure class="mySlides fade"></figure>
-      <figure class="mySlides fade"></figure>
+    -->
+      <figure class="mySlides zoomIn"></figure>
+      <figure class="mySlides zoomIn"></figure>
+      <figure class="mySlides zoomIn"></figure>
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+  <span class="badge demo buttonBorder normColor1 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(1)"></span>
+  <span class="badge demo buttonBorder normColor2 w3-hover-red" id="transparentHomeButtons" onclick="currentDiv(2)"></span>
+  <span class="badge demo buttonBorder normColor3 w3-hover-blue" id="transparentHomeButtons" onclick="currentDiv(3)"></span>
+</div>
+</div>
     </div>
 
     <script>

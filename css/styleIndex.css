@@ -242,6 +242,8 @@ ul.topnav li.dropdown{
 
 
 /* begining of front page */
+
+
 /* ---- particles front page section---- */
 canvas {
   display: block;
@@ -258,6 +260,7 @@ canvas {
   background-position: 50% 50%;
 }
 
+/* ---- animation backgrounds ---- */
 figure{
 /*  background-image: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg"); */
   -webkit-background-size: 100%;
@@ -277,22 +280,87 @@ figure{
 }
 
 /* --- keyframes --- */
-@keyframes fade {
-  0%  {opacity: 0;}
-  100% {opacity: 1;}
+@keyframes flicker {
+  25%{opacity: 0.5;}
+  50%{opacity: 0;}
+  75%{opacity: 0.5;}
 }
-.fade{
-  animation-name: fade;
-  animation-duration: 3s;
+
+.flicker{
+  animation-name: flicker;
+  animation-duration: 2s;
   animation-timing-function: ease-out;
 }
-figure:nth-child(2) { background-image: url("../images/garageMech.png"); }
 
-figure:nth-child(3) {
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  animation-duration: 2s;
+}
+
+figure:nth-child(1) { background-image: url("../images/garageMech.png"); }
+
+figure:nth-child(2) {
   background-image: url("../images/jellyfish.jpg");
 }
-figure:nth-child(4) {
+figure:nth-child(3) {
   background-image: url("../images/microscope.jpg");
+}
+.badge {
+  height:20px;
+  width:20px;
+  padding:0;
+  border-radius:10px;
+  cursor:pointer;
+}
+.w3-left, .w3-right{
+  cursor:pointer;
+  font-size: 50px;
+}
+.w3-tag,.badge{
+  background-color: unset;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+.buttonBorder{
+  border: 1px solid black;
+}
+.normColor1{
+  background-color: white;
+}
+.normColor2{
+  background-color: red;
+}
+.normColor3{
+  background-color: blue;
+}
+#transparentHomeButtons{
+  background-color: transparent;
 }
 /* --- animation buttons --- */
 #lightButtonsContent{
@@ -320,11 +388,14 @@ figure:nth-child(4) {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+/*
 .pressed{
   background-color: #962a2a;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+*/
+
 /* --- end of front page --- */
 /* --- opening content section --- */
 .opening{
@@ -508,7 +579,7 @@ word-spacing: 50px;
 }
 #faculyAndRelated p:hover{
   color: white;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 .fa-facebook{color: #4e64b5; }
@@ -541,7 +612,7 @@ word-spacing: 50px;
 .fa:hover{
   color: white;
   transform: scale(1.1,1.1);
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
 }
 .legal, .terms{
   text-decoration: none;
@@ -550,7 +621,7 @@ word-spacing: 50px;
 .legal:hover, .terms:hover{
   color: white;
   transform: scale(1.1,1.1);
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
 }
 /* --- end of footer --- */
 /* --- end of webpage --- */
