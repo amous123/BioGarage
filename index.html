@@ -10,7 +10,7 @@
   <!-- the style sheet linked to this page of the website is called styleIndex.css -->
   <link rel="StyleSheet" href="css/styleIndex.css">
   <!-- scripts -->
-  <script type="text/Javascript" src="index.js"></script>
+  <script type="text/Javascript" src="standard.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="about_style.css" type="text/css" rel="StyleSheet">
@@ -21,6 +21,27 @@
 
   </head>
   <body>
+
+
+    <div id="menuoverlay" class="showSideNav">
+      <div id="sideNavExit"><p onclick="off()"> x </p></div>
+      <div id="mainmenu">
+        <h2> EXPLORE </h2>
+        <!-- the drop down menu of the navbar is for mobile version of website -->
+        <a class="sideNavMenuItems" href="index.html">HOME</a>
+        <a class="sideNavMenuItems" href="about.html" >ABOUT</a>
+        <a class="sideNavMenuItems" href="contact.html">CONTACT</a>
+        <a class="sideNavMenuItems" href="team.html">TEAM</a>
+        <a class="sideNavMenuItems" href="projects.html">PROJECTS</a>
+
+      </div>
+      <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a> </div>
+    </div>
+
+    <div id="overlay" class="showSideNav" onclick="off()">
+</div>
+
+<div class="blurContainerUnset" id="blurContain">
 
     <!-- topnav is the navigation bar of the website -->
     <header>
@@ -37,38 +58,6 @@
     </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <div id="overlay" class="showSideNav" onclick="off()">
-    </div>
-
-    <div id="menuoverlay" class="showSideNav">
-      <div id="sideNavExit"><p onclick="off()"> x </p></div>
-      <div id="mainmenu">
-        <h2> EXPLORE </h2>
-        <!-- the drop down menu of the navbar is for mobile version of website -->
-        <a class="sideNavMenuItems" href="index.html">HOME</a>
-        <a class="sideNavMenuItems" href="about.html" >ABOUT</a>
-        <a class="sideNavMenuItems" href="contact.html">CONTACT</a>
-        <a class="sideNavMenuItems" href="team.html">TEAM</a>
-        <a class="sideNavMenuItems" href="projects.html">PROJECTS</a>
-        <!--
-        <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> MORE ▾ </a>
-          <div class="dropdown-content">
-            <a href="index.html">HOME</a>
-            <a href="index.html#about" onclick="off()">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="team.html">TEAM</a>
-            <a href="projects.html">PROJECTS</a>
-          </div>
-        </li>
-      -->
-      </div>
-      <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a> </div>
-    </div>
-    <!--
-    <div id="particles-js"></div> -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script  src="index.js"></script>
-
     <div id="frontContent">
       <!--
       <div id="lightButtonsContent">
@@ -77,18 +66,17 @@
         <button onclick="currentDiv(3)" class="lightChanger demo"> </button>
       </div>
     -->
-      <figure class="mySlides zoomIn"></figure>
-      <figure class="mySlides zoomIn"></figure>
-      <figure class="mySlides zoomIn"></figure>
+      <figure class="mySlides flash"></figure>
+      <figure class="mySlides flash"></figure>
+      <figure class="mySlides flash"></figure>
     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
   <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
   <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
   <span class="badge demo buttonBorder normColor1 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(1)"></span>
-  <span class="badge demo buttonBorder normColor2 w3-hover-red" id="transparentHomeButtons" onclick="currentDiv(2)"></span>
-  <span class="badge demo buttonBorder normColor3 w3-hover-blue" id="transparentHomeButtons" onclick="currentDiv(3)"></span>
+  <span class="badge demo buttonBorder normColor2 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(2)"></span>
+  <span class="badge demo buttonBorder normColor3 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(3)"></span>
 </div>
 </div>
-    </div>
 
     <script>
     var slideIndex = 1;
@@ -108,10 +96,10 @@
     </div>
   </div>
 
-  <div class="trans">
-    <div class="transPhoto">
-    </div>
+  <div id="particles-js" class="rainbowTransition">
   </div>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script  src="standard.js"></script>
 
 
         <div class="footer">
@@ -153,6 +141,7 @@
           </div>
 
           </div>
+        </div>
         </div>
 
       </body>

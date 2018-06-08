@@ -2,8 +2,10 @@
 <html>
 <head>
 
-  <link rel="StyleSheet" href="css/styleTeam.css">
+  <link rel="StyleSheet" href="css/styleAbout.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/Javascript" src="standard.js"></script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title style="text-align:center;"> Team </title style="text-align:center;">
@@ -12,42 +14,41 @@
   </head>
 
   <!-- topnav is the navigation bar of the website -->
+  <div id="menuoverlay" class="showSideNav">
+    <div id="sideNavExit"><p onclick="off()"> x </p></div>
+    <div id="mainmenu">
+      <h2> EXPLORE </h2>
+      <!-- the drop down menu of the navbar is for mobile version of website -->
+      <a class="sideNavMenuItems" href="index.html">HOME</a>
+      <a class="sideNavMenuItems" href="about.html" >ABOUT</a>
+      <a class="sideNavMenuItems" href="contact.html">CONTACT</a>
+      <a class="sideNavMenuItems" href="team.html">TEAM</a>
+      <a class="sideNavMenuItems" href="projects.html">PROJECTS</a>
+
+    </div>
+    <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a> </div>
+  </div>
+
+  <div id="overlay" class="showSideNav" onclick="off()">
+</div>
+
+<div class="blurContainerUnset" id="blurContain">
+
+  <!-- topnav is the navigation bar of the website -->
   <header>
-      <ul class="topnav">
-
-       <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
-        <!-- the logo for the website is logo.png located inside src="", the width and height are in pixels -->
-       <img id="logo" src="resources/logo.png" alt="bioGARRAGE logo" width="300" height="60"><a id="logoHolder" href="index.html"> </a></img>
-       <li class="right"><a href="index.html#about">ABOUT US</a></li>
-       <li class="right"><a href="contact.html">CONTACT US</a></li>
-       <li class="right"><a href="team.html">TEAM</a></li>
-       <li  class="right"><a href="projects.html">PROJECTS</a></li>
-
-     </ul>
+    <ul class="topnav transparent">
+      <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
+      <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a></li>
+      <!--
+      <li class="right"><a href="index.html#about"><p>ABOUT</p></a></li>
+      <li class="right"><a href="contact.html"><p>CONTACT</p></a></li>
+      <li class="right"><a href="team.html"><p>TEAM</p></a></li>
+      <li  class="right"><a href="projects.html"><p>PROJECTS</p></a></li>
+    -->
+    </ul>
   </header>
-  <div id="overlay" onclick="off()"></div>
-    <div id="menuoverlay">
-      <div id="sideNavExit"><p onclick="off()"> x </p></div>
-      <hr>
-      <div id="mainmenu">
-            <h2> Explore </h2>
-            <!-- the drop down menu of the navbar is for mobile version of website -->
-            <li class="dropdown"> <a href="javascript:void(0)" class="dropbtn"> Content ▾ </a>
-            <div class="dropdown-content">
-             <a href="index.html">HOME</a>
-             <a href="index.html#about" onclick="off()">ABOUT US</a>
-             <a href="contact.html">CONTACT US</a>
-             <a href="team.html">TEAM</a>
-             <a href="projects.html">PROJECTS</a>
-           </div>
-           </li>
-      </div>
-      <hr>
-      <div id="bioGARRAGE-logo"> <a href="index.html"> bioGARAGE </a> </div>
-      </div>
-
-
-     <header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script  src="standard.js"></script>
      <!-- the front page of the website begins here -->
      <div class="FrontPage">
          <div class="FrontPageContent FrontPageSection">
@@ -94,6 +95,15 @@
                  </div>
                </td>
              </tr>
+
+               <tr>
+               <div class="trans">
+                 <div class="transPhoto">
+                 </div>
+               </div>
+             </tr>
+
+
              <tr>
                <td>
                  <img src="images/jellyfish.jpg" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img></td>
@@ -108,6 +118,7 @@
                  </tr>
                </table>
              </div>
+
              <script  src="index.js"></script>
 
              <div class="StayInTouch">
@@ -122,30 +133,49 @@
 
 
 
-     <div class="footer">
-       <div class="footerContent">
-         <p>
-           <a class="lin" href="#"><i class="fa fa-github"></i></a>
-           <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
-           <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
-           <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
-         <br>
-             bioGARAGE INC. © 2018 | <a href="resources/terms.txt" class="terms"> terms </a> & <a href="resources/privacy.txt" class="privacy"> privacy </a>
-         </p>
-       </div>
-     </div>
+           <div class="footer">
+             <div class="footerContent">
 
-     <script>
-     function on() {
-         document.getElementById("overlay").style.display = "block";
-         document.getElementById("menuoverlay").style.display = "block";
-     }
 
-     function off() {
-         document.getElementById("overlay").style.display = "none";
-         document.getElementById("menuoverlay").style.display = "none";
-     }
-     </script>
+               <div id="UOttawa-section">
+
+                 <div id="UO-logo">
+                   <a href="https://www.uottawa.ca/en" ><img src="images/uOttawa-logo.png" width="150px"> </img><a>
+                 </div>
+
+                 <div id="faculyAndRelated">
+                   <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
+                   <br>
+                   <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
+                   <br>
+                   <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+                   <br>
+                   <p> CANADA </p>
+                   <br>
+                   <a href="contact.html"> <p> CONTACT US </p> <a>
+                 </div>
+             </div>
+
+             <div id="bioGARAGE-section">
+               <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+               <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+               <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+               <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
+               <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
+               <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
+               <a class="lin" href="#"><i class="fa fa-github"></i></a>
+
+               <p>
+                 bioGARAGE INC. © 2018 <br>
+                  <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
+               </p>
+             </div>
+
+             </div>
+           </div>
+           </div>
+
+
 <script>
 var myIndex = 0;
 carousel();

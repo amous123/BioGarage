@@ -7,129 +7,105 @@ body {
   font-family: Verdana;
 }
 
-.space{
-  padding-top: 800px;
-}
-
-/* beginning of footer */
-.footer{
-  background-color: #000;
-  margin: 0;
-  color: #777777;
-  font-size: 17px;
-}
-.lin{
-  text-align: center;
-  color: #777777;
-  font-size: 25px;
-}
-.footerContent{
-  text-align: center;
-  overflow: auto;
-  line-height: 200%;
-}
-.lin:hover{
-  color: white;
-  transform: scale(1.2,1.2);
-  transition-duration: 0.3s;
-}
-.privacy, .terms{
-  text-decoration: none;
-  color: #777777;
-}
-.privacy:hover, .terms:hover{
-  color: white;
-  transform: scale(1.2,1.2);
-  transition-duration: 0.3s;
-}
-/* end of footer */
-
-/*Beginning of navbar */
+/* --- Beginning of navbar --- */
 ul.topnav {
-  background-color: white;
   margin: 0;
   padding: 0;
+  background-color:rgba(255,255,255,0.9);
   list-style: none;
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   box-shadow: 0 2px 4px 0;
   z-index: 2;
+  -webkit-transition: all 0.4s ease;
+transition: all 0.4s ease;
 }
 ul.topnav img{
-  float: left;
-  text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-ul.topnav li a{
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: none;
-  font-size: 1.0625em;
-  z-index: 1;
+ul.topnav.transparent{
+  background-color:rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0 0;
 }
-ul.topnav li.right {
-  float: right;
+#logoHolder{
+  float: left;
+  padding: unset;
+  margin-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
-.topnav a:hover {
-  background-color: White;
-  color: Gold;
-  transform: scale(1.2,1.2);
-  transition-duration: 0.3s;
-
+#logo{
+width: 266px;
 }
-.topnav a.active {
-  background-color: White;
-  color: Gold;
+#logo a:hover{
+  background-color: transparent;
 }
-
-
 /* beginning of sideNav*/
 #menuoverlay{
-  left: 0;
+  right: 0;
   z-index: 10000;
   opacity: 1;
   text-align: left;
-  display: none;
-  transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-  transition-duration: 200ms;
-  transition-property: all;
+  transition: all 1s;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  pointer-events: auto;
+  background-color: white;
+  /* #5D5D5D */
+  text-decoration: none;
+  outline-left: 10px black solid;
 }
 #overlay {
     position: fixed;
-    display: none;
-    width: 100%;
     height: 100%;
     top: 0;
-    left: 280;
-    right: 0;
+    right: 340px;
+    left: 0;
     bottom: 0;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.5);
     z-index: 2;
     cursor: pointer;
+}
+.blurContainerUnset{
+  width: auto;
+  height: auto;
+  transition-delay: 0.5s;
+}
+.blurContainerSet{
+  filter: blur(5px);
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+transition-delay: initial;
+transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+transition-duration: 0.5s;
+transition-property: all;
+}
+#mainmenu{
+  position: relative;
+  width: 300px;
+  right:0;
+  left: 20px;
+  top:0px;
+  color: black;
+  list-style: none;
 }
 #bioGARRAGE-logo a{
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  width: 100%;
+  text-align: center;
   z-index: 100000;
-  color: #777777;
-  font-size: 16px;
-  text-decoration: none;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
 }
 #bioGARRAGE-logo a:hover{
-  color: white;
-  transform: scale(1.2,1.2);
+  transform: scale(1.1,1.1);
   transition-duration: 0.3s;
 }
 #sideNavExit p{
@@ -138,115 +114,84 @@ ul.topnav li.right {
   font-size: 25px;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: 20px;
+  margin-right: auto;
+  margin-left: 20px;
   margin-top: 20px;
 }
 #sideNavExit p:hover{
   cursor: pointer;
-  color: white;
+  color: black;
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
 }
-@media screen and (max-width: 900px){
-  #menuoverlay{
-    position: fixed;
-    top: 0;
-    width: 280px;
-    height: 100%;
-    pointer-events: auto;
-    background-color: #2f2f2f;;
-    text-decoration: none;
-    /*#2f2f2f; #ffe0e0*/
-    transition-delay: initial;
-    transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-    transition-duration: 200ms;
-    transition-property: all;
-  }
-  #mainmenu{
-    position: relative;
-    width: 85%;
-    right:0;
-    left: 20px;
-    top:40px;
-    color: white;
-    list-style: none;
-  }
+.showSideNav{
+  display: block;
+  width: 0px;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
 }
-/* end of sideNav */
-
-
-/* Beginning of navbar for mobile */
+/* --- end of sideNav --- */
+/* --- Beginning of navbar for mobile --- */
 ul.topnav li.dropdown{
   visibility: hidden;
   display: none;
   overflow: hidden;
 }
-#logo{
-  width: 300;
-  height: 60;
-  cursor: pointer;
-}
-#logoHolder{
-  cursor: default;
-}
 #sitemenu-icon{
-  display: none;
+  display: flex;
   cursor: pointer;
-  width: 25px;
-  height: 15px;
+  width: 36px;
+  height: 30px;
   background-color: transparent;
   position: fixed;
-  top: 24px;
-  left: 17px;
+  top: 25px;
+  right: 40px;
   z-index: 10000;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 #sitemenu-icon span{
-  height: 3px;
+  height: 4px;
+  width: 100%;
   background-color: black;
   position: absolute;
 }
 #sitemenu-icon span.line1{
-  top: 0px;
-  width: 25px;
+  top: 3px;
+  width: 36px;
 }
 #sitemenu-icon span.line2{
-  top: 7px;
-  width: 25px;
+  top: 13px;
+  width: 36px;
 }
 #sitemenu-icon span.line3{
-  top: 14px;
-  width: 25px;
-}
-@media screen and (max-width: 420px){
-  #sitemenu-icon{
-    left: 5px;
-  }
+  top: 23px;
+  width: 36px;
 }
 @media screen and (max-width: 900px){
-  ul.topnav img{
-    float: none;
-    position: relative;
-    display: block;
-    text-align: center;
-  }
-  #sitemenu-icon{
-    display: flex;
-  }
-  ul.topnav li.right{
-    visibility: hidden;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    display: none;
-  }
   ul.topnav{
-    height: auto;
+    height: 80px;;
     text-align: center;
     position: fixed;
   }
+}
+.sideNavMenuItems{
+  display: block;
+  padding: 10px 10px;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 3px;;
+}
+.sideNavMenuItems:hover{
+  background-color: #efefef;
+  color: #05BAFF;
+}
   #mainmenu li.dropdown{
     visibility: visible;
     display: inline-block;
@@ -254,13 +199,12 @@ ul.topnav li.dropdown{
   }
   #mainmenu li a, .dropbtn {
     display: inline-block;
-    color: white;
     text-align: left;
     text-decoration: none;
     float: none;
   }
   #mainmenu li a:hover, .dropdown:hover .dropbtn {
-    color: gold;
+    color: #777777;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
   }
@@ -274,7 +218,6 @@ ul.topnav li.dropdown{
     position: fixed;
   }
   #mainmenu .dropdown-content a {
-    color: white;
     padding: 6px 12px;
     text-decoration: none;
     display: block;
@@ -293,6 +236,117 @@ ul.topnav li.dropdown{
     transition-duration: 200ms;
     transition-property: all;
   }
+/* --- End of navbar for mobile --- */
+/* --- End of navbar --- */
+
+.space{
+  padding-top: 800px;
 }
-/*End of navbar for mobile */
-/*End of navbar*/
+
+/* --- beginning of footer --- */
+.footer{
+  background-color: #000;
+  margin: 0;
+  color: #777777;
+  font-size: 14px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.lin{
+  text-align: center;
+  color: #777777;
+  font-size: 20px;
+  padding: 5px 5px;
+}
+.footerContent{
+  text-align: center;
+  overflow: auto;
+  line-height: 200%;
+}
+#UOttawa-section{
+  width: 60%;
+  float: left;
+}
+#bioGARAGE-section{
+  float: right;
+  width: 30%;
+  text-align: right;
+  padding-right:50px;
+}
+#UO-logo{
+  float: left;
+  padding-left: 50px;
+}
+#faculyAndRelated{
+  float: left;
+  width: 40%;
+  text-align: left;
+  margin-left: 20px;
+}
+#faculyAndRelated a{
+  text-decoration: none;
+  color: #777777;
+  cursor: pointer;
+}
+#faculyAndRelated p{
+  display: unset;
+}
+#faculyAndRelated p:hover{
+  color: white;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.fa-facebook{color: #4e64b5; }
+.fa-linkedin{color: #0288d1; }
+.fa-twitter{color: #00aced; }
+.fa-instagram{color: #9a8f62; }
+.fa-pinterest{color: #ff5757; }
+.fa-youtube-play{color: #c82929; }
+.fa-github{color: #4a2881; }
+
+@media screen and (max-width: 630px){
+  .footerContent{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+  }
+  #UO-logo{
+    padding-left: 0;
+    float: none;
+  }
+  #bioGARAGE-section{
+    float: none;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0px;
+    width: 100%;
+  }
+  #faculyAndRelated{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+  #UOttawa-section{
+    width: 100%;
+  }
+  }
+
+.fa:hover{
+  color: white;
+  transform: scale(1.1,1.1);
+  transition-duration: 0.4s;
+}
+.legal, .terms{
+  text-decoration: none;
+  color: #777777;
+}
+.legal:hover, .terms:hover{
+  color: white;
+  transform: scale(1.1,1.1);
+  transition-duration: 0.4s;
+}
+/* --- end of footer --- */
+/* --- end of webpage --- */
