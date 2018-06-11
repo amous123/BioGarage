@@ -30,167 +30,175 @@
   </div>
 
   <div id="overlay" class="showSideNav" onclick="off()">
-</div>
+  </div>
 
-<div class="blurContainerUnset" id="blurContain">
+  <div class="blurContainerUnset" id="blurContain">
 
-  <!-- topnav is the navigation bar of the website -->
-  <header>
-    <ul class="topnav transparent">
-      <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
-      <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a></li>
-      <!--
-      <li class="right"><a href="index.html#about"><p>ABOUT</p></a></li>
-      <li class="right"><a href="contact.html"><p>CONTACT</p></a></li>
-      <li class="right"><a href="team.html"><p>TEAM</p></a></li>
-      <li  class="right"><a href="projects.html"><p>PROJECTS</p></a></li>
-    -->
+    <!-- topnav is the navigation bar of the website -->
+    <header>
+      <ul class="topnav transparent">
+        <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
+        <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a></li>
+        <!--
+        <li class="right"><a href="index.html#about"><p>ABOUT</p></a></li>
+        <li class="right"><a href="contact.html"><p>CONTACT</p></a></li>
+        <li class="right"><a href="team.html"><p>TEAM</p></a></li>
+        <li  class="right"><a href="projects.html"><p>PROJECTS</p></a></li>
+      -->
     </ul>
   </header>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script  src="standard.js"></script>
-     <!-- the front page of the website begins here -->
-     <div class="FrontPage">
-         <div class="FrontPageContent FrontPageSection">
-           <!-- Images should be 1.5:1 ratio to 2:1 ratio to fit best, keep photos similiar size -->
-           <li class="crop">
-           <img class="mySlides img1" src="images/bio.gif">
-           <img class="mySlides img2" src="images/dna.gif">
-           <img class="mySlides img3" src="images/head.gif">
-           <img class="mySlides img4" src="images/neurons.gif">
-         </li>
-         </div>
-       </div>
-     <!-- the front page of the website ends here-->
-     </header>
+  <script  src="standard.js"></script>
+  <!-- the front page of the website begins here
+  <div class="FrontPage">
+    <div class="FrontPageContent FrontPageSection">
+      <!-- Images should be 1.5:1 ratio to 2:1 ratio to fit best, keep photos similiar size
+      <li class="crop">
+        <img class="mySlides img1" src="images/bio.gif">
+        <img class="mySlides img2" src="images/dna.gif">
+        <img class="mySlides img3" src="images/head.gif">
+        <img class="mySlides img4" src="images/neurons.gif">
+      </li>
+    </div>
+  </div>
+  <!-- the front page of the website ends here
+</header>
 
-     <div class="space">
-     </div>
-     <div id="about">
+-->
 
-       <div id="aboutContent">
-         <h2> What is bioGARAGE? </h2>
-         <p>bioGARAGE is an enviromment to share and collaborate molecular biology experiments and
-           allow the general public access to what would normally take a few years of university courses in the field.
-         </p>
-       </div>
+<div class="space">
+</div>
+<div id="about">
 
+  <div id="aboutContent">
+    <h1> ABOUT </h1>
+    <p>bioGARAGE is an enviromment to share and collaborate molecular biology experiments and
+      allow the general public access to what would normally take a few years of university courses in the field.
+    </p>
+  </div>
 
-       <div id="questionsContent">
-         <table>
-           <tr>
-             <td>
-               <h2 class="tableH2"> Our goal </h2>
-               <div class="QuestionMore"> <p id="about1" class="hide"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p>
-                 <div class="moreButton"> <button id="expandB1" onclick="expand1()" class="moreButtonContent"> Expand </button>
-                 <button id="retractB1" onclick="retract1()" class="lessButtonContent"> Retract </button></div>
-               </div>
-             </td>
-             <td>
-               <img src="images/longdna.gif" id="Mquestions" alt="about picture" width="200px" height="200px;"> </img></td>
-               <td>
-                 <h2  class="tableH2"> What You Can Do? </h2>
-                 <div class="QuestionMore"> <p id="about2" class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton">  <button id="expandB2" onclick="expand2()" class="moreButtonContent"> Expand </button>
-                   <button id="retractB2" onclick="retract2()" class="lessButtonContent"> Retract </button></div>
-                 </div>
-               </td>
-             </tr>
+  <div class="trans">
+    <div class="transPhoto">
+    </div>
+  </div>
 
-               <tr>
-               <div class="trans">
-                 <div class="transPhoto">
-                 </div>
-               </div>
-             </tr>
+  <div id="questionsContent">
+
+    <div class="row">
+      <div class="column oddColor">
+        <h2 class="tableH2"> Our goal </h2>
+        <div class="QuestionMore"> <p id="about1" class="hide"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p>
+          <div class="moreButton"> <button id="expandB1" onclick="expand1()" class="moreButtonContent"> Expand </button>
+            <button id="retractB1" onclick="retract1()" class="lessButtonContent"> Retract </button></div>
+          </div>
+        </div>
+
+        <div class="column">
+          <img src="images/longdna.gif" id="Mquestions" alt="about picture" width="200px" height="200px;"> </img></td>
+        </div>
 
 
-             <tr>
-               <td>
-                 <img src="images/jellyfish.jpg" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img></td>
-                 <td>
-                   <h2  class="tableH2"> F.A.Q </h2>
-                   <div class="QuestionMore"> <p id="about3" class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. </p> <div class="moreButton">  <button id="expandB3" onclick="expand3()" class="moreButtonContent"> Expand </button>
-                     <button id="retractB3" onclick="retract3()" class="lessButtonContent"> Retract </button></div>
-                   </div>
-                 </td>
-                 <td>
-                   <img src="images/jellyfish.jpg" id="Minfo" alt="about picture" width="200px" height="200px;"> </img></td>
-                 </tr>
-               </table>
-             </div>
-
-             <script  src="index.js"></script>
-
-             <div class="StayInTouch">
-               <h3> Have a question we didn't answer or want more information? </h3>
-               <p> Get in touch with us! </p>
-               <div class="contactButton">
-                 <a href="contact.html"><button type="button" onclick=""class="contactButtonContent"> Contact Us </button></a>
-               </div>
-             </div>
-
-           </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="images/jellyfish.jpg" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img></td>
+        </div>
+        <div class="column">
+          <h2  class="tableH2"> What You Can Do? </h2>
+          <div class="QuestionMore"> <p id="about2" class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.</p> <div class="moreButton">  <button id="expandB2" onclick="expand2()" class="moreButtonContent"> Expand </button>
+            <button id="retractB2" onclick="retract2()" class="lessButtonContent"> Retract </button></div>
+          </div>
+        </div>
+      </div>
 
 
 
-           <div class="footer">
-             <div class="footerContent">
+      <div class="row">
+
+        <div class="column oddColor">
+          <h2  class="tableH2"> F.A.Q </h2>
+          <div class="QuestionMore"> <p id="about3" class="hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. </p> <div class="moreButton">  <button id="expandB3" onclick="expand3()" class="moreButtonContent"> Expand </button>
+            <button id="retractB3" onclick="retract3()" class="lessButtonContent"> Retract </button></div>
+          </div>
+        </div>
+        <div class="column">
+          <img src="images/jellyfish.jpg" id="Minfo" alt="about picture" width="200px" height="200px;"> </img></td>
+        </div>
+      </div>
+
+      <script  src="index.js"></script>
+
+      <div class="StayInTouch">
+        <h3> Have a question we didn't answer or want more information? </h3>
+        <p> Get in touch with us! </p>
+        <div class="contactButton">
+          <a href="contact.html"><button type="button" onclick=""class="contactButtonContent"> Contact Us </button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
-               <div id="UOttawa-section">
 
-                 <div id="UO-logo">
-                   <a href="https://www.uottawa.ca/en" ><img src="images/uOttawa-logo.png" width="150px"> </img><a>
-                 </div>
-
-                 <div id="faculyAndRelated">
-                   <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
-                   <br>
-                   <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
-                   <br>
-                   <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
-                   <br>
-                   <p> CANADA </p>
-                   <br>
-                   <a href="contact.html"> <p> CONTACT US </p> <a>
-                 </div>
-             </div>
-
-             <div id="bioGARAGE-section">
-               <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
-               <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
-               <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
-               <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
-               <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
-               <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
-               <a class="lin" href="#"><i class="fa fa-github"></i></a>
-
-               <p>
-                 bioGARAGE INC. © 2018 <br>
-                  <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
-               </p>
-             </div>
-
-             </div>
-           </div>
-           </div>
+  <div class="footer">
+    <div class="footerContent">
 
 
-<script>
-var myIndex = 0;
-carousel();
+      <div id="UOttawa-section">
 
-     function carousel() {
-         var i;
-         var x = document.getElementsByClassName("mySlides");
-         for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-         }
-         myIndex++;
-         if (myIndex > x.length) {myIndex = 1}
-         x[myIndex-1].style.display = "block";
-         setTimeout(carousel, 3000); // Change image every 3 seconds
-     }
-     </script>
+        <div id="UO-logo">
+          <a href="https://www.uottawa.ca/en" ><img src="images/uOttawa-logo.png" width="150px"> </img><a>
+          </div>
 
-  </html>
+          <div id="faculyAndRelated">
+            <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
+            <br>
+            <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
+            <br>
+            <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+            <br>
+            <p> CANADA </p>
+            <br>
+            <a href="contact.html"> <p> CONTACT US </p> <a>
+            </div>
+          </div>
+
+          <div id="bioGARAGE-section">
+            <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
+            <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
+            <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
+            <a class="lin" href="#"><i class="fa fa-github"></i></a>
+
+            <p>
+              bioGARAGE INC. © 2018 <br>
+              <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+    </script>
+
+    </html>

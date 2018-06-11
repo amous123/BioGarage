@@ -44,20 +44,6 @@ $(document).ready(function(){
   })
 })
 
-function on() {
-  document.getElementById("overlay").style.width="100%";
-  document.getElementById("menuoverlay").style.width="21.250em";
-  document.getElementById("sitemenu-icon").style.right="23.750em";
-  document.getElementById("blurContain").className="blurContainerSet";
-}
-
-function off() {
-    document.getElementById("overlay").style.width="0%";
-    document.getElementById("menuoverlay").style.width="0em";
-    document.getElementById("sitemenu-icon").style.right="2.500em";
-    document.getElementById("blurContain").className="blurContainerUnset";
-}
-
 /* ---- expand and retract about section content ---- */
 function expand1(){
   var p1 = document.getElementById("about1");
