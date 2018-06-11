@@ -1,5 +1,5 @@
 /* --- sets navbar transparent at top of page --- */
-$(window).scroll(function () {
+$(window).scroll(function() {
 if ($(document).scrollTop() >= 100) {
 $("ul.topnav").removeClass('transparent');
 } else {
@@ -34,15 +34,27 @@ function showDivs(n) {
 }
 
 /* ---- expand and retract sideBar content and overlay ---- */
+$(document).ready(function(){
+  $('#sitemenu-icon').click(function(){
+    $('#sitemenu-icon').toggleClass('active');
+    $('#overlay').toggleClass('active');
+    $('#blurContain').toggleClass('active');
+    $('#menuoverlay').toggleClass('active');
+    $('#logoHolder').toggleClass('active');
+  })
+})
+
 function on() {
   document.getElementById("overlay").style.width="100%";
-  document.getElementById("menuoverlay").style.width="340px";
+  document.getElementById("menuoverlay").style.width="21.250em";
+  document.getElementById("sitemenu-icon").style.right="23.750em";
   document.getElementById("blurContain").className="blurContainerSet";
 }
 
 function off() {
     document.getElementById("overlay").style.width="0%";
-    document.getElementById("menuoverlay").style.width="0px";
+    document.getElementById("menuoverlay").style.width="0em";
+    document.getElementById("sitemenu-icon").style.right="2.500em";
     document.getElementById("blurContain").className="blurContainerUnset";
 }
 

@@ -18,7 +18,7 @@ ul.topnav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 5em;
   box-shadow: 0 2px 4px 0;
   z-index: 2;
   -webkit-transition: all 0.4s ease;
@@ -28,6 +28,7 @@ ul.topnav img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 16.625em;
 }
 ul.topnav.transparent{
   background-color:rgba(0,0,0,0) !important;
@@ -39,32 +40,31 @@ ul.topnav.transparent{
   margin-left: 10px;
   margin-top: 6px;
   margin-bottom: 6px;
+  opacity: 1;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+#logoHolder.active{
+  opacity: 0.5;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
 }
 #logo{
-width: 266px;
+width: 16.625em;
 }
 #logo a:hover{
   background-color: transparent;
 }
-/*
-ul.topnav li a{
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: none;
-  font-size: 1.0625em;
-  line-height: 10px;
-  width: 125px;
-  z-index: 1;
-}
-*/
 
 /* beginning of sideNav*/
 #menuoverlay{
   right: 0;
   z-index: 10000;
+  width: 0em;
   opacity: 1;
   text-align: left;
   transition: all 1s;
@@ -73,28 +73,50 @@ ul.topnav li a{
   height: 100%;
   pointer-events: auto;
   background-color: white;
-  /* #5D5D5D */
   text-decoration: none;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
   /* box-shadow: inset 10px 0px 10px 0px #000; */
+}
+#menuoverlay.active{
+  width: 21.250em;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
 }
 #overlay {
     position: fixed;
     height: 100%;
+    width: 0%;
     top: 0;
-    right: 340px;
+    right: 21.250em;
     left: 0;
     bottom: 0;
     background-color: rgba(255,255,255,0.5);
     z-index: 2;
     cursor: pointer;
+    transition-delay: initial;
+    transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+    transition-duration: 0.5s;
+    transition-property: all;
 }
-.blurContainerUnset{
+#overlay.active{
+  width: 100%;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+.blurContainer{
   width: auto;
   height: auto;
 transition-duration: 0.5s;
 
 }
-.blurContainerSet{
+.blurContainer.active{
   filter: blur(5px);
 -webkit-filter: blur(5px);
 -moz-filter: blur(5px);
@@ -107,43 +129,19 @@ transition-property: all;
 }
 #mainmenu{
   position: relative;
-  width: 300px;
+  width: 18.750em;
   right:0;
-  left: 20px;
+  left: 1.250em;
   top:0px;
   color: black;
   list-style: none;
 }
 #bioGARRAGE-logo a{
   position: absolute;
-  bottom: 20px;
+  bottom: 1.250em;
   width: 100%;
   text-align: center;
   z-index: 100000;
-}
-#sideNavExit p{
-  color: #777777;
-  width: 25px;
-  font-size: 25px;
-  text-align: center;
-  display: block;
-  margin-right: auto;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-#sideNavExit p:hover{
-  cursor: pointer;
-  color: black;
-  transform: scale(1.2,1.2);
-  transition-duration: 0.3s;
-}
-.showSideNav{
-  display: block;
-  width: 0px;
-  transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-  transition-duration: 0.5s;
-  transition-property: all;
 }
 /* --- end of sideNav --- */
 /* --- Beginning of navbar for mobile --- */
@@ -153,59 +151,84 @@ ul.topnav li.dropdown{
   overflow: hidden;
 }
 #sitemenu-icon{
-  display: flex;
-  cursor: pointer;
-  width: 36px;
-  height: 30px;
-  background-color: transparent;
-  position: fixed;
-  top: 25px;
-  right: 40px;
-  z-index: 10000;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-#sitemenu-icon span{
-  height: 4px;
-  width: 100%;
-  background-color: black;
   position: absolute;
+  top: 50%;
+  right: 0em;
+  transform: translate(-50%, -50%);
+  width: 3.5em;
+  height: 5em;
+  cursor: pointer;
+  background: transparent;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+  z-index: 3;
 }
-#sitemenu-icon span.line1{
-  top: 3px;
-  width: 36px;
+#sitemenu{
+  width: 50px;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: 0.5s;
+
 }
-#sitemenu-icon span.line2{
-  top: 13px;
-  width: 36px;
+#sitemenu:before, #sitemenu:after{
+  content:'';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: black;
+  position: absolute;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: 0.5s;
 }
-#sitemenu-icon span.line3{
-  top: 23px;
-  width: 36px;
+#sitemenu:before{
+  top: -16px;
 }
-@media screen and (max-width: 900px){
-  ul.topnav{
-    height: 80px;;
-    text-align: center;
-    position: fixed;
-  }
+#sitemenu:after{
+  top: 16px;
+}
+#sitemenu-icon.active{
+  right: 21.250em;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+#sitemenu-icon.active #sitemenu{
+  background: rgba(0,0,0,0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+#sitemenu-icon.active #sitemenu:before{
+  top: 0;
+transform: rotate(45deg);
+}
+#sitemenu-icon.active #sitemenu:after{
+  top: 0;
+transform: rotate(135deg);
 }
 .sideNavMenuItems{
   display: block;
-  padding: 10px 10px;
+  padding: 0.625em 0.625em;
   background-color: transparent;
   color: black;
   text-decoration: none;
   font-weight: 400;
   text-transform: uppercase;
   font-family: sans-serif;
-  letter-spacing: 3px;;
+  letter-spacing: 0.188em;
 }
 .sideNavMenuItems:hover{
   background-color: #efefef;
   color: #828282;
 }
 
+/*
   #mainmenu li.dropdown{
     visibility: visible;
     display: inline-block;
@@ -219,7 +242,7 @@ ul.topnav li.dropdown{
   }
   #mainmenu li a:hover, .dropdown:hover .dropbtn {
     color: #777777;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;  Safari
     transition-duration: 0.4s;
   }
   #mainmenu li.dropdown { display: inline-block; }
@@ -240,7 +263,7 @@ ul.topnav li.dropdown{
   #mainmenu .dropdown-content a:hover, #mainmenu .dropdown-content a:active {
     background-color: transparent;
     color: #777777;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;  Safari
     transition-duration: 0.4s;
   }
   #mainmenu .dropdown:hover .dropdown-content, #mainmenu .dropdown:active .dropdown-content{
@@ -250,6 +273,8 @@ ul.topnav li.dropdown{
     transition-duration: 200ms;
     transition-property: all;
   }
+  */
+
 /* --- End of navbar for mobile --- */
 /* --- End of navbar --- */
 
@@ -263,8 +288,8 @@ figure{
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  padding-bottom: 400px;
-  padding-top: 400px;
+  padding-bottom: 25.000em;
+  padding-top: 25.000em;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -302,15 +327,15 @@ figure:nth-child(3) {
   background-image: url("../images/microscope.jpg");
 }
 .badge {
-  height:20px;
-  width:20px;
+  height:1.250em;
+  width:1.250em;
   padding:0;
-  border-radius:10px;
+  border-radius:0.625em;
   cursor:pointer;
 }
 .w3-left, .w3-right{
   cursor:pointer;
-  font-size: 50px;
+  font-size: 3.125em;
 }
 .w3-tag,.badge{
   background-color: unset;
@@ -339,6 +364,7 @@ figure:nth-child(3) {
   margin-top: 10%;
   position: absolute;
 }
+/*
 .lightChanger{
   padding: 20px 20px;
   background-color: red;
@@ -359,7 +385,6 @@ figure:nth-child(3) {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-/*
 .pressed{
   background-color: #962a2a;
   box-shadow: 0 5px #666;
@@ -370,42 +395,42 @@ figure:nth-child(3) {
 /* --- end of front page --- */
 /* --- opening content section --- */
 .opening{
-  padding: 20px;
+  padding: 1.250em;
   background-color: black;
   opacity: 0.85;
   bottom: 0;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 1.875em;
 }
 .openingContent{
   background-color: inherit;
   color: white;
   list-style: none;
-  letter-spacing: 2px;
-  font-size: 20px;
+  letter-spacing: 0.125em;
+  font-size: 1.250em;
   line-height: 200%;
   width: fit-content;
   margin: auto;
 }
 .open1{ }
 .open2{
-  padding-left: 30px;
+  padding-left: 1.875em;
 }
 .open3{
-  padding-left: 60px;
+  padding-left: 3.750em;
 }
 .open4{
-  padding-left: 90px;
+  padding-left: 5.625em;
 }
 .openingButtons{
 text-align: center;
 word-spacing: 50px;
 }
 @media screen and (max-width: 1200px){
-  .openingButtons{ padding-top: 40px; }
+  .openingButtons{ padding-top: 2.500em; }
 }
 .openBtn1{
-  font-size: 18px;
+  font-size: 1.125em;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -422,7 +447,7 @@ word-spacing: 50px;
   width: 230px;
 }
 .openBtn2{
-  font-size: 18px;
+  font-size: 1.125em;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -453,7 +478,7 @@ word-spacing: 50px;
 
 @media screen and (max-width: 700px){
   .openingContent{
-    font-size: 16px;
+    font-size: 1em;
     letter-spacing: 1.5;
     text-align: center;
   }
@@ -480,6 +505,7 @@ word-spacing: 50px;
       overflow: hidden;
     }
 }
+
 /* ---- particles filler section---- */
 canvas {
   display: block;

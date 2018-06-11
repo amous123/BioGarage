@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="about_style.css" type="text/css" rel="StyleSheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
 
   <title style="text-align:center;"> BioGarage </title style="text-align:center;">
     <meta name="Developers" content="amous123">
@@ -24,7 +27,6 @@
 
 
     <div id="menuoverlay" class="showSideNav">
-      <div id="sideNavExit"><p onclick="off()"> x </p></div>
       <div id="mainmenu">
         <h2> EXPLORE </h2>
         <!-- the drop down menu of the navbar is for mobile version of website -->
@@ -39,48 +41,45 @@
     </div>
 
     <div id="overlay" class="showSideNav" onclick="off()">
-</div>
-
-<div class="blurContainerUnset" id="blurContain">
+    </div>
 
     <!-- topnav is the navigation bar of the website -->
     <header>
       <ul class="topnav transparent">
-        <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
-        <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a></li>
-        <!--
-        <li class="right"><a href="index.html#about"><p>ABOUT</p></a></li>
-        <li class="right"><a href="contact.html"><p>CONTACT</p></a></li>
-        <li class="right"><a href="team.html"><p>TEAM</p></a></li>
-        <li  class="right"><a href="projects.html"><p>PROJECTS</p></a></li>
-      -->
+        <div id="sitemenu-icon">
+          <div id="sitemenu">
+          </div>
+        </div>
+        <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
       </ul>
     </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <div id="frontContent">
-      <!--
-      <div id="lightButtonsContent">
+    <div class="blurContainer" id="blurContain">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+      <div id="frontContent">
+        <!--
+        <div id="lightButtonsContent">
         <button onclick="currentDiv(1)" class="lightChanger demo"> </button>
         <button onclick="currentDiv(2)" class="lightChanger demo"> </button>
         <button onclick="currentDiv(3)" class="lightChanger demo"> </button>
       </div>
     -->
-      <figure class="mySlides flash"></figure>
-      <figure class="mySlides flash"></figure>
-      <figure class="mySlides flash"></figure>
+    <figure class="mySlides flash"></figure>
+    <figure class="mySlides flash"></figure>
+    <figure class="mySlides flash"></figure>
     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-  <span class="badge demo buttonBorder normColor1 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(1)"></span>
-  <span class="badge demo buttonBorder normColor2 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(2)"></span>
-  <span class="badge demo buttonBorder normColor3 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(3)"></span>
-</div>
-</div>
+      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+      <span class="badge demo buttonBorder normColor1 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(1)"></span>
+      <span class="badge demo buttonBorder normColor2 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(2)"></span>
+      <span class="badge demo buttonBorder normColor3 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(3)"></span>
+    </div>
+  </div>
 
-    <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
   </script>
 
   <div class="opening">
@@ -102,27 +101,26 @@
   <script  src="standard.js"></script>
 
 
-        <div class="footer">
-          <div class="footerContent">
+  <div class="footer">
+    <div class="footerContent">
 
+      <div id="UOttawa-section">
 
-            <div id="UOttawa-section">
+        <div id="UO-logo">
+          <a href="https://www.uottawa.ca/en" ><img src="images/uOttawa-logo.png" width="150px"> </img><a>
+          </div>
 
-              <div id="UO-logo">
-                <a href="https://www.uottawa.ca/en" ><img src="images/uOttawa-logo.png" width="150px"> </img><a>
-              </div>
-
-              <div id="faculyAndRelated">
-                <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
-                <br>
-                <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
-                <br>
-                <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
-                <br>
-                <p> CANADA </p>
-                <br>
-                <a href="contact.html"> <p> CONTACT US </p> <a>
-              </div>
+          <div id="faculyAndRelated">
+            <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
+            <br>
+            <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
+            <br>
+            <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+            <br>
+            <p> CANADA </p>
+            <br>
+            <a href="contact.html"> <p> CONTACT US </p> <a>
+            </div>
           </div>
 
           <div id="bioGARAGE-section">
@@ -136,13 +134,13 @@
 
             <p>
               bioGARAGE INC. © 2018 <br>
-               <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
+              <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
             </p>
           </div>
 
-          </div>
         </div>
-        </div>
+      </div>
+    </div>
 
-      </body>
-      </html>
+  </body>
+  </html>
