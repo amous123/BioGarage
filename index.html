@@ -28,31 +28,30 @@
 
     <div id="menuoverlay" class="showSideNav">
       <div id="mainmenu">
+        <section id="iconsAdded">
         <h2> EXPLORE </h2>
         <!-- the drop down menu of the navbar is for mobile version of website -->
-        <a class="sideNavMenuItems" href="index.html">HOME</a>
-        <a class="sideNavMenuItems" href="about.html" >ABOUT</a>
-        <a class="sideNavMenuItems" href="contact.html">CONTACT</a>
-        <a class="sideNavMenuItems" href="team.html">TEAM</a>
-        <a class="sideNavMenuItems" href="projects.html">PROJECTS</a>
-
+        <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
+        <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
+        <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
+        <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
+        <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
+      </section>
       </div>
       <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a> </div>
     </div>
-
     <div id="overlay" class="showSideNav">
     </div>
 
     <!-- topnav is the navigation bar of the website -->
-    <header>
-      <ul class="topnav transparent">
+      <ul class="topnav transparent" id="topnav">
         <div id="sitemenu-icon">
           <div id="sitemenu">
           </div>
         </div>
         <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
       </ul>
-    </header>
+
 
     <div class="blurContainer" id="blurContain">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -82,6 +81,7 @@
   showDivs(slideIndex);
   </script>
 
+<div id="openFeatured">
   <div class="opening">
     <div class="openingContent">
       <div class="open1"> A SPACE TO BUILD YOUR GENOME </div>
@@ -91,9 +91,86 @@
     </div>
     <div class="openingButtons">
       <a href="contact.html#map"> <button class="openBtn1"> Location </button> </a>
-      <a href="projects.html"> <button class="openBtn2"> Experiments </button> </a>
+    <!--  <a href="projects.html"> <button class="openBtn2"> Experiments </button> </a> -->
     </div>
   </div>
+  <h2> FEATURED IMAGES <h2>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <section class="camera-icon">
+        </section>
+      </img>
+      </div>
+      <div class="column">
+        <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        <section class="camera-icon">
+        </section>
+      </img>
+      </div>
+      <div class="column">
+        <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        <section class="camera-icon">
+        </section>
+      </img>
+      </div>
+      <div class="column">
+        <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        <section class="camera-icon">
+        </section>
+      </img>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/img_nature.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/img_snow.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/img_mountains.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/img_lights.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+          <img class="demo cursor" src="images/img_nature.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/img_snow.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+      </div>
+    </div>
+
+</div>
 
   <div id="particles-js" class="rainbowTransition">
   </div>
@@ -141,6 +218,47 @@
         </div>
       </div>
     </div>
+
+    <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+  document.getElementById("topnav").style.display = "none";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+  document.getElementById('topnav').style.display = "unset";
+}
+
+var gallerySlideIndex = 1;
+showSlides(gallerySlideIndex);
+
+function plusSlides(n) {
+  showSlides(gallerySlideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(gallerySlideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {gallerySlideIndex = 1}
+  if (n < 1) {gallerySlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[gallerySlideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[gallerySlideIndex-1].alt;
+}
+</script>
 
   </body>
   </html>

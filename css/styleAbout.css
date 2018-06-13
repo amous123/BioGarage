@@ -4,7 +4,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: Verdana;
+  font-family: 'Georgia';
 }
 
 /* --- Beginning of navbar --- */
@@ -17,7 +17,7 @@ ul.topnav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 5em;
   box-shadow: 0 2px 4px 0;
   z-index: 2;
   -webkit-transition: all 0.4s ease;
@@ -27,6 +27,7 @@ ul.topnav img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 16.625em;
 }
 ul.topnav.transparent{
   background-color:rgba(0,0,0,0) !important;
@@ -38,17 +39,31 @@ ul.topnav.transparent{
   margin-left: 10px;
   margin-top: 6px;
   margin-bottom: 6px;
+  opacity: 1;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+#logoHolder.active{
+  opacity: 0.5;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
 }
 #logo{
-width: 266px;
+width: 16.625em;
 }
 #logo a:hover{
   background-color: transparent;
 }
+
 /* beginning of sideNav*/
 #menuoverlay{
   right: 0;
   z-index: 10000;
+  width: 0em;
   opacity: 1;
   text-align: left;
   transition: all 1s;
@@ -57,27 +72,54 @@ width: 266px;
   height: 100%;
   pointer-events: auto;
   background-color: white;
-  /* #5D5D5D */
   text-decoration: none;
-  outline-left: 10px black solid;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+  /* box-shadow: inset 10px 0px 10px 0px #000; */
+}
+#menuoverlay.active{
+  width: 21.250em;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+@media screen and (max-width: 700px){
+  #menuoverlay.active{
+    width: 19em;
+  }
 }
 #overlay {
     position: fixed;
     height: 100%;
+    width: 0%;
     top: 0;
-    right: 340px;
+    right: 21.250em;
     left: 0;
     bottom: 0;
     background-color: rgba(255,255,255,0.5);
     z-index: 2;
-    cursor: pointer;
+    transition-delay: initial;
+    transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+    transition-duration: 0.5s;
+    transition-property: all;
 }
-.blurContainerUnset{
+#overlay.active{
+  width: 100%;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+.blurContainer{
   width: auto;
   height: auto;
-  transition-delay: 0.5s;
+transition-duration: 1s;
+
 }
-.blurContainerSet{
+.blurContainer.active{
   filter: blur(5px);
 -webkit-filter: blur(5px);
 -moz-filter: blur(5px);
@@ -85,52 +127,29 @@ width: 266px;
 -ms-filter: blur(5px);
 transition-delay: initial;
 transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-transition-duration: 0.5s;
+transition-duration: 1s;
 transition-property: all;
 }
 #mainmenu{
   position: relative;
-  width: 300px;
+  width: 18.750em;
   right:0;
-  left: 20px;
+  left: 1.250em;
   top:0px;
   color: black;
   list-style: none;
 }
 #bioGARRAGE-logo a{
   position: absolute;
-  bottom: 20px;
+  bottom: 1.250em;
   width: 100%;
   text-align: center;
   z-index: 100000;
 }
-#bioGARRAGE-logo a:hover{
-  transform: scale(1.1,1.1);
-  transition-duration: 0.3s;
-}
-#sideNavExit p{
-  color: #777777;
-  width: 25px;
-  font-size: 25px;
-  text-align: center;
-  display: block;
-  margin-right: auto;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-#sideNavExit p:hover{
-  cursor: pointer;
-  color: black;
-  transform: scale(1.2,1.2);
-  transition-duration: 0.3s;
-}
-.showSideNav{
-  display: block;
-  width: 0px;
-  transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-  transition-duration: 0.5s;
-  transition-property: all;
+@media screen and (max-width: 700px){
+  #bioGARRAGE-logo a{
+    transition-duration: 0.5s;
+  }
 }
 /* --- end of sideNav --- */
 /* --- Beginning of navbar for mobile --- */
@@ -140,180 +159,222 @@ ul.topnav li.dropdown{
   overflow: hidden;
 }
 #sitemenu-icon{
-  display: flex;
-  cursor: pointer;
-  width: 36px;
-  height: 30px;
-  background-color: transparent;
-  position: fixed;
-  top: 25px;
-  right: 40px;
-  z-index: 10000;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-#sitemenu-icon span{
-  height: 4px;
-  width: 100%;
-  background-color: black;
   position: absolute;
+  top: 50%;
+  right: 0em;
+  transform: translate(-50%, -50%);
+  width: 3.5em;
+  height: 5em;
+  cursor: pointer;
+  background: transparent;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+  z-index: 3;
 }
-#sitemenu-icon span.line1{
-  top: 3px;
-  width: 36px;
+#sitemenu{
+  width: 40px;
+  height: 4px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: 0.5s;
 }
-#sitemenu-icon span.line2{
-  top: 13px;
-  width: 36px;
+#sitemenu:before, #sitemenu:after{
+  content:'';
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: black;
+  position: absolute;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: 0.5s;
 }
-#sitemenu-icon span.line3{
-  top: 23px;
-  width: 36px;
+#sitemenu:before{
+  top: -12px;
 }
-@media screen and (max-width: 900px){
-  ul.topnav{
-    height: 80px;;
-    text-align: center;
-    position: fixed;
+#sitemenu:after{
+  top: 12px;
+}
+#sitemenu-icon.active{
+  right: 21.250em;
+  transition-delay: initial;
+  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+#sitemenu-icon.active #sitemenu{
+  background: rgba(0,0,0,0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+#sitemenu-icon.active #sitemenu:before{
+  top: 0;
+transform: rotate(45deg);
+}
+#sitemenu-icon.active #sitemenu:after{
+  top: 0;
+transform: rotate(135deg);
+}
+
+@media screen and (max-width: 700px){
+
+  #sitemenu-icon.active{
+    right: 19em;
   }
 }
+
 .sideNavMenuItems{
   display: block;
-  padding: 10px 10px;
+  padding: 0.625em 0.625em;
   background-color: transparent;
   color: black;
   text-decoration: none;
   font-weight: 400;
   text-transform: uppercase;
   font-family: sans-serif;
-  letter-spacing: 3px;;
+  letter-spacing: 0.188em;
 }
 .sideNavMenuItems:hover{
   background-color: #efefef;
-  color: #05BAFF;
+  color: #828282;
 }
-  #mainmenu li.dropdown{
-    visibility: visible;
-    display: inline-block;
-    background-color: transparent;
-  }
-  #mainmenu li a, .dropbtn {
-    display: inline-block;
-    text-align: left;
-    text-decoration: none;
-    float: none;
-  }
-  #mainmenu li a:hover, .dropdown:hover .dropbtn {
-    color: #777777;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-  }
-  #mainmenu li.dropdown { display: inline-block; }
 
-  #mainmenu .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: transparent;
-    min-width: 160px;
-    position: fixed;
-  }
-  #mainmenu .dropdown-content a {
-    padding: 6px 12px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  #mainmenu .dropdown-content a:hover, #mainmenu .dropdown-content a:active {
-    background-color: transparent;
-    color: #777777;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-  }
-  #mainmenu .dropdown:hover .dropdown-content, #mainmenu .dropdown:active .dropdown-content{
-    display: block;
-    transition-delay: initial;
-    transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-    transition-duration: 200ms;
-    transition-property: all;
-  }
 /* --- End of navbar for mobile --- */
 /* --- End of navbar --- */
 
 /* begining of front page */
 
-/* begining of slideshow */
-.mySlides{
-  display: none;
+
+header{
+      height: -webkit-fill-available;
 }
-.FrontPage{
-  padding-top: 100px;
-  padding-left: 0%;
-  padding-right: 0%;
-  padding-bottom: 5%;
-  background-attachment: fixed;
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
-.FrontPageContent{
-  /* max-width: 1000px; */
-  margin: auto;
-  outline-color: gold;
-  outline-width: 10px;
-  background-color: black;
+
+@keyframes slideInLeft {
+  0%{opacity: 0;}
+  25%{opacity: 0;}
+  50%{opacity: 0;}
+  75% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+    opacity: 1;
+
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+
+  }
 }
-.FrontPageSection{
-  margin-top: 16px;!important
-  margin-bottom: 16px;!important
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  animation-duration: 3s;
+  color: white;
+  opacity: 1;
+position: absolute;
+font-size: 1.5em;
+text-align: center;
+width: 100%;
+margin-top: 12em;
 }
-img.FrontPageContent{
-  vertical-align: middle;
-  border-style: none;
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
-li.crop{
-  list-style:none;
+
+@keyframes fadeInUp {
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
-.crop{
-  height: 60%;
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-duration: 6s;
+  color: white;
+  opacity: 1;
+position: absolute;
+font-size: 1.2em;
+text-align: center;
+width: 100%;
+margin-top: 19em;
+}
+
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
   width: 100%;
-  overflow: hidden;
-}
-.crop img{
   height: auto;
-  width: 100%;
+
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-@media screen and (max-width: 900px){
-  .crop{
-    height: 50%;
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    position: absolute;
+    left: 50%;
+    margin-left: -512px;   /* 50% */
   }
 }
-@media screen and (max-width: 809px){
-  .FrontPage{
-    padding-top: 150px;
-  }
-}
-@media screen and (max-width: 780px){
-  .crop{
-    height: 45%;
-  }
-}
-@media screen and (max-width: 670px){
-  .crop{
-    height: 40%;
-  }
-}
-@media screen and (max-width: 570px){
-  .crop{
-    height: 30%;
-  }
-  .FrontPage{
-    padding-top: 150px;
-  }
-}
-@media screen and (max-width: 400px){
-  .crop{
-    height: 23%;
-  }
-}
-/* end of slideshow */
 /* ending of front page */
+
+
 
 
 /* --- beginning about content section --- */
@@ -324,29 +385,68 @@ li.crop{
   font-size: 16px;
   font-family: 'Georgia';
   line-height: 200%;
-  background: #BABABA;
+  background: #eeeeee;
   /* background: linear-gradient(217deg, rgba(255,255,0,.8), rgba(255,255,0,0) 50.71%),
             linear-gradient(127deg, rgba(0,255,255,.8), rgba(0,255,255,0) 40.71%),
             linear-gradient(336deg, rgba(255,0,255,.8), rgba(255,0,255,0) 55.71%);
 */
 }
+
+/* --- beginning of seperator photo --- */
+.trans{
+  background-color: black;
+}
+.transPhoto{
+  padding: 200px;
+  background-image: url("../images/garageMech.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 1;
+  opacity: 0.5;
+  background-position: center;
+}
+@media only screen and (max-device-width: 900px) {
+    .transPhoto {
+        background-attachment: scroll;
+        background-position: center;
+    }
+  }
+  /* --- end of seperator photo --- */
+
 .oddColor{
   background-color: white !important;
 }
 #aboutContent{
   text-align: center;
   margin: 2em;
-  padding-bottom: 100px;
+  height: fit-content;
+  padding-bottom: 6em;
 }
 #aboutContent h1{
   text-align: center;
   text-indent: 0px;
+}
+#about h2{
+  -webkit-margin-before: 0;
+padding-top: 0.83em;
 }
 .row {
     font-family: arial, sans-serif;
     width: 100%;
     display: inline-flex;
     text-align: center;
+}
+.column {
+    text-align: left;
+    width: inherit;
+    overflow-y: scroll;
+}
+.accordionSection{
+  text-align: left;
+  background: white;
+  height: fit-content;
+  padding-bottom: 4.4em;
 }
 #questionsContent img{
   overflow: hidden;
@@ -366,6 +466,113 @@ li.crop{
   margin: 1em;
   line-height: 200%;
 }
+@media screen and (max-width: 700px){
+.row{
+  display: block;
+}
+#questionsContent img{
+  height: 50%;
+}
+}
+
+/* --- expand/retract about section --- */
+#expandable{
+  background: #EEE;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 0;
+  height: -webkit-fill-available;
+}
+#expandable h2, h3 {
+  text-align: center;
+}
+#expandable p {
+  font-size: 15px;
+}
+#expandable input {
+  display: none;
+  visibility: hidden;
+}
+#expandable label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  color: #666;
+}
+#expandable label:hover {
+  color: #000;
+}
+#expandable label::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+#expand1, #expand2{
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  background: #1d1d1d;;
+  color: #FFF;
+}
+section {
+  padding: 0 20px;
+}
+#toggle1:checked ~ #expand1, #toggle2:checked ~ #expand2 {
+  height: 250px;
+}
+#toggle1:checked ~ label::before, #toggle2:checked ~ label::before {
+  content: "-";
+}
+/* --- end of expand/retract about section css --- */
+
+/* --- accordion css --- */
+button.accordion {
+    background-color: white
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+/* --- end of accordion css --- */
+
 .moreButton{
   display: block;
   margin-left: auto;
@@ -422,25 +629,22 @@ li.crop{
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-delay: 0.4s;
   transition-timing-function: ease-out;
-  height: 300px;
+  max-height: fit-content;
+  height: 100%;
 }
 .hide{
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-delay: 0.4s;
   transition-timing-function: ease-out;
-  height: 200px;
-}
-.column {
-    text-align: left;
-    width: inherit;
-    /* padding: 8px; */
-    overflow-y: scroll;
+  height: 40%;
 }
 .StayInTouch{
   text-align: center;
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 .StayInTouch p{
-  text-indent: unset;
+  text-indent: unset !important;
 }
 .contactButtonContent{
   font-size: 18px;
@@ -466,25 +670,6 @@ li.crop{
   transition-duration: 0.3s;
 }
 /* --- end of about section --- */
-
-/* --- beginning of seperator photo --- */
-.transPhoto{
-  padding: 200px;
-  background-image: url("../images/garageMech.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: 1;
-  opacity: 0.5;
-  background-position: center;
-}
-@media only screen and (max-device-width: 900px) {
-    .transPhoto {
-        background-attachment: scroll;
-        background-position: center;
-    }
-  }
-  /* --- end of seperator photo --- */
 
 
 /* --- beginning of footer --- */
