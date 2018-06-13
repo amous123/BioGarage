@@ -79,6 +79,10 @@ width: 16.625em;
   transition-property: all;
   /* box-shadow: inset 10px 0px 10px 0px #000; */
 }
+#menuoverlay h2{
+  font-family: "Segoe UI",Arial,sans-serif;
+font-weight: 400;
+}
 #menuoverlay.active{
   width: 21.250em;
   transition-delay: initial;

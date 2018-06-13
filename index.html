@@ -98,27 +98,26 @@
 
     <div class="row">
       <div class="column">
-        <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-        <section class="camera-icon">
-        </section>
+
+        <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" onmouseover="fa1()" onmouseout="fa1C()" class="hover-shadow cursor">
+      <i class="fa fa-camera" id="fa1"></i>
+      </img>
+      </div>
+
+      <div class="column">
+        <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" onmouseover="fa2()" onmouseout="fa2C()" class="hover-shadow cursor">
+        <i class="fa fa-camera" id="fa2"></i>
       </img>
       </div>
       <div class="column">
-        <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-        <section class="camera-icon">
-        </section>
+        <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" onmouseover="fa3()" onmouseout="fa3C()" class="hover-shadow cursor">
+        <i class="fa fa-camera" id="fa3"></i>
       </img>
       </div>
+
       <div class="column">
-        <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-        <section class="camera-icon">
-        </section>
-      </img>
-      </div>
-      <div class="column">
-        <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-        <section class="camera-icon">
-        </section>
+        <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" onmouseover="fa4()" onmouseout="fa4C()" class="hover-shadow cursor">
+        <i class="fa fa-camera" id="fa4"></i>
       </img>
       </div>
     </div>
@@ -127,22 +126,22 @@
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
 
-        <div class="mySlides">
+        <div class="mySlides2">
           <div class="numbertext">1 / 4</div>
           <img src="images/img_nature.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
+        <div class="mySlides2">
           <div class="numbertext">2 / 4</div>
           <img src="images/img_snow.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
+        <div class="mySlides2">
           <div class="numbertext">3 / 4</div>
           <img src="images/img_mountains.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides">
+        <div class="mySlides2">
           <div class="numbertext">4 / 4</div>
           <img src="images/img_lights.jpg" style="width:100%">
         </div>
@@ -169,6 +168,11 @@
         </div>
       </div>
     </div>
+
+    <script>
+    var gallerySlideIndex = 1;
+    showSlides(gallerySlideIndex);
+    </script>
 
 </div>
 
@@ -218,47 +222,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-  document.getElementById("topnav").style.display = "none";
-}
-
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-  document.getElementById('topnav').style.display = "unset";
-}
-
-var gallerySlideIndex = 1;
-showSlides(gallerySlideIndex);
-
-function plusSlides(n) {
-  showSlides(gallerySlideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(gallerySlideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {gallerySlideIndex = 1}
-  if (n < 1) {gallerySlideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[gallerySlideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[gallerySlideIndex-1].alt;
-}
-</script>
 
   </body>
   </html>

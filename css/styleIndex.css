@@ -35,6 +35,10 @@ ul.topnav.transparent{
   background-color:rgba(0,0,0,0) !important;
   box-shadow: 0 0 0 0;
 }
+ul.topnav.active{
+  background-color:rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0 0;
+}
 #logoHolder{
   float: left;
   padding: unset;
@@ -308,13 +312,8 @@ figure{
 }
 
 figure:nth-child(1) { background-image: url("../images/garageMech.png"); }
-
-figure:nth-child(2) {
-  background-image: url("../images/jellyfish.jpg");
-}
-figure:nth-child(3) {
-  background-image: url("../images/microscope.jpg");
-}
+figure:nth-child(2) { background-image: url("../images/jellyfish.jpg"); }
+figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
 .badge {
   height:1.250em;
   width:1.250em;
@@ -389,11 +388,10 @@ figure:nth-child(3) {
   text-align: center;
 }
 #openFeatured h2{
-  padding-top: 2em;
-padding-bottom: 2em;
+padding-bottom: 1em;
 }
 .row > .column {
-  padding: 0 8px;
+  padding: 0.5em 0.5em;
 }
 .row:after {
   content: "";
@@ -403,7 +401,30 @@ padding-bottom: 2em;
 .column {
   float: left;
   width: 25%;
+  position: relative;
+text-align: center;
+color: white;
 }
+@media screen and (max-width: 1000px){
+  .column{
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (max-width: 500px){
+  .column{
+    width: 90%;
+  }
+  .row > .column {
+    padding: 0.2em 0em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+  }
+}
+
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -505,17 +526,15 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.5;
+  transition-duration: 0.5s;
 }
-.camera-icon:before{
-  font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-/*--adjust as necessary--*/
-    color: #784669;
-    font-size: 40px;
-    position: absolute;
-    z-index: 100;
+i.fa-camera{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition-duration: 0.5s;
 }
 
 .opening{
@@ -524,9 +543,9 @@ img.hover-shadow {
   opacity: 0.85;
   bottom: 0;
   position: relative;
-  padding-bottom: 4em;
-  -webkit-clip-path: polygon(0 0,100% 0vw,100% 100%,0 calc(100% - 5vw));
-  clip-path: polygon(0 0,100% 0vw,100% 100%,0 calc(100% - 5vw));
+  padding-bottom: 13em;
+  -webkit-clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
+  clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
 }
 .openingContent{
   background-color: inherit;
@@ -551,28 +570,9 @@ img.hover-shadow {
 .openingButtons{
 text-align: center;
 word-spacing: 50px;
-}
-@media screen and (max-width: 1200px){
-  .openingButtons{ padding-top: 2.500em; }
+padding-top: 2.500em;
 }
 .openBtn1{
-  font-size: 1.125em;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  background-color: transparent;
-  letter-spacing: .375em;
-  font-family: AkkuratPro-Regular,sans-serif;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 230px;
-}
-.openBtn2{
   font-size: 1.125em;
   color: #fff;
   border: 2px solid #fff;
@@ -595,12 +595,6 @@ word-spacing: 50px;
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
  }
-.openBtn2:hover{
-  color: black;
-  background-color: white;
-  transform: scale(1.2,1.2);
-  transition-duration: 0.3s;
-   }
 
 @media screen and (max-width: 700px){
   .openingContent{
