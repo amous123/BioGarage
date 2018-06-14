@@ -8,6 +8,9 @@ body {
   font-family: 'Georgia';
   /* Verdana; */
 }
+h2{
+  font-size: 4vh !important;
+}
 
 /* --- Beginning of navbar --- */
 ul.topnav {
@@ -19,7 +22,7 @@ ul.topnav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 5em;
+  height: 10%;
   box-shadow: 0 2px 4px 0;
   z-index: 2;
   -webkit-transition: all 0.4s ease;
@@ -29,7 +32,7 @@ ul.topnav img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 16.625em;
+  height: 90%;
 }
 ul.topnav.transparent{
   background-color:rgba(0,0,0,0) !important;
@@ -42,9 +45,9 @@ ul.topnav.active{
 #logoHolder{
   float: left;
   padding: unset;
-  margin-left: 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-left: 5%;
+margin-top: 2%;
+margin-bottom: 2%;
   opacity: 1;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
@@ -86,7 +89,7 @@ width: 16.625em;
   /* box-shadow: inset 10px 0px 10px 0px #000; */
 }
 #menuoverlay.active{
-  width: 21.250em;
+  width: 32%;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
   transition-duration: 0.5s;
@@ -138,9 +141,9 @@ transition-property: all;
 }
 #mainmenu{
   position: relative;
-  width: 18.750em;
+  width: 90%;
   right:0;
-  left: 1.250em;
+  left: 5%;
   top:0px;
   color: black;
   list-style: none;
@@ -169,8 +172,8 @@ ul.topnav li.dropdown{
   top: 50%;
   right: 0em;
   transform: translate(-50%, -50%);
-  width: 3.5em;
-  height: 5em;
+  width: 5%;
+  height: 75%;
   cursor: pointer;
   background: transparent;
   transition-delay: initial;
@@ -180,8 +183,8 @@ ul.topnav li.dropdown{
   z-index: 3;
 }
 #sitemenu{
-  width: 40px;
-  height: 4px;
+  width: 70%;
+  height: 10%;
   background: black;
   position: absolute;
   top: 50%;
@@ -193,21 +196,21 @@ ul.topnav li.dropdown{
 #sitemenu:before, #sitemenu:after{
   content:'';
   position: absolute;
-  width: 40px;
-  height: 4px;
+  width: 100%;
+  height: 100%;
   background: black;
   position: absolute;
   box-shadow: 0 2px 5px rgba(0,0,0,.2);
   transition: 0.5s;
 }
 #sitemenu:before{
-  top: -12px;
+  top: -250%;
 }
 #sitemenu:after{
-  top: 12px;
+  top: 250%;
 }
 #sitemenu-icon.active{
-  right: 21.250em;
+  right: 32%;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
   transition-duration: 0.5s;
@@ -225,17 +228,17 @@ transform: rotate(45deg);
   top: 0;
 transform: rotate(135deg);
 }
-
+@media screen and (max-width: 1000px){
+#sitemenu{ width: 90%; }
+}
 @media screen and (max-width: 700px){
-
-  #sitemenu-icon.active{
-    right: 19em;
-  }
+#sitemenu-icon{ width: 3.5em; }
+  #sitemenu-icon.active{ right: 19em; }
 }
 
 .sideNavMenuItems{
   display: block;
-  padding: 0.625em 0.625em;
+  padding: 3% 3%;
   background-color: transparent;
   color: black;
   text-decoration: none;
@@ -243,6 +246,7 @@ transform: rotate(135deg);
   text-transform: uppercase;
   font-family: sans-serif;
   letter-spacing: 0.188em;
+      font-size: 2.5vh;
 }
 .sideNavMenuItems:hover{
   background-color: #efefef;
@@ -281,8 +285,8 @@ figure{
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  padding-bottom: 25.000em;
-  padding-top: 25.000em;
+  padding-top: 30%;
+  padding-bottom: 30%;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -352,33 +356,6 @@ figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
   margin-top: 10%;
   position: absolute;
 }
-/*
-.lightChanger{
-  padding: 20px 20px;
-  background-color: red;
-  cursor: pointer;
-  border-radius: 30px;
-  border-color: black;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  box-shadow: 0 9px #999;
-  animation-direction: reverse;
-}
-.lightChanger:hover{
-  background-color: #962a2a;
-}
-.lightChanger:active{
-  background-color: #962a2a;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-.pressed{
-  background-color: #962a2a;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-*/
 
 /* --- end of front page --- */
 /* --- opening content section --- */
@@ -491,6 +468,10 @@ color: white;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+.prev{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
@@ -513,11 +494,11 @@ img {
   padding: 2px 16px;
   color: white;
 }
-.demo {
+.demo2 {
   opacity: 0.6;
 }
 .active,
-.demo:hover {
+.demo2:hover {
   opacity: 1;
 }
 img.hover-shadow {
@@ -543,7 +524,7 @@ i.fa-camera{
   opacity: 0.85;
   bottom: 0;
   position: relative;
-  padding-bottom: 13em;
+  padding-bottom: 20%;
   -webkit-clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
   clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
 }
@@ -552,7 +533,7 @@ i.fa-camera{
   color: white;
   list-style: none;
   letter-spacing: 0.125em;
-  font-size: 1.250em;
+  font-size: 3vh;
   line-height: 200%;
   width: fit-content;
   margin: auto;
@@ -573,7 +554,7 @@ word-spacing: 50px;
 padding-top: 2.500em;
 }
 .openBtn1{
-  font-size: 1.125em;
+  font-size: 2.5vh;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -587,7 +568,7 @@ padding-top: 2.500em;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
-  width: 230px;
+  width: 20%;
 }
 .openBtn1:hover{
   color: black;
@@ -597,8 +578,11 @@ padding-top: 2.500em;
  }
 
 @media screen and (max-width: 700px){
+  .openBtn1{
+    width: 50%;
+  }
   .openingContent{
-    font-size: 1em;
+    font-size: 1.5vh;
     letter-spacing: 1.5;
     text-align: center;
   }
@@ -630,6 +614,7 @@ padding-top: 2.500em;
 canvas {
   display: block;
   vertical-align: bottom;
+  cursor: url(../images/bioLogo_avatar_cursor.png) 16 16, auto;
 } /* ---- particles.js container ---- */
 #particles-js {
   width: 100%;
@@ -644,14 +629,14 @@ canvas {
   background-color: #000;
   margin: 0;
   color: #6c6c6c;
-  font-size: 14px;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  font-size: 2vh;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  /* height: 30%; */
 }
-.lin{
+#bioGARAGE-section .fa{
   text-align: center;
-  color: #6c6c6c;
-  font-size: 20px;
+  font-size: 2.5vh;
   padding: 5px 5px;
 }
 .footerContent{
@@ -705,6 +690,9 @@ canvas {
     margin-right: auto;
     display: block;
     width: fit-content;
+  }
+  .footer{
+    height: auto;
   }
   #UO-logo{
     padding-left: 0;

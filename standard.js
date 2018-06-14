@@ -65,7 +65,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("demo");
+  var dots = document.getElementsByClassName("demo2");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {gallerySlideIndex = 1}
   if (n < 1) {gallerySlideIndex = slides.length}
@@ -439,6 +439,7 @@ function initMap() {
     });
 }
 
+
 $(".bg").interactive_bg({
    strength: 25,
    scale: 1.05,
@@ -457,3 +458,15 @@ $(".bg").interactive_bg({
         height: $(window).outerHeight()
       })
    })
+
+/*
+   $(document).ready(function(){
+    $(window).resize();
+});
+$(window).resize(function{
+    // your code
+    var windowWidth=$(window).width();
+    var mainContainerWidth=windowWidth-100; // For example
+    $("#yourMainContainer").css({"width":mainContainerWidth+"px"});
+});
+*/
