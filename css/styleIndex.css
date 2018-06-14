@@ -186,7 +186,7 @@ ul.topnav li.dropdown{
   z-index: 3;
 }
 #sitemenu{
-  width: 70%;
+  width: 6vh;
   height: 10%;
   background: black;
   position: absolute;
@@ -230,9 +230,6 @@ transform: rotate(45deg);
 #sitemenu-icon.active #sitemenu:after{
   top: 0;
 transform: rotate(135deg);
-}
-@media screen and (max-width: 1000px){
-#sitemenu{ width: 90%; }
 }
 @media screen and (max-width: 700px){
 #sitemenu-icon{ width: 3.5em; }
@@ -287,7 +284,7 @@ figure{
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 100vh;
   padding-bottom: 0%;
   background-position: center;
@@ -442,18 +439,21 @@ padding-top: 2.500em;
     width: 50%;
   }
   .openingContent{
-    font-size: 1.5vh;
+    font-size: 2.5vh;
     letter-spacing: 1.5;
     text-align: center;
   }
+  .open1{
+    margin-left: 0;
+  }
   .open2{
-    padding-left: 0px;
+    margin-left: 0;
   }
   .open3{
-    padding-left: 0px;
+    margin-left: 0;
   }
   .open4{
-    padding-left: 0px;
+    margin-left: 0;
   }
 }
 
