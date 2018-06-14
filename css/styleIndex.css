@@ -89,7 +89,7 @@ width: 16.625em;
   /* box-shadow: inset 10px 0px 10px 0px #000; */
 }
 #menuoverlay.active{
-  width: 32%;
+  width: 40vh;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
   transition-duration: 0.5s;
@@ -150,10 +150,13 @@ transition-property: all;
 }
 #bioGARRAGE-logo a{
   position: absolute;
-  bottom: 1.250em;
+  bottom: 5%;
   width: 100%;
   text-align: center;
   z-index: 100000;
+}
+#bioGARRAGE-logo img{
+  width: 90%;
 }
 @media screen and (max-width: 700px){
   #bioGARRAGE-logo a{
@@ -210,7 +213,7 @@ ul.topnav li.dropdown{
   top: 250%;
 }
 #sitemenu-icon.active{
-  right: 32%;
+  right: 40vh;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
   transition-duration: 0.5s;
@@ -245,7 +248,7 @@ transform: rotate(135deg);
   font-weight: 400;
   text-transform: uppercase;
   font-family: sans-serif;
-  letter-spacing: 0.188em;
+      letter-spacing: 0.3vw;
       font-size: 2.5vh;
 }
 .sideNavMenuItems:hover{
@@ -285,8 +288,8 @@ figure{
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  padding-top: 30%;
-  padding-bottom: 30%;
+  padding-top: 100vh;
+  padding-bottom: 0%;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -318,6 +321,19 @@ figure{
 figure:nth-child(1) { background-image: url("../images/garageMech.png"); }
 figure:nth-child(2) { background-image: url("../images/jellyfish.jpg"); }
 figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
+
+@media only screen and (max-device-width: 900px) {
+    figure{
+      background: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+      overflow: hidden;
+    }
+}
+
 .badge {
   height:1.250em;
   width:1.250em;
@@ -362,11 +378,85 @@ figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
 #openFeatured{
   background-color: #c3c3c3;
   padding-bottom: 2em;
-  text-align: center;
 }
 #openFeatured h2{
-padding-bottom: 1em;
+padding-bottom: 5%;
+text-align: center;
 }
+.opening{
+  padding: 1.250em;
+  background-color: black;
+  opacity: 0.85;
+  bottom: 0;
+  position: relative;
+  padding-bottom: 20%;
+  -webkit-clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
+  clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
+}
+.openingContent{
+  background-color: inherit;
+  color: white;
+  list-style: none;
+  letter-spacing: 0.125em;
+  font-size: 3vh;
+  line-height: 200%;
+  width: 90%;
+  margin: auto;
+}
+.open1{ margin-left: 15%; }
+.open2{ margin-left: 25%; }
+.open3{ margin-left: 35%; }
+.open4{ margin-left: 45%; }
+
+.openingButtons{
+text-align: center;
+word-spacing: 50px;
+padding-top: 2.500em;
+}
+.openBtn1{
+  font-size: 2.5vh;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  letter-spacing: .375em;
+  font-family: AkkuratPro-Regular,sans-serif;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: fit-content;
+}
+.openBtn1:hover{
+  color: black;
+  background-color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+ }
+
+@media screen and (max-width: 700px){
+  .openBtn1{
+    width: 50%;
+  }
+  .openingContent{
+    font-size: 1.5vh;
+    letter-spacing: 1.5;
+    text-align: center;
+  }
+  .open2{
+    padding-left: 0px;
+  }
+  .open3{
+    padding-left: 0px;
+  }
+  .open4{
+    padding-left: 0px;
+  }
+}
+
 .row > .column {
   padding: 0.5em 0.5em;
 }
@@ -518,97 +608,8 @@ i.fa-camera{
   transition-duration: 0.5s;
 }
 
-.opening{
-  padding: 1.250em;
-  background-color: black;
-  opacity: 0.85;
-  bottom: 0;
-  position: relative;
-  padding-bottom: 20%;
-  -webkit-clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
-  clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
-}
-.openingContent{
-  background-color: inherit;
-  color: white;
-  list-style: none;
-  letter-spacing: 0.125em;
-  font-size: 3vh;
-  line-height: 200%;
-  width: fit-content;
-  margin: auto;
-}
-.open1{ }
-.open2{
-  padding-left: 1.875em;
-}
-.open3{
-  padding-left: 3.750em;
-}
-.open4{
-  padding-left: 5.625em;
-}
-.openingButtons{
-text-align: center;
-word-spacing: 50px;
-padding-top: 2.500em;
-}
-.openBtn1{
-  font-size: 2.5vh;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  background-color: transparent;
-  letter-spacing: .375em;
-  font-family: AkkuratPro-Regular,sans-serif;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 20%;
-}
-.openBtn1:hover{
-  color: black;
-  background-color: white;
-  transform: scale(1.2,1.2);
-  transition-duration: 0.3s;
- }
-
-@media screen and (max-width: 700px){
-  .openBtn1{
-    width: 50%;
-  }
-  .openingContent{
-    font-size: 1.5vh;
-    letter-spacing: 1.5;
-    text-align: center;
-  }
-  .open2{
-    padding-left: 0px;
-  }
-  .open3{
-    padding-left: 0px;
-  }
-  .open4{
-    padding-left: 0px;
-  }
-}
 /* --- end of opening content section --- */
 
-@media only screen and (max-device-width: 900px) {
-    figure{
-      background: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg") no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      height: 100%;
-      overflow: hidden;
-    }
-}
 
 /* ---- particles filler section---- */
 canvas {
