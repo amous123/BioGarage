@@ -16,6 +16,15 @@ $(document).ready(function(){
     $('#blurContain').toggleClass('active');
     $('#menuoverlay').toggleClass('active');
     $('#logoHolder').toggleClass('active');
+    $('ul.topnav').toggleClass('active');
+  })
+  $('#overlay').click(function(){
+    $('#sitemenu-icon').toggleClass('active');
+    $('#overlay').toggleClass('active');
+    $('#blurContain').toggleClass('active');
+    $('#menuoverlay').toggleClass('active');
+    $('#logoHolder').toggleClass('active');
+    $('ul.topnav').toggleClass('active');
   })
 })
 

@@ -7,6 +7,10 @@ $("ul.topnav").addClass('transparent');
 }
 });
 
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
+
 
 /* --- function to transition frontpage main background smoothly --- */
 function plusDivs(n) {

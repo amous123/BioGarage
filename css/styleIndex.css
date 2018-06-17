@@ -6,10 +6,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Georgia';
+  opacity: 1;
   /* Verdana; */
 }
 h2{
   font-size: 4vh !important;
+}
+.preload{
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition-duration: 0s !important;
+  opacity: 0;
 }
 
 /* --- Beginning of navbar --- */
@@ -89,21 +98,31 @@ width: 16.625em;
   /* box-shadow: inset 10px 0px 10px 0px #000; */
 }
 #menuoverlay.active{
-  width: 40vh;
+  width: 50vh;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
   transition-duration: 0.5s;
   transition-property: all;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
   #menuoverlay.active{
-    width: 19em;
+    width: 20em;
+  }
+  #bioGARRAGE-logo img{
+    90%;
+  }
+  #logoHolder.active{
+    opacity: 0;
+  }
+  #bioGARRAGE-logo a{
+    transition-duration: 0.5s;
   }
 }
 #overlay {
     position: fixed;
     height: 100%;
     width: 0%;
+    opacity: 0;
     top: 0;
     right: 21.250em;
     left: 0;
@@ -116,6 +135,7 @@ width: 16.625em;
     transition-property: all;
 }
 #overlay.active{
+  opacity: 1;
   width: 100%;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
@@ -126,7 +146,6 @@ width: 16.625em;
   width: auto;
   height: auto;
 transition-duration: 1s;
-
 }
 .blurContainer.active{
   filter: blur(5px);
@@ -156,12 +175,7 @@ transition-property: all;
   z-index: 100000;
 }
 #bioGARRAGE-logo img{
-  width: 90%;
-}
-@media screen and (max-width: 700px){
-  #bioGARRAGE-logo a{
-    transition-duration: 0.5s;
-  }
+  width: 80%;
 }
 /* --- end of sideNav --- */
 /* --- Beginning of navbar for mobile --- */
@@ -213,7 +227,7 @@ ul.topnav li.dropdown{
   top: 250%;
 }
 #sitemenu-icon.active{
-  right: 40vh;
+  right: 50vh;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
   transition-duration: 0.5s;
@@ -231,7 +245,7 @@ transform: rotate(45deg);
   top: 0;
 transform: rotate(135deg);
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
 #sitemenu-icon{ width: 3.5em; }
   #sitemenu-icon.active{ right: 19em; }
 }
@@ -271,7 +285,6 @@ font-family: "FontAwesome";
 #menu-link-5::before {
     content: "\f187";
 }
-
 /* --- End of navbar for mobile --- */
 /* --- End of navbar --- */
 
@@ -311,24 +324,20 @@ figure{
   animation-name: flash;
   -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
+            /*
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
+            */
 }
 
 figure:nth-child(1) { background-image: url("../images/garageMech.png"); }
 figure:nth-child(2) { background-image: url("../images/jellyfish.jpg"); }
 figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
 
-@media only screen and (max-device-width: 900px) {
-    figure{
-      background: url("http://i.dailymail.co.uk/i/pix/2015/10/13/09/2D55A60A00000578-0-image-a-2_1444725976530.jpg") no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      height: 100%;
-      overflow: hidden;
-    }
+@media only screen and (max-width: 700px) {
+  figure:nth-child(1) { background-image: url("../images/garageMech.png"); }
+  figure:nth-child(2) { background-image: url("../images/jellyfish.jpg"); }
+  figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
 }
 
 .badge {
@@ -395,7 +404,7 @@ text-align: center;
   color: white;
   list-style: none;
   letter-spacing: 0.125em;
-  font-size: 3vh;
+  font-size: 2.5vh;
   line-height: 200%;
   width: 90%;
   margin: auto;
@@ -433,13 +442,8 @@ padding-top: 2.500em;
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
  }
-
-@media screen and (max-width: 700px){
-  .openBtn1{
-    width: 50%;
-  }
+ @media screen and (max-width: 700px){
   .openingContent{
-    font-size: 2.5vh;
     letter-spacing: 1.5;
     text-align: center;
   }
@@ -475,19 +479,8 @@ color: white;
 @media screen and (max-width: 1000px){
   .column{
     width: 50%;
+    padding: 0.2em 0.2em;
     float: left;
-  }
-}
-@media screen and (max-width: 500px){
-  .column{
-    width: 90%;
-  }
-  .row > .column {
-    padding: 0.2em 0em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    float: none;
   }
 }
 
@@ -713,11 +706,8 @@ canvas {
     margin-left: 0;
     text-align: center;
   }
-  #UOttawa-section{
-    width: 100%;
+  #UOttawa-section{  width: 100%; }
   }
-  }
-
 .fa:hover{
   color: white;
   transform: scale(1.1,1.1);

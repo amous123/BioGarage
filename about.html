@@ -8,29 +8,31 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title style="text-align:center;"> Team </title style="text-align:center;">
+  <title style="text-align:center;"> ABOUT </title style="text-align:center;">
     <meta name="Developers" content="amous123">
 
   </head>
+<body>
 
   <div id="menuoverlay" class="showSideNav">
     <div id="mainmenu">
+      <section id="iconsAdded">
       <h2> EXPLORE </h2>
       <!-- the drop down menu of the navbar is for mobile version of website -->
-      <a class="sideNavMenuItems" href="index.html">HOME</a>
-      <a class="sideNavMenuItems" href="about.html" >ABOUT</a>
-      <a class="sideNavMenuItems" href="contact.html">CONTACT</a>
-      <a class="sideNavMenuItems" href="team.html">TEAM</a>
-      <a class="sideNavMenuItems" href="projects.html">PROJECTS</a>
-
+      <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
+      <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
+      <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
+      <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
+      <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
+    </section>
     </div>
-    <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a> </div>
+    <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo"> </img> </a> </div>
   </div>
   <div id="overlay" class="showSideNav">
   </div>
 
   <!-- topnav is the navigation bar of the website -->
-    <ul class="topnav transparent">
+    <ul class="topnav transparent" id="topnav">
       <div id="sitemenu-icon">
         <div id="sitemenu">
         </div>
@@ -39,31 +41,17 @@
     </ul>
 <script  src="javascript/about.js"></script>
 
+
+
 <div class="blurContainer" id="blurContain">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <header>
-    <img src="images/swamp.gif" class="bg" alt="About page background">
+    <img src="images/microscope.jpg" class="bg" alt="About page background">
     <h1  class="slideInLeft"> A SWAMP OF KNOWLEDGE FROM THE PAST </h1>
     <h1  class="fadeInUp"> DISCOVER MORE ABOUT US BELOW </h1>
   </img>
 </header>
-
-  <!-- the front page of the website begins here
-  <div class="FrontPage">
-  <div class="FrontPageContent FrontPageSection">
-  <!-- Images should be 1.5:1 ratio to 2:1 ratio to fit best, keep photos similiar size
-  <li class="crop">
-  <img class="mySlides img1" src="images/bio.gif">
-  <img class="mySlides img2" src="images/dna.gif">
-  <img class="mySlides img3" src="images/head.gif">
-  <img class="mySlides img4" src="images/neurons.gif">
-</li>
-</div>
-</div>
-<!-- the front page of the website ends here
-</header>
--->
 
 <div id="about">
   <div id="aboutContent">
@@ -71,8 +59,7 @@
     <p>bioGARAGE is an enviromment to share and collaborate molecular biology experiments and
       allow the general public access to what would normally take a few years of university courses in the field.
     </p>
-  </div>
-
+</div>
   <div id="questionsContent">
 
     <div class="row">
@@ -170,9 +157,11 @@
 
 <div class="footer">
   <div class="footerContent">
+
     <div id="UOttawa-section">
+
       <div id="UO-logo">
-        <a href="https://www.uottawa.ca/en" ><img src="images/uOttawa-logo.png" width="150px"> </img><a>
+        <a href="https://www.uottawa.ca/en" ><img src="images/uO-logo-grey-transparent-copy.png"> </img><a>
         </div>
 
         <div id="faculyAndRelated">
@@ -196,6 +185,7 @@
           <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
           <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
           <a class="lin" href="#"><i class="fa fa-github"></i></a>
+          <a class="lin" href="#"><i class="fa fa-benchling"></i></a>
 
           <p>
             bioGARAGE INC. © 2018 <br>
@@ -207,4 +197,5 @@
     </div>
   </div>
 
+</body>
   </html>

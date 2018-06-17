@@ -6,6 +6,9 @@ body {
   padding: 0;
   font-family: 'Georgia';
 }
+h2{
+  font-size: 4vh !important;
+}
 
 /* --- Beginning of navbar --- */
 ul.topnav {
@@ -17,7 +20,7 @@ ul.topnav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 5em;
+  height: 10%;
   box-shadow: 0 2px 4px 0;
   z-index: 2;
   -webkit-transition: all 0.4s ease;
@@ -27,18 +30,22 @@ ul.topnav img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 16.625em;
+  height: 90%;
 }
 ul.topnav.transparent{
+  background-color:rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0 0;
+}
+ul.topnav.active{
   background-color:rgba(0,0,0,0) !important;
   box-shadow: 0 0 0 0;
 }
 #logoHolder{
   float: left;
   padding: unset;
-  margin-left: 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-left: 5%;
+margin-top: 2%;
+margin-bottom: 2%;
   opacity: 1;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
@@ -79,26 +86,32 @@ width: 16.625em;
   transition-property: all;
   /* box-shadow: inset 10px 0px 10px 0px #000; */
 }
-#menuoverlay h2{
-  font-family: "Segoe UI",Arial,sans-serif;
-font-weight: 400;
-}
 #menuoverlay.active{
-  width: 21.250em;
+  width: 50vh;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
   transition-duration: 0.5s;
   transition-property: all;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
   #menuoverlay.active{
-    width: 19em;
+    width: 20em;
+  }
+  #bioGARRAGE-logo img{
+    90%;
+  }
+  #logoHolder.active{
+    opacity: 0;
+  }
+  #bioGARRAGE-logo a{
+    transition-duration: 0.5s;
   }
 }
 #overlay {
     position: fixed;
     height: 100%;
     width: 0%;
+    opacity: 0;
     top: 0;
     right: 21.250em;
     left: 0;
@@ -111,6 +124,7 @@ font-weight: 400;
     transition-property: all;
 }
 #overlay.active{
+  opacity: 1;
   width: 100%;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
@@ -121,7 +135,6 @@ font-weight: 400;
   width: auto;
   height: auto;
 transition-duration: 1s;
-
 }
 .blurContainer.active{
   filter: blur(5px);
@@ -136,24 +149,22 @@ transition-property: all;
 }
 #mainmenu{
   position: relative;
-  width: 18.750em;
+  width: 90%;
   right:0;
-  left: 1.250em;
+  left: 5%;
   top:0px;
   color: black;
   list-style: none;
 }
 #bioGARRAGE-logo a{
   position: absolute;
-  bottom: 1.250em;
+  bottom: 5%;
   width: 100%;
   text-align: center;
   z-index: 100000;
 }
-@media screen and (max-width: 700px){
-  #bioGARRAGE-logo a{
-    transition-duration: 0.5s;
-  }
+#bioGARRAGE-logo img{
+  width: 80%;
 }
 /* --- end of sideNav --- */
 /* --- Beginning of navbar for mobile --- */
@@ -167,8 +178,8 @@ ul.topnav li.dropdown{
   top: 50%;
   right: 0em;
   transform: translate(-50%, -50%);
-  width: 3.5em;
-  height: 5em;
+  width: 5%;
+  height: 75%;
   cursor: pointer;
   background: transparent;
   transition-delay: initial;
@@ -178,8 +189,8 @@ ul.topnav li.dropdown{
   z-index: 3;
 }
 #sitemenu{
-  width: 40px;
-  height: 4px;
+  width: 6vh;
+  height: 10%;
   background: black;
   position: absolute;
   top: 50%;
@@ -191,21 +202,21 @@ ul.topnav li.dropdown{
 #sitemenu:before, #sitemenu:after{
   content:'';
   position: absolute;
-  width: 40px;
-  height: 4px;
+  width: 100%;
+  height: 100%;
   background: black;
   position: absolute;
   box-shadow: 0 2px 5px rgba(0,0,0,.2);
   transition: 0.5s;
 }
 #sitemenu:before{
-  top: -12px;
+  top: -250%;
 }
 #sitemenu:after{
-  top: 12px;
+  top: 250%;
 }
 #sitemenu-icon.active{
-  right: 21.250em;
+  right: 50vh;
   transition-delay: initial;
   transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
   transition-duration: 0.5s;
@@ -223,36 +234,50 @@ transform: rotate(45deg);
   top: 0;
 transform: rotate(135deg);
 }
-
-@media screen and (max-width: 700px){
-
-  #sitemenu-icon.active{
-    right: 19em;
-  }
+@media screen and (max-width: 600px){
+#sitemenu-icon{ width: 3.5em; }
+  #sitemenu-icon.active{ right: 19em; }
 }
 
 .sideNavMenuItems{
   display: block;
-  padding: 0.625em 0.625em;
+  padding: 3% 3%;
   background-color: transparent;
   color: black;
   text-decoration: none;
   font-weight: 400;
   text-transform: uppercase;
   font-family: sans-serif;
-  letter-spacing: 0.188em;
+      letter-spacing: 0.3vw;
+      font-size: 2.5vh;
 }
 .sideNavMenuItems:hover{
   background-color: #efefef;
   color: #828282;
 }
-
+#iconsAdded a::before{
+  padding-right: 10px;
+font-family: "FontAwesome";
+}
+#menu-link-1::before {
+    content: "\f015";
+}
+#menu-link-2::before {
+    content: "\f2b9";
+}
+#menu-link-3::before {
+    content: "\f0e0";
+}
+#menu-link-4::before {
+    content: "\f0c0";
+}
+#menu-link-5::before {
+    content: "\f187";
+}
 /* --- End of navbar for mobile --- */
 /* --- End of navbar --- */
 
 /* begining of front page */
-
-
 header{
       height: -webkit-fill-available;
 }
@@ -295,7 +320,7 @@ header{
   color: white;
   opacity: 1;
 position: absolute;
-font-size: 1.5em;
+font-size: 3vh;
 text-align: center;
 width: 100%;
 margin-top: 12em;
@@ -347,7 +372,7 @@ margin-top: 12em;
   color: white;
   opacity: 1;
 position: absolute;
-font-size: 1.2em;
+font-size: 2.5vh;
 text-align: center;
 width: 100%;
 margin-top: 19em;
@@ -383,10 +408,10 @@ img.bg {
 
 /* --- beginning about content section --- */
 #about{
-  padding-bottom: 200px;
-  padding-top: 100px;
+    padding-bottom: 8vh;
   background-color: white;
-  font-size: 16px;
+  font-size: 2.2vh;
+      padding-top: 6em;
   font-family: 'Georgia';
   line-height: 200%;
   background: #eeeeee;
@@ -401,7 +426,7 @@ img.bg {
   background-color: black;
 }
 .transPhoto{
-  padding: 200px;
+  padding: 25vh;
   background-image: url("../images/garageMech.png");
   background-size: cover;
   background-attachment: fixed;
@@ -423,9 +448,14 @@ img.bg {
 }
 #aboutContent{
   text-align: center;
-  margin: 2em;
   height: fit-content;
   padding-bottom: 6em;
+  margin: 4vh;
+
+}
+#opening{
+  text-align: center;
+  z-index: 10;
 }
 #aboutContent h1{
   text-align: center;
@@ -445,6 +475,7 @@ padding-top: 0.83em;
     text-align: left;
     width: inherit;
     overflow-y: scroll;
+    height: 60vh;
 }
 .accordionSection{
   text-align: left;
@@ -458,12 +489,13 @@ padding-top: 0.83em;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 60%;
+  height: 60vh;
 }
 #questionsContent h2{
   text-align: center;
 }
 #questionsContent p{
+      font-size: 2vh;
   text-indent: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -473,6 +505,9 @@ padding-top: 0.83em;
 @media screen and (max-width: 700px){
 .row{
   display: block;
+}
+.column {
+    height: inherit;
 }
 #questionsContent img{
   height: 50%;
@@ -489,9 +524,6 @@ padding-top: 0.83em;
 }
 #expandable h2, h3 {
   text-align: center;
-}
-#expandable p {
-  font-size: 15px;
 }
 #expandable input {
   display: none;
@@ -531,7 +563,7 @@ section {
   padding: 0 20px;
 }
 #toggle1:checked ~ #expand1, #toggle2:checked ~ #expand2 {
-  height: 250px;
+  height: 50em;
 }
 #toggle1:checked ~ label::before, #toggle2:checked ~ label::before {
   content: "-";
@@ -548,7 +580,7 @@ button.accordion {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 2vh;
     transition: 0.4s;
 }
 
@@ -608,7 +640,7 @@ div.panel {
 }
 .lessButtonContent{
   display: none;
-  font-size: 14px;
+  font-size: 2vh;
   border: 2px solid black;
   background-color: transparent;
   letter-spacing: .175em;
@@ -651,7 +683,7 @@ div.panel {
   text-indent: unset !important;
 }
 .contactButtonContent{
-  font-size: 18px;
+  font-size: 2.5vh;
   color: black;
   border: 2px solid black;
   background-color: transparent;
@@ -680,15 +712,15 @@ div.panel {
 .footer{
   background-color: #000;
   margin: 0;
-  color: #777777;
-  font-size: 14px;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  color: #6c6c6c;
+  font-size: 2vh;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  /* height: 30%; */
 }
-.lin{
+#bioGARAGE-section .fa{
   text-align: center;
-  color: #777777;
-  font-size: 20px;
+  font-size: 2.5vh;
   padding: 5px 5px;
 }
 .footerContent{
@@ -702,7 +734,7 @@ div.panel {
 }
 #bioGARAGE-section{
   float: right;
-  width: 30%;
+  width: 32%;
   text-align: right;
   padding-right:50px;
 }
@@ -718,13 +750,13 @@ div.panel {
 }
 #faculyAndRelated a{
   text-decoration: none;
-  color: #777777;
+    color: #6c6c6c;
   cursor: pointer;
 }
 #faculyAndRelated p{
   display: unset;
 }
-#faculyAndRelated p:hover{
+#faculyAndRelated a:hover{
   color: white;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -737,12 +769,15 @@ div.panel {
 .fa-youtube-play{color: #c82929; }
 .fa-github{color: #4a2881; }
 
-@media screen and (max-width: 630px){
+@media screen and (max-width: 650px){
   .footerContent{
     margin-left: auto;
     margin-right: auto;
     display: block;
     width: fit-content;
+  }
+  .footer{
+    height: auto;
   }
   #UO-logo{
     padding-left: 0;
@@ -762,11 +797,8 @@ div.panel {
     margin-left: 0;
     text-align: center;
   }
-  #UOttawa-section{
-    width: 100%;
+  #UOttawa-section{  width: 100%; }
   }
-  }
-
 .fa:hover{
   color: white;
   transform: scale(1.1,1.1);
@@ -774,7 +806,7 @@ div.panel {
 }
 .legal, .terms{
   text-decoration: none;
-  color: #777777;
+  color: #6c6c6c;
 }
 .legal:hover, .terms:hover{
   color: white;
