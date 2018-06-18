@@ -11,7 +11,7 @@
   <!-- JavaScript Documents -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/Javascript" src="javascript/contact.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
 
   <!-- Viewport - for scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -23,14 +23,14 @@
     <div id="menuoverlay" class="showSideNav">
       <div id="mainmenu">
         <section id="iconsAdded">
-        <h2> EXPLORE </h2>
-        <!-- the drop down menu of the navbar is for mobile version of website -->
-        <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
-        <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
-        <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
-        <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
-        <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
-      </section>
+          <h2> EXPLORE </h2>
+          <!-- the drop down menu of the navbar is for mobile version of website -->
+          <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
+          <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
+          <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
+          <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
+          <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
+        </section>
       </div>
       <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo"> </img> </a> </div>
     </div>
@@ -38,73 +38,96 @@
     </div>
 
     <!-- topnav is the navigation bar of the website -->
-      <ul class="topnav transparent" id="topnav">
-        <div id="sitemenu-icon">
-          <div id="sitemenu">
-          </div>
+    <ul class="topnav transparent" id="topnav">
+      <div id="sitemenu-icon">
+        <div id="sitemenu">
         </div>
-        <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
-      </ul>
-      <script  src="standard.js"></script>
+      </div>
+      <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
+    </ul>
+    <script  src="javascript/contact.js"></script>
 
 
     <div class="blurContainer" id="blurContain">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!--
-<div class="newsTab">
-  <div class="newsTabContent">
-    <h2> weekly news </h2>
-    <object class="pdf" width="80%" height="30%" data="MethPreuves.pdf"> </object>
-  </div>
+
+<div id="mainBackground">
+  <header>
+    <p id="contact-title">Contact Us</p>
+  </header>
 </div>
--->
 
 <section>
   <div id="contactDetails">
-    <p id="contact-title">Contact Us</p>
     <div id="contactDetailsContent">
-      <div id="contact-info">
-        <p class="contactLabel"> Address: </p>
-        <p class="contact-stuff"> 10 Marie-Curie Private, Ottawa, ON K1N 9A4 </p>
-        <p class="contactLabel"> Phone: </p>
-        <p class="contact-stuff"> (613) 562-0000 </p>
-        <p class="contactLabel"> Email: </p>
-        <p class="contact-stuff"> bioGARAGE@uottawa.ca </p>
-      </div>
-<!--
-    <article id="contactForm">
-       action="contact.php"
-     </article> -->
 
-<div id="contact-form">
-      <form id="contact-form-content" method="POST" action="https://formspree.io/alex303ap@gmail.com">
-	       <input type="hidden" name="_subject" id="_subject" value="Website Contact Form">
-          <div id="name-elements">
-            <!-- <p id="contact-name">Name</p>-->
-            <input required="true" id="contact-name-box" class="notfilled" placeholder="Name" type="text" name="name" />
-          </div>
-          <div id="email-elements">
-            <!-- <p id="contact-email">Email</p>-->
-            <input required="true" id="contact-email-box" class="notfilled" placeholder="Your email" type="email" name="_replyto"/>
-          </div>
-          <div id="message-elements">
-            <!--<p id="contact-message">Message</p>-->
-            <textarea required="true" rows="12" id="contact-message-box" class="notfilled" placeholder="Message" type="text" name="message" ></textarea>
-          </div>
-          <div id="bottom-button">
-            <input id="contact-button" type="submit" value="Send"></input>
-          </div>
+      <div class="container-contact1">
+
+        <div class="contact1-pic js-tilt" data-tilt>
+          <img src="images/img-01.png" alt="IMG">
         </div>
-      </form>
 
+        <form class="contact1-form validate-form" method="POST" action="https://formspree.io/alex303ap@gmail.com">
+          <input type="hidden" name="_subject" id="_subject" value="Website Contact Form">
 
+          <span class="contact1-form-title">
+            GET IN TOUCH
+          </span>
+
+          <div class="wrap-input1 validate-input" data-validate = "Name is required">
+            <input required="true" class="input1" type="text" name="name" placeholder="Name">
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+            <input required="true" class="input1" type="text" name="_replyto" placeholder="Email">
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+            <input required="true" class="input1" type="text" name="subject" placeholder="Subject">
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div class="wrap-input1 validate-input" data-validate = "Message is required">
+            <textarea class="input1" name="message" placeholder="Message"></textarea>
+            <span class="shadow-input1"></span>
+          </div>
+
+          <div class="container-contact1-form-btn">
+            <button class="contact1-form-btn">
+              <span>
+                Send Email
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+        </form>
+        <script src="javascript/contact.js"> </script>
+      </div>
+
+      <div class="contact-media">
+
+        <div id="contact-info">
+          <p class="contactLabel"> Address: </p>
+          <p class="contact-stuff"> 10 Marie-Curie Private, Ottawa, ON K1N 9A4 </p>
+          <p class="contactLabel"> Phone: </p>
+          <p class="contact-stuff"> (613) 562-0000 </p>
+          <p class="contactLabel"> Email: </p>
+          <p class="contact-stuff"> bioGARAGE@uottawa.ca </p>
+        </div>
+        <div id="twitter-feed">
+          <a class="twitter-timeline" data-lang="en" data-height="400" data-theme="light" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
-<!-- predefined code for using Google Maps Static Javascript API -->
-<div id="map" style="position: relative; overflow hidden;"></div>
+  <!-- predefined code for using Google Maps Static Javascript API -->
+  <div id="map" style="position: relative; overflow hidden;"></div>
 
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA944DX_JmQ8u_qAlL5QREKP7XTjekUpLo&callback=initMap">
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA944DX_JmQ8u_qAlL5QREKP7XTjekUpLo&callback=initMap">
 </script>
 </section>
 
