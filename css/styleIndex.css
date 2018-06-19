@@ -41,15 +41,15 @@ ul.topnav img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 88%;
+  height: 84%;
 }
 #logoHolder::before{
   content: '\25CF';
-      font-size: 21.75vh;
+      font-size: 21vh;
 background-color: transparent;
 position: absolute;
-margin-left: -2.2vh;
-margin-top: -14.4vh;
+margin-left: -2.05vh;
+margin-top: -13.8vh;
 color: #000000;
 z-index: -1;
 }
@@ -69,19 +69,10 @@ margin-top: 2%;
 margin-bottom: 2%;
   opacity: 1;
   transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-timing-function: ease-out;;
   transition-duration: 0.5s;
   transition-property: all;
 }
-/*
-#logoHolder.active{
-  opacity: 0.5;
-  transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
-  transition-duration: 0.5s;
-  transition-property: all;
-}
-*/
 #logo{
 width: 16.625em;
 }
@@ -93,7 +84,8 @@ width: 16.625em;
 #menuoverlay{
   right: 0;
   z-index: 10000;
-  width: 0em;
+  width: 50vh;
+  transform: translateX(50vh);
   opacity: 1;
   text-align: left;
   transition: all 1s;
@@ -104,15 +96,15 @@ width: 16.625em;
   background-color: white;
   text-decoration: none;
   transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-timing-function: ease-out;
   transition-duration: 0.5s;
   transition-property: all;
   /* box-shadow: inset 10px 0px 10px 0px #000; */
 }
 #menuoverlay.active{
-  width: 50vh;
+  transform: translateX(0vh);
   transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-timing-function: ease-out;
   transition-duration: 0.5s;
   transition-property: all;
 }
@@ -136,7 +128,7 @@ width: 16.625em;
     background-color: rgba(255,255,255,0.5);
     z-index: 2;
     transition-delay: initial;
-    transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+    transition-timing-function: ease-out;;
     transition-duration: 0.5s;
     transition-property: all;
 }
@@ -144,7 +136,7 @@ width: 16.625em;
   opacity: 1;
   width: 100%;
   transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-timing-function: ease-out;;
   transition-duration: 0.5s;
   transition-property: all;
 }
@@ -154,15 +146,12 @@ width: 16.625em;
 transition-duration: 1s;
 }
 .blurContainer.active{
-  filter: blur(5px);
--webkit-filter: blur(5px);
--moz-filter: blur(5px);
--o-filter: blur(5px);
--ms-filter: blur(5px);
-transition-delay: initial;
-transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  filter: blur(3px);
+-webkit-filter: blur(3px);
+-moz-filter: blur(3px);
+-o-filter: blur(3px);
+-ms-filter: blur(3px);
 transition-duration: 1s;
-transition-property: all;
 }
 #mainmenu{
   position: relative;
@@ -181,7 +170,7 @@ transition-property: all;
   z-index: 100000;
 }
 #bioGARRAGE-logo img{
-  width: 70%;
+  width: 75%;
 }
 /* --- end of sideNav --- */
 /* --- Beginning of navbar for mobile --- */
@@ -200,7 +189,7 @@ ul.topnav li.dropdown{
   cursor: pointer;
   background: transparent;
   transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-timing-function: ease-out;;
   transition-duration: 0.5s;
   transition-property: all;
   z-index: 3;
@@ -235,7 +224,7 @@ ul.topnav li.dropdown{
 #sitemenu-icon.active{
   right: 50vh;
   transition-delay: initial;
-  transition-timing-function: cubic-bezier(0.06, 0.24, 0.44, 1);
+  transition-timing-function: ease-out;;
   transition-duration: 0.5s;
   transition-property: all;
 }
@@ -251,7 +240,6 @@ transform: rotate(45deg);
   top: 0;
 transform: rotate(135deg);
 }
-
 .sideNavMenuItems{
   display: block;
   padding: 3% 3%;
@@ -332,13 +320,13 @@ figure{
             */
 }
 
-figure:nth-child(1) { background-image: url("../images/garageMech.png"); }
-figure:nth-child(2) { background-image: url("../images/jellyfish.jpg"); }
+figure:nth-child(1) { background-image: url("../images/img_mountains.jpg"); }
+figure:nth-child(2) { background-image: url("../images/img_nature.jpg"); }
 figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
 
 @media only screen and (max-width: 700px) {
-  figure:nth-child(1) { background-image: url("../images/garageMech.png"); }
-  figure:nth-child(2) { background-image: url("../images/jellyfish.jpg"); }
+  figure:nth-child(1) { background-image: url("../images/img_mountains.jpg"); }
+  figure:nth-child(2) { background-image: url("../images/img_nature.jpg"); }
   figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
 }
 

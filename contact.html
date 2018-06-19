@@ -15,7 +15,7 @@
 
   <!-- Viewport - for scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title style="text-align:center;"> Contact Us </title style="text-align:center;">
+  <title style="text-align:center;"> CONTACT </title style="text-align:center;">
     <meta name="Developers" content="amous123">
   </head>
   <body>
@@ -23,33 +23,34 @@
     <div id="menuoverlay" class="showSideNav">
       <div id="mainmenu">
         <section id="iconsAdded">
-          <h2> EXPLORE </h2>
-          <!-- the drop down menu of the navbar is for mobile version of website -->
-          <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
-          <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
-          <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
-          <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
-          <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
-        </section>
+        <h2> EXPLORE </h2>
+        <!-- the drop down menu of the navbar is for mobile version of website -->
+        <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
+        <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
+        <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
+        <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
+        <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
+      </section>
       </div>
-      <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo"> </img> </a> </div>
+      <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo.png" alt="bioGARRAGE logo"> </img> </a> </div>
     </div>
     <div id="overlay" class="showSideNav">
     </div>
 
     <!-- topnav is the navigation bar of the website -->
-    <ul class="topnav transparent" id="topnav">
-      <div id="sitemenu-icon">
-        <div id="sitemenu">
+      <ul class="topnav transparent" id="topnav">
+        <div id="sitemenu-icon">
+          <div id="sitemenu">
+          </div>
         </div>
-      </div>
-      <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
-    </ul>
-    <script  src="javascript/contact.js"></script>
+        <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
+      </ul>
+      <script  src="javascript/contact.js"></script>
 
 
     <div class="blurContainer" id="blurContain">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 
 <div id="mainBackground">
   <header>
@@ -63,34 +64,26 @@
 
       <div class="container-contact1">
 
-        <div class="contact1-pic js-tilt" data-tilt>
-          <img src="images/img-01.png" alt="IMG">
-        </div>
-
         <form class="contact1-form validate-form" method="POST" action="https://formspree.io/alex303ap@gmail.com">
           <input type="hidden" name="_subject" id="_subject" value="Website Contact Form">
 
-          <span class="contact1-form-title">
-            GET IN TOUCH
-          </span>
-
-          <div class="wrap-input1 validate-input" data-validate = "Name is required">
-            <input required="true" class="input1" type="text" name="name" placeholder="Name">
+          <div id="firstInput" class="wrap-input1 validate-input" data-validate = "Name is required">
+            <input required="true" class="input1" type="text" name="name" placeholder="Name (required)">
             <span class="shadow-input1"></span>
           </div>
 
           <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-            <input required="true" class="input1" type="text" name="_replyto" placeholder="Email">
+            <input required="true" class="input1" type="text" name="_replyto" placeholder="Email (required)">
             <span class="shadow-input1"></span>
           </div>
 
           <div class="wrap-input1 validate-input" data-validate = "Subject is required">
-            <input required="true" class="input1" type="text" name="subject" placeholder="Subject">
+            <input required="false" class="input1" type="text" name="subject" placeholder="Subject (optional)">
             <span class="shadow-input1"></span>
           </div>
 
           <div class="wrap-input1 validate-input" data-validate = "Message is required">
-            <textarea class="input1" name="message" placeholder="Message"></textarea>
+            <textarea required="true" class="input1" name="message" placeholder="Message (required)"></textarea>
             <span class="shadow-input1"></span>
           </div>
 
@@ -104,21 +97,11 @@
           </div>
         </form>
         <script src="javascript/contact.js"> </script>
-      </div>
 
-      <div class="contact-media">
-
-        <div id="contact-info">
-          <p class="contactLabel"> Address: </p>
-          <p class="contact-stuff"> 10 Marie-Curie Private, Ottawa, ON K1N 9A4 </p>
-          <p class="contactLabel"> Phone: </p>
-          <p class="contact-stuff"> (613) 562-0000 </p>
-          <p class="contactLabel"> Email: </p>
-          <p class="contact-stuff"> bioGARAGE@uottawa.ca </p>
-        </div>
         <div id="twitter-feed">
-          <a class="twitter-timeline" data-lang="en" data-height="400" data-theme="light" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-lang="en" data-height="60vh" data-theme="light" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+
       </div>
 
     </div>

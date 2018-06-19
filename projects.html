@@ -4,50 +4,50 @@
 
   <link rel="StyleSheet" href="css/styleProjects.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/Javascript" src="standard.js"></script>
+  <script type="text/Javascript" src="javascript/projects.js"></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title style="text-align:center;"> Projects </title style="text-align:center;">
+  <title style="text-align:center;"> PROJECTS </title style="text-align:center;">
     <meta name="Developers" content="amous123">
 
   </head>
 
   <div id="menuoverlay" class="showSideNav">
-    <div id="sideNavExit"><p onclick="off()"> x </p></div>
     <div id="mainmenu">
+      <section id="iconsAdded">
       <h2> EXPLORE </h2>
       <!-- the drop down menu of the navbar is for mobile version of website -->
-      <a class="sideNavMenuItems" href="index.html">HOME</a>
-      <a class="sideNavMenuItems" href="about.html" >ABOUT</a>
-      <a class="sideNavMenuItems" href="contact.html">CONTACT</a>
-      <a class="sideNavMenuItems" href="team.html">TEAM</a>
-      <a class="sideNavMenuItems" href="projects.html">PROJECTS</a>
-
+      <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
+      <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
+      <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
+      <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
+      <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
+    </section>
     </div>
-    <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a> </div>
+    <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo.png" alt="bioGARRAGE logo"> </img> </a> </div>
+  </div>
+  <div id="overlay" class="showSideNav">
   </div>
 
-  <div id="overlay" class="showSideNav" onclick="off()">
-</div>
-
-<div class="blurContainerUnset" id="blurContain">
-
   <!-- topnav is the navigation bar of the website -->
-  <header>
-    <ul class="topnav transparent">
-      <div id="sitemenu-icon" onclick="on()" ><span class="line1"></span> <span class="line2"></span> <span class="line3"></span></div>
-      <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo-highres.png" alt="bioGARRAGE logo" width="266" height="68"> </img> </a></li>
-      <!--
-      <li class="right"><a href="index.html#about"><p>ABOUT</p></a></li>
-      <li class="right"><a href="contact.html"><p>CONTACT</p></a></li>
-      <li class="right"><a href="team.html"><p>TEAM</p></a></li>
-      <li  class="right"><a href="projects.html"><p>PROJECTS</p></a></li>
-    -->
+    <ul class="topnav transparent" id="topnav">
+      <div id="sitemenu-icon">
+        <div id="sitemenu">
+        </div>
+      </div>
+      <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
     </ul>
-  </header>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script  src="standard.js"></script>
+    <script src="javascript/projects.js"></script>
 
+  <div class="blurContainer" id="blurContain">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+  <div id="mainBackground">
+    <header>
+      <p id="contact-title">PROJECTS</p>
+    </header>
+  </div>
 
      <div class="space">
      </div>
