@@ -326,6 +326,230 @@ li.crop{
  height: 100%;
 }
 
+/* --- opening content section --- */
+#openFeatured{
+  background-color: #c3c3c3;
+  padding-bottom: 2em;
+}
+#openFeatured h2{
+padding-bottom: 5%;
+text-align: center;
+}
+.opening{
+  padding: 1.250em;
+  background-color: black;
+  opacity: 0.85;
+  bottom: 0;
+  position: relative;
+  padding-bottom: 20%;
+  -webkit-clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
+  clip-path: polygon(0 0,100% 0vw,100% 90%,0 calc(100% - 20vw));
+}
+.openingContent{
+  background-color: inherit;
+  color: white;
+  list-style: none;
+  letter-spacing: 0.125em;
+  font-size: 2.5vh;
+  line-height: 200%;
+  width: 90%;
+  margin: auto;
+}
+.open1{ margin-left: 15%; }
+.open2{ margin-left: 25%; }
+.open3{ margin-left: 35%; }
+.open4{ margin-left: 45%; }
+
+.openingButtons{
+text-align: center;
+word-spacing: 50px;
+padding-top: 2.500em;
+}
+.openBtn1{
+  font-size: 2.5vh;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  letter-spacing: .375em;
+  font-family: AkkuratPro-Regular,sans-serif;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: fit-content;
+}
+.openBtn1:hover{
+  color: black;
+  background-color: white;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.3s;
+ }
+ @media screen and (max-width: 700px){
+  .openingContent{
+    letter-spacing: 1.5;
+    text-align: center;
+  }
+  .open1{
+    margin-left: 0;
+  }
+  .open2{
+    margin-left: 0;
+  }
+  .open3{
+    margin-left: 0;
+  }
+  .open4{
+    margin-left: 0;
+  }
+}
+
+.row > .column {
+  padding: 0.5em 0.5em;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 25%;
+  position: relative;
+text-align: center;
+color: white;
+}
+@media screen and (max-width: 1000px){
+  .column{
+    width: 50%;
+    padding: 0.2em 0.2em;
+    float: left;
+  }
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 100000;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+img {
+  margin-bottom: -4px;
+}
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+.demo2 {
+  opacity: 0.6;
+}
+.active,
+.demo2:hover {
+  opacity: 1;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+/*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+i.fa-camera{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+/* --- end of opening content section --- */
+
+
 
 
 /* --- beginning of footer --- */

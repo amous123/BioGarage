@@ -106,13 +106,13 @@ $(document).ready(function(){
 /* --- changeable details on the particle.js algorithim  --- */
 particlesJS("particles-js", {
   particles: {
-    number: { value: 150, density: { enable: true, value_area: 800 } },
-    color: { value: "#4a4a4a" },
+    number: { value: 52, density: { enable: true, value_area: 600 } },
+    color: { value: "#000000" },
     shape: {
       type: "circle",
       stroke: { width: 0, color: "#000000" },
-      polygon: { nb_sides: 5 },
-      image: { src: "images/bioLogo_avatar.png", width: 1000, height: 1000 }
+      polygon: { nb_sides: 10 },
+      image: { src: "images/bioLogo_avatar.png", width: 100, height: 100 }
     },
     opacity: {
       value: 0.5,
@@ -122,20 +122,20 @@ particlesJS("particles-js", {
     size: {
       value: 5,
       random: true,
-      anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+      anim: { enable: false, speed: 40, size_min: 2, sync: false }
     },
     line_linked: {
-      enable: false,
-      distance: 94.69771699587272,
-      color: "#f1f1f1",
-      opacity: 0.4,
+      enable: true,
+      distance: 170,
+      color: "#ffffff",
+      opacity: 0.5,
       width: 1
     },
     move: {
       enable: true,
-      speed: 3.1565905665290903,
-      direction: "top-right",
-      random: true,
+      speed: 6,
+      direction: "none",
+      random: false,
       straight: false,
       out_mode: "out",
       bounce: false,
@@ -146,7 +146,7 @@ particlesJS("particles-js", {
     detect_on: "canvas",
     events: {
       onhover: { enable: true, mode: "grab" },
-      onclick: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" },
       resize: true
     },
     modes: {

@@ -73,7 +73,6 @@
   showDivs(slideIndex);
   </script>
 
-<div id="openFeatured">
   <div class="opening">
     <div class="openingContent">
       <div class="open1"> A SPACE TO BUILD YOUR GENOME </div>
@@ -85,93 +84,12 @@
       <a href="projects.html"> <button class="openBtn1"> Experiments </button> </a>
       <!--  <a href="contact.html#map"> <button class="openBtn2"> Location </button> </a> -->
     </div>
-  </div>
-  <h2> FEATURED IMAGES <h2>
-
-    <div class="row">
-      <div class="column">
-
-        <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" onmouseover="fa1()" onmouseout="fa1C()" class="hover-shadow cursor">
-      <i class="fa fa-camera" id="fa1"></i>
-      </img>
-      </div>
-
-      <div class="column">
-        <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" onmouseover="fa2()" onmouseout="fa2C()" class="hover-shadow cursor">
-        <i class="fa fa-camera" id="fa2"></i>
-      </img>
-      </div>
-      <div class="column">
-        <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" onmouseover="fa3()" onmouseout="fa3C()" class="hover-shadow cursor">
-        <i class="fa fa-camera" id="fa3"></i>
-      </img>
-      </div>
-
-      <div class="column">
-        <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" onmouseover="fa4()" onmouseout="fa4C()" class="hover-shadow cursor">
-        <i class="fa fa-camera" id="fa4"></i>
-      </img>
-      </div>
+    <div id="particles-js" class="rainbowTransition">
     </div>
-
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-
-        <div class="mySlides2">
-          <div class="numbertext">1 / 4</div>
-          <img src="images/img_nature.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides2">
-          <div class="numbertext">2 / 4</div>
-          <img src="images/img_snow.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides2">
-          <div class="numbertext">3 / 4</div>
-          <img src="images/img_mountains.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides2">
-          <div class="numbertext">4 / 4</div>
-          <img src="images/img_lights.jpg" style="width:100%">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-
-
-        <div class="column">
-          <img class="demo2 cursor" src="images/img_nature.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-        </div>
-        <div class="column">
-          <img class="demo2 cursor" src="images/img_snow.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-        </div>
-        <div class="column">
-          <img class="demo2 cursor" src="images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-        </div>
-        <div class="column">
-          <img class="demo2 cursor" src="images/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-      </div>
-    </div>
-
-    <script>
-    var gallerySlideIndex = 1;
-    showSlides(gallerySlideIndex);
-    </script>
-
-</div>
-
-  <div id="particles-js" class="rainbowTransition">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script  src="standard.js"></script>
   </div>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-  <script  src="standard.js"></script>
+
 
 
   <div class="footer">
