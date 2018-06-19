@@ -106,10 +106,10 @@ $(document).ready(function(){
 /* --- changeable details on the particle.js algorithim  --- */
 particlesJS("particles-js", {
   particles: {
-    number: { value: 100, density: { enable: true, value_area: 800 } },
+    number: { value: 150, density: { enable: true, value_area: 800 } },
     color: { value: "#4a4a4a" },
     shape: {
-      type: "image",
+      type: "circle",
       stroke: { width: 0, color: "#000000" },
       polygon: { nb_sides: 5 },
       image: { src: "images/bioLogo_avatar.png", width: 1000, height: 1000 }
@@ -120,7 +120,7 @@ particlesJS("particles-js", {
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
     },
     size: {
-      value: 15,
+      value: 5,
       random: true,
       anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
     },
