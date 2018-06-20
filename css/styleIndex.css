@@ -108,7 +108,7 @@ width: 16.625em;
   transition-duration: 0.5s;
   transition-property: all;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 650px){
   #menuoverlay.active{ width: 75vw;}
   #sitemenu-icon{ width: 3.5em !important; right: 5% !important;}
   #sitemenu-icon.active{ right: 80vw !important;}
