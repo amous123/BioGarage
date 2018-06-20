@@ -119,26 +119,21 @@ width: 16.625em;
 #overlay {
     position: fixed;
     height: 100%;
-    width: 0%;
+    width: 100%;
     opacity: 0;
     top: 0;
-    right: 21.250em;
     left: 0;
     bottom: 0;
     background-color: rgba(255,255,255,0.5);
-    z-index: 2;
-    transition-delay: initial;
-    transition-timing-function: ease-out;;
+    z-index: -1;
     transition-duration: 0.5s;
-    transition-property: all;
+    transition-timing-function: ease-out;
 }
 #overlay.active{
   opacity: 1;
-  width: 100%;
-  transition-delay: initial;
-  transition-timing-function: ease-out;;
+  z-index: 2;
   transition-duration: 0.5s;
-  transition-property: all;
+  transition-timing-function: ease-out;
 }
 .blurContainer{
   width: auto;
@@ -320,14 +315,14 @@ figure{
             */
 }
 
-figure:nth-child(1) { background-image: url("../images/img_mountains.jpg"); }
-figure:nth-child(2) { background-image: url("../images/img_nature.jpg"); }
-figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
+figure:nth-child(1) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_mountains.jpg"); }
+figure:nth-child(2) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_nature.jpg"); }
+figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/microscope.jpg"); }
 
 @media only screen and (max-width: 700px) {
-  figure:nth-child(1) { background-image: url("../images/img_mountains.jpg"); }
-  figure:nth-child(2) { background-image: url("../images/img_nature.jpg"); }
-  figure:nth-child(3) { background-image: url("../images/microscope.jpg"); }
+  figure:nth-child(1) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_mountains.jpg"); }
+  figure:nth-child(2) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_nature.jpg"); }
+  figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/microscope.jpg"); }
 }
 
 .badge {
@@ -421,6 +416,7 @@ padding-top: 3vh;
   transform: scale(1.2,1.2);
   transition-duration: 0.3s;
  }
+
  @media screen and (max-width: 700px){
   .openingContent{
     letter-spacing: 1.5;
@@ -442,6 +438,7 @@ padding-top: 3vh;
 /* ---- particles filler section---- */
 canvas {
   display: block;
+  position: relative;
   vertical-align: bottom;
   cursor: url(../images/bioLogo_avatar_cursor.png) 10 10, auto;
 } /* ---- particles.js container ---- */
@@ -454,6 +451,14 @@ canvas {
   background-position: 50% 50%;
   -webkit-clip-path: polygon(0 0, 100% 51%, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 51%, 100% 100%, 0% 100%);
+}
+#particles-js p{
+    transform: translate(10vh, 20vh);
+    position: absolute;
+    text-align: left;
+    font-size: 3vh;
+    letter-spacing: 1vh;
+
 }
 /* --- end of opening content section --- */
 

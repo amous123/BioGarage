@@ -270,7 +270,7 @@ font-family: "FontAwesome";
 
 /* --- Beginning of blurred background --- */
  #mainBackground{
-   background: url(../images/img_mountains.jpg) no-repeat center center fixed;
+   background: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url(../images/img_mountains.jpg) no-repeat center center fixed;
   padding: 15vh;
  -webkit-background-size: cover;
  -moz-background-size: cover;
