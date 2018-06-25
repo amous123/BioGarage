@@ -1,36 +1,49 @@
-<DOCTYPE! html>
-<html>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-  <link rel="StyleSheet" href="css/styleTeam.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/Javascript" src="javascript/team.js"></script>
-
-  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="Developers" content="amous123">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title style="text-align:center;"> TEAM </title style="text-align:center;">
-    <meta name="Developers" content="amous123">
 
+  <title style="text-align:center;"> Team </title style="text-align:center;">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+    <link rel="StyleSheet" href="sponsorSlider/infinite-slider.css">
+      <link rel="StyleSheet" href="css/styleTeam.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>
+    <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+    <script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script type="text/Javascript" src="javascript/team.js"></script>
   </head>
 
-  <div id="menuoverlay" class="showSideNav">
-    <div id="mainmenu">
-      <section id="iconsAdded">
-      <h2> EXPLORE </h2>
-      <!-- the drop down menu of the navbar is for mobile version of website -->
-      <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
-      <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
-      <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
-      <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
-      <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
-    </section>
+  <body>
+    <div id="menuoverlay" class="showSideNav">
+      <div id="mainmenu">
+        <section id="iconsAdded">
+          <h2> EXPLORE </h2>
+          <!-- the drop down menu of the navbar is for mobile version of website -->
+          <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
+          <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
+          <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
+          <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
+          <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
+        </section>
+      </div>
+      <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo.png" alt="bioGARRAGE logo"> </img> </a> </div>
     </div>
-    <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo.png" alt="bioGARRAGE logo"> </img> </a> </div>
-  </div>
-  <div id="overlay" class="showSideNav">
-  </div>
+    <div id="overlay" class="showSideNav">
+    </div>
+    <script src="javascript/team.js"></script>
 
-  <!-- topnav is the navigation bar of the website -->
+    <!-- topnav is the navigation bar of the website -->
     <ul class="topnav transparent" id="topnav">
       <div id="sitemenu-icon">
         <div id="sitemenu">
@@ -38,161 +51,490 @@
       </div>
       <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
     </ul>
-    <script  src="javascript/team.js"></script>
+
+    <div class="blurContainer" id="blurContain">
+      <script src="javascript/team.js"></script>
 
 
-  <div class="blurContainer" id="blurContain">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
-    <div id="mainBackground">
-      <header>
-        <p id="contact-title">TEAM</p>
-      </header>
-    </div>
-
-     <div class="space">
-     </div>
-     <div id="photoWall">
-     </div>
-
-     <div id="openFeatured">
-       <div class="opening">
-         <div class="openingContent">
-           <div class="open1"> A SPACE TO BUILD YOUR GENOME </div>
-           <div class="open2"> A HOME FOR YOUR BACTERIA COLONIES </div>
-           <div class="open3"> TAKE YOUR CONCEPTS INTO THE GARAGE </div>
-           <div class="open4"> OR TAKE A LOOK AT OTHER EXPERIMENTS </div>
-         </div>
-         <div class="openingButtons">
-           <a href="projects.html"> <button class="openBtn1"> Experiments </button> </a>
-           <!--  <a href="contact.html#map"> <button class="openBtn2"> Location </button> </a> -->
-         </div>
-       </div>
-       <h2> FEATURED IMAGES <h2>
-
-         <div class="row">
-           <div class="column">
-
-             <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" onmouseover="fa1()" onmouseout="fa1C()" class="hover-shadow cursor">
-           <i class="fa fa-camera" id="fa1"></i>
-           </img>
-           </div>
-
-           <div class="column">
-             <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" onmouseover="fa2()" onmouseout="fa2C()" class="hover-shadow cursor">
-             <i class="fa fa-camera" id="fa2"></i>
-           </img>
-           </div>
-           <div class="column">
-             <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" onmouseover="fa3()" onmouseout="fa3C()" class="hover-shadow cursor">
-             <i class="fa fa-camera" id="fa3"></i>
-           </img>
-           </div>
-
-           <div class="column">
-             <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" onmouseover="fa4()" onmouseout="fa4C()" class="hover-shadow cursor">
-             <i class="fa fa-camera" id="fa4"></i>
-           </img>
-           </div>
-         </div>
-
-         <div id="myModal" class="modal">
-           <span class="close cursor" onclick="closeModal()">&times;</span>
-           <div class="modal-content">
-
-             <div class="mySlides2">
-               <div class="numbertext">1 / 4</div>
-               <img src="images/img_nature.jpg" style="width:100%">
-             </div>
-
-             <div class="mySlides2">
-               <div class="numbertext">2 / 4</div>
-               <img src="images/img_snow.jpg" style="width:100%">
-             </div>
-
-             <div class="mySlides2">
-               <div class="numbertext">3 / 4</div>
-               <img src="images/img_mountains.jpg" style="width:100%">
-             </div>
-
-             <div class="mySlides2">
-               <div class="numbertext">4 / 4</div>
-               <img src="images/img_lights.jpg" style="width:100%">
-             </div>
-
-             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-             <div class="caption-container">
-               <p id="caption"></p>
-             </div>
-
-
-             <div class="column">
-               <img class="demo2 cursor" src="images/img_nature.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-             </div>
-             <div class="column">
-               <img class="demo2 cursor" src="images/img_snow.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-             </div>
-             <div class="column">
-               <img class="demo2 cursor" src="images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-             </div>
-             <div class="column">
-               <img class="demo2 cursor" src="images/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-             </div>
-           </div>
-         </div>
-
-         <script>
-         var gallerySlideIndex = 1;
-         showSlides(gallerySlideIndex);
-         </script>
-
-     </div>
+      <div id="mainBackground">
+        <header>
+          <p id="contact-title">TEAM</p>
+        </header>
+      </div>
 
 
 
-     <div class="footer">
-       <div class="footerContent">
+      <h2 id="photoH2">Photo Gallery</h2>
+
+      <div id="gallery" style="display:none;">
+
+        <a href="http://unitegallery.net">
+          <img alt="Lemon Slice"
+          src="images/thumbs/tile1.jpg"
+          data-image="images/big/tile1.jpg"
+          data-description="This is a Lemon Slice"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Peppers"
+          src="images/thumbs/tile2.jpg"
+          data-image="images/big/tile2.jpg"
+          data-description="Those are peppers"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Keys"
+          src="images/thumbs/tile3.jpg"
+          data-image="images/big/tile3.jpg"
+          data-description="Those are keys"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Friuts in cup"
+          src="images/thumbs/tile4.jpg"
+          data-image="images/big/tile4.jpg"
+          data-description="Those are friuts in a cup"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Yellow Flowers"
+          src="images/thumbs/tile5.jpg"
+          data-image="images/big/tile5.jpg"
+          data-description="Those are yellow flowers"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Butterfly"
+          src="images/thumbs/tile6.jpg"
+          data-image="images/big/tile6.jpg"
+          data-description="This is butterfly"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Boat"
+          src="images/thumbs/tile7.jpg"
+          data-image="images/big/tile7.jpg"
+          data-description="This is a boat"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Woman"
+          src="images/thumbs/tile8.jpg"
+          data-image="images/big/tile8.jpg"
+          data-description="This is a woman"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Cup Of Coffee"
+          src="images/thumbs/tile9.jpg"
+          data-image="images/big/tile9.jpg"
+          data-description="This is cup of coffee"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Iphone Back"
+          src="images/thumbs/tile10.jpg"
+          data-image="images/big/tile10.jpg"
+          data-description="This is iphone back"
+          style="display:none">
+        </a>
+        <a href="http://unitegallery.net">
+          <img alt="Lemon Slice"
+          src="images/thumbs/tile1.jpg"
+          data-image="images/big/tile1.jpg"
+          data-description="This is a Lemon Slice"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Peppers"
+          src="images/thumbs/tile2.jpg"
+          data-image="images/big/tile2.jpg"
+          data-description="Those are peppers"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Keys"
+          src="images/thumbs/tile3.jpg"
+          data-image="images/big/tile3.jpg"
+          data-description="Those are keys"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Friuts in cup"
+          src="images/thumbs/tile4.jpg"
+          data-image="images/big/tile4.jpg"
+          data-description="Those are friuts in a cup"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Yellow Flowers"
+          src="images/thumbs/tile5.jpg"
+          data-image="images/big/tile5.jpg"
+          data-description="Those are yellow flowers"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Butterfly"
+          src="images/thumbs/tile6.jpg"
+          data-image="images/big/tile6.jpg"
+          data-description="This is butterfly"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Boat"
+          src="images/thumbs/tile7.jpg"
+          data-image="images/big/tile7.jpg"
+          data-description="This is a boat"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Woman"
+          src="images/thumbs/tile8.jpg"
+          data-image="images/big/tile8.jpg"
+          data-description="This is a woman"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Cup Of Coffee"
+          src="images/thumbs/tile9.jpg"
+          data-image="images/big/tile9.jpg"
+          data-description="This is cup of coffee"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Iphone Back"
+          src="images/thumbs/tile10.jpg"
+          data-image="images/big/tile10.jpg"
+          data-description="This is iphone back"
+          style="display:none">
+        </a>
+        <a href="http://unitegallery.net">
+          <img alt="Lemon Slice"
+          src="images/thumbs/tile1.jpg"
+          data-image="images/big/tile1.jpg"
+          data-description="This is a Lemon Slice"
+          style="display:none">
+        </a>
+
+        <a href="http://unitegallery.net">
+          <img alt="Peppers"
+          src="images/thumbs/tile2.jpg"
+          data-image="images/big/tile2.jpg"
+          data-description="Those are peppers"
+          style="display:none">
+        </a>
 
 
-         <div id="UOttawa-section">
+        <a href="http://unitegallery.net">
+          <img alt="Keys"
+          src="images/thumbs/tile3.jpg"
+          data-image="images/big/tile3.jpg"
+          data-description="Those are keys"
+          style="display:none">
+        </a>
 
-           <div id="UO-logo">
-             <a href="https://www.uottawa.ca/en" ><img src="images/uOttawa-logo.png" width="150px"> </img><a>
-           </div>
+        <!--
 
-           <div id="faculyAndRelated">
-             <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
-             <br>
-             <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
-             <br>
-             <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
-             <br>
-             <p> CANADA </p>
-             <br>
-             <a href="contact.html"> <p> CONTACT US </p> <a>
-           </div>
-       </div>
+        <a href="http://unitegallery.net">
+        <img alt="Friuts in cup"
+        src="images/thumbs/tile4.jpg"
+        data-image="images/big/tile4.jpg"
+        data-description="Those are friuts in a cup"
+        style="display:none">
+      </a>
 
-       <div id="bioGARAGE-section">
-         <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
-         <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
-         <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
-         <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
-         <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
-         <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
-         <a class="lin" href="#"><i class="fa fa-github"></i></a>
+      <a href="http://unitegallery.net">
+      <img alt="Yellow Flowers"
+      src="images/thumbs/tile5.jpg"
+      data-image="images/big/tile5.jpg"
+      data-description="Those are yellow flowers"
+      style="display:none">
+    </a>
 
-         <p>
-           bioGARAGE INC. © 2018 <br>
+    <a href="http://unitegallery.net">
+    <img alt="Butterfly"
+    src="images/thumbs/tile6.jpg"
+    data-image="images/big/tile6.jpg"
+    data-description="This is butterfly"
+    style="display:none">
+  </a>
+
+  <a href="http://unitegallery.net">
+  <img alt="Boat"
+  src="images/thumbs/tile7.jpg"
+  data-image="images/big/tile7.jpg"
+  data-description="This is a boat"
+  style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Woman"
+src="images/thumbs/tile8.jpg"
+data-image="images/big/tile8.jpg"
+data-description="This is a woman"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Cup Of Coffee"
+src="images/thumbs/tile9.jpg"
+data-image="images/big/tile9.jpg"
+data-description="This is cup of coffee"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Iphone Back"
+src="images/thumbs/tile10.jpg"
+data-image="images/big/tile10.jpg"
+data-description="This is iphone back"
+style="display:none">
+</a>
+<a href="http://unitegallery.net">
+<img alt="Lemon Slice"
+src="images/thumbs/tile1.jpg"
+data-image="images/big/tile1.jpg"
+data-description="This is a Lemon Slice"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Peppers"
+src="images/thumbs/tile2.jpg"
+data-image="images/big/tile2.jpg"
+data-description="Those are peppers"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Keys"
+src="images/thumbs/tile3.jpg"
+data-image="images/big/tile3.jpg"
+data-description="Those are keys"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Friuts in cup"
+src="images/thumbs/tile4.jpg"
+data-image="images/big/tile4.jpg"
+data-description="Those are friuts in a cup"
+style="display:none">
+</a>
+
+
+
+<a href="http://unitegallery.net">
+<img alt="Yellow Flowers"
+src="images/thumbs/tile5.jpg"
+data-image="images/big/tile5.jpg"
+data-description="Those are yellow flowers"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Butterfly"
+src="images/thumbs/tile6.jpg"
+data-image="images/big/tile6.jpg"
+data-description="This is butterfly"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Boat"
+src="images/thumbs/tile7.jpg"
+data-image="images/big/tile7.jpg"
+data-description="This is a boat"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Woman"
+src="images/thumbs/tile8.jpg"
+data-image="images/big/tile8.jpg"
+data-description="This is a woman"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Cup Of Coffee"
+src="images/thumbs/tile9.jpg"
+data-image="images/big/tile9.jpg"
+data-description="This is cup of coffee"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Iphone Back"
+src="images/thumbs/tile10.jpg"
+data-image="images/big/tile10.jpg"
+data-description="This is iphone back"
+style="display:none">
+</a>
+<a href="http://unitegallery.net">
+<img alt="Lemon Slice"
+src="images/thumbs/tile1.jpg"
+data-image="images/big/tile1.jpg"
+data-description="This is a Lemon Slice"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Peppers"
+src="images/thumbs/tile2.jpg"
+data-image="images/big/tile2.jpg"
+data-description="Those are peppers"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Keys"
+src="images/thumbs/tile3.jpg"
+data-image="images/big/tile3.jpg"
+data-description="Those are keys"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Friuts in cup"
+src="images/thumbs/tile4.jpg"
+data-image="images/big/tile4.jpg"
+data-description="Those are friuts in a cup"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Yellow Flowers"
+src="images/thumbs/tile5.jpg"
+data-image="images/big/tile5.jpg"
+data-description="Those are yellow flowers"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Butterfly"
+src="images/thumbs/tile6.jpg"
+data-image="images/big/tile6.jpg"
+data-description="This is butterfly"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Boat"
+src="images/thumbs/tile7.jpg"
+data-image="images/big/tile7.jpg"
+data-description="This is a boat"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Woman"
+src="images/thumbs/tile8.jpg"
+data-image="images/big/tile8.jpg"
+data-description="This is a woman"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Cup Of Coffee"
+src="images/thumbs/tile9.jpg"
+data-image="images/big/tile9.jpg"
+data-description="This is cup of coffee"
+style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Iphone Back"
+src="images/thumbs/tile10.jpg"
+data-image="images/big/tile10.jpg"
+data-description="This is iphone back"
+style="display:none">
+</a>
+-->
+
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery("#gallery").unitegallery();
+});
+</script>
+
+<div id="sponsors">
+  <section class="customer-logos slider">
+    <div class="slide"><img src="images/sponsors/sponsor_blank.png"></div>
+    <div class="slide"><img src="images/sponsors/sponsor_blank.png"></div>
+    <div class="slide"><img src="images/sponsors/sponsor_blank.png"></div>
+    <div class="slide"><img src="images/sponsors/sponsor_blank.png"></div>
+    <div class="slide"><img src="images/sponsors/sponsor_blank.png"></div>
+    <div class="slide"><img src="images/sponsors/sponsor_blank.png"></div>
+    <div class="slide"><img src="images/sponsors/sponsor_blank.png"></div>
+    <div class="slide"><img src="images/sponsors/sponsor_blank.png"></div>
+  </section>
+</div>
+<script src="sponsorSlider/carousel.js"></script>
+<script src="javascript/team.js"></script>
+
+<div class="footer">
+  <div class="footerContent">
+
+    <div id="UOttawa-section">
+
+      <div id="UO-logo">
+        <a href="https://www.uottawa.ca/en" ><img src="images/uO-logo-grey-transparent-copy.png"> </img><a>
+        </div>
+
+        <div id="faculyAndRelated">
+          <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
+          <br>
+          <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
+          <br>
+          <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+          <br>
+          <p> CANADA </p>
+          <br>
+          <a href="contact.html"> <p> CONTACT US </p> <a>
+          </div>
+        </div>
+
+        <div id="bioGARAGE-section">
+          <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+          <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+          <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
+          <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
+          <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
+          <a class="lin" href="#"><i class="fa fa-github"></i></a>
+          <a class="lin" href="#"><img class="fa" src="images/benchling-logo.png" style="height: 3.5vh;
+  vertical-align: bottom;"></img></a>
+
+          <p>
+            bioGARAGE INC. © 2018 <br>
             <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
-         </p>
-       </div>
+          </p>
+        </div>
 
-       </div>
-     </div>
-     </div>
+      </div>
+    </div>
+  </div>
+  <script src="javascript/team.js"></script>
 
-  </html>
+</body>
+</html>

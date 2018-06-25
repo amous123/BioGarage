@@ -9,6 +9,11 @@ body {
 h2{
   font-size: 4vh !important;
 }
+/*
+a.customisable-highlight{
+  color: #8f001a !important;
+}
+*/
 
 /* --- Beginning of navbar --- */
 ul.topnav {
@@ -37,8 +42,8 @@ ul.topnav img{
       font-size: 20.5vh;
 background-color: transparent;
 position: absolute;
-margin-left: -1.9vh;
-margin-top: -10.5vh;
+margin-left: -1.95vh;
+margin-top: -8.85vh;
 color: #000000;
 z-index: -1;
 }
@@ -322,6 +327,10 @@ font-family: "FontAwesome";
     color: #444444;
     text-align: center;
 }
+@media screen and (max-width: 600px){
+#mainBackground{ padding-left: 0 !important; padding-right: 0 !important;}
+#contact-title{ font-size: 5vh; }
+}
 /* --- end of blurred background --- */
 
 /*CONTACT*/
@@ -344,14 +353,6 @@ a:focus {
 a:hover {
 	text-decoration: none;
 	color: #57b846;
-}
-
-/*---------------------------------------------*/
-p {
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
 }
 
 /*---------------------------------------------*/
@@ -600,15 +601,14 @@ textarea.input1 + .shadow-input1 {
   background-color: #000;
   margin: 0;
   color: #6c6c6c;
-  font-size: 1.8vh;
+  font-size: 1.5vh;
   padding-top: 5%;
   padding-bottom: 2%;
-  /* height: 30%; */
 }
 #bioGARAGE-section .fa{
   text-align: center;
   font-size: 2.5vh;
-  padding: 5px 5px;
+  padding: 0.5vh 0.6vh;
 }
 .footerContent{
   text-align: center;
@@ -616,18 +616,21 @@ textarea.input1 + .shadow-input1 {
   line-height: 200%;
 }
 #UOttawa-section{
-  width: 60%;
+  width: 50%;
   float: left;
 }
 #bioGARAGE-section{
   float: right;
-  width: 32%;
-  text-align: right;
-  padding-right:50px;
+  width: 35%;
+  text-align: center;
+  padding-right: 7vh;
 }
 #UO-logo{
   float: left;
-  padding-left: 50px;
+  padding-left: 7vh;
+}
+#UO-logo img{
+  height: 14vh;
 }
 #faculyAndRelated{
   float: left;
@@ -656,7 +659,7 @@ textarea.input1 + .shadow-input1 {
 .fa-youtube-play{color: #c82929; }
 .fa-github{color: #4a2881; }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 630px){
   .footerContent{
     margin-left: auto;
     margin-right: auto;

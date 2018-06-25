@@ -322,6 +322,10 @@ font-family: "FontAwesome";
     color: #444444;
     text-align: center;
 }
+@media screen and (max-width: 600px){
+#mainBackground{ padding-left: 0 !important; padding-right: 0 !important;}
+#contact-title{ font-size: 5vh; }
+}
 /* --- end of blurred background --- */
 
 
@@ -393,9 +397,9 @@ padding-top: 0.83em;
 .column {
     text-align: left;
     width: inherit;
-    overflow-y: scroll;
+    overflow: hidden;
     height: 60vh;
-    background-color: black;
+    background-color: white;
 }
 .accordionSection{
   text-align: left;
@@ -408,8 +412,8 @@ padding-top: 0.83em;
   margin-left: auto;
   margin-right: auto;
   opacity: 1;
-  width: 100%;
   height: 60vh;
+  width: 70vh;
 }
 #questionsContent h2{
   text-align: center;
@@ -422,7 +426,7 @@ padding-top: 0.83em;
   margin: 1em;
   line-height: 200%;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px){
 .row{
   display: block;
 }
@@ -430,14 +434,23 @@ padding-top: 0.83em;
     height: inherit;
 }
 #questionsContent img{
-  height: 50%;
+  height: auto;
+  width: -webkit-fill-available;
+  max-width: 75%;
+}
+#expandable{
+  width: 90% !important;
+}
+#aboutContent {
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 }
 
 /* --- expand/retract about section --- */
 #expandable{
   background: white;
-  width: 100%;
+  width: 60vh;
   margin: 0px auto;
   padding: 0px 0;
   height: -webkit-fill-available;
@@ -526,15 +539,14 @@ div.panel {
   background-color: #000;
   margin: 0;
   color: #6c6c6c;
-  font-size: 2vh;
+  font-size: 1.5vh;
   padding-top: 5%;
   padding-bottom: 2%;
-  /* height: 30%; */
 }
 #bioGARAGE-section .fa{
   text-align: center;
   font-size: 2.5vh;
-  padding: 5px 5px;
+  padding: 0.5vh 0.6vh;
 }
 .footerContent{
   text-align: center;
@@ -542,18 +554,21 @@ div.panel {
   line-height: 200%;
 }
 #UOttawa-section{
-  width: 60%;
+  width: 50%;
   float: left;
 }
 #bioGARAGE-section{
   float: right;
-  width: 32%;
-  text-align: right;
-  padding-right:50px;
+  width: 35%;
+  text-align: center;
+  padding-right: 7vh;
 }
 #UO-logo{
   float: left;
-  padding-left: 50px;
+  padding-left: 7vh;
+}
+#UO-logo img{
+  height: 14vh;
 }
 #faculyAndRelated{
   float: left;
@@ -582,7 +597,7 @@ div.panel {
 .fa-youtube-play{color: #c82929; }
 .fa-github{color: #4a2881; }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 630px){
   .footerContent{
     margin-left: auto;
     margin-right: auto;

@@ -7,7 +7,7 @@
   <script type="text/Javascript" src="javascript/projects.js"></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title style="text-align:center;"> PROJECTS </title style="text-align:center;">
+  <title style="text-align:center;"> Projects </title style="text-align:center;">
     <meta name="Developers" content="amous123">
 
   </head>
@@ -28,6 +28,7 @@
   </div>
   <div id="overlay" class="showSideNav">
   </div>
+  <script src="javascript/projects.js"> </script>
 
   <!-- topnav is the navigation bar of the website -->
     <ul class="topnav transparent" id="topnav">
@@ -49,19 +50,219 @@
     </header>
   </div>
 
-     <div class="space">
+
+     <div id="openFeatured">
+       <h2> FEATURED IMAGES </h2>
+
+         <div class="row">
+           <div class="column">
+
+             <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" onmouseover="fa1()" onmouseout="fa1C()" class="hover-shadow cursor">
+           <i class="fa fa-camera" id="fa1"></i>
+           </img>
+           </div>
+
+           <div class="column">
+             <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" onmouseover="fa2()" onmouseout="fa2C()" class="hover-shadow cursor">
+             <i class="fa fa-camera" id="fa2"></i>
+           </img>
+           </div>
+           <div class="column">
+             <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" onmouseover="fa3()" onmouseout="fa3C()" class="hover-shadow cursor">
+             <i class="fa fa-camera" id="fa3"></i>
+           </img>
+           </div>
+
+           <div class="column">
+             <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" onmouseover="fa4()" onmouseout="fa4C()" class="hover-shadow cursor">
+             <i class="fa fa-camera" id="fa4"></i>
+           </img>
+           </div>
+         </div>
+
+         <div id="myModal" class="modal">
+           <span class="close cursor" onclick="closeModal()">&times;</span>
+           <div class="modal-content">
+
+             <div class="mySlides2">
+               <div class="numbertext">1 / 4</div>
+               <img src="images/img_nature.jpg" style="width:100%">
+             </div>
+
+             <div class="mySlides2">
+               <div class="numbertext">2 / 4</div>
+               <img src="images/img_snow.jpg" style="width:100%">
+             </div>
+
+             <div class="mySlides2">
+               <div class="numbertext">3 / 4</div>
+               <img src="images/img_mountains.jpg" style="width:100%">
+             </div>
+
+             <div class="mySlides2">
+               <div class="numbertext">4 / 4</div>
+               <img src="images/img_lights.jpg" style="width:100%">
+             </div>
+
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+             <div class="caption-container">
+               <p id="caption"></p>
+             </div>
+
+
+             <div class="column">
+               <img class="demo2 cursor" src="images/img_nature.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+             </div>
+             <div class="column">
+               <img class="demo2 cursor" src="images/img_snow.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+             </div>
+             <div class="column">
+               <img class="demo2 cursor" src="images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+             </div>
+             <div class="column">
+               <img class="demo2 cursor" src="images/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+             </div>
+           </div>
+         </div>
+
+         <script>
+         var gallerySlideIndex = 1;
+         showSlides(gallerySlideIndex);
+         </script>
      </div>
 
+<div id="displayContent">
+     <div class="rowDIsplay">
+       <div class="columnDisplay">
+         <img src="images/img_nature.jpg" class="leftPic" alt="about picture" width="200px" height="200px;"> </img></td>
+       </div>
+
+       <div class="columnDisplay">
+         <div class="expandable">
+        <div class="oneLiner">
+           <h2>Project 1</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             </p>
+           </section>
+         </div>
+         <div class="moreContent">
+           <h2>MORE</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+             </p>
+           </section>
+         </div>
+         <h3> Hover for more </h3>
+         </div>
+       </div>
 
 
-     <div class="footer">
-       <div class="footerContent">
+     </div>
+
+     <div class="trans">
+       <div class="transPhoto">
+       </div>
+     </div>
+
+     <div class="rowDisplay">
+       <div class="columnDisplay">
+         <div class="expandable">
+        <div class="oneLiner">
+           <h2>Project 2</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             </p>
+           </section>
+         </div>
+         <div class="moreContent">
+           <h2>MORE</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+             </p>
+           </section>
+         </div>
+         <h3> Hover for more </h3>
+         </div>
+       </div>
+       <div class="columnDisplay">
+         <img src="images/img_nature.jpg" class="rightPic" alt="about picture" width="200px" height="200px;"> </img></td>
+       </div>
+     </div>
+
+     <div class="trans">
+       <div class="transPhoto">
+       </div>
+     </div>
+
+     <div class="rowDIsplay">
+       <div class="columnDisplay">
+         <img src="images/img_nature.jpg" class="leftPic" alt="about picture" width="" height=""> </img></td>
+       </div>
+
+       <div class="columnDisplay">
+         <div class="expandable">
+        <div class="oneLiner">
+           <h2>Project 3</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             </p>
+           </section>
+         </div>
+         <div class="moreContent">
+           <h2>MORE</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+             </p>
+           </section>
+         </div>
+         <h3> Hover for more </h3>
+         </div>
+       </div>
+     </div>
+
+     <div class="trans">
+       <div class="transPhoto">
+       </div>
+     </div>
+
+     <div class="rowDisplay">
+       <div class="columnDisplay">
+         <div class="expandable">
+        <div class="oneLiner">
+           <h2>Project 4</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             </p>
+           </section>
+         </div>
+         <div class="moreContent">
+           <h2>MORE</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+             </p>
+           </section>
+         </div>
+         <h3> Hover for more </h3>
+         </div>
+       </div>
+       <div class="columnDisplay">
+         <img src="images/img_nature.jpg" class="rightPic" alt="about picture" width="200px" height="200px;"> </img></td>
+       </div>
+     </div>
+   </div>
+   <script src="javascript/projects.js"> </script>
 
 
-         <div id="UOttawa-section">
+   <div class="footer">
+     <div class="footerContent">
 
-           <div id="UO-logo">
-             <a href="https://www.uottawa.ca/en" ><img src="images/uOttawa-logo.png" width="150px"> </img><a>
+       <div id="UOttawa-section">
+
+         <div id="UO-logo">
+           <a href="https://www.uottawa.ca/en" ><img src="images/uO-logo-grey-transparent-copy.png"> </img><a>
            </div>
 
            <div id="faculyAndRelated">
@@ -74,27 +275,28 @@
              <p> CANADA </p>
              <br>
              <a href="contact.html"> <p> CONTACT US </p> <a>
+             </div>
            </div>
-       </div>
 
-       <div id="bioGARAGE-section">
-         <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
-         <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
-         <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
-         <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
-         <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
-         <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
-         <a class="lin" href="#"><i class="fa fa-github"></i></a>
+           <div id="bioGARAGE-section">
+             <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+             <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+             <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+             <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
+             <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
+             <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
+             <a class="lin" href="#"><i class="fa fa-github"></i></a>
+             <a class="lin" href="#"><img class="fa" src="images/benchling-logo.png" style="height: 2.6vh;
+     vertical-align: bottom;"></img></a>
 
-         <p>
-           bioGARAGE INC. © 2018 <br>
-            <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
-         </p>
-       </div>
+             <p>
+               bioGARAGE INC. © 2018 <br>
+               <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
+             </p>
+           </div>
 
+         </div>
        </div>
      </div>
-     </div>
-
 
   </html>
