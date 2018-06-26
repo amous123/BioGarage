@@ -35,11 +35,11 @@ ul.topnav img{
 }
 #logoHolder::before{
   content: '\25CF';
-      font-size: 20.5vh;
+      font-size: 21vh;
 background-color: transparent;
 position: absolute;
-margin-left: -1.95vh;
-margin-top: -8.8vh;
+margin-left: -2.05vh;
+margin-top: -13.8vh;
 color: #000000;
 z-index: -1;
 }
@@ -55,13 +55,12 @@ ul.topnav.active{
   float: left;
   padding: unset;
   margin-left: 2.2vh;
-margin-top: 2%;
-margin-bottom: 2%;
+margin-top:0.8vh;
+margin-bottom: 0.8vh;
   opacity: 1;
-  transition-delay: initial;
-  transition-timing-function: ease-out;;
-  transition-duration: 0.5s;
-  transition-property: all;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 #logo{
 width: 16.625em;
@@ -78,27 +77,24 @@ width: 16.625em;
   transform: translateX(50vh);
   opacity: 1;
   text-align: left;
-  transition: all 1s;
   position: fixed;
   top: 0;
   height: 100%;
   pointer-events: auto;
   background-color: white;
   text-decoration: none;
-  transition-delay: initial;
-  transition-timing-function: ease-out;
-  transition-duration: 0.5s;
-  transition-property: all;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   /* box-shadow: inset 10px 0px 10px 0px #000; */
 }
 #menuoverlay.active{
   transform: translateX(0vh);
-  transition-delay: initial;
-  transition-timing-function: ease-out;
-  transition-duration: 0.5s;
-  transition-property: all;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 650px){
   #menuoverlay.active{ width: 75vw;}
   #sitemenu-icon{ width: 3.5em !important; right: 5% !important;}
   #sitemenu-icon.active{ right: 80vw !important;}
@@ -109,31 +105,30 @@ width: 16.625em;
 #overlay {
     position: fixed;
     height: 100%;
-    width: 0%;
+    width: 100%;
     opacity: 0;
     top: 0;
-    right: 21.250em;
     left: 0;
     bottom: 0;
     background-color: rgba(255,255,255,0.5);
-    z-index: 2;
-    transition-delay: initial;
-    transition-timing-function: ease-out;;
-    transition-duration: 0.5s;
-    transition-property: all;
+    z-index: -1;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 #overlay.active{
   opacity: 1;
-  width: 100%;
-  transition-delay: initial;
-  transition-timing-function: ease-out;;
-  transition-duration: 0.5s;
-  transition-property: all;
+  z-index: 2;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .blurContainer{
   width: auto;
   height: auto;
-transition-duration: 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .blurContainer.active{
   filter: blur(3px);
@@ -141,7 +136,9 @@ transition-duration: 1s;
 -moz-filter: blur(3px);
 -o-filter: blur(3px);
 -ms-filter: blur(3px);
-transition-duration: 1s;
+-o-transition: all 1s;
+-webkit-transition: all 1s;
+transition: all 1s;
 }
 #mainmenu{
   position: relative;
@@ -178,10 +175,9 @@ ul.topnav li.dropdown{
   height: 75%;
   cursor: pointer;
   background: transparent;
-  transition-delay: initial;
-  transition-timing-function: ease-out;;
-  transition-duration: 0.5s;
-  transition-property: all;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   z-index: 3;
 }
 #sitemenu{
@@ -213,10 +209,9 @@ ul.topnav li.dropdown{
 }
 #sitemenu-icon.active{
   right: 50vh;
-  transition-delay: initial;
-  transition-timing-function: ease-out;;
-  transition-duration: 0.5s;
-  transition-property: all;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 #sitemenu-icon.active #sitemenu{
   background: rgba(0,0,0,0);
@@ -242,9 +237,9 @@ transform: rotate(135deg);
       letter-spacing: 0.3vw;
       font-size: 2.5vh;
 }
-.sideNavMenuItems:hover{
-  background-color: #efefef;
-  color: #828282;
+.sideNavMenuItems:hover, .selectedPage{
+  background-color: #4c4c4c;
+  color: #e2e2e2;
 }
 #iconsAdded a::before{
   padding-right: 10px;
@@ -326,160 +321,68 @@ font-family: "FontAwesome";
 /* --- end of blurred background --- */
 
 /* --- opening content section --- */
-#openFeatured{
-  background-color: #c3c3c3;
-  padding-bottom: 2em;
+#photoIndex{
+  background-color: #f2f2f2;
+  padding: 4%;
 }
-#openFeatured h2{
-  margin-top: 0;
-  margin-bottom: 4vh;
-  padding-top: 4vh;
-  text-align: center;
-}
-
-.row > .column {
-  padding: 1% 1%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column {
-  float: left;
-  width: 23%;
-  position: relative;
+#photoIndexContent{
 text-align: center;
-color: white;
 }
-@media screen and (max-width: 1000px){
-  .column{
-    width: 48%;
-padding: 1% 1% !important;
-    float: left;
-  }
-}
-
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
+#photoIndexContent img{
+  display: block;
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
+  height: auto;
 }
-/* Modal Content */
-.modal-content {
+.indexContainer{
   position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  width: 13vw;
+  height: auto;
+  margin: 2vw;
+  display: inline-block;
+    box-shadow: #5d5d5d 0px 0px 2px;
 }
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-  z-index: 100000;
-}
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-.mySlides {
-  display: none;
-}
-.cursor {
-  cursor: pointer;
-}
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev{
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+.iconOverlay{
   position: absolute;
   top: 0;
-}
-img {
-  margin-bottom: -4px;
-}
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-.demo2 {
-  opacity: 0.6;
-}
-.active,
-.demo2:hover {
-  opacity: 1;
-}
-img.hover-shadow {
-  transition: 0.3s;
-}
-.hover-shadow:hover {
-/*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  opacity: 0.5;
-  transition-duration: 0.5s;
-}
-i.fa-camera{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
   opacity: 0;
-  transition-duration: 0.5s;
+  transition: .3s ease;
 }
-.column > .fa{
-  font-size: 5vh;
+.iconOverlay:hover{
+  opacity: 1;
+  background-color: rgba(121, 121, 121, 0.5);
+  box-shadow: inset #5d5d5d 0px 0px 2px;
+  cursor: pointer;
+}
+.iconOverlay::after{
+  content: '\f05a';
+  font-family: "FontAwesome";
+  display: block;
+  font-size: 3vw;
+  color: #8f001a;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
 }
 
+@media screen and (max-width:700px){
+.indexContainer{
+  width: 20vw;
+  height: auto;
+  margin: 2.5vw;
+}
+.iconOverlay::after{
+  font-size: 5vw;
+}
+}
 /* --- end of opening content section --- */
 
 
@@ -504,12 +407,7 @@ i.fa-camera{
   }
   /* --- end of seperator photo --- */
   #displayContent{
-        padding: 10%;
-        background-attachment: fixed;
-        background-size: cover;
-        background-color: rgba(0, 0, 0, 0.5);
-        background-blend-mode: color-dodge;
-        background-image: url(../images/img_mountains.jpg);
+    padding: 0;
     }
   .rowDisplay {
       font-family: arial, sans-serif;
@@ -526,7 +424,8 @@ i.fa-camera{
         font-size: 2.2vh;
   }
   .oneLiner{
-    width: 40%;
+    width: 50%;
+    text-align: center;
     height: fit-content;
     opacity: 1;
     z-index: 1;
@@ -540,7 +439,7 @@ i.fa-camera{
     opacity: 0;
   }
   .moreContent{
-    width: 40%;
+    width: 50%;
     height: fit-content;
     opacity: 1;
     z-index: -1;
@@ -548,6 +447,9 @@ i.fa-camera{
     transition-timing-function: ease-out;
     opacity: 0;
     position: absolute;
+  }
+  .moreContent p{
+      text-indent: 50px;
   }
   .moreContent.active{
     z-index: 1;
@@ -574,11 +476,10 @@ i.fa-camera{
     text-align: center;
   }
   #displayContent p{
-        font-size: 2vh;
-    text-indent: 50px;
+    font-size: 2vh;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 1em;
+    margin: 2em;
     line-height: 200%;
   }
 
@@ -590,6 +491,8 @@ i.fa-camera{
   @media screen and (max-width: 1000px){
   .rowDisplay{
     display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   .columnDisplay {
       height: inherit;
@@ -612,7 +515,7 @@ i.fa-camera{
     }
   .expandable{
     margin-bottom: 10vh !important;
-    height: 50% !important;
+    height: 40% !important;
   }
   .oneLiner{ width: 100%; }
   .moreContent{ width: 100%; }
@@ -633,6 +536,7 @@ i.fa-camera{
     font-size: 1.5vh;
     font-weight: 500;
     text-align: center;
+        margin: 0;
   }
   /* --- end of expand/retract about section css --- */
 
@@ -697,13 +601,13 @@ i.fa-camera{
     transition-duration: 0.4s;
     cursor: pointer;
   }
-  .fa-facebook{color: #4e64b5; }
-  .fa-linkedin{color: #0288d1; }
-  .fa-twitter{color: #00aced; }
-  .fa-instagram{color: #9a8f62; }
-  .fa-pinterest{color: #ff5757; }
-  .fa-youtube-play{color: #c82929; }
-  .fa-github{color: #4a2881; }
+  .fa-facebook:hover{color: #4e64b5; }
+  .fa-linkedin:hover{color: #0288d1; }
+  .fa-twitter:hover{color: #00aced; }
+  .fa-instagram:hover{color: #9a8f62; }
+  .fa-pinterest:hover{color: #ff5757; }
+  .fa-youtube-play:hover{color: #c82929; }
+  .fa-github:hover{color: #4a2881; }
 
   @media screen and (max-width: 630px){
     .footerContent{
@@ -735,8 +639,10 @@ i.fa-camera{
     }
     #UOttawa-section{  width: 100%; }
     }
+    .fa{
+      color: #6c6c6c;
+    }
   .fa:hover{
-    color: white;
     transform: scale(1.1,1.1);
     transition-duration: 0.4s;
   }

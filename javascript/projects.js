@@ -7,6 +7,11 @@ $("ul.topnav").addClass('transparent');
 }
 });
 
+/* ---- sets home menu active for specific page---- */
+$(document).ready(function(){
+  $('#menu-link-5').addClass('selectedPage');
+  });
+
 /* ---- expand and retract sideBar content and overlay ---- */
 $(document).ready(function(){
   $('#sitemenu-icon').click(function(){
@@ -27,12 +32,6 @@ $(document).ready(function(){
   })
 })
 
-$(document).ready(function(){
-  $('.expandable').hover(function(){
-    $('.oneLiner').toggleClass('active');
-    $('.moreContent').toggleClass('active');
-  });
-});
 $(document).ready(function(){
   $('.expandable').click(function(){
     $('.oneLiner').toggleClass('active');

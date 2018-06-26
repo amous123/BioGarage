@@ -7,6 +7,11 @@ $("ul.topnav").addClass('transparent');
 }
 });
 
+/* ---- sets home menu active for specific page---- */
+$(document).ready(function(){
+  $('#menu-link-3').addClass('selectedPage');
+  });
+
 /* ---- expand and retract sideBar content and overlay ---- */
 $(document).ready(function(){
   $('#sitemenu-icon').click(function(){

@@ -247,9 +247,9 @@ transform: rotate(135deg);
       letter-spacing: 0.3vw;
       font-size: 2.5vh;
 }
-.sideNavMenuItems:hover{
-  background-color: #efefef;
-  color: #828282;
+.sideNavMenuItems:hover, .selectedPage{
+  background-color: #4c4c4c;
+  color: #e2e2e2;
 }
 #iconsAdded a::before{
   padding-right: 10px;
@@ -317,12 +317,12 @@ figure{
 
 figure:nth-child(1) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_mountains.jpg"); }
 figure:nth-child(2) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_nature.jpg"); }
-figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/microscope.jpg"); }
+figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.4) ), url("../images/microscope.jpg"); }
 
 @media only screen and (max-width: 700px) {
   figure:nth-child(1) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_mountains.jpg"); }
   figure:nth-child(2) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_nature.jpg"); }
-  figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/microscope.jpg"); }
+  figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.4) ), url("../images/microscope.jpg"); }
 }
 
 .badge {
@@ -453,11 +453,14 @@ canvas {
   clip-path: polygon(0 0, 100% 51%, 100% 100%, 0% 100%);
 }
 #particles-js p{
-    transform: translate(10vh, 20vh);
+    width: 100%;
+    -ms-transform: translateY(35vh); /* IE 9 */
+    -webkit-transform: translateY(35vh); /* Safari */
+    transform: translateY(35vh);
+    text-align: center;
     position: absolute;
-    text-align: left;
     font-size: 3vh;
-    letter-spacing: 1vh;
+    letter-spacing: 0.75vh;
 
 }
 /* --- end of opening content section --- */
@@ -520,13 +523,13 @@ canvas {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-.fa-facebook{color: #4e64b5; }
-.fa-linkedin{color: #0288d1; }
-.fa-twitter{color: #00aced; }
-.fa-instagram{color: #9a8f62; }
-.fa-pinterest{color: #ff5757; }
-.fa-youtube-play{color: #c82929; }
-.fa-github{color: #4a2881; }
+.fa-facebook:hover{color: #4e64b5; }
+.fa-linkedin:hover{color: #0288d1; }
+.fa-twitter:hover{color: #00aced; }
+.fa-instagram:hover{color: #9a8f62; }
+.fa-pinterest:hover{color: #ff5757; }
+.fa-youtube-play:hover{color: #c82929; }
+.fa-github:hover{color: #4a2881; }
 
 @media screen and (max-width: 630px){
   .footerContent{
@@ -558,8 +561,10 @@ canvas {
   }
   #UOttawa-section{  width: 100%; }
   }
+  .fa{
+    color: #6c6c6c;
+  }
 .fa:hover{
-  color: white;
   transform: scale(1.1,1.1);
   transition-duration: 0.4s;
 }

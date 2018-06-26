@@ -8,11 +8,12 @@ body {
 }
 h2{
   font-size: 4vh !important;
-  text-align: center;
+  /* text-align: center; */
 }
 a {
   text-decoration: none !important;
 }
+
 /* --- Beginning of navbar --- */
 ul.topnav {
   margin: 0;
@@ -80,27 +81,24 @@ width: 16.625em;
   transform: translateX(50vh);
   opacity: 1;
   text-align: left;
-  transition: all 1s;
   position: fixed;
   top: 0;
   height: 100%;
   pointer-events: auto;
   background-color: white;
   text-decoration: none;
-  transition-delay: initial;
-  transition-timing-function: ease-out;
-  transition-duration: 0.5s;
-  transition-property: all;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   /* box-shadow: inset 10px 0px 10px 0px #000; */
 }
 #menuoverlay.active{
   transform: translateX(0vh);
-  transition-delay: initial;
-  transition-timing-function: ease-out;
-  transition-duration: 0.5s;
-  transition-property: all;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 650px){
   #menuoverlay.active{ width: 75vw;}
   #sitemenu-icon{ width: 3.5em !important; right: 5% !important;}
   #sitemenu-icon.active{ right: 80vw !important;}
@@ -111,31 +109,30 @@ width: 16.625em;
 #overlay {
     position: fixed;
     height: 100%;
-    width: 0%;
+    width: 100%;
     opacity: 0;
     top: 0;
-    right: 21.250em;
     left: 0;
     bottom: 0;
     background-color: rgba(255,255,255,0.5);
-    z-index: 2;
-    transition-delay: initial;
-    transition-timing-function: ease-out;;
-    transition-duration: 0.5s;
-    transition-property: all;
+    z-index: -1;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 #overlay.active{
   opacity: 1;
-  width: 100%;
-  transition-delay: initial;
-  transition-timing-function: ease-out;;
-  transition-duration: 0.5s;
-  transition-property: all;
+  z-index: 2;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .blurContainer{
   width: auto;
   height: auto;
-transition-duration: 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .blurContainer.active{
   filter: blur(3px);
@@ -143,7 +140,9 @@ transition-duration: 1s;
 -moz-filter: blur(3px);
 -o-filter: blur(3px);
 -ms-filter: blur(3px);
-transition-duration: 1s;
+-o-transition: all 1s;
+-webkit-transition: all 1s;
+transition: all 1s;
 }
 #mainmenu{
   position: relative;
@@ -180,10 +179,9 @@ ul.topnav li.dropdown{
   height: 75%;
   cursor: pointer;
   background: transparent;
-  transition-delay: initial;
-  transition-timing-function: ease-out;;
-  transition-duration: 0.5s;
-  transition-property: all;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   z-index: 3;
 }
 #sitemenu{
@@ -215,10 +213,9 @@ ul.topnav li.dropdown{
 }
 #sitemenu-icon.active{
   right: 50vh;
-  transition-delay: initial;
-  transition-timing-function: ease-out;;
-  transition-duration: 0.5s;
-  transition-property: all;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 #sitemenu-icon.active #sitemenu{
   background: rgba(0,0,0,0);
@@ -244,9 +241,9 @@ transform: rotate(135deg);
       letter-spacing: 0.3vw;
       font-size: 2.5vh;
 }
-.sideNavMenuItems:hover{
-  background-color: #efefef;
-  color: #828282;
+.sideNavMenuItems:hover, .selectedPage{
+  background-color: #4c4c4c;
+  color: #e2e2e2;
 }
 #iconsAdded a::before{
   padding-right: 10px;
@@ -269,6 +266,7 @@ font-family: "FontAwesome";
 }
 /* --- End of navbar for mobile --- */
 /* --- End of navbar --- */
+
 
 /* --- Beginning of blurred background --- */
  #mainBackground{
@@ -337,15 +335,19 @@ font-family: "FontAwesome";
 }
 #gallery{
   padding: 10%;
-  padding-top: 0;
+  /* padding-top: 0; */
   background-color: white;
 }
 #sponsors{
   margin-top: 5%;
   margin-bottom: 5%;
 }
+#sponsors img{
+  filter: grayscale(100%);
+  transition: all 0.25s ease-in-out;
+}
 .customer-logos{
-  background-color: #c34872;
+  background-color: #aca39a;
   background-image: linear-gradient(
       135deg,
       rgba(255, 255, 255, 1) 0%,
@@ -389,6 +391,7 @@ font-family: "FontAwesome";
 .customer-logos img:hover{
   transform: scale(1.1, 1.1);
   transition: all 0.25s ease-in-out;
+  filter: grayscale(0%) !important;
 }
 .slick-list img{
   padding-top: 1rem;

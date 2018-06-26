@@ -24,12 +24,11 @@
       <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
     </section>
     </div>
-    <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/bioLogo.png" alt="bioGARRAGE logo"> </img> </a> </div>
+    <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/logo/bioLogo_white_highres.png" alt="bioGARRAGE logo"> </img> </a> </div>
   </div>
   <div id="overlay" class="showSideNav">
   </div>
-  <script src="javascript/projects.js"> </script>
-
+<script  src="javascript/projects.js"></script>
   <!-- topnav is the navigation bar of the website -->
     <ul class="topnav transparent" id="topnav">
       <div id="sitemenu-icon">
@@ -51,90 +50,82 @@
   </div>
 
 
-     <div id="openFeatured">
-       <h2> FEATURED IMAGES </h2>
+  <div id="photoIndex">
+    <div id="photoIndexContent">
 
-         <div class="row">
-           <div class="column">
+      <div class="indexContainer">
+        <img src="images/garageMech.png">
+          <a href="#project1">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-             <img src="images/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" onmouseover="fa1()" onmouseout="fa1C()" class="hover-shadow cursor">
-           <i class="fa fa-camera" id="fa1"></i>
-           </img>
-           </div>
+      <div class="indexContainer">
+        <img src="images/img_snow.jpg">
+        <a href="#project2">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-           <div class="column">
-             <img src="images/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" onmouseover="fa2()" onmouseout="fa2C()" class="hover-shadow cursor">
-             <i class="fa fa-camera" id="fa2"></i>
-           </img>
-           </div>
-           <div class="column">
-             <img src="images/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" onmouseover="fa3()" onmouseout="fa3C()" class="hover-shadow cursor">
-             <i class="fa fa-camera" id="fa3"></i>
-           </img>
-           </div>
+      <div class="indexContainer">
+        <img src="images/img_snow.jpg">
+          <a href="#project3">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-           <div class="column">
-             <img src="images/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" onmouseover="fa4()" onmouseout="fa4C()" class="hover-shadow cursor">
-             <i class="fa fa-camera" id="fa4"></i>
-           </img>
-           </div>
-         </div>
+      <div class="indexContainer">
+        <img src="images/img_snow.jpg">
+          <a href="#project4">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-         <div id="myModal" class="modal">
-           <span class="close cursor" onclick="closeModal()">&times;</span>
-           <div class="modal-content">
+      <div class="indexContainer">
+        <img src="images/jellyfish.jpg">
+          <a href="#project5">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-             <div class="mySlides2">
-               <div class="numbertext">1 / 4</div>
-               <img src="images/img_nature.jpg" style="width:100%">
-             </div>
+      <div class="indexContainer">
+        <img src="images/img_snow.jpg">
+          <a href="#project6">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-             <div class="mySlides2">
-               <div class="numbertext">2 / 4</div>
-               <img src="images/img_snow.jpg" style="width:100%">
-             </div>
+      <div class="indexContainer">
+        <img src="images/img_snow.jpg">
+          <a href="#project7">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-             <div class="mySlides2">
-               <div class="numbertext">3 / 4</div>
-               <img src="images/img_mountains.jpg" style="width:100%">
-             </div>
+      <div class="indexContainer">
+        <img src="images/img_snow.jpg">
+          <a href="#project8">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-             <div class="mySlides2">
-               <div class="numbertext">4 / 4</div>
-               <img src="images/img_lights.jpg" style="width:100%">
-             </div>
+      <div class="indexContainer">
+        <img src="images/img_lights.jpg">
+          <a href="#project9">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="indexContainer">
+        <img src="images/img_snow.jpg">
+        <a href="#project10">  <div class="iconOverlay"> </div> </a>
+        </img>
+      </div>
 
-             <div class="caption-container">
-               <p id="caption"></p>
-             </div>
+    </div>
+  </div>
 
-
-             <div class="column">
-               <img class="demo2 cursor" src="images/img_nature.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-             </div>
-             <div class="column">
-               <img class="demo2 cursor" src="images/img_snow.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-             </div>
-             <div class="column">
-               <img class="demo2 cursor" src="images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-             </div>
-             <div class="column">
-               <img class="demo2 cursor" src="images/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-             </div>
-           </div>
-         </div>
-
-         <script>
-         var gallerySlideIndex = 1;
-         showSlides(gallerySlideIndex);
-         </script>
-     </div>
 
 <div id="displayContent">
-     <div class="rowDIsplay">
+
+  <div class="trans">
+    <div class="transPhoto">
+    </div>
+  </div>
+
+      <!-- project 1 -->
+     <div id="project1" class="rowDIsplay">
        <div class="columnDisplay">
          <img src="images/img_nature.jpg" class="leftPic" alt="about picture" width="200px" height="200px;"> </img></td>
        </div>
@@ -155,11 +146,9 @@
              </p>
            </section>
          </div>
-         <h3> Hover for more </h3>
+         <h3> Tap for more/less info </h3>
          </div>
        </div>
-
-
      </div>
 
      <div class="trans">
@@ -167,7 +156,8 @@
        </div>
      </div>
 
-     <div class="rowDisplay">
+     <!-- project 2 -->
+     <div id="project2" class="rowDisplay">
        <div class="columnDisplay">
          <div class="expandable">
         <div class="oneLiner">
@@ -184,7 +174,7 @@
              </p>
            </section>
          </div>
-         <h3> Hover for more </h3>
+         <h3> Tap for more/less info </h3>
          </div>
        </div>
        <div class="columnDisplay">
@@ -197,7 +187,8 @@
        </div>
      </div>
 
-     <div class="rowDIsplay">
+          <!-- project 3 -->
+     <div id="project3" class="rowDIsplay">
        <div class="columnDisplay">
          <img src="images/img_nature.jpg" class="leftPic" alt="about picture" width="" height=""> </img></td>
        </div>
@@ -218,7 +209,7 @@
              </p>
            </section>
          </div>
-         <h3> Hover for more </h3>
+         <h3> Tap for more/less info </h3>
          </div>
        </div>
      </div>
@@ -228,7 +219,8 @@
        </div>
      </div>
 
-     <div class="rowDisplay">
+          <!-- project 4 -->
+     <div id="project4" class="rowDisplay">
        <div class="columnDisplay">
          <div class="expandable">
         <div class="oneLiner">
@@ -245,13 +237,208 @@
              </p>
            </section>
          </div>
-         <h3> Hover for more </h3>
+         <h3> Tap for more/less info </h3>
          </div>
        </div>
        <div class="columnDisplay">
          <img src="images/img_nature.jpg" class="rightPic" alt="about picture" width="200px" height="200px;"> </img></td>
        </div>
      </div>
+
+     <div class="trans">
+       <div class="transPhoto">
+       </div>
+     </div>
+
+     <!-- project 5 -->
+     <div id="project5" class="rowDIsplay">
+       <div class="columnDisplay">
+         <img src="images/img_nature.jpg" class="leftPic" alt="about picture" width="200px" height="200px;"> </img></td>
+       </div>
+
+       <div class="columnDisplay">
+         <div class="expandable">
+        <div class="oneLiner">
+           <h2>Project 5</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             </p>
+           </section>
+         </div>
+         <div class="moreContent">
+           <h2>MORE</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+             </p>
+           </section>
+         </div>
+         <h3> Tap for more/less info </h3>
+         </div>
+       </div>
+     </div>
+
+     <div class="trans">
+       <div class="transPhoto">
+       </div>
+     </div>
+
+          <!-- project 6 -->
+     <div id="project6" class="rowDisplay">
+       <div class="columnDisplay">
+         <div class="expandable">
+        <div class="oneLiner">
+           <h2>Project 6</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             </p>
+           </section>
+         </div>
+         <div class="moreContent">
+           <h2>MORE</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+             </p>
+           </section>
+         </div>
+         <h3> Tap for more/less info </h3>
+         </div>
+       </div>
+       <div class="columnDisplay">
+         <img src="images/img_nature.jpg" class="rightPic" alt="about picture" width="200px" height="200px;"> </img></td>
+       </div>
+     </div>
+
+     <div class="trans">
+       <div class="transPhoto">
+       </div>
+     </div>
+
+          <!-- project 7 -->
+     <div id="project7" class="rowDIsplay">
+       <div class="columnDisplay">
+         <img src="images/img_nature.jpg" class="leftPic" alt="about picture" width="" height=""> </img></td>
+       </div>
+
+       <div class="columnDisplay">
+         <div class="expandable">
+        <div class="oneLiner">
+           <h2>Project 7</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             </p>
+           </section>
+         </div>
+         <div class="moreContent">
+           <h2>MORE</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+             </p>
+           </section>
+         </div>
+         <h3> Tap for more/less info </h3>
+         </div>
+       </div>
+     </div>
+
+     <div class="trans">
+       <div class="transPhoto">
+       </div>
+     </div>
+
+     <!-- project 8 -->
+     <div id="project8" class="rowDisplay">
+       <div class="columnDisplay">
+         <div class="expandable">
+        <div class="oneLiner">
+           <h2>Project 8</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             </p>
+           </section>
+         </div>
+         <div class="moreContent">
+           <h2>MORE</h2>
+           <section>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+             </p>
+           </section>
+         </div>
+         <h3> Tap for more/less info </h3>
+         </div>
+       </div>
+       <div class="columnDisplay">
+         <img src="images/img_nature.jpg" class="rightPic" alt="about picture" width="200px" height="200px;"> </img></td>
+       </div>
+     </div>
+
+     <div class="trans">
+       <div class="transPhoto">
+       </div>
+     </div>
+
+     <!-- project 9 -->
+<div id="project9" class="rowDIsplay">
+  <div class="columnDisplay">
+    <img src="images/img_nature.jpg" class="leftPic" alt="about picture" width="" height=""> </img></td>
+  </div>
+
+  <div class="columnDisplay">
+    <div class="expandable">
+   <div class="oneLiner">
+      <h2>Project 9</h2>
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </section>
+    </div>
+    <div class="moreContent">
+      <h2>MORE</h2>
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+        </p>
+      </section>
+    </div>
+    <h3> Tap for more/less info </h3>
+    </div>
+  </div>
+</div>
+
+<div class="trans">
+  <div class="transPhoto">
+  </div>
+</div>
+
+<!-- project 10 -->
+<div id="project10" class="rowDisplay">
+  <div class="columnDisplay">
+    <div class="expandable">
+   <div class="oneLiner">
+      <h2>Project 10</h2>
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </section>
+    </div>
+    <div class="moreContent">
+      <h2>MORE</h2>
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+        </p>
+      </section>
+    </div>
+    <h3> Tap for more/less info </h3>
+    </div>
+  </div>
+  <div class="columnDisplay">
+    <img src="images/img_nature.jpg" class="rightPic" alt="about picture" width="200px" height="200px;"> </img></td>
+  </div>
+</div>
+
+<div class="trans">
+  <div class="transPhoto">
+  </div>
+</div>
+
    </div>
    <script src="javascript/projects.js"> </script>
 

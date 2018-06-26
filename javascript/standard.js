@@ -36,6 +36,11 @@ function showDivs(n) {
   dots[slideIndex-1].id = "";
 }
 
+/* ---- sets home menu active for specific page---- */
+$(document).ready(function(){
+  $('#menu-link-1').addClass('selectedPage');
+  });
+
 /* ---- expand and retract sideBar content and overlay ---- */
 $(document).ready(function(){
   $('#sitemenu-icon').click(function(){
