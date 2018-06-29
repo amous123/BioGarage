@@ -7,13 +7,24 @@ $("ul.topnav").addClass('transparent');
 }
 });
 
-/* ---- sets home menu active for specific page---- */
 $(document).ready(function(){
+  /* ---- sets home menu active for specific page---- */
   $('#menu-link-3').addClass('selectedPage');
-  });
+
+/* ---- smooth scroll to top---- */
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+        $('#scroll').fadeIn();
+    } else {
+        $('#scroll').fadeOut();
+    }
+});
+$('#scroll').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+});
 
 /* ---- expand and retract sideBar content and overlay ---- */
-$(document).ready(function(){
   $('#sitemenu-icon').click(function(){
     $('#sitemenu-icon').toggleClass('active');
     $('#overlay').toggleClass('active');

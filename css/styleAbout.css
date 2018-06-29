@@ -37,8 +37,8 @@ ul.topnav img{
       font-size: 21vh;
 background-color: transparent;
 position: absolute;
-margin-left: -2.05vh;
-margin-top: -13.8vh;
+margin-left: -2.18vh;
+margin-top: -9.15vh;
 color: #000000;
 z-index: -1;
 }
@@ -80,7 +80,7 @@ width: 16.625em;
   top: 0;
   height: 100%;
   pointer-events: auto;
-  background-color: white;
+  background-color: #f2f2f2;
   text-decoration: none;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
@@ -237,8 +237,8 @@ transform: rotate(135deg);
       font-size: 2.5vh;
 }
 .sideNavMenuItems:hover, .selectedPage{
-  background-color: #4c4c4c;
-  color: #e2e2e2;
+  background-color: #2d2d2c;
+  color: white;
 }
 #iconsAdded a::before{
   padding-right: 10px;
@@ -323,6 +323,38 @@ font-family: "FontAwesome";
 }
 /* --- end of blurred background --- */
 
+/* --- scroll to topbutton --- */
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  opacity: 0.5;
+  z-index: 10;
+  height: 50px;
+  background-color: #000000;
+  text-indent: -9999px;
+  display: none;
+  transition-duration: 0.25s;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#03A9F4;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+    transition-duration: 0.25s;
+}
 
 /* --- beginning about content section --- */
 #about{
@@ -457,8 +489,8 @@ padding-bottom: 5vh !important;
 
 /* --- accordion css --- */
 button.accordion {
-    background-color: #EEE;
-    color: #444;
+    background-color: #f2f2f2;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -468,11 +500,9 @@ button.accordion {
     font-size: 2vh;
     transition: 0.4s;
 }
-
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
-
 button.accordion:after {
     content: '\002B';
     color: #777;
@@ -480,11 +510,9 @@ button.accordion:after {
     float: right;
     margin-left: 5px;
 }
-
 button.accordion.active:after {
     content: "\2212";
 }
-
 div.panel {
     padding: 0 18px;
     background-color: #f2f2f2;
@@ -529,7 +557,7 @@ div.panel {
 
 /* --- beginning of footer --- */
 .footer{
-  background-color: #000;
+  background-color: #2d2d2c ;
   margin: 0;
   color: #6c6c6c;
   font-size: 1.5vh;
@@ -582,13 +610,13 @@ div.panel {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-.fa-facebook{color: #4e64b5; }
-.fa-linkedin{color: #0288d1; }
-.fa-twitter{color: #00aced; }
-.fa-instagram{color: #9a8f62; }
-.fa-pinterest{color: #ff5757; }
-.fa-youtube-play{color: #c82929; }
-.fa-github{color: #4a2881; }
+.fa-facebook:hover{color: #4e64b5; }
+.fa-linkedin:hover{color: #0288d1; }
+.fa-twitter:hover{color: #00aced; }
+.fa-instagram:hover{color: #9a8f62; }
+.fa-pinterest:hover{color: #ff5757; }
+.fa-youtube-play:hover{color: #c82929; }
+.fa-github:hover{color: #4a2881; }
 
 @media screen and (max-width: 630px){
   .footerContent{
@@ -620,8 +648,10 @@ div.panel {
   }
   #UOttawa-section{  width: 100%; }
   }
+  .fa{
+    color: #6c6c6c;
+  }
 .fa:hover{
-  color: white;
   transform: scale(1.1,1.1);
   transition-duration: 0.4s;
 }

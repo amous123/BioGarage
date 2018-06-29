@@ -1,4 +1,3 @@
-
 /* --- sets navbar transparent at top of page --- */
 $(window).scroll(function() {
 if ($(document).scrollTop() >= 100) {
@@ -8,25 +7,13 @@ $("ul.topnav").addClass('transparent');
 }
 });
 
-
+/* ---- sets home menu active for specific page---- */
 $(document).ready(function(){
-  /* ---- sets home menu active for specific page---- */
-  $('#menu-link-2').addClass('selectedPage');
-
-/* ---- smooth scroll to top---- */
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
-        $('#scroll').fadeIn();
-    } else {
-        $('#scroll').fadeOut();
-    }
-});
-$('#scroll').click(function(){
-    $("html, body").animate({ scrollTop: 0 }, 600);
-    return false;
-});
+  $('#menu-link-5').removeClass('selectedPage');
+  });
 
 /* ---- expand and retract sideBar content and overlay ---- */
+$(document).ready(function(){
   $('#sitemenu-icon').click(function(){
     $('#sitemenu-icon').toggleClass('active');
     $('#overlay').toggleClass('active');
@@ -45,31 +32,27 @@ $('#scroll').click(function(){
   })
 })
 
+$(document).ready(function(){
+  $('.expandable').click(function(){
+    $('.oneLiner').toggleClass('active');
+    $('.moreContent').toggleClass('active');
+  });
+});
+
 // W3C's JS Code for an accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 // Open the first accordion
 var firstAccordion = acc[0];
 var firstPanel = firstAccordion.nextElementSibling;
-firstAccordion.classList.add("active");
+ firstAccordion.classList.add("active");
 firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
 // Add onclick listener to every accordion element
 for (i = 0; i < acc.length; i++) {
   acc[i].onclick = function() {
     // For toggling purposes detect if the clicked section is already "active"
     var isActive = this.classList.contains("active");
-    // Close all accordions
-    var allAccordions = document.getElementsByClassName("accordion");
-    for (j = 0; j < allAccordions.length; j++) {
-      // Remove active class from section header
-      allAccordions[j].classList.remove("active");
-      // Remove the max-height class from the panel to close it
-      var panel = allAccordions[j].nextElementSibling;
-      var maxHeightValue = getStyle(panel, "maxHeight");
-      if (maxHeightValue !== "0px") {
-        panel.style.maxHeight = null;
-      }
-    }
+
     // Toggle the clicked section using a ternary operator
     isActive ? this.classList.remove("active") : this.classList.add("active");
     // Toggle the panel element

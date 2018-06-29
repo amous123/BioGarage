@@ -91,7 +91,7 @@ width: 16.625em;
   top: 0;
   height: 100%;
   pointer-events: auto;
-  background-color: white;
+  background-color: #f2f2f2;
   text-decoration: none;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
@@ -248,8 +248,8 @@ transform: rotate(135deg);
       font-size: 2.5vh;
 }
 .sideNavMenuItems:hover, .selectedPage{
-  background-color: #4c4c4c;
-  color: #e2e2e2;
+  background-color: #2d2d2c;
+  color: white;
 }
 #iconsAdded a::before{
   padding-right: 10px;
@@ -365,10 +365,42 @@ figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rg
 }
 /* --- end of front page --- */
 
+/* --- scroll to topbutton --- */
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  opacity: 0.5;
+  z-index: 10;
+  height: 50px;
+  background-color: #000000;
+  text-indent: -9999px;
+  display: none;
+  transition-duration: 0.25s;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#03A9F4;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+    transition-duration: 0.25s;
+}
 
 /* --- opening content section --- */
 .opening{
-  background-color: #2b2b2b;
+  background-color: #2d2d2c;
   bottom: 0;
   position: relative;
 }
@@ -471,7 +503,7 @@ canvas {
 
 /* --- beginning of footer --- */
 .footer{
-  background-color: #000;
+  background-color: #2d2d2c ;
   margin: 0;
   color: #6c6c6c;
   font-size: 1.5vh;
@@ -503,7 +535,7 @@ canvas {
   padding-left: 7vh;
 }
 #UO-logo img{
-  height: 14vh;
+  height: 14.7vh;
 }
 #faculyAndRelated{
   float: left;
