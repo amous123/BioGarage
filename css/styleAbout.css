@@ -95,7 +95,7 @@ width: 16.625em;
 }
 @media screen and (max-width: 650px){
   #menuoverlay.active{ width: 75vw;}
-  #sitemenu-icon{ width: 3.5em !important; right: 5% !important;}
+  #sitemenu-icon{ width: 3.5em !important; right: 0% !important;}
   #sitemenu-icon.active{ right: 80vw !important;}
   #bioGARRAGE-logo img{  width: 90% !important;}
   #logoHolder.active{ opacity: 0 !important;}

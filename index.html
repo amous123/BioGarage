@@ -9,8 +9,10 @@
 
   <!-- the style sheet linked to this page of the website is called styleIndex.css -->
   <link rel="StyleSheet" href="css/styleIndex.css">
+  <link rel="StyleSheet" href="css/standard.css">
   <!-- scripts -->
   <script type="text/Javascript" src="javascript/standard.js"></script>
+  <script type="text/Javascript" src="javascript/index.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -26,114 +28,167 @@
     <div id="menuoverlay" class="showSideNav">
       <div id="mainmenu">
         <section id="iconsAdded">
-        <h2> EXPLORE </h2>
-        <!-- the drop down menu of the navbar is for mobile version of website -->
-        <a class="sideNavMenuItems" id="menu-link-1" href="index.html">HOME</a>
-        <a class="sideNavMenuItems" id="menu-link-2" href="about.html" >ABOUT</a>
-        <a class="sideNavMenuItems" id="menu-link-3" href="contact.html">CONTACT</a>
-        <a class="sideNavMenuItems" id="menu-link-4" href="team.html">TEAM</a>
-        <a class="sideNavMenuItems" id="menu-link-5" href="projects.html">PROJECTS</a>
-      </section>
+          <h2> EXPLORE </h2>
+          <div id="languageButtonContainer">
+            <button id="english" class="active" >EN</button>
+            <button id="french">FR</button>
+          </div>
+          <hr></hr>
+          <!-- the drop down menu of the navbar is for mobile version of website -->
+          <div class="EN">
+          <a class="sideNavMenuItems menu-link-1" href="index.html">HOME</a>
+          <a class="sideNavMenuItems menu-link-2" href="about.html" >ABOUT</a>
+          <a class="sideNavMenuItems menu-link-3" href="contact.html">CONTACT</a>
+          <a class="sideNavMenuItems menu-link-4" href="team.html">TEAM</a>
+          <a class="sideNavMenuItems menu-link-5" href="projects.html">PROJECTS</a>
+        </div>
+
+        <div class="FR">
+        <a class="sideNavMenuItems menu-link-1" href="index.html">FOYER</a>
+        <a class="sideNavMenuItems menu-link-2" href="about.html" >PROPOS</a>
+        <a class="sideNavMenuItems menu-link-3" href="contact.html">CONTACTE</a>
+        <a class="sideNavMenuItems menu-link-4" href="team.html">ÉQUIPE</a>
+        <a class="sideNavMenuItems menu-link-5" href="projects.html">PROJECTS</a>
+      </div>
+        </section>
       </div>
       <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/logo/bioLogo_highres.png" alt="bioGARRAGE logo"> </img> </a> </div>
     </div>
     <div id="overlay" class="showSideNav">
     </div>
-<script  src="javascript/standard.js"></script>
+
     <!-- topnav is the navigation bar of the website -->
-      <ul class="topnav transparent" id="topnav">
-        <div id="sitemenu-icon">
-          <div id="sitemenu">
-          </div>
+    <ul class="topnav transparent" id="topnav">
+      <div id="sitemenu-icon">
+        <div id="sitemenu">
         </div>
-        <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/logo/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
-      </ul>
+      </div>
+      <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/logo/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
+    </ul>
 
     <div class="blurContainer" id="blurContain">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-      <a href="#" id="scroll" style="display: none;"><span></span></a>
-      
+      <a href="#" id="scroll" class="arrowColor" style="display: none;"><span></span></a>
+
       <div id="frontContent">
-    <figure class="mySlides flash"></figure>
-    <figure class="mySlides flash"></figure>
-    <figure class="mySlides flash"></figure>
-    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-      <span class="badge demo buttonBorder normColor1 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(1)"></span>
-      <span class="badge demo buttonBorder normColor2 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(2)"></span>
-      <span class="badge demo buttonBorder normColor3 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(3)"></span>
-    </div>
-  </div>
-
-  <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  </script>
-
-  <div class="opening">
-    <div class="openingContent">
-      <div class="open1"> A SPACE TO BUILD YOUR GENOME </div>
-      <div class="open2"> A HOME FOR YOUR BACTERIA COLONIES </div>
-      <div class="open3"> TAKE YOUR CONCEPTS INTO THE GARAGE </div>
-      <div class="open4"> OR TAKE A LOOK AT OTHER EXPERIMENTS </div>
-    </div>
-    <div class="openingButtons">
-      <a href="projects.html"> <button class="openBtn1"> Experiments </button> </a>
-      <!--  <a href="contact.html#map"> <button class="openBtn2"> Location </button> </a> -->
-    </div>
-    <div id="particles-js" class="rainbowTransition">
-      <p> Click.Create.Connect </p>
-    </div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script  src="javascript/standard.js"></script>
-  </div>
-
-
-
-  <div class="footer">
-    <div class="footerContent">
-
-      <div id="UOttawa-section">
-
-        <div id="UO-logo">
-          <a href="https://www.uottawa.ca/en" ><img src="images/uO-logo-grey-transparent-copy.png"> </img><a>
-          </div>
-
-          <div id="faculyAndRelated">
-            <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
-            <br>
-            <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
-            <br>
-            <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
-            <br>
-            <p> CANADA </p>
-            <br>
-            <a href="contact.html"> <p> CONTACT US </p> <a>
-            </div>
-          </div>
-
-          <div id="bioGARAGE-section">
-            <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
-            <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
-            <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
-            <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
-            <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
-            <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
-            <a class="lin" href="#"><i class="fa fa-github"></i></a>
-            <a class="lin" href="#"><img class="fa" src="images/benchling-logo.png" style="height: 3.5vh;
-    vertical-align: bottom;"></img></a>
-
-            <p>
-              bioGARAGE INC. © 2018 <br>
-              <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
-            </p>
-          </div>
-
+        <figure class="mySlides flash"></figure>
+        <figure class="mySlides flash"></figure>
+        <figure class="mySlides flash"></figure>
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="badge demo buttonBorder normColor1 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(1)"></span>
+          <span class="badge demo buttonBorder normColor2 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(2)"></span>
+          <span class="badge demo buttonBorder normColor3 w3-hover-white" id="transparentHomeButtons" onclick="currentDiv(3)"></span>
         </div>
       </div>
-    </div>
 
-  </body>
-  </html>
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      </script>
+
+      <div class="opening">
+
+
+        <div class="openingContent EN">
+          <div class="open1"> A SPACE TO BUILD YOUR GENOME </div>
+          <div class="open2"> A HOME FOR YOUR BACTERIA COLONIES </div>
+          <div class="open3"> TAKE YOUR CONCEPTS INTO THE GARAGE </div>
+          <div class="open4"> OR TAKE A LOOK AT OTHER EXPERIMENTS </div>
+        </div>
+        <div class="openingButtons EN">
+          <a href="projects.html"> <button class="openBtn1"> Experiments </button> </a>
+          <!--  <a href="contact.html#map"> <button class="openBtn2"> Location </button> </a> -->
+        </div>
+
+        <div class="openingContent FR">
+          <div class="open1"> UN ESPACE POUR CONSTRUIRE VOTRE GÉNOME </div>
+          <div class="open2"> UNE MAISON POUR VOS COLONIES DE BACTÉRIES </div>
+          <div class="open3"> PRENEZ VOS CONCEPTES DANS LE GARAGE </div>
+          <div class="open4"> OU REGARDEZ D'AUTRES EXPÉRIENCES </div>
+        </div>
+        <div class="openingButtons FR">
+          <a href="projects.html"> <button class="openBtn1"> Expériences </button> </a>
+          <!--  <a href="contact.html#map"> <button class="openBtn2"> Location </button> </a> -->
+        </div>
+
+
+        <div id="particles-js" class="rainbowTransition">
+          <p class="EN"> create.connect.click </p>
+          <p class="FR"> créer.connectez.cliquez </p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+      </div>
+
+
+
+      <div class="footer">
+        <div class="footerContent">
+
+          <div id="UOttawa-section">
+
+            <div id="UO-logo">
+              <a href="https://www.uottawa.ca/en" ><img src="images/uO-logo-grey-transparent-copy.png"> </img><a>
+              </div>
+
+              <div id="faculyAndRelated" class="EN">
+                <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
+                <br>
+                <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
+                <br>
+                <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+                <br>
+                <p> CANADA </p>
+                <br>
+                <a href="contact.html"> <p> CONTACT US </p> <a>
+                </div>
+
+                <div id="faculyAndRelated" class="FR">
+                  <p> <a href="http://science.uottawa.ca/fr"> Faculté de Science </a> </p>
+                  <br>
+                  <p> <a href="https://www.uottawa.ca/fr"> Université d'Ottawa </a> </p>
+                  <br>
+                  <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+                  <br>
+                  <p> CANADA </p>
+                  <br>
+                  <a href="contact.html"> <p> CONTACTEZ NOUS </p> <a>
+                  </div>
+              </div>
+
+              <div id="bioGARAGE-section">
+                <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+                <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
+                <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
+                <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
+                <a class="lin" href="#"><i class="fa fa-github"></i></a>
+                <a class="lin" href="#"><img class="fa" id="bench-1" src="images/logo/Benchling-1.png" style="    height: 4.5vh;
+    vertical-align: -1.2vh; padding-left: 0;"></img></a>
+    <a class="lin" href="#"><img class="fa" id="bench-2" src="images/logo/Benchling-2.png" style="    height: 4.5vh;
+vertical-align: -1.2vh; padding-left: 0;"></img></a>
+
+                  <p class="EN">
+                    bioGARAGE INC. © 2018
+                    <br>
+                    <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
+                  </p>
+
+                  <p class="FR">
+                    bioGARAGE INC. © 2018
+                    <br>
+                    <a href="resources/terms.txt" class="terms"> termes & intimité</a> | <a href="resources/legal.txt" class="legal">légal</a>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+            <script  src="javascript/standard.js"></script>
+            <script  src="javascript/index.js"></script>
+
+        </body>
+        </html>
