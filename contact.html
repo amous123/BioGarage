@@ -20,12 +20,13 @@
   <title style="text-align:center;"> Contact </title style="text-align:center;">
     <meta name="Developers" content="amous123">
   </head>
-  <body>
+  <body onload="paint()">
 
     <div id="menuoverlay" class="showSideNav">
       <div id="mainmenu">
         <section id="iconsAdded">
-          <h2> EXPLORE </h2>
+          <h2 class="EN"> EXPLORE </h2>
+          <h2 class="FR"> EXPLORÉ </h2>
           <div id="languageButtonContainer">
             <button id="english" class="active" >EN</button>
             <button id="french">FR</button>
@@ -86,30 +87,36 @@
                 <input type="hidden" name="_subject" id="_subject" value="Website Contact Form">
 
                 <div id="firstInput" class="wrap-input1 validate-input" data-validate = "Name is required">
-                  <input required="true" class="input1" type="text" name="name" placeholder="Name*">
+                  <input required="true" class="input1 EN" type="text" name="name" placeholder="Name*">
+                  <input required="true" class="input1 FR" type="text" name="name" placeholder="Nom*">
                   <span class="shadow-input1"></span>
                 </div>
 
                 <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                  <input required="true" class="input1" type="text" name="_replyto" placeholder="Email*">
+                  <input required="true" class="input1 EN" type="text" name="_replyto" placeholder="Email*">
+                  <input required="true" class="input1 FR" type="text" name="_replyto" placeholder="Courriel*">
                   <span class="shadow-input1"></span>
                 </div>
 
                 <div class="wrap-input1 validate-input" data-validate = "Subject is required">
-                  <input required="false" class="input1" type="text" name="subject" placeholder="Subject">
+                  <input required="false" class="input1 EN" type="text" name="subject" placeholder="Subject">
+                  <input required="false" class="input1 FR" type="text" name="subject" placeholder="Subjet">
                   <span class="shadow-input1"></span>
                 </div>
 
                 <div class="wrap-input1 validate-input" data-validate = "Message is required">
-                  <textarea required="true" class="input1" name="message" placeholder="Message*"></textarea>
+                  <textarea required="true" class="input1 EN" name="message" placeholder="Message*"></textarea>
+                  <textarea required="true" class="input1 FR" name="message" placeholder="Message*"></textarea>
                   <span class="shadow-input1"></span>
                 </div>
 
                 <div class="container-contact1-form-btn">
                   <button class="contact1-form-btn">
-                    <span>
-                      Send Email
-                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <span class="EN">
+                      Send Email <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </span>
+                    <span class="FR">
+                      Envoie Courriel <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </span>
                   </button>
                 </div>
@@ -117,9 +124,8 @@
               <script src="javascript/contact.js"> </script>
 
               <div id="twitter-feed">
-
-                <a class="twitter-timeline" data-lang="en" data-height="60vh" data-link-color="#8f001a" data-theme="light" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by bioGARAGE</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-height="100%" href="https://twitter.com/DEV?ref_src=twsrc%5Etfw">Tweets by bioGARAGE</a>
+                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
 
             </div>
@@ -129,8 +135,7 @@
         <!-- predefined code for using Google Maps Static Javascript API -->
         <div id="map" style="position: relative; overflow hidden;"></div>
 
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA944DX_JmQ8u_qAlL5QREKP7XTjekUpLo&callback=initMap">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA944DX_JmQ8u_qAlL5QREKP7XTjekUpLo&callback=initMap">
       </script>
     </section>
 
@@ -143,7 +148,7 @@
             <a href="https://www.uottawa.ca/en" ><img src="images/uO-logo-grey-transparent-copy.png"> </img><a>
             </div>
 
-            <div id="faculyAndRelated">
+            <div id="faculyAndRelated" class="EN">
               <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
               <br>
               <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
@@ -154,6 +159,18 @@
               <br>
               <a href="contact.html"> <p> CONTACT US </p> <a>
               </div>
+
+              <div id="faculyAndRelated" class="FR">
+                <p> <a href="http://science.uottawa.ca/fr"> Faculté de Science </a> </p>
+                <br>
+                <p> <a href="https://www.uottawa.ca/fr"> Université d'Ottawa </a> </p>
+                <br>
+                <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+                <br>
+                <p> CANADA </p>
+                <br>
+                <a href="contact.html"> <p> CONTACTEZ NOUS </p> <a>
+                </div>
             </div>
 
             <div id="bioGARAGE-section">
@@ -164,12 +181,19 @@
               <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
               <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
               <a class="lin" href="#"><i class="fa fa-github"></i></a>
-              <a class="lin" href="#"><img class="fa" src="images/benchling-logo.png" style="height: 2.6vh;
-                vertical-align: bottom;"></img></a>
+              <a class="lin" href="#"><img class="fa" id="bench-1" src="images/logo/Benchling-1.png"></img></a>
+              <a class="lin" href="#"><img class="fa" id="bench-2" src="images/logo/Benchling-2.png" style="display:none;"></img></a>
 
-                <p>
-                  bioGARAGE INC. © 2018 <br>
+                <p class="EN">
+                  bioGARAGE INC. © 2018
+                  <br>
                   <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
+                </p>
+
+                <p class="FR">
+                  bioGARAGE INC. © 2018
+                  <br>
+                  <a href="resources/terms.txt" class="terms"> termes & intimité</a> | <a href="resources/legal.txt" class="legal">légal</a>
                 </p>
               </div>
 

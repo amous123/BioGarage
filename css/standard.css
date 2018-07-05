@@ -1,6 +1,6 @@
 /* the body influences everything that doesn't have a class or id*/
 body {
-  background-color: White;
+  background-color: #f2f2f2;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -46,6 +46,7 @@ ul.topnav.active{
   margin-left: 2.2vh;
   margin-top:0.8vh;
   margin-bottom: 0.8vh;
+  height: inherit;
   opacity: 1;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
@@ -53,6 +54,7 @@ ul.topnav.active{
 }
 #logo{
   width: 16.625em;
+  height: 100%;
 }
 #logo a:hover{
   background-color: transparent;
@@ -86,7 +88,7 @@ ul.topnav.active{
 @media screen and (max-width: 650px){
   #menuoverlay.active{ width: 75vw;}
   #sitemenu-icon{ width: 3.5em !important; right: 0% !important;}
-  #sitemenu-icon.active{ right: 80vw !important;}
+  #sitemenu-icon.active{ right: 72vw !important;}
   #bioGARRAGE-logo img{  width: 90% !important;}
   #logoHolder.active{ opacity: 0 !important;}
   #bioGARRAGE-logo a{ transition-duration: 0.5s;}
@@ -329,3 +331,126 @@ ul.topnav li.dropdown{
   color: #2d2d2c;
   transition: all 0.25s;
 }
+
+/* --- beginning of footer --- */
+.footer{
+  background-color: #2d2d2c ;
+  margin: 0;
+  color: #6c6c6c;
+  font-size: 1.5vh;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+#bioGARAGE-section .fa{
+  text-align: center;
+  font-size: 2.5vh;
+  padding: 0.5vh 0.6vh;
+}
+.footerContent{
+  text-align: center;
+  overflow: auto;
+  line-height: 200%;
+}
+#UOttawa-section{
+  width: 50%;
+  float: left;
+}
+#bioGARAGE-section{
+  float: right;
+  width: 35%;
+  text-align: center;
+  padding-right: 7vh;
+}
+#UO-logo{
+  float: left;
+  padding-left: 7vh;
+}
+#UO-logo img{
+  height: 14vh;
+}
+#faculyAndRelated{
+  float: left;
+  width: 40%;
+  text-align: left;
+  margin-left: 20px;
+}
+#faculyAndRelated a{
+  text-decoration: none;
+    color: #6c6c6c;
+  cursor: pointer;
+}
+#faculyAndRelated p{
+  display: unset;
+}
+#faculyAndRelated a:hover{
+  color: white;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.fa-facebook:hover{color: #4e64b5; }
+.fa-linkedin:hover{color: #0288d1; }
+.fa-twitter:hover{color: #00aced; }
+.fa-instagram:hover{color: #9a8f62; }
+.fa-pinterest:hover{color: #ff5757; }
+.fa-youtube-play:hover{color: #c82929; }
+.fa-github:hover{color: #4a2881; }
+
+#bench-1{
+height: 3vh;
+vertical-align: -1.2vh;
+padding-left: 0;
+}
+#bench-2{
+  height: 3vh;
+  vertical-align: -1.2vh;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 630px){
+  .footerContent{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+  }
+  .footer{
+    height: auto;
+  }
+  #UO-logo{
+    padding-left: 0;
+    float: none;
+  }
+  #bioGARAGE-section{
+    float: none;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0px;
+    width: 100%;
+  }
+  #faculyAndRelated{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+  #UOttawa-section{  width: 100%; }
+  }
+  .fa{
+    color: #6c6c6c;
+  }
+.fa:hover{
+  transform: scale(1.1,1.1);
+  transition-duration: 0.4s;
+}
+.legal, .terms{
+  text-decoration: none;
+  color: #6c6c6c;
+}
+.legal:hover, .terms:hover{
+  color: white;
+  transform: scale(1.1,1.1);
+  transition-duration: 0.4s;
+}
+/* --- end of footer --- */
+/* --- end of webpage --- */

@@ -1,3 +1,23 @@
+var widgetCSS = "" +
+    "body{font-family: arial; }" +
+     ".timeline-Widget { background-color: #f2f2f2 !important;}" +
+    ".timeline-Header{background-color: #8f001a; border-top-left-radius: 10px; border-top-right-radius: 10px;}" +
+    ".timeline-Header-title{color: white !important;}" +
+    "a{ color: #ffffff !important; }" +
+    "a:hover{ color: #3b94d9 !important}" +
+    ".TweetAuthor-name {color: #2d2d2c !important;}" +
+    ".timeline-Viewport{ height: 65vh; }" +
+    ".timeline-Tweet-text{color: #8f001a; }";
+
+function paint(){
+  var w = document.getElementById("twitter-widget-0").contentDocument;
+
+  var s = document.createElement("style");
+  s.innerHTML = widgetCSS;
+  s.type = "text/css";
+  w.head.appendChild(s);
+}
+
 $(document).ready(function(){
   /* ---- sets home menu active for specific page---- */
   $('.menu-link-3').addClass(' selectedPage');

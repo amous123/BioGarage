@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
     <link rel="StyleSheet" href="sponsorSlider/infinite-slider.css">
-      <link rel="StyleSheet" href="css/styleTeam.css">
-        <link rel="StyleSheet" href="css/standard.css">
+    <link rel="StyleSheet" href="css/styleTeam.css">
+    <link rel="StyleSheet" href="css/standard.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -22,7 +22,7 @@
     <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
     <script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-      <script type="text/Javascript" src="javascript/standard.js"></script>
+    <script type="text/Javascript" src="javascript/standard.js"></script>
     <script type="text/Javascript" src="javascript/team.js"></script>
   </head>
 
@@ -31,7 +31,8 @@
     <div id="menuoverlay" class="showSideNav">
       <div id="mainmenu">
         <section id="iconsAdded">
-          <h2> EXPLORE </h2>
+          <h2 class="EN"> EXPLORE </h2>
+          <h2 class="FR"> EXPLORÉ </h2>
           <div id="languageButtonContainer">
             <button id="english" class="active" >EN</button>
             <button id="french">FR</button>
@@ -39,20 +40,20 @@
           <hr></hr>
           <!-- the drop down menu of the navbar is for mobile version of website -->
           <div class="EN">
-          <a class="sideNavMenuItems menu-link-1" href="index.html">HOME</a>
-          <a class="sideNavMenuItems menu-link-2" href="about.html" >ABOUT</a>
-          <a class="sideNavMenuItems menu-link-3" href="contact.html">CONTACT</a>
-          <a class="sideNavMenuItems menu-link-4" href="team.html">TEAM</a>
-          <a class="sideNavMenuItems menu-link-5" href="projects.html">PROJECTS</a>
-        </div>
+            <a class="sideNavMenuItems menu-link-1" href="index.html">HOME</a>
+            <a class="sideNavMenuItems menu-link-2" href="about.html" >ABOUT</a>
+            <a class="sideNavMenuItems menu-link-3" href="contact.html">CONTACT</a>
+            <a class="sideNavMenuItems menu-link-4" href="team.html">TEAM</a>
+            <a class="sideNavMenuItems menu-link-5" href="projects.html">PROJECTS</a>
+          </div>
 
-        <div class="FR">
-        <a class="sideNavMenuItems menu-link-1" href="index.html">FOYER</a>
-        <a class="sideNavMenuItems menu-link-2" href="about.html" >PROPOS</a>
-        <a class="sideNavMenuItems menu-link-3" href="contact.html">CONTACTE</a>
-        <a class="sideNavMenuItems menu-link-4" href="team.html">ÉQUIPE</a>
-        <a class="sideNavMenuItems menu-link-5" href="projects.html">PROJECTS</a>
-      </div>
+          <div class="FR">
+            <a class="sideNavMenuItems menu-link-1" href="index.html">FOYER</a>
+            <a class="sideNavMenuItems menu-link-2" href="about.html" >PROPOS</a>
+            <a class="sideNavMenuItems menu-link-3" href="contact.html">CONTACTE</a>
+            <a class="sideNavMenuItems menu-link-4" href="team.html">ÉQUIPE</a>
+            <a class="sideNavMenuItems menu-link-5" href="projects.html">PROJECTS</a>
+          </div>
         </section>
       </div>
       <div id="bioGARRAGE-logo"> <a href="index.html"> <img src="images/logo/bioLogo_highres.png" alt="bioGARRAGE logo"> </img> </a> </div>
@@ -82,7 +83,7 @@
 
 
 
-    <!--  <h2 id="photoH2">Photo Gallery</h2> -->
+      <!--  <h2 id="photoH2">Photo Gallery</h2> -->
 
       <div id="gallery" style="display:none;">
 
@@ -519,7 +520,7 @@ jQuery(document).ready(function(){
         <a href="https://www.uottawa.ca/en" ><img src="images/uO-logo-grey-transparent-copy.png"> </img><a>
         </div>
 
-        <div id="faculyAndRelated">
+        <div id="faculyAndRelated" class="EN">
           <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
           <br>
           <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
@@ -530,29 +531,48 @@ jQuery(document).ready(function(){
           <br>
           <a href="contact.html"> <p> CONTACT US </p> <a>
           </div>
+
+          <div id="faculyAndRelated" class="FR">
+            <p> <a href="http://science.uottawa.ca/fr"> Faculté de Science </a> </p>
+            <br>
+            <p> <a href="https://www.uottawa.ca/fr"> Université d'Ottawa </a> </p>
+            <br>
+            <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+            <br>
+            <p> CANADA </p>
+            <br>
+            <a href="contact.html"> <p> CONTACTEZ NOUS </p> <a>
+            </div>
+          </div>
+
+          <div id="bioGARAGE-section">
+            <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
+            <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
+            <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
+            <a class="lin" href="#"><i class="fa fa-github"></i></a>
+            <a class="lin" href="#"><img class="fa" id="bench-1" src="images/logo/Benchling-1.png"></img></a>
+            <a class="lin" href="#"><img class="fa" id="bench-2" src="images/logo/Benchling-2.png" style="display:none;"></img></a>
+
+            <p class="EN">
+              bioGARAGE INC. © 2018
+              <br>
+              <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
+            </p>
+
+            <p class="FR">
+              bioGARAGE INC. © 2018
+              <br>
+              <a href="resources/terms.txt" class="terms"> termes & intimité</a> | <a href="resources/legal.txt" class="legal">légal</a>
+            </p>
+          </div>
+
         </div>
-
-        <div id="bioGARAGE-section">
-          <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
-          <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
-          <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
-          <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
-          <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
-          <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
-          <a class="lin" href="#"><i class="fa fa-github"></i></a>
-          <a class="lin" href="#"><img class="fa" src="images/benchling-logo.png" style="height: 3.5vh;
-  vertical-align: bottom;"></img></a>
-
-          <p>
-            bioGARAGE INC. © 2018 <br>
-            <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
-          </p>
-        </div>
-
       </div>
     </div>
-  </div>
-  <script src="javascript/team.js"></script>
+    <script src="javascript/team.js"></script>
 
-</body>
-</html>
+  </body>
+  </html>

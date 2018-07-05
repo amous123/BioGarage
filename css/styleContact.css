@@ -183,7 +183,8 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  height: 70vh;
+  height: 65vh;
+  margin-top: 10vh;
   justify-content: space-between;
   align-items: center;
   padding: 5% 5% 5% 5%;
@@ -193,11 +194,14 @@ button:hover {
 [  ]*/
 .contact1-form {
   width: 50%;
+  height: inherit;
+  margin-top: 1em;
 }
 
 #twitter-feed{
   margin-left: auto;
   width: 45%;
+  height: inherit;
   position: relative;
 }
 
@@ -219,7 +223,7 @@ input.input1 + .shadow-input1 {
 }
 
 textarea.input1 {
-  min-height: 150px;
+  min-height: 22vh;
   border-radius: 0px;
   padding: 12px 30px;
 }
@@ -234,17 +238,14 @@ textarea.input1 + .shadow-input1 {
   z-index: 1;
   margin-bottom: 3vh;
 }
-#firstInput{
-  margin-top: 15vh;
-}
 .input1 {
   display: block;
   width: 100%;
-  background: #e6e6e6;
+  background: #90271b;
   font-family: Montserrat-Bold;
   font-size: 1.9vh;
   line-height: 1.5;
-  color: #666666;
+  color: #f2f2f2;
 }
 .shadow-input1 {
   content: '';
