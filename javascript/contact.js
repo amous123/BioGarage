@@ -294,4 +294,5 @@ function initMap() {
         map: map
     });
 }
+
 });
