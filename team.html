@@ -14,7 +14,7 @@
     <link rel="StyleSheet" href="sponsorSlider/infinite-slider.css">
     <link rel="StyleSheet" href="css/styleTeam.css">
     <link rel="StyleSheet" href="css/standard.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <!--  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -28,15 +28,26 @@
 
   <body>
 
+    <div id="loader">
+      <section id="spinnerCircle">
+        <p id="spinnerU"> u </p>
+      <div id="spinner"></div>
+    </section >
+    </div>
+    <div id="loadingPage" class="animate-bottom">
+
     <div id="menuoverlay" class="showSideNav">
       <div id="mainmenu">
         <section id="iconsAdded">
+          <div id="sideMenuHeader">
           <h2 class="EN"> EXPLORE </h2>
           <h2 class="FR"> EXPLORÉ </h2>
+
           <div id="languageButtonContainer">
             <button id="english" class="active" >EN</button>
             <button id="french">FR</button>
           </div>
+        </div>
           <hr></hr>
           <!-- the drop down menu of the navbar is for mobile version of website -->
           <div class="EN">
@@ -70,6 +81,8 @@
       <li id="logo"> <a id="logoHolder" href="index.html"> <img src="images/logo/bioLogo_highres.png" alt="bioGARRAGE logo" width="" height=""> </img> </a></li>
     </ul>
 
+    <script  src="javascript/standard.js"></script>
+    <script  src="javascript/team.js"></script>
     <div class="blurContainer" id="blurContain">
       <script src="javascript/team.js"></script>
 
@@ -84,7 +97,6 @@
 
 
       <!--  <h2 id="photoH2">Photo Gallery</h2> -->
-
       <div id="gallery" style="display:none;">
 
         <a href="http://unitegallery.net">
@@ -490,11 +502,6 @@ style="display:none">
 -->
 
 </div>
-<script type="text/javascript">
-jQuery(document).ready(function(){
-  jQuery("#gallery").unitegallery();
-});
-</script>
 
 <div id="sponsors">
   <section class="customer-logos slider">
@@ -549,12 +556,12 @@ jQuery(document).ready(function(){
             <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
             <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
             <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="lin" href="#"><img class="fa" id="bench-1" src="images/logo/Benchling-1.png"></img></a>
+            <a class="lin" href="#"><img class="fa" id="bench-2" src="images/logo/Benchling-2.png" style="display:none;"></img></a>
             <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
             <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
             <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
             <a class="lin" href="#"><i class="fa fa-github"></i></a>
-            <a class="lin" href="#"><img class="fa" id="bench-1" src="images/logo/Benchling-1.png"></img></a>
-            <a class="lin" href="#"><img class="fa" id="bench-2" src="images/logo/Benchling-2.png" style="display:none;"></img></a>
 
             <p class="EN">
               bioGARAGE INC. © 2018
@@ -572,7 +579,15 @@ jQuery(document).ready(function(){
         </div>
       </div>
     </div>
-    <script src="javascript/team.js"></script>
+  </div>
+  <script type="text/javascript">
+  jQuery(document).ready(function(){
+  jQuery("#gallery").unitegallery();
+  loadPage();
+    });
+  </script>
+    <script  src="javascript/standard.js"></script>
+    <script  src="javascript/team.js"></script>
 
   </body>
   </html>

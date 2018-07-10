@@ -6,11 +6,8 @@ $(document).ready(function(){
 // W3C's JS Code for an accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
-// Open the first accordion
-var firstAccordion = acc[0];
-var firstPanel = firstAccordion.nextElementSibling;
-firstAccordion.classList.add("active");
-firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+
+
 // Add onclick listener to every accordion element
 for (i = 0; i < acc.length; i++) {
   acc[i].onclick = function() {

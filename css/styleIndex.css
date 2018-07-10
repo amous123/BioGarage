@@ -7,16 +7,6 @@
   transition-duration: 0s !important;
   opacity: 0;
 }
-#logoHolder::before{
-  content: '\25CF';
-      font-size: 21vh;
-background-color: transparent;
-position: absolute;
-margin-left: -2.05vh;
-margin-top: -13.8vh;
-color: #000000;
-z-index: -1;
-}
 
 /* begining of front page */
 /* ---- animation backgrounds ---- */
@@ -36,6 +26,9 @@ figure{
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0 0 !important;
+}
+#frontContent{
+  position: relative;
 }
 
 /* --- keyframes --- */
@@ -142,7 +135,6 @@ padding-top: 3vh;
   border-radius: 10px;
   background-color: transparent;
   letter-spacing: .375em;
-  font-family: AkkuratPro-Regular,sans-serif;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   padding: 15px 32px;
@@ -182,7 +174,7 @@ canvas {
   display: block;
   position: relative;
   vertical-align: bottom;
-  cursor: url(../images/bioLogo_avatar_cursor.png) 10 10, auto;
+  cursor: url(../images/logo/bioLogo_avatar_cursor.png) 10 10, auto;
 } /* ---- particles.js container ---- */
 #particles-js {
   width: 100%;

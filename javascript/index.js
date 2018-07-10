@@ -1,5 +1,6 @@
 $(window).load(function() {
   $("body").removeClass("preload");
+  loadPage();
 });
 
 /* --- function to transition frontpage main background smoothly --- */

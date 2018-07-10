@@ -1,9 +1,11 @@
 var widgetCSS = "" +
     "body{font-family: arial; }" +
      ".timeline-Widget { background-color: #f2f2f2 !important;}" +
-    ".timeline-Header{background-color: #8f001a; border-top-left-radius: 10px; border-top-right-radius: 10px;}" +
-    ".timeline-Header-title{color: white !important;}" +
-    "a{ color: #ffffff !important; }" +
+    ".timeline-Header{background-color: white; border-top-left-radius: 10px; border-top-right-radius: 10px;}" +
+    ".timeline-Header-title{color: #8f001a !important;}" +
+    ".timeline-Header-byline{ color: #8f001a; }" +
+    ".timeline-Footer { background-color: #ffffff; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }" +
+    "a{ color: #8f001a !important; }" +
     "a:hover{ color: #3b94d9 !important}" +
     ".TweetAuthor-name {color: #2d2d2c !important;}" +
     ".timeline-Viewport{ height: 65vh; }" +
@@ -16,11 +18,13 @@ function paint(){
   s.innerHTML = widgetCSS;
   s.type = "text/css";
   w.head.appendChild(s);
+  loadPage();
 }
 
 $(document).ready(function(){
   /* ---- sets home menu active for specific page---- */
   $('.menu-link-3').addClass(' selectedPage');
+});
 
 
 // Predefined code for using Google Maps Static Javascript API
@@ -294,5 +298,3 @@ function initMap() {
         map: map
     });
 }
-
-});

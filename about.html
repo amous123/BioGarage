@@ -4,10 +4,12 @@
 
   <link rel="StyleSheet" href="css/styleAbout.css">
   <link rel="StyleSheet" href="css/standard.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/Javascript" src="javascript/standard.js"></script>
   <script type="text/Javascript" src="javascript/about.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -15,17 +17,28 @@
     <meta name="Developers" content="amous123">
 
   </head>
-  <body>
+  <body onload="loadPage()">
+
+    <div id="loader">
+      <section id="spinnerCircle">
+        <p id="spinnerU"> u </p>
+      <div id="spinner"></div>
+    </section >
+    </div>
+    <div id="loadingPage" class="animate-bottom">
 
     <div id="menuoverlay" class="showSideNav">
       <div id="mainmenu">
         <section id="iconsAdded">
+          <div id="sideMenuHeader">
           <h2 class="EN"> EXPLORE </h2>
           <h2 class="FR"> EXPLORÉ </h2>
+
           <div id="languageButtonContainer">
             <button id="english" class="active" >EN</button>
             <button id="french">FR</button>
           </div>
+        </div>
           <hr></hr>
           <!-- the drop down menu of the navbar is for mobile version of website -->
           <div class="EN">
@@ -71,7 +84,7 @@
       </div>
 
       <div id="about">
-        <div id="aboutContent">
+        <div data-aos="fade" id="aboutContent">
           <p class="EN">
             bioGARAGE is an enviromment to share and collaborate molecular biology experiments and
             allow the general public access to what would normally take a few years of university courses in the field. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -85,13 +98,14 @@ bioGARAGE est un enviromment de partager et de collaborer des expériences de bi
         <div id="questionsContent">
 
           <div class="row">
-            <div class="column">
+            <div data-aos="fade-up" class="column">
               <img src="images/img_nature.jpg" id="Mquestions" alt="about picture" width="200px" height="200px;"> </img></td>
             </div>
 
             <div class="column oddColor">
-              <div id="expandable">
-                <h2>Our Goal</h2>
+              <div data-aos="fade-left"id="expandable">
+                <h2 class="EN">Our Goal</h2>
+                <h2 class="FR">Notre But</h2>
                 <section>
                   <p class="EN">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
@@ -101,6 +115,29 @@ bioGARAGE est un enviromment de partager et de collaborer des expériences de bi
                   </p>
                 </section>
               </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="column">
+              <div data-aos="fade-right" id="expandable" >
+                <h2 class="EN">What You Can Do?</h2>
+                <h2 class="FR">Ce que vous pouvez faire?</h2>
+
+                <section>
+                  <p class="EN">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+                  </p>
+                  <p class="FR">
+                    french: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
+                  </p>
+                </section>
+
+              </div>
+            </div>
+            <div data-aos="fade-up" class="column">
+              <img src="images/img_nature.jpg" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img></td>
             </div>
           </div>
 
@@ -109,28 +146,7 @@ bioGARAGE est un enviromment de partager et de collaborer des expériences de bi
             </div>
           </div>
 
-          <div class="row">
-            <div class="column">
-              <div id="expandable" >
-                <h2>What You Can Do?</h2>
-
-                <section>
-                  <p class="EN">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
-                  </p>
-                  <p class="FR">
-                    french: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta non turpis faucibus lobortis. Curabitur non eros rutrum, gravida felis non, luctus velit. Ut commodo congue velit feugiat lobortis. Etiam nec dolor quis nulla bibendum blandit vitae nec enim. Maecenas id dignissim erat. Aenean ac mi nec ante venenatis interdum quis vel lacus.
-                  </p>
-                </section>
-
-              </div>
-            </div>
-            <div class="column">
-              <img src="images/img_nature.jpg" id="descriptionImage" alt="about picture" width="200px" height="200px;"> </img></td>
-            </div>
-          </div>
-
-          <div class="accordionSection EN">
+          <div data-aos="fade-right" class="accordionSection EN">
             <!-- <h2> F.A.Q. </h2> -->
             <button class="accordion">Lorem ipsum dolor sit amet?</button>
             <div class="panel">
@@ -158,7 +174,7 @@ bioGARAGE est un enviromment de partager et de collaborer des expériences de bi
             </div>
           </div>
 
-          <div class="accordionSection FR">
+          <div data-aos="fade-right" class="accordionSection FR">
             <!-- <h2> F.A.Q. </h2> -->
             <button class="accordion"> french: Lorem ipsum dolor sit amet?</button>
             <div class="panel">
@@ -237,12 +253,12 @@ bioGARAGE est un enviromment de partager et de collaborer des expériences de bi
                 <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
                 <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
                 <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="lin" href="#"><img class="fa" id="bench-1" src="images/logo/Benchling-1.png"></img></a>
+                <a class="lin" href="#"><img class="fa" id="bench-2" src="images/logo/Benchling-2.png" style="display:none;"></img></a>
                 <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
                 <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
                 <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
                 <a class="lin" href="#"><i class="fa fa-github"></i></a>
-                <a class="lin" href="#"><img class="fa" id="bench-1" src="images/logo/Benchling-1.png"></img></a>
-                <a class="lin" href="#"><img class="fa" id="bench-2" src="images/logo/Benchling-2.png" style="display:none;"></img></a>
 
                   <p class="EN">
                     bioGARAGE INC. © 2018
@@ -260,6 +276,8 @@ bioGARAGE est un enviromment de partager et de collaborer des expériences de bi
               </div>
             </div>
           </div>
+        </div>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
           <script  src="javascript/standard.js"></script>
           <script  src="javascript/about.js"></script>
 

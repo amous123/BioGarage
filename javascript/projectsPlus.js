@@ -1,6 +1,6 @@
 $(document).ready(function(){
   /* ---- sets home menu active for specific page---- */
-  $('#menu-link-5').removeClass('selectedPage');
+  $('.menu-link-5').removeClass('selectedPage');
   });
 
 

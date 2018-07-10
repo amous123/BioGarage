@@ -7,6 +7,22 @@ $("ul.topnav").addClass('transparent');
 }
 });
 
+/* ---- loading page animation ---- */
+var load;
+function loadPage() {
+    load = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("loadingPage").style.zIndex = "10";
+
+  /* --- initializing AOS --- */
+  AOS.init();
+AOS.refresh();
+}
+
+
 $(document).ready(function(){
 /* ---- smooth scroll to top---- */
   $(window).scroll(function(){

@@ -11,7 +11,7 @@ $('a[href^="#"]').on('click', function(event) {
 
 $(document).ready(function(){
   /* ---- sets home menu active for specific page---- */
-  $('#menu-link-5').addClass('selectedPage');
+  $('.menu-link-5').addClass('selectedPage');
 })
 
 $(document).ready(function(){
