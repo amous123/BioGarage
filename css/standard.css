@@ -13,50 +13,62 @@
 }
 #spinnerCircle{
   position: relative;
-      height: 45vh;
-      width: 45vh;
-      margin-top: auto;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: auto;
-      background-color: black;
-      border-radius: 50%;
-      line-height: normal;
-      -webkit-box-sizing: unset !important;
-      -moz-box-sizing: unset !important;
-      box-sizing: unset !important;
+  height: 50vh;
+  width: 50vh;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  background-color: black;
+  border-radius: 50%;
+  line-height: normal;
+  -webkit-box-sizing: unset !important;
+  -moz-box-sizing: unset !important;
+  box-sizing: unset !important;
 }
-#spinner {
+#spinner{
   position: absolute;
   left: 55%;
   top: 40%;
   z-index: 1;
-  border: 2.5vh solid #f2f2f2;
+  border: 2vh solid #f2f2f2;
   border-radius: 50%;
-  border-top: 2.5vh solid #8f001a;
   width: 45%;
   height: 45%;
   margin: -8.12vh 0 0 -8.12vh;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
-#spinner::before{
+#spinnerArrow{
+  position: absolute;
+  width: 92%;
+  height: 92%;
+  transform: translate(-3vh, -3vh);
+  z-index: 1;
+  border: 4vh solid transparent;
+  border-radius: 50%;
+  border-top: 4vh solid #f2f2f2;
+}
+#spinnerArrow::before{
+  content: "";
   width: 0;
   height: 0;
-  border-bottom: 4vh solid #8f001a;
-  border-left: 4vh solid transparent;
-  transform: translate(-0.5vh, 0vh);
-  content: "";
+  border-bottom-width: 6vh;
+  border-bottom-style: solid;
+  border-bottom-color: #f2f2f2;
+  border-left: 3.5vh solid transparent;
+  border-right: 3.5vh solid transparent;
+  transform: translate(2.7vh, 0vh) rotate(145deg);
   right: 0;
   position: absolute;
 }
 #spinnerU{
   position: relative;
-  font-size: 30vh;
+  font-size: 28vh;
   color: #f2f2f2;
   font-family: serif;
-  left: 5%;
-  top: 17%;
+  left: 10%;
+  top: 29%;
   width: fit-content;
 }
 @-webkit-keyframes spin {
