@@ -172,8 +172,7 @@ function initMap() {
             "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "color": "#8f001a"
-                    //"#FFC80A"
+                    "color": "#FFC80A"
                 },
                 {
                     "lightness": "0"

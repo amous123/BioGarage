@@ -1,0 +1,151 @@
+/* --- Beginning of blurred background --- */
+#mainBackground{
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url(../images/img_mountains.jpg) no-repeat center center fixed;
+}
+body{
+  background-color: #A2CCED !important;
+}
+
+/* --- benchling button for protocols --- */
+.benchling-button-container{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0%;
+  margin-bottom: 4%;
+}
+.benchling-button{
+  font-size: 2.5vh;
+  color: #3172a5;
+  border: 2px solid #3172a5;
+  border-radius: 10px;
+  background-color: transparent;
+  letter-spacing: 0.25vh;
+  font-family: AkkuratPro-Regular,sans-serif;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: fit-content;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.benchling-button:hover{
+  color: #d6eafa;
+  background-color: #3172a5;
+  transform: scale(1.1,1.1);
+}
+.benchling-button i {
+  margin-left: 7px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #3172a5;
+}
+.benchling-button:hover i {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  color: #d6eafa;
+}
+
+/* --- accordion css --- */
+.accordionSection{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.boxes{
+  display: flex;
+  overflow: auto;
+}
+
+.rightProtocol{
+  float: right;
+  width: 50%;
+}
+.leftProtocol{
+  width: 50%;
+}
+button.accordion {
+  background-color: #5091C3;
+  /* f2f2f2; */
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2vh;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+button.accordion p{
+  margin: 0;
+}
+button.accordion.active, button.accordion:hover {
+  background-color: #3173A6;
+    /*#ddd;*/
+  color: #d6eafa;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+button.accordion p:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+button.accordion.active p:after {
+  content: "\2212";
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+button.accordion.active p:after, button.accordion:hover p:after{
+  color: #d6eafa;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+div.panel {
+  width: 100%;
+  background-color: #D6EAFA;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+div.panel p{
+  width: 96%;
+  text-indent: 50px;
+  font-size: 2vh;
+  vertical-align: top;
+  margin: 2%;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 700px) {
+  div.panel{
+    padding: 0;
+  }
+  .panel-img{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  div.panel p{
+    width: 90%;
+    display: block;
+  }
+}
+/* --- end of accordion css --- */

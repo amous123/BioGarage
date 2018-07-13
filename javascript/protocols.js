@@ -1,6 +1,6 @@
 $(document).ready(function(){
   /* ---- sets home menu active for specific page---- */
-  $('.menu-link-5').removeClass('selectedPage');
+  $('.menu-link-6').addClass('selectedPage');
   });
 
 
@@ -8,22 +8,29 @@ $(document).ready(function(){
 // W3C's JS Code for an accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
-
-  // Open the first accordion
-  var firstAccordion = acc[0];
+var accI;
+var cell;
+for (accI = 0; accI < acc.length; accI=accI+calcCell(accI) ){
+  // Open the accordions in a diagnol pattern
+  var firstAccordion = acc[accI];
   var firstPanel = firstAccordion.nextElementSibling;
    firstAccordion.classList.add("active");
   firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
-
-  // Open the second accordion
-  var firstAccordion = acc[2];
-  var firstPanel = firstAccordion.nextElementSibling;
-   firstAccordion.classList.add("active");
-  firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
-
+}
+function calcCell(cell){
+  var res;
+  res = cell%2;
+  if(res==0){
+    return 3;
+  }
+  else{
+    return 1;
+  }
+}
 
 // Add onclick listener to every accordion element
 for (i = 0; i < acc.length; i++) {
+  $(acc[i]).addClass(" accord"+i);
   acc[i].onclick = function(){
     // For toggling purposes detect if the clicked section is already "active"
     var isActive = this.classList.contains("active");
@@ -37,9 +44,11 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
+
     }
   };
 }
+
 // Cross-browser way to get the computed height of a certain element. Credit to @CMS on StackOverflow (http://stackoverflow.com/a/2531934/7926565)
 function getStyle(el, styleProp) {
   var value, defaultView = (el.ownerDocument || document).defaultView;

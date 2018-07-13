@@ -13,8 +13,9 @@
 }
 #spinnerCircle{
   position: relative;
-  height: 50vh;
-  width: 50vh;
+  height: 25vh;
+  width: 25vh;
+  top: 25vh;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
@@ -31,11 +32,11 @@
   left: 55%;
   top: 40%;
   z-index: 1;
-  border: 2vh solid #f2f2f2;
+  border: 1vh solid #f2f2f2;
+  margin: -4.06vh 0 0 -4.06vh;
   border-radius: 50%;
   width: 45%;
   height: 45%;
-  margin: -8.12vh 0 0 -8.12vh;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -43,34 +44,35 @@
   position: absolute;
   width: 92%;
   height: 92%;
-  transform: translate(-3vh, -3vh);
+  transform: translate(-1.5vh, -1.5vh);
+  border: 2vh solid transparent;
+  border-top: 2vh solid #f2f2f2;
   z-index: 1;
-  border: 4vh solid transparent;
   border-radius: 50%;
-  border-top: 4vh solid #f2f2f2;
 }
 #spinnerArrow::before{
   content: "";
   width: 0;
   height: 0;
-  border-bottom-width: 6vh;
   border-bottom-style: solid;
   border-bottom-color: #f2f2f2;
-  border-left: 3.5vh solid transparent;
-  border-right: 3.5vh solid transparent;
-  transform: translate(2.7vh, 0vh) rotate(145deg);
+  border-bottom-width: 3vh;
+  border-left: 1.75vh solid transparent;
+  border-right: 1.75vh solid transparent;
+  transform: translate(1.4vh, 0vh) rotate(145deg);
   right: 0;
   position: absolute;
 }
 #spinnerU{
   position: relative;
-  font-size: 28vh;
+  font-size: 14vh;
   color: #f2f2f2;
   font-family: serif;
   left: 10%;
   top: 29%;
   width: fit-content;
 }
+
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
@@ -404,6 +406,9 @@ ul.topnav li.dropdown{
   content: "\f0c0";
 }
 .menu-link-5::before {
+  content: "\f085";
+}
+.menu-link-6::before {
   content: "\f187";
 }
 /* --- End of navbar for mobile --- */

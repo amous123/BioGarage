@@ -92,7 +92,7 @@ padding-top: 0.83em;
 #questionsContent h2{
   text-align: center;
 }
-#questionsContent p{
+#questionsContent div.panel p{
       font-size: 2vh;
   text-indent: 50px;
   overflow: hidden;
@@ -156,14 +156,17 @@ button.accordion {
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
-button.accordion:after {
+button.accordion p{
+  margin: 0;
+}
+button.accordion p:after {
     content: '\002B';
     color: #777;
     font-weight: bold;
     float: right;
     margin-left: 5px;
 }
-button.accordion.active:after {
+button.accordion p.active:after {
     content: "\2212";
 }
 div.panel {
