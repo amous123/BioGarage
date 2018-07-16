@@ -4,8 +4,7 @@ if ($(document).scrollTop() >= 100) {
 $("ul.topnav").removeClass('transparent');
 } else {
 $("ul.topnav").addClass('transparent');
-}
-});
+} });
 
 /* ---- loading page animation ---- */
 var load;
@@ -16,12 +15,10 @@ function loadPage() {
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("loadingPage").style.zIndex = "10";
-
-  /* --- initializing AOS --- */
-  AOS.init();
+/* --- initializing AOS --- */
+AOS.init();
 AOS.refresh();
 }
-
 
 $(document).ready(function(){
 /* ---- smooth scroll to top---- */
@@ -41,11 +38,9 @@ $('#scroll').click(function(){
 $('#scroll').mouseover(function(){
   $('#scroll span').css("border-bottom-color", "#8f001a");
 });
-
 $('#scroll').mouseout(function(){
   $('#scroll span').css("border-bottom-color", "#ffffff");
 });
-
 
 /* ---- storing cookies on which language is selected ---- */
 var language = sessionStorage.getItem('language');
@@ -70,8 +65,7 @@ function switchEnglish() {
 else{
   $('.EN').toggleClass('');
   $('.FR').toggleClass('');
-}
-}
+} }
 
 $('#french').click(function(){
   switchFrench();
@@ -87,8 +81,7 @@ else{
   $('.FR').toggleClass('active');
   $('#english').removeClass('active');
   $('#french').addClass('active');
-}
-}
+} }
 
 /* ---- expand and retract sideBar content and overlay ---- */
   $('#sitemenu-icon').click(function(){
@@ -117,5 +110,4 @@ else{
       $('#bench-1').css("display", "inline-block");
       $('#bench-2').css("display", "none");
     })
-
 })

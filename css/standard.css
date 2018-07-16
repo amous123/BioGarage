@@ -421,7 +421,8 @@ ul.topnav li.dropdown{
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
- position: relative; background-attachment: fixed;
+ position: relative;
+ background-attachment: fixed;
  overflow: hidden;
  }
  #mainBackground > header {
@@ -468,8 +469,12 @@ ul.topnav li.dropdown{
     text-align: center;
 }
 @media screen and (max-width: 600px){
-#mainBackground{ padding-left: 0 !important; padding-right: 0 !important;}
+#mainBackground{ padding-left: 0 !important;
+  padding-right: 0 !important;
+  background-attachment: unset;
+}
 #contact-title{ font-size: 5vh; }
+
 }
 /* --- end of blurred background --- */
 
