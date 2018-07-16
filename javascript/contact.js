@@ -26,7 +26,6 @@ $(document).ready(function(){
   $('.menu-link-3').addClass(' selectedPage');
 });
 
-
 // Predefined code for using Google Maps Static Javascript API
 function initMap() {
     var uluru = {lat: 45.423722, lng: -75.683634};
