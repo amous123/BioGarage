@@ -126,7 +126,7 @@ function initMap() {
             "elementType": "labels.text.fill",
             "stylers": [
                 {
-                    "color": "#FFC80A"
+                    "color": "#2f2f2"
                 }
             ]
         },
@@ -171,7 +171,7 @@ function initMap() {
             "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "color": "#FFC80A"
+                    "color": "#f2f2f2"
                 },
                 {
                     "lightness": "0"
@@ -201,7 +201,7 @@ function initMap() {
             "elementType": "labels.text.stroke",
             "stylers": [
                 {
-                    "color": "#FFC80A"
+                    "color": "#f2f2f2"
                 }
             ]
         },
