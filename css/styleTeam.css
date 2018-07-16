@@ -65,9 +65,9 @@ a {
   background-position: top center, top center, bottom center, bottom center,
     top center, bottom center;
   background-size: 2rem 2rem, 2rem 2rem, 2rem 2rem,
-    2rem 2rem, 100% 3rem, 100% 3rem;
-  background-repeat: repeat-x;
+    2rem 2rem, 100% 3rem, 100% 3rem;;
   padding: 3rem 0;
+  background-repeat: repeat-x;
   position: relative;
   transition: all 0.25s ease-in-out;
 }
@@ -80,3 +80,8 @@ a {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media only screen and (max-width: 700px) {
+  .customer-logos{
+    background-size: 4% 12%, 4% 12%, 4% 12%, 4% 12%, 100% 30%, 100% 30%;
+    padding: 4% 0;
+} }

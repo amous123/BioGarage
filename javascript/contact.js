@@ -108,7 +108,7 @@ function initMap() {
             "elementType": "labels.text.fill",
             "stylers": [
                 {
-                    "color": "#f2f2f2"
+                    "color": "#FFC80A"
                 }
             ]
         },
@@ -126,7 +126,7 @@ function initMap() {
             "elementType": "labels.text.fill",
             "stylers": [
                 {
-                    "color": "#2f2f2"
+                    "color": "#f2f2f2"
                 }
             ]
         },
