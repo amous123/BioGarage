@@ -154,7 +154,7 @@ padding-top: 3vh;
   transition-duration: 0.3s;
  }
 
- @media screen and (max-width: 700px){
+ @media screen and (max-width: 900px){
   .openingContent{
     letter-spacing: 1.5;
     text-align: center;
