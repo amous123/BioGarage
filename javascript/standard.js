@@ -92,6 +92,14 @@ else{
     $('#logoHolder').toggleClass('active');
     $('ul.topnav').toggleClass('active');
   })
+  $('#sitemenu-icon-side').click(function(){
+    $('#sitemenu-icon').toggleClass('active');
+    $('#overlay').toggleClass('active');
+    $('#blurContain').toggleClass('active');
+    $('#menuoverlay').toggleClass('active');
+    $('#logoHolder').toggleClass('active');
+    $('ul.topnav').toggleClass('active');
+  })
   $('#overlay').click(function(){
     $('#sitemenu-icon').toggleClass('active');
     $('#overlay').toggleClass('active');
