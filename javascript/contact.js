@@ -21,6 +21,24 @@ function paint(){
   loadPage();
 }
 
+
+function inputLang(){
+  var input1;
+  var input2;
+  var i;
+  var inputs = document.getElementsByClassName("formInput");
+  for(i=0; i<inputs.length; i=i+2){
+    input1 = document.getElementsByClassName("formInput")[i].value;
+    input2 = document.getElementsByClassName("formInput")[i+1].value;
+    if ($('#english').hasClass('active')){
+      document.getElementsByClassName("formInput")[i+1].value = input1;
+    }
+    else{
+      document.getElementsByClassName("formInput")[i].value = input2;
+    }
+  }
+}
+
 $(document).ready(function(){
   /* ---- sets home menu active for specific page---- */
   $('.menu-link-3').addClass(' selectedPage');
