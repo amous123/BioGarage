@@ -261,6 +261,12 @@ textarea.input1 + .shadow-input1 {
     height: fit-content;
   }
 }
+@media (max-width: 600px) {
+  .contact1-form-btn{
+    font-size: 2.5vh;
+    padding: 10px 20px;
+  }
+}
 
 #map{
   height: 17em;
