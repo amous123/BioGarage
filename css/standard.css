@@ -394,11 +394,17 @@ ul.topnav li.dropdown{
 #sitemenu-icon-side{
   display: none;
 }
-@media screen and (max-width: 800px){
-  #sitemenu-icon{
-    width: 10%;
+
+@media screen and (max-width: 450px){
+  ul.topnav img{
+    height: 60%;
+  }
+  #logoHolder{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
   }
 }
+
 @media screen and (max-width: 500px){
   ul.topnav{
     height: 12%;

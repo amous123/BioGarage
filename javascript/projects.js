@@ -1,6 +1,6 @@
 /* ---- changes tabs ---- */
 (function($) {
-var tabs =  $("#tabs li");
+var tabs =  $("#tabs li a");
 var projects =  $(".projectContent");
 tabs.click(function() {
   var content = ($(this).attr('id'));
@@ -11,7 +11,6 @@ tabs.click(function() {
   $(content).addClass("active");
 
 });
-
 })(jQuery);
 
 $('a[href^="#"]').on('click', function(event) {

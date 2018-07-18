@@ -10,22 +10,12 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 var accI;
 var cell;
-for (accI = 0; accI < acc.length; accI=accI+calcCell(accI) ){
+for (accI = 0; accI < acc.length; accI++){
   // Open the accordions in a diagnol pattern
   var firstAccordion = acc[accI];
   var firstPanel = firstAccordion.nextElementSibling;
    firstAccordion.classList.add("active");
   firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
-}
-function calcCell(cell){
-  var res;
-  res = cell%2;
-  if(res==0){
-    return 3;
-  }
-  else{
-    return 1;
-  }
 }
 
 // Add onclick listener to every accordion element
