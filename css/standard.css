@@ -76,16 +76,16 @@
   #spinnerCircle{
     height: 185px;
     width: 185px;
-    top: 185px;
+    top: 10%;
   }
   #spinner{
     border: 7.2px solid #f2f2f2;
     margin: -30px 0 0 -30px;
   }
   #spinnerArrow{
-        transform: translate(-11px, -11px);
-        border: 16px solid transparent;
-        border-top: 16px solid #f2f2f2;
+    transform: translate(-11px, -11px);
+    border: 16px solid transparent;
+    border-top: 16px solid #f2f2f2;
   }
   #spinnerArrow::before{
     border-bottom-width: 22px;
@@ -94,7 +94,7 @@
     transform: translate(11px, 0px) rotate(145deg);
   }
   #spinnerU{
-      font-size: 105px;
+    font-size: 105px;
   }
 }
 
@@ -266,7 +266,7 @@ ul.topnav.active{
   width: fit-content;
   color: #2d2d2c;
   font-weight: bold !important;
-    margin-left: 0;
+  margin-left: 0;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -280,15 +280,7 @@ ul.topnav.active{
 #bioGARRAGE-logo img{
   width: 75%;
 }
-@media screen and (max-width: 500px){
-  #menuoverlay.active{ width: 100%;}
-  #mainmenu{ top: 10%; }
-  #sitemenu-icon{ width: 3.5em !important; right: 0% !important;}
-  #sitemenu-icon.active{ right: 72vw !important;}
-  #bioGARRAGE-logo img{  width: 90% !important;}
-  #logoHolder.active{ opacity: 0 !important;}
-  #bioGARRAGE-logo a{ transition-duration: 0.5s;}
-}
+
 
 /* classes to switch between languages */
 .EN{
@@ -408,55 +400,81 @@ ul.topnav li.dropdown{
   }
 }
 @media screen and (max-width: 500px){
-#sitemenu-icon-side{
-  position: absolute;
-  display: block;
-  top: 1.5%;
-  left: 5%;
-  width: 10%;
-  height: 8%;
-  cursor: pointer;
-  background: transparent;
-  -o-transition: all 1s;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  z-index: 3;
-}
-#sitemenu-side{
-  width: 45px;
-  height: 10%;
-  background: black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 2px 5px rgba(0,0,0,.2);
-  transition: 0.5s;
-}
-#sitemenu-side:before, #sitemenu-side:after{
-  content:'';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: black;
-  box-shadow: 0 2px 5px rgba(0,0,0,.2);
-  transition: 0.5s;
-}
-#sitemenu-side:before{
-  top: 0;
-  transform: rotate(45deg);
-}
-#sitemenu-side:after{
-  top: 0;
-  transform: rotate(135deg);
-}
-#sitemenu-icon-side #sitemenu-side{
-  background: rgba(0,0,0,0);
-  box-shadow: 0 2px 5px rgba(0,0,0,0);
-}
-#languageButtonContainer {
+  ul.topnav{
+    height: 12%;
+  }
+  #menuoverlay.active{ width: 100%;}
+  #mainmenu{ top: 10%; }
+  #sitemenu{ width: 7vh; }
+  #sitemenu-icon{ width: 3.5em !important; right: 0% !important;}
+  #bioGARRAGE-logo img{  width: 90% !important;}
+  #logoHolder.active{ opacity: 0 !important;}
+  #bioGARRAGE-logo a{ transition-duration: 0.5s;}
+  #sitemenu-icon.active{
+    right: 0;
+  }
+  #sitemenu-icon.active #sitemenu{
+    background: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);;
+  }
+  #sitemenu-icon.active #sitemenu:before{
+    top:  -250%;
+    transform:  unset;
+  }
+  #sitemenu-icon.active #sitemenu:after{
+    top:  250%;
+    transform:  unset;
+  }
+
+  #sitemenu-icon-side{
+    position: absolute;
+    display: block;
+    top: 1.5%;
+    left: 5%;
+    width: 10%;
+    height: 8%;
+    cursor: pointer;
+    background: transparent;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    z-index: 3;
+  }
+  #sitemenu-side{
+    width: 6vh;
+    height: 10%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: 0.5s;
+  }
+  #sitemenu-side:before, #sitemenu-side:after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: 0.5s;
+  }
+  #sitemenu-side:before{
+    top: 0;
+    transform: rotate(45deg);
+  }
+  #sitemenu-side:after{
+    top: 0;
+    transform: rotate(135deg);
+  }
+  #sitemenu-icon-side #sitemenu-side{
+    background: rgba(0,0,0,0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0);
+  }
+  #languageButtonContainer {
     margin: 2% 5%;
-}
+  }
 }
 .sideNavMenuItems{
   display: block;
@@ -500,45 +518,45 @@ ul.topnav li.dropdown{
 /* --- End of navbar --- */
 
 /* --- Beginning of blurred background --- */
- #mainBackground{
+#mainBackground{
   padding: 12%;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
- position: relative;
- background-attachment: fixed;
- overflow: hidden;
- }
- #mainBackground > header {
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   padding: 20px 10px;
-   background: inherit;
-   background-attachment: fixed;
-   overflow: hidden;
- }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+#mainBackground > header {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+  overflow: hidden;
+}
 #mainBackground > header::before {
- content: "";
- position: absolute;
- top: -20px;
- left: 0;
- width: 200%;
- height: 200%;
- background: inherit;
- background-attachment: fixed;
- -webkit-filter: blur(4px);
- filter: blur(4px);
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
 }
 #mainBackground > header::after {
- content: "";
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background: rgba(0, 0, 0, 0.25)
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25)
 }
 #mainBackground > header > p {
   margin: 0;
@@ -547,19 +565,19 @@ ul.topnav li.dropdown{
   z-index: 1;
 }
 #contact-title {
-    font-size: 8vh;
-    z-index: 4;
-    letter-spacing: 2px;
-    color: #444444;
-    text-align: center;
+  font-size: 8vh;
+  z-index: 4;
+  letter-spacing: 2px;
+  color: #444444;
+  text-align: center;
 }
 @media screen and (max-width: 600px){
-#mainBackground{ padding-left: 0 !important;
-  padding-right: 0 !important;
-  background-attachment: unset;
-}
-#contact-title{ font-size: 5vh; }
-
+  #mainBackground{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding: 20vh;
+  }
+  #contact-title{ font-size: 5vh; }
 }
 /* --- end of blurred background --- */
 
@@ -645,7 +663,7 @@ ul.topnav li.dropdown{
 }
 #faculyAndRelated a{
   text-decoration: none;
-    color: #6c6c6c;
+  color: #6c6c6c;
   cursor: pointer;
 }
 #faculyAndRelated p{
@@ -665,9 +683,9 @@ ul.topnav li.dropdown{
 .fa-github:hover{color: white; }
 
 #bench-1{
-height: 2.5vh;
-vertical-align: -1vh;
-padding-left: 0;
+  height: 2.5vh;
+  vertical-align: -1vh;
+  padding-left: 0;
 }
 #bench-2{
   height: 2.5vh;
@@ -704,14 +722,14 @@ padding-left: 0;
     text-align: center;
   }
   #UOttawa-section{  width: 100%; }
-  }
-  .fa{
-    color: #6c6c6c;
-  }
-  /*
+}
+.fa{
+  color: #6c6c6c;
+}
+/*
 .fa:hover{
-  transform: scale(1.1,1.1);
-  transition-duration: 0.4s;
+transform: scale(1.1,1.1);
+transition-duration: 0.4s;
 }
 */
 .legal, .terms{
