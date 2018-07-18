@@ -61,6 +61,13 @@ figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rg
   figure:nth-child(1) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_mountains.jpg"); }
   figure:nth-child(2) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/img_nature.jpg"); }
   figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.4) ), url("../images/microscope.jpg"); }
+  .badge{
+    height: 3vh !important;
+    width: 3vh !important;
+  }
+  .w3-left, .w3-right {
+    font-size: 10vh !important;
+}
 }
 
 .badge {
