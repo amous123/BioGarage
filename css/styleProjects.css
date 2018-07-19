@@ -14,7 +14,7 @@
 
 ul.tabs {
 	width: 100%;
-	height: 30vh;
+	height: 40vh;
 	margin: 0 auto;
 	list-style: none;
 	overflow: hidden;
@@ -33,7 +33,7 @@ ul.tabs li a {
   cursor: pointer;
   height: fit-content;
   min-height: -webkit-fill-available;
-  margin-top: 8vh;
+  margin-top: 14%;
   padding: 1.4vh 0 0 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5vh;
@@ -184,21 +184,13 @@ ul.tabs li.active a{
   animation: spin 2s linear infinite;
   color: #f2f2f2;
 }
-@media screen and (max-width: 1000px){
-  #tabs li{
-    margin-right: 0%;
-  }
-}
+
 @media screen and (max-width: 600px){
-#tabs li:first-child{
-  margin-left: 2%;
-}
-#tabs li{
-  width: 20%;
-  margin-right: 0.2%;
-}
 .col{
   -moz-columns:1;
   -webkit-columns:1;
+}
+.tabs li a p{
+  font-size: 2vh;
 }
 }
