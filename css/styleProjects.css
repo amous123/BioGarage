@@ -1,7 +1,3 @@
-body{
-  font-size:62%;
-}
-
 /* --- Beginning of blurred background --- */
  #mainBackground{
    background: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url(../images/img_mountains.jpg) no-repeat center center fixed;
@@ -18,30 +14,33 @@ body{
 
 ul.tabs {
 	width: 100%;
-	height: 80px;
+	height: 30vh;
 	margin: 0 auto;
 	list-style: none;
 	overflow: hidden;
   padding: 0;
-  background-color: cadetblue;
+  background-color: #e0e0e0
 }
 ul.tabs li {
 	float: left;
-	width: 25%;
+	width: 22.5%;
+  margin-right: 2%;
 }
+
 ul.tabs li a {
 	position: relative;
 	display: block;
   cursor: pointer;
-	height: 30px;
-	margin-top: 40px;
-	padding: 10px 0 0 0;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+  height: fit-content;
+  min-height: -webkit-fill-available;
+  margin-top: 8vh;
+  padding: 1.4vh 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5vh;
 	text-align: center;
 	text-decoration: none;
 	color: #f2f2f2;
-	background: #6edeef;
+	background: #6c6c6c;
 	-webkit-box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
 	   -moz-box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
 	        box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
@@ -51,6 +50,13 @@ ul.tabs li a {
          -o-transition: padding 0.2s ease, margin 0.2s ease;
         -ms-transition: padding 0.2s ease, margin 0.2s ease;
             transition: padding 0.2s ease, margin 0.2s ease;
+}
+ul.tabs li a img{
+  width: 90%;
+  padding: 0 0 1.4vh 0;
+}
+.tabs li:first-child{
+    margin-left: 2%;
 }
 .tabs li:first-child a {
 	z-index: 4;
@@ -77,17 +83,18 @@ border-top-left-radius: 8px;
 border-top-right-radius: 8px;
 }
 ul.tabs li a:hover {
-	margin: 35px 0 0 0;
-	padding: 10px 0 5px 0;
+  margin: 3vh 0 0 0;
+  padding: 1.4vh 0 5px 0;
 }
-ul.tabs li a.active {
-	margin: 30px 0 0 0;
-	padding: 10px 0 10px 0;
+ul.tabs li.active a{
+  margin: 3vh 0 0 0;
+  padding: 1.4vh 0 17.4vh 0;
   background: #f2f2f2;
   color: #5d9b9d;
-	/*color: #ff6831;*/
 	z-index: 5;
 	outline: none;
+  transition: all;
+  transition-duration: 0.2s;
 }
 .group:before,
 .group:after {
@@ -114,7 +121,7 @@ ul.tabs li a.active {
 .projectContent p{
   color: #2d2d2c;
   font-weight:500;
-  font-size: 1.4em;
+  font-size: 2vh;
   margin: 10px;
 }
 .projectContent.active{
