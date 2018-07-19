@@ -14,7 +14,7 @@
 
 ul.tabs {
 	width: 100%;
-	height: 40vh;
+	height: 20vh;
 	margin: 0 auto;
 	list-style: none;
 	overflow: hidden;
@@ -33,7 +33,7 @@ ul.tabs li a {
   cursor: pointer;
   height: fit-content;
   min-height: -webkit-fill-available;
-  margin-top: 14%;
+  margin-top: 10vh;
   padding: 1.4vh 0 0 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5vh;
@@ -41,19 +41,15 @@ ul.tabs li a {
 	text-decoration: none;
 	color: #f2f2f2;
 	background: #6c6c6c;
-	-webkit-box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
-	   -moz-box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
-	        box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 9px 0px 25px 2px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 9px 0px 25px 2px rgba(0,0,0,0.4);
+	        box-shadow: 9px 0px 25px 2px rgba(0,0,0,0.4);
 	        	border: 0px solid #000000;
 	-webkit-transition: padding 0.2s ease, margin 0.2s ease;
        -moz-transition: padding 0.2s ease, margin 0.2s ease;
          -o-transition: padding 0.2s ease, margin 0.2s ease;
         -ms-transition: padding 0.2s ease, margin 0.2s ease;
             transition: padding 0.2s ease, margin 0.2s ease;
-}
-ul.tabs li a img{
-  width: 90%;
-  padding: 0 0 1.4vh 0;
 }
 .tabs li:first-child{
     margin-left: 2%;
@@ -69,15 +65,9 @@ border-top-left-radius: 8px;
 }
 .tabs li:nth-child(3) a{
   z-index: 2;
-  -webkit-box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
-     -moz-box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
-          box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
 }
 .tabs li:last-child a{
 	z-index: 1;
-  -webkit-box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
-	   -moz-box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
-	        box-shadow: 2px 8px 25px -2px rgba(0,0,0,0.3);
   -webkit-border-top-right-radius: 8px;
 -moz-border-radius-topright: 8px;
 border-top-right-radius: 8px;
@@ -90,7 +80,7 @@ ul.tabs li.active a{
   margin: 3vh 0 0 0;
   padding: 1.4vh 0 17.4vh 0;
   background: #f2f2f2;
-  color: #5d9b9d;
+  color: #6c6c6c;
 	z-index: 5;
 	outline: none;
   transition: all;
@@ -113,7 +103,7 @@ ul.tabs li.active a{
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-top-right-radius: 3px;
-  padding: 2em;
+  padding: 2.5%;
   height: fit-content;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -123,6 +113,15 @@ ul.tabs li.active a{
   font-weight:500;
   font-size: 2vh;
   margin: 10px;
+}
+.projectContent img{
+  width: 22.5%;
+  float: left;
+  margin-top: 0%;
+  margin-right: 2.5%;
+}
+.projectContent .imageCol{
+  
 }
 .projectContent.active{
   display: block !important;
@@ -148,8 +147,8 @@ ul.tabs li.active a{
 }
 .project-btn{
   font-size: 2.5vh;
-  color: #5f9ea0;
-  border: 2px solid #5f9ea0;
+  color: #6c6c6c;
+  border: 2px solid #6c6c6c;
   border-radius: 10px;
   background-color: transparent;
   letter-spacing: 0.25vh;
@@ -168,7 +167,7 @@ ul.tabs li.active a{
 }
 .project-btn:hover{
   color: #f2f2f2;
-  background-color: #5f9ea0;
+  background-color: #6c6c6c;
   transform: scale(1.1,1.1);
 }
 .project-btn i {
@@ -177,7 +176,7 @@ ul.tabs li.active a{
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  color: #5f9ea0;
+  color: #6c6c6c;
 }
 .project-btn:hover i {
   -webkit-animation: spin 2s linear infinite;

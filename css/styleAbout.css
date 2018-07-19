@@ -1,21 +1,34 @@
 /* --- Beginning of blurred background --- */
- #mainBackground{
-   background: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url(../images/img_mountains.jpg) no-repeat center center fixed;
- }
+#mainBackground{
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url(../images/img_mountains.jpg) no-repeat center center fixed;
+}
 
 /* --- beginning about content section --- */
 #about{
-    padding-bottom: 5vh;
+  padding-bottom: 5vh;
   background-color: white;
   font-size: 2.2vh;
-      padding-top: 6vh;
+  padding-top: 6vh;
   font-family: arial;
   line-height: 200%;
   background: #f2f2f2;
-  /* background: linear-gradient(217deg, rgba(255,255,0,.8), rgba(255,255,0,0) 50.71%),
-            linear-gradient(127deg, rgba(0,255,255,.8), rgba(0,255,255,0) 40.71%),
-            linear-gradient(336deg, rgba(255,0,255,.8), rgba(255,0,255,0) 55.71%);
-*/
+}
+#about video{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.donateContainer{
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.donateContainer a{
+  text-decoration: none;
 }
 
 /* --- beginning of seperator photo --- */
@@ -33,12 +46,12 @@
   background-position: center;
 }
 @media only screen and (max-device-width: 900px) {
-    .transPhoto {
-        background-attachment: scroll;
-        background-position: center;
-    }
+  .transPhoto {
+    background-attachment: scroll;
+    background-position: center;
   }
-  /* --- end of seperator photo --- */
+}
+/* --- end of seperator photo --- */
 #aboutContent{
   text-align: center;
   height: fit-content;
@@ -56,22 +69,22 @@
 }
 #about h2{
   -webkit-margin-before: 0;
-padding-top: 0.83em;
+  margin-bottom: 2%;
 }
 .row {
-    font-family: arial, sans-serif;
-    width: 100%;
-    display: inline-flex;
-    text-align: center;
-    padding-bottom: 5vh;
-    padding-top: 5vh;
+  font-family: arial, sans-serif;
+  width: 100%;
+  display: inline-flex;
+  text-align: center;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
 }
 .column {
-    text-align: left;
-    width: inherit;
-    overflow: hidden;
-    height: 60vh;
-    background-color: #f2f2f2;
+  text-align: left;
+  width: inherit;
+  overflow: hidden;
+  height: 60vh;
+  background-color: #f2f2f2;
 }
 .accordionSection{
   text-align: left;
@@ -93,34 +106,41 @@ padding-top: 0.83em;
   text-align: center;
 }
 #questionsContent div.panel p{
-      font-size: 2vh;
+  font-size: 2vh;
   text-indent: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 1em;
   line-height: 200%;
 }
+#questionsContent div.media p{
+  text-indent: 0;
+}
 @media screen and (max-width: 900px){
-.row{
-  display: block;
-}
-.column {
+  .row{
+    display: block;
+  }
+  .column {
     height: inherit;
-}
-#questionsContent img{
-  height: auto;
-  width: -webkit-fill-available;
-  max-width: 75%;
-}
-#expandable{
-  width: 90% !important;
-  height: fit-content !important;
-padding-bottom: 5vh !important;
-}
-#aboutContent {
+    text-align: center;
+  }
+  #about video{
+    width: 90%;
+  }
+  #questionsContent img{
+    height: auto;
+    width: -webkit-fill-available;
+    max-width: 75%;
+  }
+  #expandable{
+    width: 90% !important;
+    height: fit-content !important;
+    padding-bottom: 5vh !important;
+  }
+  #aboutContent {
     margin-left: 5vh;
     margin-right: 5vh;
-}
+  }
 }
 
 /* --- expand/retract about section --- */
@@ -142,39 +162,39 @@ padding-bottom: 5vh !important;
 
 /* --- accordion css --- */
 button.accordion {
-    background-color: #f2f2f2;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 2vh;
-    transition: 0.4s;
+  background-color: #f2f2f2;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2vh;
+  transition: 0.4s;
 }
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 button.accordion p{
   margin: 0;
 }
 button.accordion p:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 button.accordion p.active:after {
-    content: "\2212";
+  content: "\2212";
 }
 div.panel {
-    padding: 0 18px;
-    background-color: #f2f2f2;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+  background-color: #f2f2f2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 /* --- end of accordion css --- */
 
@@ -193,13 +213,16 @@ div.panel {
   font-family: AkkuratPro-Regular,sans-serif;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
   width: unset;
+}
+.contactButtonContent p{
+  margin: 0;
 }
 .contactButtonContent:hover{
   background-color: black;
