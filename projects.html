@@ -95,209 +95,324 @@
         </div>
 
         <div id="wrap">
-          <!--
-          <div id="tabs">
-          <li id="tab1" class="active"> <img src="images/img_snow.jpg">  </img> </li>
-          <li id="tab2"> <img src="images/img_snow.jpg"> <div class="iconOverlay"> </div> </img> </li>
-          <li id="tab3"> <img src="images/img_snow.jpg"> <div class="iconOverlay"> </div> </img> </li>
-          <li id="tab4"> <img src="images/img_snow.jpg"> <div class="iconOverlay" id="plusIconOverlay"> </div> </img> </li>
+          <ul id="tabs" class="tabs group">
+            <li id="tab1" class="active"><a><p> Agarose-Gel-Electrophoresis </p></a></li>
+            <li id="tab2"><a><p> red Agarose-Gel-Electrophoresis </p></a></li>
+            <li id="tab3"><a><p> blue Agarose-Gel-Electrophoresis </p></a></li>
+            <li id="tab4"><a><p> Extra </p></a></li>
+            <!--
+            To change tab Names:
+            Each id corresponds with the tab, ex: id="tab1" is the first tab.
+            to change the title of the tab, simply replace text between <p> and </p> for the according tab.
+          -->
+        </ul>
+        <div id="projectSections">
+          <div class="projectContent active" id="project1">
+
+            <div id="imageContainer" class="grid1">
+              <img src="images/projects/tab1/side_image_1.jpg"></img>
+            </div>
+            <div class="col grid234">
+              <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+              <p class="EN">Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+              <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+
+              <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+              <p class="FR">french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+              <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+            </div>
+
+            <div id="imageContainer" class="grid1">
+              <img src="images/projects/tab1/side_image_2.jpg"></img>
+            </div>
+            <div class="col grid234">
+              <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+              <p class="EN">Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+              <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+
+              <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+              <p class="FR">french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+              <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+            </div>
+
+            <!--
+            To add more text/images to the first tab:
+            Copy the code below and paste it above this comment.
+            Modify the text in between the <p> and </p> as desired
+            Check the highest number of the "side_image_(number)" for tab1,
+            increment it by 1 for the new image number.
+            Add new image inside images/projects/tab1 folder and rename it same as src="this";
+
+            To edit text/images to the first tab:
+            Replace text inside <p></p> as desired.
+            Check the source name of the image you want to change src="this"
+            Rename your new image to "this" and add it in images/projects/tab1 folder.
+            Remove the old image.
+
+            to remove:
+            Find code above comment matching the one below, make sure to have the same amout of "<div>" and "</div>" as below being deleted.
+            code:
+
+            <div id="imageContainer" class="grid1">
+            <img src="images/projects/tab1/side_image_1.jpg"></img>
+          </div>
+          <div class="col grid234">
+          <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+          <p class="EN">Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+          <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+
+          <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+          <p class="FR">french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+          <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
         </div>
       -->
-      <ul id="tabs" class="tabs group">
-        <li id="tab1" class="active"><a><p>Agarose-Gel-Electrophoresis</p></a></li>
-        <li id="tab2"><a><p>red Agarose-Gel-Electrophoresis</p></a></li>
-        <li id="tab3"><a><p>blue Agarose-Gel-Electrophoresis</p></a></li>
-        <li id="tab4"><a><p>Extra</p></a></li>
-      </ul>
-      <div id="projectSections">
-        <div class="projectContent active" id="project1">
-          <div class="imageCol">
-          <img src="images/img_snow.jpg"></img>
-          <img src="images/img_snow.jpg"></img>
-          <img src="images/img_snow.jpg"></img>
-          </div>
-          <div class="col EN">
-            <p>Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-          </div>
-          <div class="col FR">
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-          </div>
-          <div class="container-project-btn">
-            <a href="https://benchling.com/protocols/FEjB3AQ4/colony-screening-pcr">
-              <button class="project-btn">
-                <span class="EN">
-                  Begin Project <i class="fa fa-gear" aria-hidden="true"></i>
-                </span>
-                <span class="FR">
-                  Commencez Projet <i class="fa fa-gear" aria-hidden="true"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-        </div>
+      <div class="container-project-btn">
+        <a href="https://benchling.com/protocols/FEjB3AQ4/colony-screening-pcr">
+          <!-- To replace button link for protocol in tab1,
+          change href="this"
+          note: make sure link is external or path inside folder is correct. -->
+          <button class="project-btn">
+            <span class="EN">
+              Begin Project
+              <i class="fa fa-gear" aria-hidden="true"></i>
+            </span>
+            <span class="FR">
+              Commencez Projet
+              <i class="fa fa-gear" aria-hidden="true"></i>
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
 
-        <div class="projectContent" id="project2">
-          <div class="col EN">
-            <p>Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-          </div>
-          <div class="col FR">
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-          </div>
-          <div class="container-project-btn">
-            <a href="https://benchling.com/protocols/FEjB3AQ4/colony-screening-pcr">
-              <button class="project-btn">
-                <span class="EN">
-                  Begin Project <i class="fa fa-gear" aria-hidden="true"></i>
-                </span>
-                <span class="FR">
-                  Commencez Projet <i class="fa fa-gear" aria-hidden="true"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-        </div>
+    <div class="projectContent" id="project2">
 
-        <div class="projectContent" id="project3">
-          <div class="col EN">
-            <p>Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-          </div>
-          <div class="col FR">
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-          </div>
-          <div class="container-project-btn">
-            <a href="https://benchling.com/protocols/FEjB3AQ4/colony-screening-pcr">
-              <button class="project-btn">
-                <span class="EN">
-                  Begin Project <i class="fa fa-gear" aria-hidden="true"></i>
-                </span>
-                <span class="FR">
-                  Commencez Projet <i class="fa fa-gear" aria-hidden="true"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-        </div>
+      <div id="imageContainer" class="grid1">
+        <img src="images/projects/tab2/side_image_1.jpg"></img>
+      </div>
+      <div class="col grid234">
+        <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+        <p class="EN">Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+        <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
 
-        <div class="projectContent moreProtocols" id="project4">
-          <div class="EN">
-            <p> Visit the protocols page to try other experiments</p>
-            <p> other useful information </p>
-          </div>
-          <div class="FR">
-            <p>french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
-            <p>french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
-          </div>
-          <div class="container-project-btn">
-            <a href="protocols.html">
-              <button class="project-btn">
-                <span class="EN">
-                  Protocols <i class="fa fa-gear" aria-hidden="true"></i>
-                </span>
-                <span class="FR">
-                  Protocoles <i class="fa fa-gear" aria-hidden="true"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-        </div>
-
+        <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+        <p class="FR">french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+        <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
       </div>
 
+      <!--
+      To add more text/images to the second tab:
+      Copy the code below and paste it above this comment.
+      Modify the text in between the <p> and </p> as desired
+      Check the highest number of the "side_image_(number)" for tab2,
+      increment it by 1 for the new image number.
+      Add new image inside images/projects/tab2 folder and rename it same as src="this";
 
-      <div class="footer">
-        <div class="footerContent">
+      To edit text/images to the second tab:
+      Replace text inside <p></p> as desired.
+      Check the source name of the image you want to change src="this"
+      Rename your new image to "this" and add it in images/projects/tab2 folder.
+      Remove the old image.
 
-          <div id="UOttawa-section">
+      to remove:
+      Find code above comment matching the one below, make sure to have the same amout of "<div>" and "</div>" as below being deleted.
+      code:
 
-            <div id="UO-logo">
-              <a href="https://www.uottawa.ca/en" ><img src="images/uO-logo-grey-transparent-copy.png"> </img><a>
-              </div>
+      <div id="imageContainer" class="grid1">
+      <img src="images/projects/tab2/side_image_1.jpg"></img>
+    </div>
+    <div class="col grid234">
+    <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+    <p class="EN">Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+    <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
 
-              <div id="faculyAndRelated" class="EN">
-                <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
-                <br>
-                <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
-                <br>
-                <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
-                <br>
-                <p> CANADA </p>
-                <br>
-                <a href="contact.html"> <p> CONTACT US </p> <a>
-                </div>
+    <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+    <p class="FR">french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+    <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+  </div>
+-->
 
-                <div id="faculyAndRelated" class="FR">
-                  <p> <a href="http://science.uottawa.ca/fr"> Faculté de Science </a> </p>
-                  <br>
-                  <p> <a href="https://www.uottawa.ca/fr"> Université d'Ottawa </a> </p>
-                  <br>
-                  <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
-                  <br>
-                  <p> CANADA </p>
-                  <br>
-                  <a href="contact.html"> <p> CONTACTEZ NOUS </p> <a>
-                  </div>
-                </div>
+<div class="container-project-btn">
+  <a href="https://benchling.com/protocols/FEjB3AQ4/colony-screening-pcr">
+    <!-- To replace button link for protocol in tab2,
+    change href="this"
+    note: make sure link is external or path inside folder is correct. -->
+    <button class="project-btn">
+      <span class="EN">
+        Begin Project
+        <i class="fa fa-gear" aria-hidden="true"></i>
+      </span>
+      <span class="FR">
+        Commencez Projet
+        <i class="fa fa-gear" aria-hidden="true"></i>
+      </span>
+    </button>
+  </a>
+</div>
+</div>
 
-                <div id="bioGARAGE-section">
-                  <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
-                  <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
-                  <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
-                  <a class="lin" href="#"><img class="fa" id="bench-1" src="images/logo/Benchling-1.png"></img></a>
-                  <a class="lin" href="#"><img class="fa" id="bench-2" src="images/logo/Benchling-2.png" style="display:none;"></img></a>
-                  <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
-                  <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
-                  <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
-                  <a class="lin" href="#"><i class="fa fa-github"></i></a>
+<div class="projectContent" id="project3">
 
-                  <p class="EN">
-                    bioGARAGE INC. © 2018
-                    <br>
-                    <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
-                  </p>
+  <div id="imageContainer" class="grid1">
+    <img src="images/projects/tab3/side_image_1.jpg"></img>
+  </div>
+  <div class="col grid234">
+    <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+    <p class="EN">Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+    <p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
 
-                  <p class="FR">
-                    bioGARAGE INC. © 2018
-                    <br>
-                    <a href="resources/terms.txt" class="terms"> termes & intimité</a> | <a href="resources/legal.txt" class="legal">légal</a>
-                  </p>
-                </div>
+    <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+    <p class="FR">french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+    <p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+  </div>
 
-              </div>
-            </div>
-          </div>
+  <!--
+  To add more text/images to the third tab:
+  Copy the code below and paste it above this comment.
+  Modify the text in between the <p> and </p> as desired
+  Check the highest number of the "side_image_(number)" for tab3,
+  increment it by 1 for the new image number.
+  Add new image inside images/projects/tab3 folder and rename it same as src="this";
+
+  To edit text/images to the third tab:
+  Replace text inside <p></p> as desired.
+  Check the source name of the image you want to change src="this"
+  Rename your new image to "this" and add it in images/projects/tab3 folder.
+  Remove the old image.
+
+  to remove:
+  Find code above comment matching the one below, make sure to have the same amout of "<div>" and "</div>" as below being deleted.
+  code:
+
+  <div id="imageContainer" class="grid1">
+  <img src="images/projects/tab3/side_image_1.jpg"></img>
+</div>
+<div class="col grid234">
+<p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+<p class="EN">Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+<p class="EN">Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+
+<p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+<p class="FR">french: Um, well it's a delorean, right? Yeah okay. Wow, ah Red, you look great. Everything looks great. 1:24, I still got time. Oh my god. No, no not again, c'mon, c'mon. Hey. Libyans. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? Yeah, yeah what are you wearing, Dave.</p>
+<p class="FR">french: Excuse me. I'll call you tonight. Right. Yeah, I think maybe you do. Wait a minute, wait a minute, Doc, are you telling me that you built a time machine out of a delorean.</p>
+</div>
+-->
+
+<div class="container-project-btn">
+  <a href="https://benchling.com/protocols/FEjB3AQ4/colony-screening-pcr">
+    <!-- To replace button link for protocol in tab3,
+    change href="this"
+    note: make sure link is external or path inside folder is correct. -->
+    <button class="project-btn">
+      <span class="EN">
+        Begin Project
+        <i class="fa fa-gear" aria-hidden="true"></i>
+      </span>
+      <span class="FR">
+        Commencez Projet
+        <i class="fa fa-gear" aria-hidden="true"></i>
+      </span>
+    </button>
+  </a>
+</div>
+</div>
+
+<div class="projectContent moreProtocols" id="project4">
+
+  <div class="col gridExtra">
+    <p class="EN">View more protocols</p>
+
+    <p class="FR">Regarder plus de protocoles</p>
+  </div>
+
+  <!--
+  To modify text for "Extra" tab:
+  Change the text in between <p> and </p> above.
+-->
+
+<div class="container-project-btn">
+  <a href="protocols.html">
+    <button class="project-btn">
+      <span class="EN">
+        Protocols
+        <i class="fa fa-gear" aria-hidden="true"></i>
+      </span>
+      <span class="FR">
+        Protocoles
+        <i class="fa fa-gear" aria-hidden="true"></i>
+      </span>
+    </button>
+  </a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+  <div class="footerContent">
+
+    <div id="UOttawa-section">
+
+      <div id="UO-logo">
+        <a href="https://www.uottawa.ca/en" ><img src="images/uO-logo-grey-transparent-copy.png"> </img><a>
         </div>
 
-      </body>
-      <script  src="javascript/standard.js"></script>
-      <script  src="javascript/projects.js"></script>
-      </html>
+        <div id="faculyAndRelated" class="EN">
+          <p> <a href="http://science.uottawa.ca/en"> Faculty of Science </a> </p>
+          <br>
+          <p> <a href="https://www.uottawa.ca/en"> University of Ottawa </a> </p>
+          <br>
+          <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+          <br>
+          <p> CANADA </p>
+          <br>
+          <a href="contact.html"> <p> CONTACT US </p> <a>
+          </div>
+
+          <div id="faculyAndRelated" class="FR">
+            <p> <a href="http://science.uottawa.ca/fr"> Faculté de Science </a> </p>
+            <br>
+            <p> <a href="https://www.uottawa.ca/fr"> Université d'Ottawa </a> </p>
+            <br>
+            <p> <a href="https://www.google.ca/maps/place/Ottawa,+ON+K1N+6N5/@45.4224699,-75.6865546,16z/data=!3m1!4b1!4m5!3m4!1s0x4cce050458319c71:0x5145607f5f22993b!8m2!3d45.4227425!4d-75.6824915"> Ottawa, Ontario, K1N 6N5 </a> </p>
+            <br>
+            <p> CANADA </p>
+            <br>
+            <a href="contact.html"> <p> CONTACTEZ NOUS </p> <a>
+            </div>
+          </div>
+
+          <div id="bioGARAGE-section">
+            <a class="lin" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="lin" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="lin" href="#"><img class="fa" id="bench-1" src="images/logo/Benchling-1.png"></img></a>
+            <a class="lin" href="#"><img class="fa" id="bench-2" src="images/logo/Benchling-2.png" style="display:none;"></img></a>
+            <a class="lin" href="#"><i class="fa fa-instagram"></i></a>
+            <a class="lin" href="#"><i class="fa fa-pinterest"></i></a>
+            <a class="lin" href="#"><i class="fa fa-youtube-play"></i></a>
+            <a class="lin" href="#"><i class="fa fa-github"></i></a>
+
+            <p class="EN">
+              bioGARAGE INC. © 2018
+              <br>
+              <a href="resources/terms.txt" class="terms"> terms & privacy</a> | <a href="resources/legal.txt" class="legal">legal</a>
+            </p>
+
+            <p class="FR">
+              bioGARAGE INC. © 2018
+              <br>
+              <a href="resources/terms.txt" class="terms"> termes & intimité</a> | <a href="resources/legal.txt" class="legal">légal</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script  src="javascript/standard.js"></script>
+<script  src="javascript/projects.js"></script>
+</html>
