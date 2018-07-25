@@ -269,7 +269,7 @@ textarea.input1 + .shadow-input1 {
 }
 
 #map{
-  height: 17em;
+  height: 35%;
   width: 100%;
 }
 /* make sure to secure it to bioGARAGE website when done *** */

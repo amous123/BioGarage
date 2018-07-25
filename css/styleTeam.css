@@ -75,6 +75,7 @@ a {
   transform: scale(1.1, 1.1);
   transition: all 0.25s ease-in-out;
   filter: grayscale(0%) !important;
+  cursor: pointer;
 }
 .slick-list img{
   padding-top: 1rem;

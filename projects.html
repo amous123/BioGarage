@@ -52,22 +52,31 @@
             </div>
             <hr></hr>
             <!-- the drop down menu of the navbar is for mobile version of website -->
-            <div class="EN">
-              <a class="sideNavMenuItems menu-link-1" href="index.html">HOME</a>
-              <a class="sideNavMenuItems menu-link-2" href="about.html" >ABOUT</a>
-              <a class="sideNavMenuItems menu-link-3" href="contact.html">CONTACT</a>
-              <a class="sideNavMenuItems menu-link-4" href="team.html">TEAM</a>
-              <a class="sideNavMenuItems menu-link-5" href="projects.html">PROJECTS</a>
-              <a class="sideNavMenuItems menu-link-6" href="protocols.html">PROTOCOLS</a>
-            </div>
-
-            <div class="FR">
-              <a class="sideNavMenuItems menu-link-1" href="index.html">FOYER</a>
-              <a class="sideNavMenuItems menu-link-2" href="about.html" >PROPOS</a>
-              <a class="sideNavMenuItems menu-link-3" href="contact.html">CONTACTE</a>
-              <a class="sideNavMenuItems menu-link-4" href="team.html">ÉQUIPE</a>
-              <a class="sideNavMenuItems menu-link-5" href="projects.html">PROJECTS</a>
-              <a class="sideNavMenuItems menu-link-6" href="protocols.html">PROTOCOLES</a>
+            <div>
+              <a class="sideNavMenuItems menu-link-1" href="index.html">
+                <p class="EN">HOME</p>
+                <p class="FR">FOYER</p>
+              </a>
+              <a class="sideNavMenuItems menu-link-2" href="about.html">
+                <p class="EN">ABOUT</p>
+                <p class="FR">PROPOS</p>
+                </a>
+              <a class="sideNavMenuItems menu-link-3" href="contact.html">
+                <p class="EN">CONTACT</p>
+                <p class="FR">CONTACTE</p>
+              </a>
+              <a class="sideNavMenuItems menu-link-4" href="team.html">
+                <p class="EN">TEAM</p>
+                <p class="FR">ÉQUIPE</p>
+              </a>
+              <a class="sideNavMenuItems menu-link-5" href="projects.html">
+                <p class="EN">PROJECTS</p>
+                <p class="FR">PROJETS</p>
+              </a>
+              <a class="sideNavMenuItems menu-link-6" href="protocols.html">
+                <p class="EN">PROTOCOLS</p>
+                <p class="FR">PROTOCOLES</p>
+              </a>
             </div>
           </section>
         </div>
@@ -96,14 +105,26 @@
 
         <div id="wrap">
           <ul id="tabs" class="tabs group">
-            <li id="tab1" class="active"><a><p> Agarose-Gel-Electrophoresis </p></a></li>
-            <li id="tab2"><a><p> red Agarose-Gel-Electrophoresis </p></a></li>
-            <li id="tab3"><a><p> blue Agarose-Gel-Electrophoresis </p></a></li>
-            <li id="tab4"><a><p> Extra </p></a></li>
+            <li id="tab1" class="active"><a>
+              <p class="EN"> Agarose-Gel-Electrophoresis </p>
+              <p class="FR"> french: Agarose-Gel-Electrophoresis </p>
+            </a></li>
+            <li id="tab2"><a>
+            <p class="EN"> Agarose-Gel-Electrophoresis </p>
+            <p class="FR"> french: Agarose-Gel-Electrophoresis </p>
+          </a></li>
+            <li id="tab3"><a>
+            <p class="EN"> Agarose-Gel-Electrophoresis </p>
+            <p class="FR"> french: Agarose-Gel-Electrophoresis </p>
+          </a></li>
+            <li id="tab4"><a>
+              <p class="EN"> Extra </p>
+              <p class="FR"> Plus </p>
+            </a></li>
             <!--
             To change tab Names:
-            Each id corresponds with the tab, ex: id="tab1" is the first tab.
-            to change the title of the tab, simply replace text between <p> and </p> for the according tab.
+            Change text in between <p> </p> above as desired.
+            note: Each id corresponds with the tab, ex: id="tab1" is the first tab.
           -->
         </ul>
         <div id="projectSections">
@@ -144,7 +165,7 @@
             Add new image inside images/projects/tab1 folder and rename it same as src="this";
 
             To edit text/images to the first tab:
-            Replace text inside <p></p> as desired.
+            Replace text inside <p> </p> as desired.
             Check the source name of the image you want to change src="this"
             Rename your new image to "this" and add it in images/projects/tab1 folder.
             Remove the old image.
@@ -170,7 +191,7 @@
         <a href="https://benchling.com/protocols/FEjB3AQ4/colony-screening-pcr">
           <!-- To replace button link for protocol in tab1,
           change href="this"
-          note: make sure link is external or path inside folder is correct. -->
+          Note: make sure link is external or path inside folder is correct; ex:benchling_pdf/protocol(number).pdf -->
           <button class="project-btn">
             <span class="EN">
               Begin Project
@@ -236,7 +257,7 @@
   <a href="https://benchling.com/protocols/FEjB3AQ4/colony-screening-pcr">
     <!-- To replace button link for protocol in tab2,
     change href="this"
-    note: make sure link is external or path inside folder is correct. -->
+    Note: make sure link is external or path inside folder is correct; ex:benchling_pdf/protocol(number).pdf -->
     <button class="project-btn">
       <span class="EN">
         Begin Project
@@ -302,7 +323,7 @@
   <a href="https://benchling.com/protocols/FEjB3AQ4/colony-screening-pcr">
     <!-- To replace button link for protocol in tab3,
     change href="this"
-    note: make sure link is external or path inside folder is correct. -->
+    Note: make sure link is external or path inside folder is correct; ex:benchling_pdf/protocol(number).pdf -->
     <button class="project-btn">
       <span class="EN">
         Begin Project

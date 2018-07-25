@@ -133,6 +133,9 @@ text-align: center;
 word-spacing: 50px;
 padding-top: 3vh;
 }
+.openingButtons p{
+  margin: 0;
+}
 .openBtn1{
   font-size: 2.5vh;
   color: #fff;

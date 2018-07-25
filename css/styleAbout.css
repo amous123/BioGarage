@@ -118,6 +118,7 @@
 }
 #questionsContent div.media p{
   text-indent: 0;
+  margin: 0;
 }
 @media screen and (max-width: 900px){
   .row{
@@ -195,7 +196,7 @@ button.accordion p:after {
   float: right;
   margin-left: 5px;
 }
-button.accordion p.active:after {
+button.accordion.active p:after {
   content: "\2212";
 }
 div.panel {
@@ -203,7 +204,7 @@ div.panel {
   background-color: #f2f2f2;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 /* --- end of accordion css --- */
 
