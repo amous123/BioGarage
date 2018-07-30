@@ -173,8 +173,8 @@ ul.topnav.active{
   float: left;
   padding: unset;
   margin-left: 2.2vh;
-  margin-top:0.8vh;
-  margin-bottom: 0.8vh;
+  margin-top:1%;
+  margin-bottom: 1%;
   height: inherit;
   opacity: 1;
   -o-transition: all 1s;
@@ -400,7 +400,7 @@ ul.topnav li.dropdown{
 
 @media screen and (max-width: 450px){
   ul.topnav img{
-    height: 60%;
+    height: 84%;
   }
   #logoHolder{
     margin-top: 2vh;
