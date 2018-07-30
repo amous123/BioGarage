@@ -3,10 +3,13 @@ $(document).ready(function(){
   $('.menu-link-2').addClass(' selectedPage');
 });
 
+/* --- initializing AOS --- */
+AOS.init();
+AOS.refresh();
+
 // W3C's JS Code for an accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
-
 
 // Add onclick listener to every accordion element
 for (i = 0; i < acc.length; i++) {

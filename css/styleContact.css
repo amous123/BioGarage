@@ -136,7 +136,7 @@ input.input1 + .shadow-input1 {
 textarea.input1 {
   min-height: 22vh;
   border-radius: 0px;
-  padding: 12px 30px;
+  padding: 10px 20px;
 }
 textarea.input1 + .shadow-input1 {
   border-radius: 0px;

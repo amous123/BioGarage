@@ -1,11 +1,3 @@
-/* --- sets navbar transparent at top of page --- */
-$(window).scroll(function() {
-if ($(document).scrollTop() >= 100) {
-$("ul.topnav").removeClass('transparent');
-} else {
-$("ul.topnav").addClass('transparent');
-} });
-
 /* ---- loading page animation ---- */
 var load;
 function loadPage() {
@@ -15,10 +7,15 @@ function loadPage() {
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("loadingPage").style.zIndex = "10";
-/* --- initializing AOS --- */
-AOS.init();
-AOS.refresh();
 }
+
+/* --- sets navbar transparent at top of page --- */
+$(window).scroll(function() {
+if ($(document).scrollTop() >= 100) {
+$("ul.topnav").removeClass('transparent');
+} else {
+$("ul.topnav").addClass('transparent');
+} });
 
 $(document).ready(function(){
 /* ---- smooth scroll to top---- */

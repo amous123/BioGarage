@@ -243,11 +243,11 @@ ul.topnav.active{
   transition: all 1s;
 }
 .blurContainer.active{
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;

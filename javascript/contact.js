@@ -18,7 +18,7 @@ function paint(){
   s.innerHTML = widgetCSS;
   s.type = "text/css";
   w.head.appendChild(s);
-  loadPage();
+  setTimeout(loadPage(), 500);
 }
 
 
