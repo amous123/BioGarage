@@ -173,8 +173,8 @@ ul.topnav.active{
   float: left;
   padding: unset;
   margin-left: 2.2vh;
-  margin-top:1%;
-  margin-bottom: 1%;
+  margin-top:0.8vh;
+  margin-bottom: 0.8vh;
   height: inherit;
   opacity: 1;
   -o-transition: all 1s;
@@ -400,22 +400,20 @@ ul.topnav li.dropdown{
 
 @media screen and (max-width: 450px){
   ul.topnav img{
-    height: 84%;
+    height: 75%;
   }
   #logoHolder{
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 4%;
+    margin-bottom: 4%;
   }
 }
 
 @media screen and (max-width: 500px){
-  ul.topnav{
-    height: 12%;
-  }
+  ul.topnav{ height: 75px;}
   #menuoverlay.active{ width: 100%;}
   #mainmenu{ top: 10%; }
-  #sitemenu{ width: 7vh; }
-  #sitemenu-icon{ width: 3.5em !important; right: 0% !important;}
+  #sitemenu{ width: 100%; }
+  #sitemenu-icon{ width: 3em !important; right: 0% !important;}
   #bioGARRAGE-logo img{  width: 90% !important;}
   #logoHolder.active{ opacity: 0 !important;}
   #bioGARRAGE-logo a{ transition-duration: 0.5s;}

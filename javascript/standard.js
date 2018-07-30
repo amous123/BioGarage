@@ -7,6 +7,7 @@ function loadPage() {
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("loadingPage").style.zIndex = "10";
+  paint();
 }
 
 /* --- sets navbar transparent at top of page --- */

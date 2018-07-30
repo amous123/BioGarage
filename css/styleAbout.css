@@ -83,7 +83,7 @@
   padding-top: 5vh;
 }
 .column {
-  text-align: left;
+  text-align: justify;
   width: inherit;
   overflow: hidden;
   height: 60vh;

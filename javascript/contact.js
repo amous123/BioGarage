@@ -23,12 +23,6 @@ function paint(){
   s.innerHTML = widgetCSS;
   s.type = "text/css";
   w.head.appendChild(s);
-  setTimeout(showPage, 1000);
-}
-
-function showPage() {
-document.getElementById("loader").style.display = "none";
-document.getElementById("loadingPage").style.zIndex = "10";
 }
 
 function inputLang(){
