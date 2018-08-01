@@ -713,10 +713,14 @@ ul.topnav li.dropdown{
   }
   .footer{
     height: auto;
+    font-size: 11px;
   }
   #UO-logo{
     padding-left: 0;
     float: none;
+  }
+  #UO-logo img{
+    height: 105px;
   }
   #bioGARAGE-section{
     float: none;
@@ -725,6 +729,9 @@ ul.topnav li.dropdown{
     padding-left: 0px;
     width: 100%;
   }
+  #bioGARAGE-section .fa{ font-size: 18px;}
+  #bench-1{ height: 18px; }
+  #bench-2{ height: 18px; }
   #faculyAndRelated{
     width: 100%;
     margin-top: 20px;
@@ -734,6 +741,7 @@ ul.topnav li.dropdown{
   }
   #UOttawa-section{  width: 100%; }
 }
+
 .fa{
   color: #6c6c6c;
 }
