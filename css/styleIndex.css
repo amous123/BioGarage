@@ -162,7 +162,6 @@ padding-top: 3vh;
  @media screen and (max-width: 900px){
   .openingContent{
     letter-spacing: 1.5;
-    font-size: 16px;
     text-align: center;
   }
   .open1{
