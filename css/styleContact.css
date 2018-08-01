@@ -259,6 +259,7 @@ textarea.input1 + .shadow-input1 {
   }
   .container-contact1{
     height: fit-content;
+    margin-top: 0;
   }
 }
 @media (max-width: 600px) {
