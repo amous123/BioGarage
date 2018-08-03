@@ -23,15 +23,24 @@
   display: block;
 }
 .donateContainer{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  display: flex;
+}
+.donateContainer a{
+  text-decoration: none;
+}
+#donate-button{
   width: fit-content;
   display: block;
   margin-left: auto;
   margin-right: 17.5%;
-  margin-top: 2%;
-  margin-bottom: 5%;
 }
-.donateContainer a{
-  text-decoration: none;
+#french-video{
+  width: fit-content;
+  display: block;
+  margin-right: auto;
+  margin-left: 17.5%;
 }
 
 /* --- beginning of seperator photo --- */
@@ -128,8 +137,11 @@
     height: inherit;
     text-align: center;
   }
-  .donateContainer{
+  #donate-button{
     margin-right: 5%;
+  }
+  #french-video{
+    margin-left: 5%;
   }
   .topSpace{
     padding-top: 2%;

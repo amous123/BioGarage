@@ -1,7 +1,14 @@
 a {
   text-decoration: none !important;
 }
-
+#logo{
+  height: 92% !important;
+}
+#logoHolder{
+  margin-top: 2.5% !important;
+  margin-bottom: 2.5% !important;
+  height: inherit !important;
+}
 
 /* --- Beginning of blurred background --- */
  #mainBackground{
