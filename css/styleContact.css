@@ -4,7 +4,7 @@ body{
 
 /* --- Beginning of blurred background --- */
  #mainBackground{
-   background: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.6) ), url(../images/img_mountains.jpg) no-repeat center center fixed;
+   background: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.6) ), url(../images/contact/main_background/main_background.jpg) no-repeat center center fixed;
 }
 
 /*CONTACT*/
