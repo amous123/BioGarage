@@ -30,7 +30,7 @@ a:hover {
 }
 
 /*---------------------------------------------*/
-textarea ,input {
+textarea, input {
   outline: none;
   border: none;
   border: 2px solid transparent;
