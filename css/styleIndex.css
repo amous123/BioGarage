@@ -191,14 +191,14 @@ canvas {
   /* linear-gradient(135deg, #777777, white 75%, #4e64b5, #0288d1, #00aced, orange, #ff5757, #c82929,#4a2881); */
   background-size: cover;
   background-position: 50% 50%;
-  -webkit-clip-path: polygon(0 0, 100% 51%, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 51%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 50%);
+  clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 50%);
 }
 #particles-js p{
     width: 100%;
-    -ms-transform: translateY(35vh); /* IE 9 */
-    -webkit-transform: translateY(35vh); /* Safari */
-    transform: translateY(35vh);
+    -ms-transform: translateY(32vh); /* IE 9 */
+    -webkit-transform: translateY(32vh); /* Safari */
+    transform: translateY(32vh);
     text-align: center;
     position: absolute;
     font-size: 3vh;
