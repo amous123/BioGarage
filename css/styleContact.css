@@ -172,7 +172,7 @@ textarea.input1 + .shadow-input1 {
   opacity: 0.5;
 }
 
-.input1:focus + .shadow-input1 {
+.input1:focus + .shadow-input1, .textarea:focus + .shadow-input1 {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
