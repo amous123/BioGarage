@@ -88,12 +88,12 @@ figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rg
   border: 1px solid white;
 }
 .normColor2{
-  background-color: #4CAF50;
-  border: 1px solid #4CAF50;
+  background-color: #D1E39A;
+  border: 1px solid #D1E39A;
 }
 .normColor3{
-  background-color: red;
-  border: 1px solid red;
+  background-color: #F7ABB4;
+  border: 1px solid #F7ABB4;
 }
 #transparentHomeButtons{
   background-color: transparent;
@@ -123,10 +123,8 @@ figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rg
   width: 90%;
   margin: auto;
 }
-.open1{ margin-left: 15%; }
-.open2{ margin-left: 25%; }
-.open3{ margin-left: 35%; }
-.open4{ margin-left: 45%; }
+.open1{ text-align: center;}
+.open2{ text-align: center;}
 
 .openingButtons{
 text-align: center;
