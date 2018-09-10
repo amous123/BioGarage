@@ -95,6 +95,12 @@ figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rg
   background-color: #F7ABB4;
   border: 1px solid #F7ABB4;
 }
+.hover-red:hover{
+  background-color: #F7ABB4 !important;
+}
+.hover-green:hover{
+  background-color: #D1E39A !important;
+}
 #transparentHomeButtons{
   background-color: transparent;
 }
