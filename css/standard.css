@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
 /*Loading page css*/
 #loadingPage{
   z-index: -1;
@@ -517,6 +519,7 @@ ul.topnav li.dropdown{
 /* --- End of navbar --- */
 
 /* --- Beginning of blurred background --- */
+
 #mainBackground{
   padding: 12%;
   -webkit-background-size: cover;
@@ -535,6 +538,7 @@ ul.topnav li.dropdown{
   background: inherit;
   background-attachment: fixed;
   overflow: hidden;
+  font-family: 'Special Elite', cursive;
 }
 #mainBackground > header::before {
   content: "";
@@ -545,8 +549,10 @@ ul.topnav li.dropdown{
   height: 200%;
   background: inherit;
   background-attachment: fixed;
+  /*
   -webkit-filter: blur(4px);
   filter: blur(4px);
+  */
 }
 #mainBackground > header::after {
   content: "";

@@ -1,6 +1,6 @@
 /* --- Beginning of blurred background --- */
 #mainBackground{
-  background: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url(../images/about/main_background/main_background.png) no-repeat center center fixed;
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.4) ), url(../images/about/main_background/main_background.png) no-repeat center center fixed;
 }
 
 /* --- beginning about content section --- */
@@ -95,8 +95,7 @@
 .column {
   text-align: justify;
   width: inherit;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 60vh;
   background-color: #f2f2f2;
 }
