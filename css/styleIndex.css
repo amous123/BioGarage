@@ -46,17 +46,17 @@ figure{
   animation-duration: 0.5s;
 }
 
-figure:nth-child(1) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/home/background_desktop_1.png"); }
-figure:nth-child(2) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/home/background_desktop_2.png"); }
-figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.4) ), url("../images/home/background_desktop_3.png"); }
+figure:nth-child(1) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/home/background_desktop_1.jpg"); }
+figure:nth-child(2) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/home/background_desktop_2.jpg"); }
+figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.4) ), url("../images/home/background_desktop_3.jpg"); }
 
 @media only screen and (max-width: 700px) {
   figure{
     background-attachment: unset;
   }
-  figure:nth-child(1) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/home/background_mobile_1.png"); }
-  figure:nth-child(2) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/home/background_mobile_2.png"); }
-  figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.4) ), url("../images/home/background_mobile_3.png"); }
+  figure:nth-child(1) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/home/background_mobile_1.jpg"); }
+  figure:nth-child(2) { background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.3) ), url("../images/home/background_mobile_2.jpg"); }
+  figure:nth-child(3) {background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.4) ), url("../images/home/background_mobile_3.jpg"); }
   .badge{
     height: 3vh !important;
     width: 3vh !important;

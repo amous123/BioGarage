@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint');
 
 /*Loading page css*/
 #loadingPage{
@@ -538,7 +538,7 @@ ul.topnav li.dropdown{
   background: inherit;
   background-attachment: fixed;
   overflow: hidden;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Finger Paint', cursive;
 }
 #mainBackground > header::before {
   content: "";
